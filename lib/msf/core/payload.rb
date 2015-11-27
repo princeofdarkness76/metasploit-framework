@@ -30,6 +30,7 @@ class Payload < Msf::Module
   require 'msf/core/payload/java'
   require 'msf/core/payload/dalvik'
   require 'msf/core/payload/firefox'
+  require 'msf/core/payload/mainframe'
 
   ##
   #
@@ -160,6 +161,36 @@ class Payload < Msf::Module
   end
 
   #
+  # This method returns an optional cached size value
+  #
+  def self.cached_size
+    csize = (const_defined?('CachedSize')) ? const_get('CachedSize') : nil
+    csize == :dynamic ? nil : csize
+  end
+
+  #
+  # This method returns whether the payload generates variable-sized output
+  #
+  def self.dynamic_size?
+    csize = (const_defined?('CachedSize')) ? const_get('CachedSize') : nil
+    csize == :dynamic
+  end
+
+  #
+  # This method returns an optional cached size value
+  #
+  def cached_size
+      self.class.cached_size
+  end
+
+  #
+  # This method returns whether the payload generates variable-sized output
+  #
+  def dynamic_size?
+      self.class.dynamic_size?
+  end
+
+  #
   # Returns the payload's size.  If the payload is staged, the size of the
   # first stage is returned.
   #
@@ -234,7 +265,7 @@ class Payload < Msf::Module
   # payload's convention.
   #
   def compatible_convention?(conv)
-    # If we ourself don't have a convention or our convention is equal to
+    # If we don't have a convention or our convention is equal to
     # the one supplied, then we know we are compatible.
     if ((self.convention == nil) or
         (self.convention == conv))
@@ -282,12 +313,29 @@ class Payload < Msf::Module
   end
 
   #
+  # Generates the payload and returns the raw buffer to the caller,
+  # handling any post-processing tasks, such as prepended code stubs.
+  def generate_complete
+    apply_prepends(generate)
+  end
+
+  #
+  # Convert raw bytes to metasm-ready 'db' encoding format
+  # eg. "\x90\xCC" => "db 0x90,0xCC"
+  #
+  # @param raw [Array] Byte array to encode.
+  #
+  def raw_to_db(raw)
+    raw.unpack("C*").map {|c| "0x%.2x" % c}.join(",")
+  end
+
+  #
   # Substitutes variables with values from the module's datastore in the
   # supplied raw buffer for a given set of named offsets.  For instance,
   # RHOST is substituted with the RHOST value from the datastore which will
   # have been populated by the framework.
   #
-  # Supprted packing types:
+  # Supported packing types:
   #
   # - ADDR  (foo.com, 1.2.3.4)
   # - ADDR6 (foo.com, fe80::1234:5678:8910:1234)
@@ -433,6 +481,13 @@ class Payload < Msf::Module
     }
 
     return nops
+  end
+
+  #
+  # A placeholder stub, to be overriden by mixins
+  #
+  def apply_prepends(raw)
+    raw
   end
 
   ##

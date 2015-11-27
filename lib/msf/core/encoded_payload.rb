@@ -49,8 +49,6 @@ class EncodedPayload
     self.nop_sled      = nil
     self.encoder       = nil
     self.nop           = nil
-    self.iterations    = reqs['Iterations'].to_i
-    self.iterations    = 1 if self.iterations < 1
 
     # Increase thread priority as necessary.  This is done
     # to ensure that the encoding and sled generation get
@@ -71,8 +69,27 @@ class EncodedPayload
       # Generate the raw version of the payload first
       generate_raw() if self.raw.nil?
 
-      # Encode the payload
-      encode()
+      # If encoder is set, it could be an encoders list
+      # The form is "<encoder>:<iteration>, <encoder2>:<iteration>"...
+      if reqs['Encoder']
+        encoder_str = reqs['Encoder']
+        encoder_str.scan(/([^:, ]+):?([^,]+)?/).map do |encoder_opt|
+          reqs['Encoder'] = encoder_opt[0]
+
+          self.iterations = (encoder_opt[1] || reqs['Iterations']).to_i
+          self.iterations = 1 if self.iterations < 1
+
+          # Encode the payload with every encoders in the list
+          encode()
+          # Encoded payload is now the raw payload to be encoded by the next encoder
+          self.raw = self.encoded
+        end
+      else
+        self.iterations = reqs['Iterations'].to_i
+        self.iterations = 1 if self.iterations < 1
+        # No specified encoder, let BadChars or ForceEncode do their job
+        encode()
+      end
 
       # Build the NOP sled
       generate_sled()
@@ -94,7 +111,7 @@ class EncodedPayload
   #
   # @return [String] The raw, unencoded payload.
   def generate_raw
-    self.raw = (reqs['Prepend'] || '') + pinst.generate + (reqs['Append'] || '')
+    self.raw = (reqs['Prepend'] || '') + pinst.generate_complete + (reqs['Append'] || '')
 
     # If an encapsulation routine was supplied, then we should call it so
     # that we can get the real raw payload.
@@ -110,7 +127,7 @@ class EncodedPayload
   def encode
     # If the exploit has bad characters, we need to run the list of encoders
     # in ranked precedence and try to encode without them.
-    if reqs['BadChars'] or reqs['Encoder'] or reqs['ForceEncode']
+    if reqs['BadChars'].to_s.length > 0 or reqs['Encoder'] or reqs['ForceEncode']
       encoders = pinst.compatible_encoders
 
       # Make sure the encoder name from the user has the same String#encoding
@@ -165,7 +182,7 @@ class EncodedPayload
           next
         end
 
-        # If the caller explictly requires register preservation, make sure
+        # If the caller explicitly requires register preservation, make sure
         # that the module in question can handle it. This is mostly used by
         # the stage encoder path.
         if (reqs['ForceSaveRegisters'] and
@@ -325,14 +342,18 @@ class EncodedPayload
           self.nop_sled = nop.generate_sled(self.nop_sled_size,
             'BadChars'      => reqs['BadChars'],
             'SaveRegisters' => save_regs)
+
+          if nop_sled && nop_sled.length == nop_sled_size
+            break
+          else
+            dlog("#{pinst.refname}: Nop generator #{nop.refname} failed to generate sled for payload", 'core', LEV_1)
+          end
         rescue
           dlog("#{pinst.refname}: Nop generator #{nop.refname} failed to generate sled for payload: #{$!}",
             'core', LEV_1)
 
           self.nop = nil
         end
-
-        break
       }
 
       if (self.nop_sled == nil)
