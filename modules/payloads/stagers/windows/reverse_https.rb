@@ -24,6 +24,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'Name'          => 'Reverse HTTPS Stager',
       'Description'   => 'Tunnel communication over HTTP using SSL',
       'Author'        => 'hdm',
@@ -45,6 +46,8 @@ module Metasploit4
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
       'Name'        => 'Windows Reverse HTTPS Stager (wininet)',
       'Description' => 'Tunnel communication over HTTPS (Windows wininet)',
       'Author'      => 'hdm',
@@ -59,6 +62,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -70,6 +74,8 @@ module Metasploit4
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
   end

