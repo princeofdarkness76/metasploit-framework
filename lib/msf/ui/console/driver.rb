@@ -216,6 +216,7 @@ class Driver < Msf::Ui::Driver
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       # Rebuild the module cache in a background thread
       self.framework.modules.async.refresh_cache_from_module_files
 =======
@@ -225,6 +226,8 @@ class Driver < Msf::Ui::Driver
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
     if framework.db.active && !opts['DeferModuleLoads']
       framework.threads.spawn("ModuleCacheRebuild", true) do
         framework.modules.refresh_cache_from_module_files
