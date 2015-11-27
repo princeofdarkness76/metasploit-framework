@@ -7,8 +7,13 @@ require 'msf/core/payload/windows'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 module Msf
 
+=======
+
+module Msf
+>>>>>>> rapid7/master
 =======
 
 module Msf
@@ -51,6 +56,7 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['seh']}
           push.i8 0              ; push the exit function parameter
           push ebx               ; push the hash of the exit function
@@ -59,6 +65,8 @@ module Payload::Windows::Exitfunk
           ret                    ; Return to NULL (crash)
         ^
 =======
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -78,6 +86,9 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -94,6 +105,7 @@ module Payload::Windows::Exitfunk
 
     when 'thread'
       asm << %Q^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -138,6 +150,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['thread'].to_s(16)}
         push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
         call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
@@ -172,6 +186,9 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
