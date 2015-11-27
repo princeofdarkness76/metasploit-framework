@@ -20,8 +20,8 @@ class Metasploit3 < Msf::Post
       'License'       => MSF_LICENSE,
       'Author'        =>
             [
-              'Wesley Neelen <security[at]forsec.nl/@wez3forsec>', # Metasploit module
-              'Matt Nelson (@enigma0x3)'			   # Author original powershell script
+              'Wesley Neelen <security[at]forsec.nl>', # Metasploit module, @wez3forsec on Twitter
+              'Matt Nelson'                           # Original powershell script, @enigma0x3 on Twitter
             ],
       'References'    => [ 'URL', 'https://forsec.nl/2015/02/windows-credentials-phishing-using-metasploit' ],
       'Platform'      => [ 'win' ],
@@ -109,7 +109,7 @@ class Metasploit3 < Msf::Post
     # Check whether target system is locked
     locked = client.railgun.user32.GetForegroundWindow()['return']
     if locked == 0
-      fail_with(Failure::Unknown, "Target system is locked. This post module cannot click on Outlooks security warning when the target system is locked")
+      fail_with(Failure::Unknown, "Target system is locked. This post module cannot start the loginprompt when the target system is locked.")
     end
 
     # Switch to check whether a specific process needs to be monitored, or just show the popup immediatly.

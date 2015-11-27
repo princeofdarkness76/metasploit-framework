@@ -169,7 +169,7 @@ class Driver < Msf::Ui::Driver
 
         unless configuration_pathname.nil?
           if configuration_pathname.readable?
-            dbinfo = YAML.load_file(configuration_pathname)
+            dbinfo = YAML.load_file(configuration_pathname) || {}
             dbenv  = opts['DatabaseEnv'] || Rails.env
             db     = dbinfo[dbenv]
           else
@@ -186,15 +186,7 @@ class Driver < Msf::Ui::Driver
 
       # framework.db.active will be true if after_establish_connection ran directly when connection_established? was
       # already true or if framework.db.connect called after_establish_connection.
-      if framework.db.active
-        unless opts['DeferModuleLoads']
-          self.framework.modules.refresh_cache_from_database
-
-          if self.framework.modules.cache_empty?
-            print_status("The initial module cache will be built in the background, this can take 2-5 minutes...")
-          end
-        end
-      elsif !framework.db.error.nil?
+      if !! framework.db.error
         if framework.db.error.to_s =~ /RubyGem version.*pg.*0\.11/i
           print_error("***")
           print_error("*")
@@ -217,11 +209,18 @@ class Driver < Msf::Ui::Driver
     # Initialize the module paths only if we didn't get passed a Framework instance and 'DeferModuleLoads' is false
     unless opts['Framework'] || opts['DeferModuleLoads']
       # Configure the framework module paths
-      self.framework.init_module_paths
-      self.framework.modules.add_module_path(opts['ModulePath']) if opts['ModulePath']
+      self.framework.init_module_paths(module_paths: opts['ModulePath'])
+    end
 
+<<<<<<< HEAD
       # Rebuild the module cache in a background thread
       self.framework.modules.async.refresh_cache_from_module_files
+=======
+    if framework.db.active && !opts['DeferModuleLoads']
+      framework.threads.spawn("ModuleCacheRebuild", true) do
+        framework.modules.refresh_cache_from_module_files
+      end
+>>>>>>> rapid7/master
     end
 
     # Load console-specific configuration (after module paths are added)
@@ -233,7 +232,8 @@ class Driver < Msf::Ui::Driver
     # Process any resource scripts
     if opts['Resource'].blank?
       # None given, load the default
-      load_resource(File.join(Msf::Config.config_directory, 'msfconsole.rc'))
+      default_resource = ::File.join(Msf::Config.config_directory, 'msfconsole.rc')
+      load_resource(default_resource) if ::File.exists?(default_resource)
     else
       opts['Resource'].each { |r|
         load_resource(r)
@@ -384,8 +384,13 @@ class Driver < Msf::Ui::Driver
     if (conf.group?(ConfigGroup))
       conf[ConfigGroup].each_pair { |k, v|
         case k.downcase
-          when "activemodule"
+          when 'activemodule'
             run_single("use #{v}")
+          when 'activeworkspace'
+            if framework.db.active
+              workspace = framework.db.find_workspace(v)
+              framework.db.workspace = workspace if workspace
+            end
         end
       }
     end
@@ -400,6 +405,12 @@ class Driver < Msf::Ui::Driver
 
     if (active_module)
       group['ActiveModule'] = active_module.fullname
+    end
+
+    if framework.db.active
+      unless framework.db.workspace.default?
+        group['ActiveWorkspace'] = framework.db.workspace.name
+      end
     end
 
     # Save it
@@ -418,9 +429,10 @@ class Driver < Msf::Ui::Driver
     if path == '-'
       resource_file = $stdin.read
       path = 'stdin'
-    elsif ::File.readable?(path)
+    elsif ::File.exists?(path)
       resource_file = ::File.read(path)
     else
+      print_error("Cannot find resource script: #{path}")
       return
     end
 
@@ -530,8 +542,15 @@ class Driver < Msf::Ui::Driver
 
     framework.events.on_ui_start(Msf::Framework::Revision)
 
+<<<<<<< HEAD
     Celluloid::Actor[:metasploit_framework_command_console_spinner].terminate!
     $stderr.print "\n"
+=======
+    if $msf_spinner_thread
+      $msf_spinner_thread.kill
+      $stderr.print "\r" + (" " * 50) + "\n"
+    end
+>>>>>>> rapid7/master
 
     run_single("banner") unless opts['DisableBanner']
 
@@ -553,6 +572,8 @@ class Driver < Msf::Ui::Driver
       when "payload"
 
         if (framework and framework.payloads.valid?(val) == false)
+          return false
+        elsif active_module.type == 'exploit' && !active_module.is_payload_compatible?(val)
           return false
         elsif (active_module)
           active_module.datastore.clear_non_user_defined
@@ -721,7 +742,7 @@ protected
     if opts['RealReadline']
       # Remove the gem version from load path to be sure we're getting the
       # stdlib readline.
-      gem_dir = Gem::Specification.find_all_by_name('rb-readline').first.gem_dir
+      gem_dir = Gem::Specification.find_all_by_name('rb-readline-r7').first.gem_dir
       rb_readline_path = File.join(gem_dir, "lib")
       index = $LOAD_PATH.index(rb_readline_path)
       # Bundler guarantees that the gem will be there, so it should be safe to
