@@ -20,6 +20,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'Name'          => 'Reverse HTTPS Stager',
       'Description'   => 'Tunnel communication over HTTP using SSL',
       'Author'        => 'hdm',
@@ -29,6 +30,8 @@ module Metasploit4
       'Handler'       => Msf::Handler::ReverseHttps,
       'Convention'    => 'sockedi https'))
 =======
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -43,6 +46,9 @@ module Metasploit4
       'Convention'  => 'sockedi https'))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master

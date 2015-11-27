@@ -4,6 +4,10 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> rapid7/master
 =======
 require 'msf/core/payload/transport_config'
 >>>>>>> rapid7/master
@@ -20,7 +24,10 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -33,6 +40,7 @@ module Msf
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -89,6 +97,8 @@ module Payload::Windows::ReverseHttps
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
 module Payload::Windows::ReverseHttps
 
   include Msf::Payload::TransportConfig
@@ -108,6 +118,9 @@ module Payload::Windows::ReverseHttps
     transport_config_reverse_https(opts)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
