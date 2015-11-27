@@ -3,8 +3,13 @@
 require 'msf/core'
 require 'msf/core/payload/windows'
 <<<<<<< HEAD
+<<<<<<< HEAD
 module Msf
 
+=======
+
+module Msf
+>>>>>>> rapid7/master
 =======
 
 module Msf
@@ -27,6 +32,7 @@ module Payload::Windows::Exitfunk
     when 'seh'
       asm << %Q^
 <<<<<<< HEAD
+<<<<<<< HEAD
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['seh']}
           push.i8 0              ; push the exit function parameter
           push ebx               ; push the hash of the exit function
@@ -35,6 +41,8 @@ module Payload::Windows::Exitfunk
           ret                    ; Return to NULL (crash)
         ^
 =======
+=======
+>>>>>>> rapid7/master
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['seh'].to_s(16)}
         push.i8 0              ; push the exit function parameter
         push ebx               ; push the hash of the exit function
@@ -42,6 +50,9 @@ module Payload::Windows::Exitfunk
         push.i8 0
         ret                    ; Return to NULL (crash)
       ^
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 
     # On Windows Vista, Server 2008, and newer, it is not possible to call ExitThread
@@ -50,6 +61,7 @@ module Payload::Windows::Exitfunk
 
     when 'thread'
       asm << %Q^
+<<<<<<< HEAD
 <<<<<<< HEAD
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
           push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
@@ -82,6 +94,8 @@ module Payload::Windows::Exitfunk
           jmp exitfunk           ; repeat
         ^
 =======
+=======
+>>>>>>> rapid7/master
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['thread'].to_s(16)}
         push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
         call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
@@ -112,6 +126,9 @@ module Payload::Windows::Exitfunk
         call ebp               ; Sleep(300000)
         jmp exitfunk           ; repeat
       ^
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
     else
       # Do nothing and continue after the end of the shellcode

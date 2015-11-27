@@ -212,6 +212,7 @@ module Msf
       if encoder_list.empty?
         cli_print "No encoder or badchars specified, outputting raw payload"
 <<<<<<< HEAD
+<<<<<<< HEAD
         shellcode
       else
         cli_print "Found #{encoder_list.count} compatible encoders"
@@ -228,6 +229,8 @@ module Msf
             next
           end
 =======
+=======
+>>>>>>> rapid7/master
         return shellcode
       end
 
@@ -246,6 +249,9 @@ module Msf
         rescue ::Msf::EncodingError => e
           cli_print "#{encoder_mod.refname} failed with #{e.message}"
           next
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
         end
       end
