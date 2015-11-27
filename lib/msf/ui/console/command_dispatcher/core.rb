@@ -864,6 +864,7 @@ class Core
         cmd_irb_help
         return false
       end
+<<<<<<< HEAD
     end
 
     if expressions.empty?
@@ -883,7 +884,70 @@ class Core
       expressions.each { |expression| eval(expression, binding) }
 <<<<<<< HEAD
 =======
+=======
     end
+
+    if expressions.empty?
+      print_status("Starting IRB shell...\n")
+
+      begin
+        Rex::Ui::Text::IrbShell.new(binding).run
+      rescue
+        print_error("Error during IRB: #{$!}\n\n#{$@.join("\n")}")
+      end
+
+      # Reset tab completion
+      if (driver.input.supports_readline)
+        driver.input.reset_tab_completion
+      end
+    else
+      expressions.each { |expression| eval(expression, binding) }
+    end
+  end
+
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+    end
+
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+>>>>>>> rapid7/master
+    end
+
+    # This is not respecting the Protected access control, but this seems to be the only way
+    # to rename a job. If you know a more appropriate way, patches accepted.
+    framework.jobs[job_id].send(:name=, job_name)
+    print_status("Job #{job_id} updated")
+
+    true
+  end
+
+  #
+  # Tab completion for the rename_job command
+  #
+  # @param str [String] the string currently being typed before tab was hit
+  # @param words [Array<String>] the previously completed words on the command line.  words is always
+  # at least 1 when tab completion has reached this stage since the command itself has been completed
+
+  def cmd_rename_job_tabs(str, words)
+    return [] if words.length > 1
+    framework.jobs.keys
   end
 
   def cmd_rename_job_help
@@ -1946,6 +2010,7 @@ class Core
       print_status("Killing all sessions...")
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       framework.sessions.list.each do |session|
         if session.respond_to?(:response_timeout)
           last_known_timeout = session.response_timeout
@@ -1970,11 +2035,16 @@ class Core
       framework.sessions.each_sorted do |s|
         session = framework.sessions.get(s)
 >>>>>>> rapid7/master
+=======
+      framework.sessions.each_sorted do |s|
+        session = framework.sessions.get(s)
+>>>>>>> rapid7/master
         if session
           if session.respond_to?(:response_timeout)
             last_known_timeout = session.response_timeout
             session.response_timeout = response_timeout
           end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           print_status("Detaching session #{sess_id}")
@@ -1985,6 +2055,8 @@ class Core
 =======
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
           begin
             session.kill
           ensure
@@ -1992,6 +2064,9 @@ class Core
               session.response_timeout = last_known_timeout
             end
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
