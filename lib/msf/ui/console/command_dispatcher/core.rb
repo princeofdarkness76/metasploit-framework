@@ -867,6 +867,9 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
     end
@@ -886,6 +889,7 @@ class Core
       end
     else
       expressions.each { |expression| eval(expression, binding) }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -971,6 +975,9 @@ class Core
   def cmd_rename_job_tabs(str, words)
     return [] if words.length > 1
     framework.jobs.keys
+=======
+    end
+>>>>>>> rapid7/master
   end
 
   def cmd_rename_job_help
@@ -995,6 +1002,9 @@ class Core
     unless framework.jobs[job_id]
       print_error("Job #{job_id} does not exist.")
       return false
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
     end
 
@@ -1016,6 +1026,7 @@ class Core
   def cmd_rename_job_tabs(str, words)
     return [] if words.length > 1
     framework.jobs.keys
+<<<<<<< HEAD
   end
 
   def cmd_rename_job_help
@@ -1099,6 +1110,8 @@ class Core
   def cmd_rename_job_tabs(str, words)
     return [] if words.length > 1
     framework.jobs.keys
+=======
+>>>>>>> rapid7/master
   end
 
   def cmd_jobs_help
@@ -2091,6 +2104,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       framework.sessions.list.each do |session|
         if session.respond_to?(:response_timeout)
           last_known_timeout = session.response_timeout
@@ -2127,11 +2141,16 @@ class Core
       framework.sessions.each_sorted do |s|
         session = framework.sessions.get(s)
 >>>>>>> master
+=======
+      framework.sessions.each_sorted do |s|
+        session = framework.sessions.get(s)
+>>>>>>> rapid7/master
         if session
           if session.respond_to?(:response_timeout)
             last_known_timeout = session.response_timeout
             session.response_timeout = response_timeout
           end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2151,12 +2170,15 @@ class Core
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
           begin
             session.kill
           ensure
             if session.respond_to?(:response_timeout) && last_known_timeout
               session.response_timeout = last_known_timeout
             end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2170,6 +2192,8 @@ class Core
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
           end
         end
       end

@@ -73,6 +73,7 @@ class Framework
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   #
   # Attributes
@@ -95,6 +96,9 @@ class Framework
 =======
   require 'rex/json_hash_file'
 >>>>>>> master
+=======
+  require 'rex/json_hash_file'
+>>>>>>> rapid7/master
 
   #
   # Creates an instance of the framework context.
@@ -116,6 +120,7 @@ class Framework
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     self.run_supervision_group!
 =======
@@ -126,6 +131,8 @@ class Framework
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 
     # Configure the thread factory
     Rex::ThreadFactory.provider = Metasploit::Framework::ThreadFactoryProvider.new(framework: self)
