@@ -869,6 +869,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -913,6 +914,8 @@ class Core
     else
       expressions.each { |expression| eval(expression, binding) }
 =======
+=======
+>>>>>>> rapid7/master
     end
 
     if expressions.empty?
@@ -955,6 +958,7 @@ class Core
     unless framework.jobs[job_id]
       print_error("Job #{job_id} does not exist.")
       return false
+<<<<<<< HEAD
 >>>>>>> master
     end
 
@@ -1139,6 +1143,10 @@ class Core
     end
 
 >>>>>>> rapid7/master
+=======
+    end
+
+>>>>>>> rapid7/master
     # This is not respecting the Protected access control, but this seems to be the only way
     # to rename a job. If you know a more appropriate way, patches accepted.
     framework.jobs[job_id].send(:name=, job_name)
@@ -1158,6 +1166,9 @@ class Core
     return [] if words.length > 1
     framework.jobs.keys
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -2156,6 +2167,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       framework.sessions.list.each do |session|
         if session.respond_to?(:response_timeout)
           last_known_timeout = session.response_timeout
@@ -2200,11 +2212,16 @@ class Core
       framework.sessions.each_sorted do |s|
         session = framework.sessions.get(s)
 >>>>>>> rapid7/master
+=======
+      framework.sessions.each_sorted do |s|
+        session = framework.sessions.get(s)
+>>>>>>> rapid7/master
         if session
           if session.respond_to?(:response_timeout)
             last_known_timeout = session.response_timeout
             session.response_timeout = response_timeout
           end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2230,12 +2247,15 @@ class Core
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
           begin
             session.kill
           ensure
             if session.respond_to?(:response_timeout) && last_known_timeout
               session.response_timeout = last_known_timeout
             end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2251,6 +2271,8 @@ class Core
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
