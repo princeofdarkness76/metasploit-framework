@@ -74,6 +74,7 @@ class Framework
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   #
   # Attributes
@@ -99,6 +100,9 @@ class Framework
 =======
   require 'rex/json_hash_file'
 >>>>>>> rapid7/master
+=======
+  require 'rex/json_hash_file'
+>>>>>>> rapid7/master
 
   #
   # Creates an instance of the framework context.
@@ -121,6 +125,7 @@ class Framework
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     self.run_supervision_group!
 =======
@@ -131,6 +136,8 @@ class Framework
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 
