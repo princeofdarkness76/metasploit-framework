@@ -168,7 +168,10 @@ module Msf::Payload::Windows
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
   #
@@ -180,6 +183,9 @@ module Msf::Payload::Windows
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master

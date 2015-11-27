@@ -19,6 +19,7 @@ module Metasploit4
     super(merge_info(info,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'Name'          => 'Reverse HTTPS Stager',
       'Description'   => 'Tunnel communication over HTTP using SSL',
       'Author'        => 'hdm',
@@ -30,6 +31,8 @@ module Metasploit4
 =======
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
       'Name'        => 'Windows Reverse HTTPS Stager (wininet)',
       'Description' => 'Tunnel communication over HTTPS (Windows wininet)',
       'Author'      => 'hdm',
@@ -39,6 +42,9 @@ module Metasploit4
       'Handler'     => Msf::Handler::ReverseHttps,
       'Convention'  => 'sockedi https'))
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master

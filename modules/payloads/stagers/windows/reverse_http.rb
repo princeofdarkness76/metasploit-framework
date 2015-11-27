@@ -8,6 +8,11 @@ require 'msf/core/handler/reverse_http'
 require 'msf/core/payload/windows/reverse_http'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+module Metasploit4
+>>>>>>> rapid7/master
 =======
 
 module Metasploit4
@@ -27,6 +32,7 @@ module Metasploit4
     super(merge_info(info,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'Name'          => 'Reverse HTTP Stager',
       'Description'   => 'Tunnel communication over HTTP',
       'Author'        => 'hdm',
@@ -37,6 +43,8 @@ module Metasploit4
       'Convention'    => 'sockedi http'))
   end
 =======
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
       'Name'        => 'Windows Reverse HTTP Stager (wininet)',
@@ -50,6 +58,9 @@ module Metasploit4
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
