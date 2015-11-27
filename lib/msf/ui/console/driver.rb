@@ -215,9 +215,12 @@ class Driver < Msf::Ui::Driver
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       # Rebuild the module cache in a background thread
       self.framework.modules.async.refresh_cache_from_module_files
 =======
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======

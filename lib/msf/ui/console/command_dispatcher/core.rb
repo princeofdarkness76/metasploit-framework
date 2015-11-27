@@ -865,6 +865,9 @@ class Core
         return false
       end
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
     end
 
     if expressions.empty?
@@ -882,6 +885,7 @@ class Core
       end
     else
       expressions.each { |expression| eval(expression, binding) }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -969,6 +973,11 @@ class Core
   end
 
 <<<<<<< HEAD
+=======
+    end
+  end
+
+>>>>>>> rapid7/master
   def cmd_rename_job_help
     print_line "Usage: rename_job [ID] [Name]"
     print_line
@@ -991,6 +1000,7 @@ class Core
     unless framework.jobs[job_id]
       print_error("Job #{job_id} does not exist.")
       return false
+<<<<<<< HEAD
     end
 
 =======
@@ -1000,6 +1010,10 @@ class Core
     unless framework.jobs[job_id]
       print_error("Job #{job_id} does not exist.")
       return false
+    end
+
+>>>>>>> rapid7/master
+=======
     end
 
 >>>>>>> rapid7/master
@@ -2011,6 +2025,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       framework.sessions.list.each do |session|
         if session.respond_to?(:response_timeout)
           last_known_timeout = session.response_timeout
@@ -2039,11 +2054,16 @@ class Core
       framework.sessions.each_sorted do |s|
         session = framework.sessions.get(s)
 >>>>>>> rapid7/master
+=======
+      framework.sessions.each_sorted do |s|
+        session = framework.sessions.get(s)
+>>>>>>> rapid7/master
         if session
           if session.respond_to?(:response_timeout)
             last_known_timeout = session.response_timeout
             session.response_timeout = response_timeout
           end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2057,6 +2077,8 @@ class Core
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
           begin
             session.kill
           ensure
@@ -2065,6 +2087,9 @@ class Core
             end
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
