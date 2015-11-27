@@ -174,6 +174,7 @@ module Msf::Payload::Windows
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> rapid7/master
@@ -189,6 +190,8 @@ module Msf::Payload::Windows
 >>>>>>> master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
   #
   # By default, we don't want to send the UUID, but we'll send
   # for certain payloads if requested.
@@ -204,6 +207,7 @@ module Msf::Payload::Windows
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -219,5 +223,7 @@ module Msf::Payload::Windows
 >>>>>>> master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 end
 
