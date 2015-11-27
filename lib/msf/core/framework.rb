@@ -69,6 +69,7 @@ class Framework
   require 'msf/core/db_manager'
   require 'msf/core/event_dispatcher'
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   #
   # Attributes
@@ -76,6 +77,9 @@ class Framework
 
   # The Celluloid::SupervisionGroup that is the root of the supervision tree.
   attr_accessor :supervision_group
+=======
+  require 'rex/json_hash_file'
+>>>>>>> rapid7/master
 =======
   require 'rex/json_hash_file'
 >>>>>>> rapid7/master
@@ -96,8 +100,11 @@ class Framework
     self.plugins   = PluginManager.new(self)
     self.uuid_db   = Rex::JSONHashFile.new(::File.join(Msf::Config.config_directory, "payloads.json"))
     self.browser_profiles = Hash.new
+<<<<<<< HEAD
 
     self.run_supervision_group!
+=======
+>>>>>>> rapid7/master
 
     # Configure the thread factory
     Rex::ThreadFactory.provider = Metasploit::Framework::ThreadFactoryProvider.new(framework: self)

@@ -881,9 +881,30 @@ class Core
       end
     else
       expressions.each { |expression| eval(expression, binding) }
+<<<<<<< HEAD
+=======
     end
   end
 
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+>>>>>>> rapid7/master
+    end
+  end
+
+<<<<<<< HEAD
   def cmd_rename_job_help
     print_line "Usage: rename_job [ID] [Name]"
     print_line
@@ -908,6 +929,16 @@ class Core
       return false
     end
 
+=======
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+    end
+
+>>>>>>> rapid7/master
     # This is not respecting the Protected access control, but this seems to be the only way
     # to rename a job. If you know a more appropriate way, patches accepted.
     framework.jobs[job_id].send(:name=, job_name)
@@ -1914,6 +1945,7 @@ class Core
     when 'killall'
       print_status("Killing all sessions...")
 <<<<<<< HEAD
+<<<<<<< HEAD
       framework.sessions.list.each do |session|
         if session.respond_to?(:response_timeout)
           last_known_timeout = session.response_timeout
@@ -1934,11 +1966,16 @@ class Core
       framework.sessions.each_sorted do |s|
         session = framework.sessions.get(s)
 >>>>>>> rapid7/master
+=======
+      framework.sessions.each_sorted do |s|
+        session = framework.sessions.get(s)
+>>>>>>> rapid7/master
         if session
           if session.respond_to?(:response_timeout)
             last_known_timeout = session.response_timeout
             session.response_timeout = response_timeout
           end
+<<<<<<< HEAD
 <<<<<<< HEAD
           print_status("Detaching session #{sess_id}")
           begin
@@ -1946,12 +1983,17 @@ class Core
           ensure
             session.response_timeout = last_known_timeout if last_known_timeout
 =======
+=======
+>>>>>>> rapid7/master
           begin
             session.kill
           ensure
             if session.respond_to?(:response_timeout) && last_known_timeout
               session.response_timeout = last_known_timeout
             end
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
           end
         end
