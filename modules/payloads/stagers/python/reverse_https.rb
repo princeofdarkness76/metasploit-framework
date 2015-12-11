@@ -8,16 +8,20 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/uuid/options'
 
 module Metasploit3
 =======
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
 require 'msf/core/payload/python'
 require 'msf/core/payload/python/reverse_http'
 
 module Metasploit4
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
@@ -27,10 +31,13 @@ module Metasploit3
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
 
   CachedSize = 762
 
   include Msf::Payload::Stager
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -42,6 +49,10 @@ module Metasploit3
 =======
   include Msf::Payload::UUID::Options
 >>>>>>> master
+=======
+  include Msf::Payload::Python
+  include Msf::Payload::Python::ReverseHttp
+>>>>>>> rapid7/master
 =======
   include Msf::Payload::Python
   include Msf::Payload::Python::ReverseHttp
@@ -61,6 +72,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> master
 
@@ -76,12 +88,15 @@ module Metasploit3
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
   end
 
   #
   # Constructs the payload
   #
   def generate
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -178,6 +193,9 @@ module Metasploit3
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+    super({scheme: 'https'})
+>>>>>>> rapid7/master
 =======
     super({scheme: 'https'})
 >>>>>>> rapid7/master

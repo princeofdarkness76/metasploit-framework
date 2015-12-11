@@ -84,6 +84,7 @@ module ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
 =======
     "#{scheme}://#{uri_host}:#{bind_port}/"
@@ -91,6 +92,9 @@ module ReverseHttp
 =======
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
 >>>>>>> master
+=======
+    "#{scheme}://#{uri_host}:#{bind_port}/"
+>>>>>>> rapid7/master
 =======
     "#{scheme}://#{uri_host}:#{bind_port}/"
 >>>>>>> rapid7/master
@@ -109,6 +113,9 @@ module ReverseHttp
     if req && req.headers && req.headers['Host']
       callback_host = req.headers['Host']
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
     end
 
     # Override the host and port as appropriate
@@ -121,6 +128,7 @@ module ReverseHttp
       callback_host = "#{callback_name}:#{callback_port}"
     end
 
+<<<<<<< HEAD
 =======
     end
 
@@ -134,6 +142,8 @@ module ReverseHttp
       callback_host = "#{callback_name}:#{callback_port}"
     end
 
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
     "#{scheme}://#{callback_host}/"
   end
@@ -263,10 +273,14 @@ protected
     info = process_uri_resource(req.relative_resource)
     uuid = info[:uuid] || Msf::Payload::UUID.new
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
 
     # Configure the UUID architecture and payload if necessary
     uuid.arch      ||= obj.arch
     uuid.platform  ||= obj.platform
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -306,6 +320,14 @@ protected
       conn_id = generate_uri_uuid(URI_CHECKSUM_CONN, uuid)
     end
 
+=======
+
+    conn_id = nil
+    if info[:mode] && info[:mode] != :connect
+      conn_id = generate_uri_uuid(URI_CHECKSUM_CONN, uuid)
+    end
+
+>>>>>>> rapid7/master
     request_summary = "#{req.relative_resource} with UA '#{req.headers['User-Agent']}'"
 
     # Validate known UUIDs for all requests if IgnoreUnknownPayloads is set
@@ -323,7 +345,10 @@ protected
       end
     end
 
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
     self.pending_connections += 1
@@ -332,6 +357,7 @@ protected
     case info[:mode]
       when :init_connect
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Redirecting stageless connection from #{request_summary}")
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -367,12 +393,19 @@ protected
         # first connect. From there, we tell them to callback on a connect URI that
         # was generated on the fly. This means we form a new session for each.
 >>>>>>> rapid7/master
+=======
+
+        # Handle the case where stageless payloads call in on the same URI when they
+        # first connect. From there, we tell them to callback on a connect URI that
+        # was generated on the fly. This means we form a new session for each.
+>>>>>>> rapid7/master
 
         # Hurl a TLV back at the caller, and ignore the response
         pkt = Rex::Post::Meterpreter::Packet.new(Rex::Post::Meterpreter::PACKET_TYPE_RESPONSE,
                                                  'core_patch_url')
         pkt.add_tlv(Rex::Post::Meterpreter::TLV_TYPE_TRANS_URL, conn_id + "/")
         resp.body = pkt.to_r
+<<<<<<< HEAD
 <<<<<<< HEAD
 
       when :init_python
@@ -418,6 +451,13 @@ protected
         url = payload_uri(req) + conn_id + '/'
 
 >>>>>>> rapid7/master
+=======
+
+      when :init_python
+        print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Python payload ...")
+        url = payload_uri(req) + conn_id + '/'
+
+>>>>>>> rapid7/master
         blob = ""
         blob << obj.generate_stage(
           http_url: url,
@@ -428,6 +468,9 @@ protected
           uri:  conn_id
         )
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -446,11 +489,19 @@ protected
           :ssl                => ssl?,
           :payload_uuid       => uuid
         })
+<<<<<<< HEAD
 
       when :init_java
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Java payload ...")
         url = payload_uri(req) + conn_id + "/\x00"
 
+=======
+
+      when :init_java
+        print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Java payload ...")
+        url = payload_uri(req) + conn_id + "/\x00"
+
+>>>>>>> rapid7/master
         blob = obj.generate_stage(
           uuid: uuid,
           uri:  conn_id
@@ -477,11 +528,15 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         uri = URI(payload_uri(req) + conn_id)
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+        uri = URI(payload_uri(req) + conn_id)
+>>>>>>> rapid7/master
 =======
         uri = URI(payload_uri(req) + conn_id)
 >>>>>>> rapid7/master
@@ -496,6 +551,7 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 =======
@@ -506,6 +562,10 @@ protected
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 >>>>>>> master
+=======
+          lhost: uri.host,
+          lport: uri.port
+>>>>>>> rapid7/master
 =======
           lhost: uri.host,
           lport: uri.port

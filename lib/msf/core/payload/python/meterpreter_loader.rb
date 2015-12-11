@@ -39,7 +39,10 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
   # @option opts [String] :http_proxy_host The host to use as a proxy for
@@ -51,9 +54,12 @@ module Payload::Python::MeterpreterLoader
   # @option opts [String] :http_user_agent The value to use for the User-Agent
   #   header for HTTP(S) transports.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
   # @option opts [String] :stageless_tcp_socket_setup Python code to execute to
@@ -66,7 +72,10 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
     var_escape = lambda { |txt|
@@ -74,9 +83,12 @@ module Payload::Python::MeterpreterLoader
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
     if datastore['PythonMeterpreterDebug']
@@ -95,7 +107,10 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
     # patch in the stageless http(s) connection url
@@ -108,9 +123,12 @@ module Payload::Python::MeterpreterLoader
     end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
     # patch in any optional stageless tcp socket setup

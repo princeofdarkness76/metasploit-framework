@@ -94,6 +94,7 @@ class Core
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
@@ -102,6 +103,8 @@ class Core
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 

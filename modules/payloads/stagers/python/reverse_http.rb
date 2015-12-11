@@ -12,10 +12,13 @@ module Metasploit4
 
   CachedSize = 494
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   CachedSize = 466
 
   CachedSize = 466
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 
@@ -34,6 +37,7 @@ module Metasploit4
       'Handler'       => Msf::Handler::ReverseHttp,
       'Stager'        => {'Payload' => ""}
     ))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -129,6 +133,10 @@ module Metasploit4
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+  end
+
+>>>>>>> rapid7/master
 =======
   end
 

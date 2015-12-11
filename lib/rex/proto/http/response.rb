@@ -111,6 +111,7 @@ class Response < Packet
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     json = []
 =======
     json = {}
@@ -118,6 +119,9 @@ class Response < Packet
 =======
     json = []
 >>>>>>> master
+=======
+    json = {}
+>>>>>>> rapid7/master
 =======
     json = {}
 >>>>>>> rapid7/master

@@ -71,6 +71,7 @@ Gem::Specification.new do |spec|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.19'
@@ -78,6 +79,9 @@ Gem::Specification.new do |spec|
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
 >>>>>>> master
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.19'
+>>>>>>> rapid7/master
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.19'
 >>>>>>> rapid7/master
@@ -100,12 +104,17 @@ Gem::Specification.new do |spec|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   # required for bitlocker fvek extraction
   spec.add_runtime_dependency 'openssl-ccm', '1.2.1'
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+  # required for bitlocker fvek extraction
+  spec.add_runtime_dependency 'openssl-ccm', '1.2.1'
+>>>>>>> rapid7/master
 =======
   # required for bitlocker fvek extraction
   spec.add_runtime_dependency 'openssl-ccm', '1.2.1'

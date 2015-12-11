@@ -15,6 +15,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 49398
 =======
   CachedSize = 50146
@@ -22,6 +23,9 @@ module Metasploit4
 =======
   CachedSize = 49398
 >>>>>>> master
+=======
+  CachedSize = 50146
+>>>>>>> rapid7/master
 =======
   CachedSize = 50146
 >>>>>>> rapid7/master

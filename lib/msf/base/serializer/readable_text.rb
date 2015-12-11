@@ -661,8 +661,11 @@ class ReadableText
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       row << (ctx[0].datastore['LPORT'] || "")
 =======
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 
@@ -675,10 +678,13 @@ class ReadableText
       end
       row << lport
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 

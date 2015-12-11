@@ -44,8 +44,11 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 =======
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil]),
@@ -54,10 +57,13 @@ class Metasploit3 < Msf::Post
       OptString.new('BOURNE_FILE',
         [false, 'Remote filename to use for dropped binary'])
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
     ], self.class)

@@ -2258,7 +2258,10 @@ describe 'modules/payloads', :content do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
   context 'python/meterpreter_reverse_http' do
@@ -2282,9 +2285,12 @@ describe 'modules/payloads', :content do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
   context 'python/meterpreter_reverse_tcp' do
