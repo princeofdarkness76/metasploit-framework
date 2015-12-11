@@ -6,6 +6,7 @@
 require 'msf/core'
 require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/uuid/options'
 
 module Metasploit3
@@ -15,16 +16,25 @@ require 'msf/core/payload/python/reverse_http'
 
 module Metasploit4
 >>>>>>> rapid7/master
+=======
+require 'msf/core/payload/uuid/options'
+
+module Metasploit3
+>>>>>>> master
 
   CachedSize = 762
 
   include Msf::Payload::Stager
+<<<<<<< HEAD
 <<<<<<< HEAD
   include Msf::Payload::UUID::Options
 =======
   include Msf::Payload::Python
   include Msf::Payload::Python::ReverseHttp
 >>>>>>> rapid7/master
+=======
+  include Msf::Payload::UUID::Options
+>>>>>>> master
 
   def initialize(info = {})
     super(merge_info(info,
@@ -38,14 +48,20 @@ module Metasploit4
       'Stager'        => {'Payload' => ""}
     ))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 
     register_options(
       [
         OptString.new('PayloadProxyHost', [false, "The proxy server's IP address"]),
         OptPort.new('PayloadProxyPort', [true, "The proxy port to connect to", 8080 ])
       ], self.class)
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
   end
 
   #
@@ -53,6 +69,9 @@ module Metasploit4
   #
   def generate
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
     lhost = datastore['LHOST'] || '127.127.127.127'
 
     var_escape = lambda { |txt|
@@ -138,9 +157,12 @@ module Metasploit4
     end
 
     generate_uri_uuid_mode(:init_python, uri_req_len)
+<<<<<<< HEAD
 =======
     super({scheme: 'https'})
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
   end
 
 end

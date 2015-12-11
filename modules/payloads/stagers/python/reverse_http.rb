@@ -14,6 +14,8 @@ module Metasploit4
 
   CachedSize = 466
 
+  CachedSize = 466
+
   include Msf::Payload::Stager
   include Msf::Payload::Python
   include Msf::Payload::Python::ReverseHttp
@@ -116,8 +118,11 @@ module Metasploit4
     generate_uri_checksum(Rex::Payloads::Meterpreter::UriChecksum::URI_CHECKSUM_INITP, uri_req_len)
   end
 
+<<<<<<< HEAD
 =======
   end
 
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 end

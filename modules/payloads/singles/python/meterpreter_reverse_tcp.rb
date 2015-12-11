@@ -13,10 +13,14 @@ require 'msf/base/sessions/meterpreter_python'
 module Metasploit4
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 49398
 =======
   CachedSize = 50146
 >>>>>>> rapid7/master
+=======
+  CachedSize = 49398
+>>>>>>> master
 
   include Msf::Payload::Single
   include Msf::Payload::Python

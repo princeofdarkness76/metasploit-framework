@@ -659,6 +659,7 @@ class ReadableText
       row = [ k, framework.jobs[k].name ]
       row << (ctx[1].nil? ? (ctx[0].datastore['PAYLOAD'] || "") : ctx[1].refname)
 <<<<<<< HEAD
+<<<<<<< HEAD
       row << (ctx[0].datastore['LPORT'] || "")
 =======
 
@@ -671,6 +672,9 @@ class ReadableText
       end
       row << lport
 >>>>>>> rapid7/master
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> master
 
       if (verbose)
         uripath = ctx[0].get_resource if ctx[0].respond_to?(:get_resource)

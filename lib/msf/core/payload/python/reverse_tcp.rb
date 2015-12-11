@@ -64,6 +64,10 @@ end
 
 end
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> rapid7/master
+=======
+
+>>>>>>> master

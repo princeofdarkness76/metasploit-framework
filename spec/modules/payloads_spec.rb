@@ -2256,6 +2256,7 @@ describe 'modules/payloads', :content do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   context 'python/meterpreter_reverse_http' do
     it_should_behave_like 'payload cached size is consistent',
@@ -2278,6 +2279,8 @@ describe 'modules/payloads', :content do
   end
 
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
   context 'python/meterpreter_reverse_tcp' do
     it_should_behave_like 'payload cached size is consistent',
                           ancestor_reference_names: [

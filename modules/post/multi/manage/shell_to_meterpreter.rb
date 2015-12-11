@@ -42,6 +42,7 @@ class Metasploit3 < Msf::Post
         [true, 'Which method to try first to transfer files on a Windows target.', 'POWERSHELL', ['POWERSHELL', 'VBS']]),
       OptString.new('PAYLOAD_OVERRIDE',
 <<<<<<< HEAD
+<<<<<<< HEAD
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil]),
@@ -50,6 +51,9 @@ class Metasploit3 < Msf::Post
       OptString.new('BOURNE_FILE',
         [false, 'Remote filename to use for dropped binary'])
 >>>>>>> rapid7/master
+=======
+        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+>>>>>>> master
     ], self.class)
     deregister_options('PERSIST', 'PSH_OLD_METHOD', 'RUN_WOW64')
   end

@@ -10,10 +10,14 @@ require 'msf/core'
 module Metasploit3
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 314
 =======
   CachedSize = 313
 >>>>>>> rapid7/master
+=======
+  CachedSize = 314
+>>>>>>> master
 
   include Msf::Payload::Windows
   include Msf::Payload::Single

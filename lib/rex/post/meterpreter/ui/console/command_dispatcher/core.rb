@@ -378,6 +378,9 @@ class Console::CommandDispatcher::Core
     print_line('Any or all of these can be set at once.')
     print_line(@@set_timeouts_opts.usage)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
   end
 
   def cmd_set_timeouts(*args)
@@ -814,6 +817,7 @@ class Console::CommandDispatcher::Core
         print_error("Failed to remove transport, please check the parameters")
       end
     end
+<<<<<<< HEAD
   end
 
   @@migrate_opts = Rex::Parser::Arguments.new(
@@ -1266,10 +1270,19 @@ class Console::CommandDispatcher::Core
     '-t' => [true,  'The number of seconds to wait for migration to finish (default: 60).'],
     '-h' => [false, 'Help menu.']
 >>>>>>> rapid7/master
+=======
+  end
+
+  @@migrate_opts = Rex::Parser::Arguments.new(
+    '-p'  => [true,  'Writable path - Linux only (eg. /tmp).'],
+    '-t'  => [true,  'The number of seconds to wait for migration to finish (default: 60).'],
+    '-h'  => [false, 'Help menu.']
+>>>>>>> master
   )
 
   def cmd_migrate_help
     if client.platform =~ /linux/
+<<<<<<< HEAD
 <<<<<<< HEAD
       print_line('Usage: migrate <pid> [-p writable_path] [-t timeout]')
     else
@@ -1279,6 +1292,11 @@ class Console::CommandDispatcher::Core
     else
       print_line('Usage: migrate <<pid> | -P <pid> | -N <name>> [-t timeout]')
 >>>>>>> rapid7/master
+=======
+      print_line('Usage: migrate <pid> [-p writable_path] [-t timeout]')
+    else
+      print_line('Usage: migrate <pid> [-t timeout]')
+>>>>>>> master
     end
     print_line
     print_line('Migrates the server instance to another process.')
@@ -1294,10 +1312,14 @@ class Console::CommandDispatcher::Core
   # @return [void]
   def cmd_migrate(*args)
 <<<<<<< HEAD
+<<<<<<< HEAD
     if args.length == 0 || args.include?('-h')
 =======
     if args.length == 0 || args.any? { |arg| %w(-h --pid --name).include? arg }
 >>>>>>> rapid7/master
+=======
+    if args.length == 0 || args.include?('-h')
+>>>>>>> master
       cmd_migrate_help
       return true
     end
@@ -1321,6 +1343,7 @@ class Console::CommandDispatcher::Core
       when '-p'
         writable_dir = val
       end
+<<<<<<< HEAD
 =======
     pid = nil
     writable_dir = nil
@@ -1365,6 +1388,8 @@ class Console::CommandDispatcher::Core
       end
       pid = pid.to_i
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
     end
 
     begin
