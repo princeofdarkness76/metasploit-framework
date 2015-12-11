@@ -83,6 +83,7 @@ module ReverseHttp
     uri_host = Rex::Socket.is_ipv6?(listener_address) ? "[#{listener_address}]" : listener_address
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
 =======
     "#{scheme}://#{uri_host}:#{bind_port}/"
@@ -90,6 +91,9 @@ module ReverseHttp
 =======
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
 >>>>>>> master
+=======
+    "#{scheme}://#{uri_host}:#{bind_port}/"
+>>>>>>> rapid7/master
   end
 
   # Return a URI suitable for placing in a payload.
@@ -104,6 +108,7 @@ module ReverseHttp
     # Extract whatever the client sent us in the Host header
     if req && req.headers && req.headers['Host']
       callback_host = req.headers['Host']
+<<<<<<< HEAD
     end
 
     # Override the host and port as appropriate
@@ -116,6 +121,20 @@ module ReverseHttp
       callback_host = "#{callback_name}:#{callback_port}"
     end
 
+=======
+    end
+
+    # Override the host and port as appropriate
+    if datastore['OverrideRequestHost'] || callback_host.nil?
+      callback_name = datastore['OverrideLHOST'] || datastore['LHOST']
+      callback_port = datastore['OverrideLPORT'] || datastore['LPORT']
+      if Rex::Socket.is_ipv6? callback_name
+        callback_name = "[#{callback_name}]"
+      end
+      callback_host = "#{callback_name}:#{callback_port}"
+    end
+
+>>>>>>> rapid7/master
     "#{scheme}://#{callback_host}/"
   end
 
@@ -243,12 +262,20 @@ protected
     resp = Rex::Proto::Http::Response.new
     info = process_uri_resource(req.relative_resource)
     uuid = info[:uuid] || Msf::Payload::UUID.new
+<<<<<<< HEAD
 
     # Configure the UUID architecture and payload if necessary
     uuid.arch      ||= obj.arch
     uuid.platform  ||= obj.platform
 <<<<<<< HEAD
 
+=======
+
+    # Configure the UUID architecture and payload if necessary
+    uuid.arch      ||= obj.arch
+    uuid.platform  ||= obj.platform
+
+>>>>>>> rapid7/master
     conn_id = nil
     if info[:mode] && info[:mode] != :connect
       conn_id = generate_uri_uuid(URI_CHECKSUM_CONN, uuid)
@@ -271,6 +298,7 @@ protected
       end
     end
 
+<<<<<<< HEAD
 =======
 
     conn_id = nil
@@ -296,12 +324,15 @@ protected
     end
 
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
     self.pending_connections += 1
 
     # Process the requested resource.
     case info[:mode]
       when :init_connect
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Redirecting stageless connection from #{request_summary}")
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -330,12 +361,19 @@ protected
           uri:  conn_id
         )
 >>>>>>> master
+=======
+
+        # Handle the case where stageless payloads call in on the same URI when they
+        # first connect. From there, we tell them to callback on a connect URI that
+        # was generated on the fly. This means we form a new session for each.
+>>>>>>> rapid7/master
 
         # Hurl a TLV back at the caller, and ignore the response
         pkt = Rex::Post::Meterpreter::Packet.new(Rex::Post::Meterpreter::PACKET_TYPE_RESPONSE,
                                                  'core_patch_url')
         pkt.add_tlv(Rex::Post::Meterpreter::TLV_TYPE_TRANS_URL, conn_id + "/")
         resp.body = pkt.to_r
+<<<<<<< HEAD
 
       when :init_python
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Python payload ...")
@@ -373,6 +411,13 @@ protected
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Python payload ...")
         url = payload_uri(req) + conn_id + '/'
 
+=======
+
+      when :init_python
+        print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Python payload ...")
+        url = payload_uri(req) + conn_id + '/'
+
+>>>>>>> rapid7/master
         blob = ""
         blob << obj.generate_stage(
           http_url: url,
@@ -382,6 +427,9 @@ protected
           uuid: uuid,
           uri:  conn_id
         )
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 
         resp.body = blob
@@ -428,11 +476,15 @@ protected
         url = payload_uri(req) + conn_id + "/\x00"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         uri = URI(payload_uri(req) + conn_id)
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+        uri = URI(payload_uri(req) + conn_id)
+>>>>>>> rapid7/master
 
         resp['Content-Type'] = 'application/octet-stream'
 
@@ -441,6 +493,7 @@ protected
         blob = obj.stage_payload(
           uuid: uuid,
           uri:  conn_id,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
@@ -453,6 +506,10 @@ protected
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 >>>>>>> master
+=======
+          lhost: uri.host,
+          lport: uri.port
+>>>>>>> rapid7/master
         )
 
         resp.body = encode_stage(blob)

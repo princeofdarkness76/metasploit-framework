@@ -11,10 +11,13 @@ require 'msf/core/payload/python/reverse_http'
 module Metasploit4
 
   CachedSize = 494
+<<<<<<< HEAD
 
   CachedSize = 466
 
   CachedSize = 466
+=======
+>>>>>>> rapid7/master
 
   include Msf::Payload::Stager
   include Msf::Payload::Python
@@ -31,6 +34,7 @@ module Metasploit4
       'Handler'       => Msf::Handler::ReverseHttp,
       'Stager'        => {'Payload' => ""}
     ))
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     register_options(
@@ -125,4 +129,8 @@ module Metasploit4
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+  end
+
+>>>>>>> rapid7/master
 end

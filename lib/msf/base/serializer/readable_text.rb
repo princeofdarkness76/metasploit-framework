@@ -660,8 +660,11 @@ class ReadableText
       row << (ctx[1].nil? ? (ctx[0].datastore['PAYLOAD'] || "") : ctx[1].refname)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       row << (ctx[0].datastore['LPORT'] || "")
 =======
+=======
+>>>>>>> rapid7/master
 
       # Make the LPORT show the bind port if it's different
       local_port = ctx[0].datastore['LPORT']
@@ -671,10 +674,13 @@ class ReadableText
         lport << " (#{bind_port})"
       end
       row << lport
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 
       if (verbose)
         uripath = ctx[0].get_resource if ctx[0].respond_to?(:get_resource)

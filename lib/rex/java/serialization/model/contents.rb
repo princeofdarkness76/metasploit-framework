@@ -90,6 +90,7 @@ module Rex
             when ProxyClassDesc
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               content = [TC_PROXYCLASSDESC].pack('C')
 =======
               encoded << [TC_PROXYCLASSDESC].pack('C')
@@ -97,6 +98,9 @@ module Rex
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
 >>>>>>> master
+=======
+              encoded << [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> rapid7/master
             when NullReference
               encoded << [TC_NULL].pack('C')
             when Reset

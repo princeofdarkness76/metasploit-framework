@@ -11,6 +11,7 @@ module Metasploit3
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 314
 =======
   CachedSize = 313
@@ -18,6 +19,9 @@ module Metasploit3
 =======
   CachedSize = 314
 >>>>>>> master
+=======
+  CachedSize = 313
+>>>>>>> rapid7/master
 
   include Msf::Payload::Windows
   include Msf::Payload::Single

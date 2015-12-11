@@ -38,7 +38,10 @@ module Payload::Python::MeterpreterLoader
   # @param opts [Hash] The options to use for patching the stage data.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> rapid7/master
   # @option opts [String] :http_proxy_host The host to use as a proxy for
   #   HTTP(S) transports.
   # @option opts [String] :http_proxy_port The port to use when a proxy  host is
@@ -47,9 +50,12 @@ module Payload::Python::MeterpreterLoader
   #   allow use of the stage as a stageless payload.
   # @option opts [String] :http_user_agent The value to use for the User-Agent
   #   header for HTTP(S) transports.
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
   # @option opts [String] :stageless_tcp_socket_setup Python code to execute to
   #   setup a tcp socket to allow use of the stage as a stageless payload.
   # @option opts [String] :uuid A specific UUID to use for sessions created by
@@ -59,14 +65,20 @@ module Payload::Python::MeterpreterLoader
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> rapid7/master
     var_escape = lambda { |txt|
       txt.gsub('\\', '\\'*8).gsub('\'', %q(\\\\\\\'))
     }
 
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
     if datastore['PythonMeterpreterDebug']
       met = met.sub("DEBUGGING = False", "DEBUGGING = True")
     end
@@ -82,7 +94,10 @@ module Payload::Python::MeterpreterLoader
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> rapid7/master
     # patch in the stageless http(s) connection url
     met.sub!('HTTP_CONNECTION_URL = None', "HTTP_CONNECTION_URL = '#{var_escape.call(opts[:http_url])}'") if opts[:http_url].to_s != ''
     met.sub!('HTTP_USER_AGENT = None', "HTTP_USER_AGENT = '#{var_escape.call(opts[:http_user_agent])}'") if opts[:http_user_agent].to_s != ''
@@ -92,9 +107,12 @@ module Payload::Python::MeterpreterLoader
       met.sub!('HTTP_PROXY = None', "HTTP_PROXY = '#{var_escape.call(proxy_url)}'")
     end
 
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
     # patch in any optional stageless tcp socket setup
     unless opts[:stageless_tcp_socket_setup].nil?
       socket_setup = opts[:stageless_tcp_socket_setup]

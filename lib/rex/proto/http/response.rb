@@ -110,6 +110,7 @@ class Response < Packet
   def get_json_document
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     json = []
 =======
     json = {}
@@ -117,6 +118,9 @@ class Response < Packet
 =======
     json = []
 >>>>>>> master
+=======
+    json = {}
+>>>>>>> rapid7/master
 
     begin
       json = JSON.parse(self.body)

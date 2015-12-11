@@ -14,6 +14,7 @@ module Metasploit4
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 49482
 =======
   CachedSize = 50226
@@ -21,6 +22,9 @@ module Metasploit4
 =======
   CachedSize = 49482
 >>>>>>> master
+=======
+  CachedSize = 50226
+>>>>>>> rapid7/master
 
   include Msf::Payload::Single
   include Msf::Payload::Python
