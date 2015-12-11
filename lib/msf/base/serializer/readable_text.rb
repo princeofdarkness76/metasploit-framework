@@ -1144,6 +1144,7 @@ class ReadableText
     out << "\n"
     return out
 <<<<<<< HEAD
+<<<<<<< HEAD
   end
 
   # Dumps the list of active sessions in verbose mode
@@ -1213,6 +1214,8 @@ class ReadableText
     return out
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
   end
 
   # Dumps the list of running jobs.
@@ -1247,6 +1250,7 @@ class ReadableText
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       # Make the LPORT show the bind port if it's different
       local_port = ctx[0].datastore['LPORT']
@@ -1259,6 +1263,9 @@ class ReadableText
 =======
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
