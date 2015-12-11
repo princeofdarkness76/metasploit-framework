@@ -220,6 +220,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         shellcode
       else
         cli_print "Found #{encoder_list.count} compatible encoders"
@@ -252,6 +253,8 @@ module Msf
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
         return shellcode
       end
 
@@ -278,6 +281,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -295,6 +299,8 @@ module Msf
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
         end
       end
 

@@ -14,6 +14,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #require 'msf/core/payload/windows/x64/reverse_https'
 =======
 require 'msf/core/payload/windows/x64/reverse_https'
@@ -42,6 +43,8 @@ module Metasploit4
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 require 'msf/core/payload/windows/x64/reverse_https'
 
 module Metasploit4
@@ -51,6 +54,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -62,6 +66,8 @@ module Metasploit4
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
   CachedSize = 532
 
   include Msf::Payload::Stager

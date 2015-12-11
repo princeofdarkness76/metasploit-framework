@@ -11,6 +11,7 @@ require 'msf/core/payload/windows'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 module Msf
 
 =======
@@ -49,6 +50,10 @@ module Msf
 
 module Msf
 >>>>>>> rapid7/master
+=======
+
+module Msf
+>>>>>>> master
 
 ###
 #
@@ -66,6 +71,7 @@ module Payload::Windows::Exitfunk
 
     when 'seh'
       asm << %Q^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -99,6 +105,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['seh'].to_s(16)}
         push.i8 0              ; push the exit function parameter
         push ebx               ; push the hash of the exit function
@@ -114,6 +122,7 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -131,6 +140,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 
     # On Windows Vista, Server 2008, and newer, it is not possible to call ExitThread
     # on WoW64 processes, instead we need to call RtlExitUserThread. This stub will
@@ -138,6 +149,7 @@ module Payload::Windows::Exitfunk
 
     when 'thread'
       asm << %Q^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -194,6 +206,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['thread'].to_s(16)}
         push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
         call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
@@ -232,6 +246,7 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -249,6 +264,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
     else
       # Do nothing and continue after the end of the shellcode
     end
