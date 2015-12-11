@@ -72,10 +72,14 @@ Gem::Specification.new do |spec|
   # Needed for Meterpreter
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.19'
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -97,10 +101,13 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'recog', '2.0.14'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   # required for bitlocker fvek extraction
   spec.add_runtime_dependency 'openssl-ccm', '1.2.1'
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 

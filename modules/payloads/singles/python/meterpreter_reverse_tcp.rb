@@ -14,10 +14,14 @@ module Metasploit4
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 50146
 =======
   CachedSize = 49398
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+  CachedSize = 49398
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
   CachedSize = 49398
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree

@@ -110,10 +110,14 @@ class Response < Packet
   def get_json_document
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     json = {}
 =======
     json = []
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+    json = []
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
     json = []
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
