@@ -81,7 +81,11 @@ module ReverseHttp
   # @return [String] A URI of the form +scheme://host:port/+
   def listener_uri
     uri_host = Rex::Socket.is_ipv6?(listener_address) ? "[#{listener_address}]" : listener_address
+<<<<<<< HEAD
     "#{scheme}://#{uri_host}:#{bind_port}/"
+=======
+    "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
   end
 
   # Return a URI suitable for placing in a payload.
@@ -286,6 +290,7 @@ protected
         blob = ""
         blob << obj.generate_stage(
 <<<<<<< HEAD
+<<<<<<< HEAD
           http_url: url,
           http_user_agent: datastore['MeterpreterUserAgent'],
           http_proxy_host: datastore['PayloadProxyHost'] || datastore['PROXYHOST'],
@@ -294,6 +299,8 @@ protected
           uri:  conn_id
         )
 =======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
           uuid: uuid,
           uri:  conn_id
         )
@@ -354,7 +361,10 @@ protected
       when :init_native
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Native payload ...")
         url = payload_uri(req) + conn_id + "/\x00"
+<<<<<<< HEAD
         uri = URI(payload_uri(req) + conn_id)
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 
         resp['Content-Type'] = 'application/octet-stream'
 
@@ -364,12 +374,17 @@ protected
           uuid: uuid,
           uri:  conn_id,
 <<<<<<< HEAD
+<<<<<<< HEAD
           lhost: uri.host,
           lport: uri.port
 =======
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
         )
 
         resp.body = encode_stage(blob)
