@@ -5,7 +5,13 @@ module Msf::Payload::Python
 
   #
   # Encode the given python command in base64 and wrap it with a stub
+<<<<<<< HEAD
   # that will decode and execute it on the fly.
+=======
+  # that will decode and execute it on the fly. The code will be condensed to
+  # one line and compatible with all Python versions supported by the Python
+  # Meterpreter stage.
+>>>>>>> rapid7/master
   #
   # @param cmd [String] The python code to execute.
   # @return [String] Full python stub to execute the command.

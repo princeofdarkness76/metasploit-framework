@@ -63,4 +63,7 @@ module Payload::Python::ReverseTcp
 end
 
 end
+<<<<<<< HEAD
 
+=======
+>>>>>>> rapid7/master

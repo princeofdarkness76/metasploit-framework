@@ -81,7 +81,11 @@ module ReverseHttp
   # @return [String] A URI of the form +scheme://host:port/+
   def listener_uri
     uri_host = Rex::Socket.is_ipv6?(listener_address) ? "[#{listener_address}]" : listener_address
+<<<<<<< HEAD
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+=======
+    "#{scheme}://#{uri_host}:#{bind_port}/"
+>>>>>>> rapid7/master
   end
 
   # Return a URI suitable for placing in a payload.
@@ -268,6 +272,7 @@ protected
     case info[:mode]
       when :init_connect
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Redirecting stageless connection from #{request_summary}")
+<<<<<<< HEAD
 
         # Handle the case where stageless payloads call in on the same URI when they
         # first connect. From there, we tell them to callback on a connect URI that
@@ -288,11 +293,20 @@ protected
           uuid: uuid,
           uri:  conn_id
         )
+=======
 
-        var_escape = lambda { |txt|
-          txt.gsub('\\', '\\'*8).gsub('\'', %q(\\\\\\\'))
-        }
+        # Handle the case where stageless payloads call in on the same URI when they
+        # first connect. From there, we tell them to callback on a connect URI that
+        # was generated on the fly. This means we form a new session for each.
+>>>>>>> rapid7/master
 
+        # Hurl a TLV back at the caller, and ignore the response
+        pkt = Rex::Post::Meterpreter::Packet.new(Rex::Post::Meterpreter::PACKET_TYPE_RESPONSE,
+                                                 'core_patch_url')
+        pkt.add_tlv(Rex::Post::Meterpreter::TLV_TYPE_TRANS_URL, conn_id + "/")
+        resp.body = pkt.to_r
+
+<<<<<<< HEAD
         # Patch all the things
         blob.sub!('HTTP_CONNECTION_URL = None', "HTTP_CONNECTION_URL = '#{var_escape.call(url)}'")
         blob.sub!('HTTP_USER_AGENT = None', "HTTP_USER_AGENT = '#{var_escape.call(datastore['MeterpreterUserAgent'])}'")
@@ -301,6 +315,21 @@ protected
           proxy_url = "http://#{datastore['PayloadProxyHost']||datastore['PROXYHOST']}:#{datastore['PayloadProxyPort']||datastore['PROXYPORT']}"
           blob.sub!('HTTP_PROXY = None', "HTTP_PROXY = '#{var_escape.call(proxy_url)}'")
         end
+=======
+      when :init_python
+        print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Python payload ...")
+        url = payload_uri(req) + conn_id + '/'
+
+        blob = ""
+        blob << obj.generate_stage(
+          http_url: url,
+          http_user_agent: datastore['MeterpreterUserAgent'],
+          http_proxy_host: datastore['PayloadProxyHost'] || datastore['PROXYHOST'],
+          http_proxy_port: datastore['PayloadProxyPort'] || datastore['PROXYPORT'],
+          uuid: uuid,
+          uri:  conn_id
+        )
+>>>>>>> rapid7/master
 
         resp.body = blob
 
@@ -344,6 +373,10 @@ protected
       when :init_native
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Native payload ...")
         url = payload_uri(req) + conn_id + "/\x00"
+<<<<<<< HEAD
+=======
+        uri = URI(payload_uri(req) + conn_id)
+>>>>>>> rapid7/master
 
         resp['Content-Type'] = 'application/octet-stream'
 
@@ -352,8 +385,13 @@ protected
         blob = obj.stage_payload(
           uuid: uuid,
           uri:  conn_id,
+<<<<<<< HEAD
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+=======
+          lhost: uri.host,
+          lport: uri.port
+>>>>>>> rapid7/master
         )
 
         resp.body = encode_stage(blob)
