@@ -17,6 +17,7 @@ require 'msf/core/payload/windows/reverse_http'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 module Metasploit4
@@ -59,6 +60,11 @@ module Metasploit4
 module Metasploit4
 
 >>>>>>> rapid7/master
+=======
+
+module Metasploit4
+
+>>>>>>> master
 =======
 
 module Metasploit4
@@ -77,6 +83,7 @@ module Metasploit4
 
   def initialize(info = {})
     super(merge_info(info,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -118,6 +125,8 @@ module Metasploit4
 >>>>>>> master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
       'Name'        => 'Windows Reverse HTTP Stager (wininet)',
       'Description' => 'Tunnel communication over HTTP (Windows wininet)',
       'Author'      => 'hdm',
@@ -138,6 +147,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -155,6 +165,8 @@ module Metasploit4
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
