@@ -69,6 +69,7 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4.11.2_release_pre-rails4
@@ -84,6 +85,9 @@ end
 =======
 
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+
+>>>>>>> msf-complex-payloads
 =======
 
 >>>>>>> msf-complex-payloads

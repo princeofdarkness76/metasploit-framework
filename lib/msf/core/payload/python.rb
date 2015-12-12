@@ -11,6 +11,7 @@ module Msf::Payload::Python
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   # that will decode and execute it on the fly. The code will be condensed to
   # one line and compatible with all Python versions supported by the Python
   # Meterpreter stage.
@@ -29,6 +30,9 @@ module Msf::Payload::Python
 =======
   # that will decode and execute it on the fly.
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> msf-complex-payloads
 =======
   # that will decode and execute it on the fly.
 >>>>>>> msf-complex-payloads

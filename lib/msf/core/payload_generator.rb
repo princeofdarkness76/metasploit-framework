@@ -214,6 +214,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
         return shellcode
@@ -241,6 +242,10 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
         shellcode
       else
         cli_print "Found #{encoder_list.count} compatible encoders"
@@ -257,10 +262,13 @@ module Msf
             next
           end
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
+=======
+>>>>>>> msf-complex-payloads
 =======
 =======
 >>>>>>> rapid7/master
@@ -301,6 +309,9 @@ module Msf
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
         end
       end

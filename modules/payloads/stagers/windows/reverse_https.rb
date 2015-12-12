@@ -20,6 +20,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
       'Name'        => 'Windows Reverse HTTPS Stager (wininet)',
@@ -37,6 +38,10 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
       'Name'          => 'Reverse HTTPS Stager',
       'Description'   => 'Tunnel communication over HTTP using SSL',
       'Author'        => 'hdm',
@@ -46,10 +51,13 @@ module Metasploit4
       'Handler'       => Msf::Handler::ReverseHttps,
       'Convention'    => 'sockedi https'))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
+=======
+>>>>>>> msf-complex-payloads
 =======
 =======
 >>>>>>> rapid7/master
@@ -80,6 +88,9 @@ module Metasploit4
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
   end
 

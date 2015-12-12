@@ -169,10 +169,13 @@ module Msf::Payload::Windows
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -184,6 +187,9 @@ module Msf::Payload::Windows
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
   #
   # By default, we don't want to send the UUID, but we'll send
@@ -195,12 +201,15 @@ module Msf::Payload::Windows
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> feature/complex-payloads
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
@@ -212,6 +221,9 @@ module Msf::Payload::Windows
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
 end
 

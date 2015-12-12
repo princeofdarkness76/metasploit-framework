@@ -4,6 +4,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/transport_config'
 =======
 >>>>>>> feature/complex-payloads
@@ -12,6 +13,8 @@ require 'msf/core/payload/transport_config'
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -29,6 +32,9 @@ require 'msf/core/payload/transport_config'
 =======
 require 'msf/core/payload/transport_config'
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
 require 'msf/core/payload/windows/reverse_http'
 
@@ -37,6 +43,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> feature/complex-payloads
@@ -44,6 +51,8 @@ module Msf
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -57,6 +66,9 @@ module Msf
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
 ###
 #
@@ -64,6 +76,7 @@ module Msf
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -106,6 +119,8 @@ module Payload::Windows::ReverseHttps
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -131,6 +146,9 @@ module Payload::Windows::ReverseHttps
   #
   # Generate the first stage
   #
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
   def generate
 
@@ -153,10 +171,13 @@ module Payload::Windows::ReverseHttps
 
     generate_reverse_https(conf)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   def transport_config(opts={})
     transport_config_reverse_https(opts)
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
   end
@@ -165,8 +186,11 @@ module Payload::Windows::ReverseHttps
   def cached_size
     341
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
+=======
+>>>>>>> msf-complex-payloads
 =======
 =======
 >>>>>>> rapid7/master
@@ -206,6 +230,9 @@ module Payload::Windows::ReverseHttps
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
   end
 

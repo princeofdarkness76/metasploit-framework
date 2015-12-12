@@ -4,6 +4,7 @@ require 'msf/core'
 require 'msf/core/payload/windows'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 module Msf
 
@@ -14,6 +15,8 @@ module Msf
 >>>>>>> feature/complex-payloads
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -40,6 +43,9 @@ module Msf
 module Msf
 >>>>>>> rapid7/master
 
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
 ###
 #
@@ -60,10 +66,13 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['seh']}
@@ -82,6 +91,9 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['seh'].to_s(16)}
         push.i8 0              ; push the exit function parameter
@@ -90,6 +102,7 @@ module Payload::Windows::Exitfunk
         push.i8 0
         ret                    ; Return to NULL (crash)
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -105,6 +118,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
@@ -116,6 +131,9 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
 
     # On Windows Vista, Server 2008, and newer, it is not possible to call ExitThread
@@ -127,10 +145,13 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
@@ -172,6 +193,9 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['thread'].to_s(16)}
         push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
@@ -188,6 +212,9 @@ module Payload::Windows::Exitfunk
       ^
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 
@@ -207,6 +234,7 @@ module Payload::Windows::Exitfunk
         call ebp               ; Sleep(300000)
         jmp exitfunk           ; repeat
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
@@ -253,6 +281,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -265,6 +295,9 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
     else
       # Do nothing and continue after the end of the shellcode

@@ -8,6 +8,7 @@ require 'msf/core/handler/reverse_http'
 require 'msf/core/payload/windows/reverse_http'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 module Metasploit4
 <<<<<<< HEAD
@@ -18,6 +19,8 @@ module Metasploit4
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -37,6 +40,15 @@ module Metasploit4
 
 module Metasploit4
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+
+=======
+
+module Metasploit4
+
+>>>>>>> rapid7/master
+>>>>>>> msf-complex-payloads
+=======
 
 =======
 
@@ -55,6 +67,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
       'Name'        => 'Windows Reverse HTTP Stager (wininet)',
@@ -74,6 +87,10 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
       'Name'          => 'Reverse HTTP Stager',
       'Description'   => 'Tunnel communication over HTTP',
       'Author'        => 'hdm',
@@ -84,12 +101,15 @@ module Metasploit4
       'Convention'    => 'sockedi http'))
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
   end
 
 >>>>>>> 4.11.2_release_pre-rails4
 =======
+=======
+>>>>>>> msf-complex-payloads
 =======
 =======
 >>>>>>> rapid7/master
@@ -122,5 +142,8 @@ module Metasploit4
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
 >>>>>>> msf-complex-payloads
 end
