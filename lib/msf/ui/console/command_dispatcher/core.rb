@@ -126,6 +126,10 @@ class Core
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
 
+  @@irb_opts = Rex::Parser::Arguments.new(
+    "-h" => [ false, "Help banner."                                   ],
+    "-e" => [ true,  "Expression to evaluate."                        ])
+
   # The list of data store elements that cannot be set when in defanged
   # mode.
   DefangedProhibitedDataStoreElements = [ "MsfModulePaths" ]
@@ -1931,7 +1935,38 @@ class Core
     }
   end
 
+  def cmd_options_help
+    print_line 'Usage: options [mod1 mod2 ...]'
+    print_line
+    print_line 'Queries the supplied module or modules for options. If no module is given,'
+    print_line 'show options for the currently active module.'
+    print_line
+  end
+
+  def cmd_options(*args)
+    if args.empty?
+      if (active_module)
+        show_options(active_module)
+        return true
+      else
+        show_global_options
+        return true
+      end
+    end
+
+    args.each { |name|
+      mod = framework.modules.create(name)
+
+      if (mod == nil)
+        print_error("Invalid module: #{name}")
+      else
+        show_options(mod)
+      end
+    }
+  end
+
   #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1946,6 +1981,18 @@ class Core
 =======
 =======
 =======
+=======
+  # Tab completion for the advanced command (same as use)
+  #
+  # @param str (see #cmd_use_tabs)
+  # @param words (see #cmd_use_tabs)
+
+  def cmd_advanced_tabs(str, words)
+    cmd_use_tabs(str, words)
+  end
+
+  #
+>>>>>>> pod/metasploit-gemfile-
   # Tab completion for the advanced command (same as use)
   #
   # @param str (see #cmd_use_tabs)
@@ -2035,15 +2082,28 @@ class Core
     cmd_use_tabs(str, words)
   end
 
+  #
+  # Tab completion for the advanced command (same as use)
+  #
+  # @param str (see #cmd_use_tabs)
+  # @param words (see #cmd_use_tabs)
+
+  def cmd_options_tabs(str, words)
+    cmd_use_tabs(str, words)
+  end
+
   def cmd_irb_help
     print_line "Usage: irb"
     print_line
     print_line "Execute commands in a Ruby environment"
     print @@irb_opts.usage
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
   end
 
   #
@@ -2052,6 +2112,7 @@ class Core
   # @param str (see #cmd_use_tabs)
   # @param words (see #cmd_use_tabs)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   def cmd_options_tabs(str, words)
     cmd_use_tabs(str, words)
@@ -2167,6 +2228,10 @@ class Core
 =======
     expressions = []
 
+=======
+    expressions = []
+
+>>>>>>> pod/metasploit-gemfile-
     # Parse the command options
     @@irb_opts.parse(args) do |opt, idx, val|
       case opt
@@ -2178,7 +2243,10 @@ class Core
       end
     end
 
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
     if expressions.empty?
       print_status("Starting IRB shell...\n")
 
@@ -3248,6 +3316,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -3324,11 +3393,14 @@ class Core
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
         if session
           if session.respond_to?(:response_timeout)
             last_known_timeout = session.response_timeout
             session.response_timeout = response_timeout
           end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3384,12 +3456,15 @@ class Core
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
           begin
             session.kill
           ensure
             if session.respond_to?(:response_timeout) && last_known_timeout
               session.response_timeout = last_known_timeout
             end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3439,6 +3514,8 @@ class Core
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
           end
         end
       end

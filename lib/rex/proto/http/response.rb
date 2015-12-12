@@ -116,6 +116,7 @@ class Response < Packet
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     json = {}
 =======
     json = []
@@ -141,6 +142,9 @@ class Response < Packet
 =======
     json = []
 >>>>>>> payload-generator.rb
+=======
+    json = []
+>>>>>>> pod/metasploit-gemfile-
 
     begin
       json = JSON.parse(self.body)

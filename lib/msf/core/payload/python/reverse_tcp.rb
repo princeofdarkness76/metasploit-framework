@@ -71,6 +71,7 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4.11.2_release_pre-rails4
@@ -95,3 +96,6 @@ end
 =======
 
 >>>>>>> payload-generator.rb
+=======
+
+>>>>>>> pod/metasploit-gemfile-

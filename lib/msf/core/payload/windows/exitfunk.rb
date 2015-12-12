@@ -7,6 +7,7 @@ require 'msf/core/payload/windows'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 module Msf
 
@@ -20,11 +21,17 @@ module Msf
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -50,6 +57,7 @@ module Msf
 
 module Msf
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 <<<<<<< HEAD
@@ -58,17 +66,7 @@ module Msf
 >>>>>>> msf-complex-payloads
 =======
 =======
-
-module Msf
->>>>>>> rapid7/master
-=======
-
-module Msf
->>>>>>> master
-=======
-
-module Msf
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 
 module Msf
@@ -77,6 +75,19 @@ module Msf
 
 module Msf
 >>>>>>> master
+=======
+
+module Msf
+>>>>>>> master
+=======
+
+module Msf
+>>>>>>> rapid7/master
+=======
+
+module Msf
+>>>>>>> master
+<<<<<<< HEAD
 
 >>>>>>> payload-generator.rb
 =======
@@ -84,6 +95,21 @@ module Msf
 
 
 >>>>>>> pod/complex-payloads
+=======
+=======
+
+module Msf
+>>>>>>> master
+=======
+
+module Msf
+>>>>>>> master
+=======
+
+module Msf
+>>>>>>> master
+
+>>>>>>> pod/metasploit-gemfile-
 ###
 #
 # Implements arbitrary exit routines for Windows ARCH_X86 payloads
@@ -106,6 +132,7 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
@@ -113,6 +140,10 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -122,6 +153,10 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 =======
 >>>>>>> pod/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['seh']}
           push.i8 0              ; push the exit function parameter
           push ebx               ; push the hash of the exit function
@@ -130,6 +165,9 @@ module Payload::Windows::Exitfunk
           ret                    ; Return to NULL (crash)
         ^
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 =======
 >>>>>>> rapid7/master
@@ -141,9 +179,11 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
 =======
 =======
 >>>>>>> rapid7/master
@@ -151,11 +191,24 @@ module Payload::Windows::Exitfunk
 >>>>>>> master
 =======
 >>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['seh'].to_s(16)}
         push.i8 0              ; push the exit function parameter
         push ebx               ; push the hash of the exit function
@@ -163,6 +216,7 @@ module Payload::Windows::Exitfunk
         push.i8 0
         ret                    ; Return to NULL (crash)
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -183,11 +237,18 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
@@ -199,6 +260,7 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -206,18 +268,29 @@ module Payload::Windows::Exitfunk
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 
     # On Windows Vista, Server 2008, and newer, it is not possible to call ExitThread
     # on WoW64 processes, instead we need to call RtlExitUserThread. This stub will
@@ -231,6 +304,7 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
@@ -238,6 +312,10 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -247,6 +325,10 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 =======
 >>>>>>> pod/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
           push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
           call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
@@ -278,6 +360,9 @@ module Payload::Windows::Exitfunk
           jmp exitfunk           ; repeat
         ^
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-gemfile-
 =======
 =======
 >>>>>>> rapid7/master
@@ -289,9 +374,11 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
 =======
 =======
 >>>>>>> rapid7/master
@@ -299,11 +386,24 @@ module Payload::Windows::Exitfunk
 >>>>>>> master
 =======
 >>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['thread'].to_s(16)}
         push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
         call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
@@ -321,12 +421,15 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 
     when 'process', nil
       asm << %Q^
@@ -344,6 +447,7 @@ module Payload::Windows::Exitfunk
         call ebp               ; Sleep(300000)
         jmp exitfunk           ; repeat
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -395,11 +499,18 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> msf-complex-payloads
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -412,6 +523,7 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -419,18 +531,29 @@ module Payload::Windows::Exitfunk
 >>>>>>> msf-complex-payloads
 =======
 =======
->>>>>>> rapid7/master
-=======
->>>>>>> master
-=======
->>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
     else
       # Do nothing and continue after the end of the shellcode
     end

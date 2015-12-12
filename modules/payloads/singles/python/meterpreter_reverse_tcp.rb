@@ -20,6 +20,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 50146
 =======
   CachedSize = 49398
@@ -45,6 +46,9 @@ module Metasploit4
 =======
   CachedSize = 49398
 >>>>>>> payload-generator.rb
+=======
+  CachedSize = 49398
+>>>>>>> pod/metasploit-gemfile-
 
   include Msf::Payload::Single
   include Msf::Payload::Python
