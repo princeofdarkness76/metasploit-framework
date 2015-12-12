@@ -90,6 +90,7 @@ module ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "#{scheme}://#{uri_host}:#{bind_port}/"
 =======
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
@@ -112,6 +113,9 @@ module ReverseHttp
 =======
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
 >>>>>>> pod/metasploit-gemfile-
+=======
+    "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -325,6 +329,7 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -362,6 +367,8 @@ protected
 =======
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -435,6 +442,7 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         uri = URI(payload_uri(req) + conn_id)
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -454,6 +462,8 @@ protected
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 
         resp['Content-Type'] = 'application/octet-stream'
 
@@ -462,6 +472,7 @@ protected
         blob = obj.stage_payload(
           uuid: uuid,
           uri:  conn_id,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -517,6 +528,10 @@ protected
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']

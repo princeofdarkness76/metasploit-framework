@@ -9,6 +9,7 @@ module Msf::Payload::Python
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52,6 +53,9 @@ module Msf::Payload::Python
   # that will decode and execute it on the fly.
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
   # that will decode and execute it on the fly.
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree

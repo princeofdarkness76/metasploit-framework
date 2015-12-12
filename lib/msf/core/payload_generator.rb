@@ -219,8 +219,11 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -243,6 +246,7 @@ module Msf
         rescue ::Msf::EncodingError => e
           cli_print "#{encoder_mod.refname} failed with #{e.message}"
           next
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -422,6 +426,8 @@ module Msf
 =======
 >>>>>>> master
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======

@@ -112,6 +112,7 @@ class Response < Packet
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -153,6 +154,9 @@ class Response < Packet
     json = []
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+    json = []
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
     json = []
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree

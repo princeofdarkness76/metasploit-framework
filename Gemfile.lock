@@ -16,6 +16,7 @@ PATH
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       filesize
       jsobfu (~> 0.3.0)
 =======
@@ -31,6 +32,8 @@ PATH
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -73,6 +76,7 @@ PATH
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -102,11 +106,14 @@ PATH
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
       json
       metasm (~> 1.0.2)
       metasploit-concern (= 1.0.0)
       metasploit-credential (= 1.0.1)
       metasploit-model (= 1.0.0)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -158,10 +165,14 @@ PATH
 =======
       metasploit-payloads (= 1.0.17)
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+      metasploit-payloads (= 1.0.17)
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
       metasploit_data_models (= 1.2.9)
       msgpack
       network_interface (~> 0.0.1)
       nokogiri
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -198,6 +209,8 @@ PATH
 =======
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -227,6 +240,7 @@ PATH
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -294,6 +308,8 @@ PATH
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -312,6 +328,7 @@ PATH
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -344,15 +361,21 @@ PATH
 >>>>>>> origin/4.11.2_release_pre-rails4
 >>>>>>> master
 =======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> origin/4.11.2_release_pre-rails4
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
@@ -399,6 +422,8 @@ PATH
 >>>>>>> master
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -449,6 +474,7 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     builder (3.1.4)
     capybara (2.4.4)
 =======
@@ -464,6 +490,8 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -506,6 +534,7 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -535,11 +564,14 @@ GEM
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -564,6 +596,8 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -599,6 +633,7 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -619,6 +654,8 @@ GEM
 =======
     childprocess (0.5.5)
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -657,6 +694,9 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -672,6 +712,7 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -682,6 +723,8 @@ GEM
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -695,6 +738,7 @@ GEM
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -711,6 +755,8 @@ GEM
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 >>>>>>> master
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -733,6 +779,7 @@ GEM
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 =======
@@ -746,6 +793,8 @@ GEM
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
     json (1.8.2)
@@ -759,6 +808,7 @@ GEM
       metasploit-concern (= 0.4.0)
       metasploit-model (~> 0.29.0)
       metasploit_data_models (= 0.24.5)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -969,6 +1019,8 @@ GEM
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> origin/4.11.2_release_pre-rails4
 >>>>>>> master
 =======
@@ -977,6 +1029,9 @@ GEM
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
       pg
       railties
@@ -990,6 +1045,7 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
@@ -1029,11 +1085,16 @@ GEM
 >>>>>>> master
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> master
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
@@ -1070,6 +1131,8 @@ GEM
 =======
 >>>>>>> rapid7/master
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
     metasploit-model (1.0.0)
       activemodel (>= 4.0.9, < 4.1.0)
       activesupport (>= 4.0.9, < 4.1.0)
@@ -1078,6 +1141,7 @@ GEM
     metasploit_data_models (1.2.9)
       activerecord (>= 4.0.9, < 4.1.0)
       activesupport (>= 4.0.9, < 4.1.0)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1178,6 +1242,10 @@ GEM
 =======
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
     metasploit-model (0.29.2)
       activesupport
       railties (< 4.0.0)
@@ -1185,6 +1253,7 @@ GEM
     metasploit_data_models (0.24.5)
       activerecord (>= 3.2.13, < 4.0.0)
       activesupport
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1203,10 +1272,13 @@ GEM
 >>>>>>> master
 >>>>>>> 4.11.2_release_pre-rails4
 =======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> origin/4.11.2_release_pre-rails4
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
 =======
@@ -1272,6 +1344,12 @@ GEM
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
       arel-helpers
       metasploit-concern (~> 1.0)
       metasploit-model (~> 1.0)
@@ -1292,19 +1370,22 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 =======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -1330,6 +1411,7 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -1349,10 +1431,13 @@ GEM
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
     minitest (4.7.5)
     msgpack (0.7.1)
     multi_json (1.11.2)
     multi_test (0.1.2)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1394,6 +1479,8 @@ GEM
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -1401,6 +1488,7 @@ GEM
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1411,10 +1499,13 @@ GEM
 =======
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
     network_interface (0.0.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -1448,9 +1539,12 @@ GEM
 <<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
     network_interface (0.0.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
@@ -1462,11 +1556,16 @@ GEM
 >>>>>>> rapid7/master
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> master
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
     network_interface (0.0.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
 >>>>>>> rapid7/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     network_interface (0.0.1)
     nokogiri (1.6.6.2)
@@ -1474,11 +1573,17 @@ GEM
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
     network_interface (0.0.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
+=======
+>>>>>>> rapid7/master
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> rapid7/master
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -1486,6 +1591,7 @@ GEM
     network_interface (0.0.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1520,6 +1626,9 @@ GEM
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> rapid7/master
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
     packetfu (1.1.11)
       network_interface (~> 0.0)
       pcaprub (~> 0.12)
@@ -1537,6 +1646,7 @@ GEM
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
@@ -1635,6 +1745,8 @@ GEM
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 =======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
     packetfu (1.1.9)
     pcaprub (0.11.3)
     pg (0.18.2)
@@ -1643,6 +1755,7 @@ GEM
 >>>>>>> origin/4.11.2_release_pre-rails4
 >>>>>>> master
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1660,11 +1773,14 @@ GEM
 =======
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1708,6 +1824,8 @@ GEM
 >>>>>>> master
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -1737,6 +1855,7 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     rb-readline-r7 (0.5.2.0)
     recog (2.0.14)
 <<<<<<< HEAD
@@ -1758,6 +1877,8 @@ GEM
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1801,6 +1922,7 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -1816,6 +1938,8 @@ GEM
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -1876,6 +2000,7 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     timecop (0.7.3)
     tzinfo (0.3.44)
 =======
@@ -1891,6 +2016,8 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -1938,6 +2065,7 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -1963,6 +2091,8 @@ GEM
     timecop (0.7.3)
     tzinfo (0.3.44)
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======

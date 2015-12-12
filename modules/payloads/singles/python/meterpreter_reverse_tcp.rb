@@ -16,6 +16,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -57,6 +58,9 @@ module Metasploit4
   CachedSize = 49398
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+  CachedSize = 49398
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
   CachedSize = 49398
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree

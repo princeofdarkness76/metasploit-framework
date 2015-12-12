@@ -67,6 +67,7 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 4.11.2_release_pre-rails4
@@ -107,6 +108,9 @@ end
 
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
