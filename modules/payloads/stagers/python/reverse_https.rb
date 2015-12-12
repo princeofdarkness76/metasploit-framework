@@ -10,6 +10,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/python'
 require 'msf/core/payload/python/reverse_http'
 =======
@@ -35,10 +36,16 @@ require 'msf/core/payload/uuid/options'
 
 module Metasploit3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+require 'msf/core/payload/uuid/options'
+
+module Metasploit3
+>>>>>>> msf-complex-payloads
 
   CachedSize = 762
 
   include Msf::Payload::Stager
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -63,6 +70,9 @@ module Metasploit3
   include Msf::Payload::Stager
   include Msf::Payload::UUID::Options
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+  include Msf::Payload::UUID::Options
+>>>>>>> msf-complex-payloads
 
   def initialize(info = {})
     super(merge_info(info,
@@ -78,11 +88,14 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> msf-complex-payloads
 
     register_options(
       [
@@ -91,11 +104,14 @@ module Metasploit3
       ], self.class)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> msf-complex-payloads
   end
 
   #
@@ -105,12 +121,15 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     super({scheme: 'https'})
 =======
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> msf-complex-payloads
     lhost = datastore['LHOST'] || '127.127.127.127'
 
     var_escape = lambda { |txt|
@@ -198,11 +217,14 @@ module Metasploit3
     generate_uri_uuid_mode(:init_python, uri_req_len)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> msf-complex-payloads
   end
 
 end

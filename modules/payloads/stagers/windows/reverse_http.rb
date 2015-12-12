@@ -7,6 +7,7 @@ require 'msf/core'
 require 'msf/core/handler/reverse_http'
 require 'msf/core/payload/windows/reverse_http'
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 module Metasploit4
 <<<<<<< HEAD
@@ -15,6 +16,34 @@ module Metasploit4
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+module Metasploit4
+>>>>>>> rapid7/master
+=======
+
+module Metasploit4
+>>>>>>> rapid7/master
+=======
+
+module Metasploit4
+>>>>>>> rapid7/master
+=======
+
+module Metasploit4
+>>>>>>> rapid7/master
+
+=======
+
+module Metasploit4
+
+>>>>>>> rapid7/master
+>>>>>>> msf-complex-payloads
   CachedSize = 327
 
   include Msf::Payload::Stager
@@ -23,6 +52,7 @@ module Metasploit4
 
   def initialize(info = {})
     super(merge_info(info,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -39,6 +69,11 @@ module Metasploit4
   end
 
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
       'Name'          => 'Reverse HTTP Stager',
       'Description'   => 'Tunnel communication over HTTP',
       'Author'        => 'hdm',
@@ -48,9 +83,44 @@ module Metasploit4
       'Handler'       => Msf::Handler::ReverseHttp,
       'Convention'    => 'sockedi http'))
   end
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
   end
 
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+      'Name'        => 'Windows Reverse HTTP Stager (wininet)',
+      'Description' => 'Tunnel communication over HTTP (Windows wininet)',
+      'Author'      => 'hdm',
+      'License'     => MSF_LICENSE,
+      'Platform'    => 'win',
+      'Arch'        => ARCH_X86,
+      'Handler'     => Msf::Handler::ReverseHttp,
+      'Convention'  => 'sockedi http'))
+  end
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> msf-complex-payloads
 end

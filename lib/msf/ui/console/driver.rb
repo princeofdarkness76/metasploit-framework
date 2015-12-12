@@ -216,6 +216,7 @@ class Driver < Msf::Ui::Driver
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -255,6 +256,8 @@ class Driver < Msf::Ui::Driver
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> msf-complex-payloads
     if framework.db.active && !opts['DeferModuleLoads']
       framework.threads.spawn("ModuleCacheRebuild", true) do
         framework.modules.refresh_cache_from_module_files

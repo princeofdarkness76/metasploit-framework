@@ -19,6 +19,7 @@ module Metasploit4
     super(merge_info(info,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
       'Name'        => 'Windows Reverse HTTPS Stager (wininet)',
@@ -31,6 +32,11 @@ module Metasploit4
       'Convention'  => 'sockedi https'))
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
       'Name'          => 'Reverse HTTPS Stager',
       'Description'   => 'Tunnel communication over HTTP using SSL',
       'Author'        => 'hdm',
@@ -39,9 +45,42 @@ module Metasploit4
       'Arch'          => ARCH_X86,
       'Handler'       => Msf::Handler::ReverseHttps,
       'Convention'    => 'sockedi https'))
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+      'Name'        => 'Windows Reverse HTTPS Stager (wininet)',
+      'Description' => 'Tunnel communication over HTTPS (Windows wininet)',
+      'Author'      => 'hdm',
+      'License'     => MSF_LICENSE,
+      'Platform'    => 'win',
+      'Arch'        => ARCH_X86,
+      'Handler'     => Msf::Handler::ReverseHttps,
+      'Convention'  => 'sockedi https'))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> msf-complex-payloads
   end
 
 end

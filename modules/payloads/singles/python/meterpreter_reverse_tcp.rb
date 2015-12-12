@@ -17,6 +17,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 50146
 =======
   CachedSize = 49398
@@ -33,6 +34,9 @@ module Metasploit4
 =======
   CachedSize = 49398
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+  CachedSize = 49398
+>>>>>>> msf-complex-payloads
 
   include Msf::Payload::Single
   include Msf::Payload::Python

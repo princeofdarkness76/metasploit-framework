@@ -113,6 +113,7 @@ class Response < Packet
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     json = {}
 =======
     json = []
@@ -129,6 +130,9 @@ class Response < Packet
 =======
     json = []
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+    json = []
+>>>>>>> msf-complex-payloads
 
     begin
       json = JSON.parse(self.body)
