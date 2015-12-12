@@ -626,6 +626,7 @@ for discussion.</p>
 286
 287
 <<<<<<< HEAD
+<<<<<<< HEAD
 288
 289
 290
@@ -638,6 +639,9 @@ for discussion.</p>
 297
 298
 299</pre>
+=======
+288</pre>
+>>>>>>> origin/gh-pages
 =======
 288</pre>
 >>>>>>> origin/gh-pages
@@ -830,6 +834,7 @@ for discussion.</p>
     ; get handle
     push 0x40                 ; RWX
 <<<<<<< HEAD
+<<<<<<< HEAD
     add bh, 0x10              ; ebx = 0x1000
     push ebx                  ; MEM_COMMIT
 </span><span class='heredoc_end'>  EOS
@@ -844,6 +849,11 @@ for discussion.</p>
 
   <span class='id identifier rubyid_migrate_asm'>migrate_asm</span> <span class='op'>&lt;&lt;</span> <span class='heredoc_beg'>&lt;&lt;-EOS</span>
 <span class='tstring_content'>    push ebx                  ; size
+=======
+    add bh,0x10               ; ebx = 0x1000
+    push ebx                  ; MEM_COMMIT
+    push ebx                  ; size
+>>>>>>> origin/gh-pages
 =======
     add bh,0x10               ; ebx = 0x1000
     push ebx                  ; MEM_COMMIT
@@ -969,7 +979,10 @@ for discussion.</p>
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/gh-pages
 291
 292
 293
@@ -981,6 +994,9 @@ for discussion.</p>
 299
 300
 301
+<<<<<<< HEAD
+>>>>>>> origin/gh-pages
+=======
 >>>>>>> origin/gh-pages
 302
 303
@@ -1202,6 +1218,7 @@ for discussion.</p>
 519
 520
 <<<<<<< HEAD
+<<<<<<< HEAD
 521
 522
 523
@@ -1234,10 +1251,15 @@ for discussion.</p>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/payload/windows/prepend_migrate.rb', line 302</span>
 =======
+=======
+>>>>>>> origin/gh-pages
 521</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/payload/windows/prepend_migrate.rb', line 291</span>
+<<<<<<< HEAD
+>>>>>>> origin/gh-pages
+=======
 >>>>>>> origin/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_prepend_migrate_64'>prepend_migrate_64</span><span class='lparen'>(</span><span class='id identifier rubyid_buf'>buf</span><span class='rparen'>)</span>
@@ -1398,16 +1420,22 @@ for discussion.</p>
 
     jmp getcommand
 <<<<<<< HEAD
+<<<<<<< HEAD
   gotcommand:
     pop rsi                   ; rsi = address of process name (command line)
 
     ; create the process
     push 0                    ; keep the stack aligned
 =======
+=======
+>>>>>>> origin/gh-pages
     gotcommand:
     pop rsi                   ; rsi = address of process name (command line)
 
     ; create the process
+<<<<<<< HEAD
+>>>>>>> origin/gh-pages
+=======
 >>>>>>> origin/gh-pages
     lea rdi,[rsp+0x110]       ; Offset of empty space for lpProcessInformation
     push rdi                  ; lpProcessInformation : write processinfo here
@@ -1435,6 +1463,7 @@ for discussion.</p>
     push 0x40                 ; RWX
     mov r9,0x1000             ; 0x1000 = MEM_COMMIT
 <<<<<<< HEAD
+<<<<<<< HEAD
 </span><span class='heredoc_end'>  EOS
 </span>
   <span class='kw'>if</span> <span class='id identifier rubyid_buf'>buf</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&gt;</span> <span class='int'>4096</span>
@@ -1452,6 +1481,10 @@ for discussion.</p>
 
   <span class='id identifier rubyid_migrate_asm'>migrate_asm</span> <span class='op'>&lt;&lt;</span> <span class='heredoc_beg'>&lt;&lt;-EOS</span>
 <span class='tstring_content'>    xor rdx,rdx               ; address
+=======
+    mov r8,r9                 ; size
+    xor rdx,rdx               ; address
+>>>>>>> origin/gh-pages
 =======
     mov r8,r9                 ; size
     xor rdx,rdx               ; address
@@ -1510,9 +1543,15 @@ for discussion.</p>
 
     <div id="footer">
 <<<<<<< HEAD
+<<<<<<< HEAD
   Generated on Tue Dec  8 22:32:26 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.1.7).
+=======
+  Generated on Tue Sep  1 22:32:57 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.5).
+>>>>>>> origin/gh-pages
 =======
   Generated on Tue Sep  1 22:32:57 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>

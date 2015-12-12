@@ -686,6 +686,7 @@ active on sub-urls.</p>
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 403
 404
 405
@@ -694,6 +695,8 @@ active on sub-urls.</p>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/handler/reverse_http.rb', line 403</span>
 =======
+=======
+>>>>>>> origin/gh-pages
 407
 408
 409
@@ -701,6 +704,9 @@ active on sub-urls.</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/handler/reverse_http.rb', line 407</span>
+<<<<<<< HEAD
+>>>>>>> origin/gh-pages
+=======
 >>>>>>> origin/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_bind_port'>bind_port</span>
@@ -914,7 +920,11 @@ active on sub-urls.</p>
 <span class='kw'>def</span> <span class='id identifier rubyid_listener_uri'>listener_uri</span>
   <span class='id identifier rubyid_uri_host'>uri_host</span> <span class='op'>=</span> <span class='const'>Rex</span><span class='op'>::</span><span class='const'>Socket</span><span class='period'>.</span><span class='id identifier rubyid_is_ipv6?'>is_ipv6?</span><span class='lparen'>(</span><span class='id identifier rubyid_listener_address'>listener_address</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>[</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_listener_address'>listener_address</span><span class='embexpr_end'>}</span><span class='tstring_content'>]</span><span class='tstring_end'>&quot;</span></span> <span class='op'>:</span> <span class='id identifier rubyid_listener_address'>listener_address</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_scheme'>scheme</span><span class='embexpr_end'>}</span><span class='tstring_content'>://</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uri_host'>uri_host</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_bind_port'>bind_port</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='tstring_end'>&quot;</span></span>
+=======
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_scheme'>scheme</span><span class='embexpr_end'>}</span><span class='tstring_content'>://</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uri_host'>uri_host</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_datastore'>datastore</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>LPORT</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='tstring_end'>&quot;</span></span>
+>>>>>>> origin/gh-pages
 =======
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_scheme'>scheme</span><span class='embexpr_end'>}</span><span class='tstring_content'>://</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uri_host'>uri_host</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_datastore'>datastore</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>LPORT</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='tstring_end'>&quot;</span></span>
 >>>>>>> origin/gh-pages
@@ -1221,13 +1231,19 @@ active on sub-urls.</p>
 397
 398
 <<<<<<< HEAD
+<<<<<<< HEAD
 399</pre>
 =======
+=======
+>>>>>>> origin/gh-pages
 399
 400
 401
 402
 403</pre>
+<<<<<<< HEAD
+>>>>>>> origin/gh-pages
+=======
 >>>>>>> origin/gh-pages
     </td>
     <td>
@@ -1248,11 +1264,17 @@ active on sub-urls.</p>
   <span class='kw'>end</span>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   <span class='id identifier rubyid_request_summary'>request_summary</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_req'>req</span><span class='period'>.</span><span class='id identifier rubyid_relative_resource'>relative_resource</span><span class='embexpr_end'>}</span><span class='tstring_content'> with UA &#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_req'>req</span><span class='period'>.</span><span class='id identifier rubyid_headers'>headers</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>User-Agent</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;</span><span class='tstring_end'>&quot;</span></span>
 
   <span class='comment'># Validate known UUIDs for all requests if IgnoreUnknownPayloads is set
 </span>  <span class='kw'>if</span> <span class='id identifier rubyid_datastore'>datastore</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>IgnoreUnknownPayloads</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span> <span class='id identifier rubyid_framework'>framework</span><span class='period'>.</span><span class='id identifier rubyid_uuid_db'>uuid_db</span><span class='lbracket'>[</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_puid_hex'>puid_hex</span><span class='rbracket'>]</span>
     <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> (UUID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='embexpr_end'>}</span><span class='tstring_content'>) Ignoring unknown UUID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_request_summary'>request_summary</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+=======
+  <span class='comment'># Validate known UUIDs for all requests if IgnoreUnknownPayloads is set
+</span>  <span class='kw'>if</span> <span class='id identifier rubyid_datastore'>datastore</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>IgnoreUnknownPayloads</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span> <span class='id identifier rubyid_framework'>framework</span><span class='period'>.</span><span class='id identifier rubyid_uuid_db'>uuid_db</span><span class='lbracket'>[</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_puid_hex'>puid_hex</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> (UUID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='embexpr_end'>}</span><span class='tstring_content'>) Ignoring request with unknown UUID</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+>>>>>>> origin/gh-pages
 =======
   <span class='comment'># Validate known UUIDs for all requests if IgnoreUnknownPayloads is set
 </span>  <span class='kw'>if</span> <span class='id identifier rubyid_datastore'>datastore</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>IgnoreUnknownPayloads</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span> <span class='id identifier rubyid_framework'>framework</span><span class='period'>.</span><span class='id identifier rubyid_uuid_db'>uuid_db</span><span class='lbracket'>[</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_puid_hex'>puid_hex</span><span class='rbracket'>]</span>
@@ -1266,7 +1288,11 @@ active on sub-urls.</p>
     <span class='id identifier rubyid_allowed_urls'>allowed_urls</span> <span class='op'>=</span> <span class='id identifier rubyid_framework'>framework</span><span class='period'>.</span><span class='id identifier rubyid_uuid_db'>uuid_db</span><span class='lbracket'>[</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_puid_hex'>puid_hex</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>urls</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
     <span class='kw'>unless</span> <span class='id identifier rubyid_allowed_urls'>allowed_urls</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_req'>req</span><span class='period'>.</span><span class='id identifier rubyid_relative_resource'>relative_resource</span><span class='rparen'>)</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> (UUID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='embexpr_end'>}</span><span class='tstring_content'>) Ignoring unknown UUID URL: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_request_summary'>request_summary</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+=======
+      <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> (UUID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='embexpr_end'>}</span><span class='tstring_content'>) Ignoring request with unknown UUID URL </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_req'>req</span><span class='period'>.</span><span class='id identifier rubyid_relative_resource'>relative_resource</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+>>>>>>> origin/gh-pages
 =======
       <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> (UUID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='embexpr_end'>}</span><span class='tstring_content'>) Ignoring request with unknown UUID URL </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_req'>req</span><span class='period'>.</span><span class='id identifier rubyid_relative_resource'>relative_resource</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
 >>>>>>> origin/gh-pages
@@ -1280,7 +1306,11 @@ active on sub-urls.</p>
 </span>  <span class='kw'>case</span> <span class='id identifier rubyid_info'>info</span><span class='lbracket'>[</span><span class='symbol'>:mode</span><span class='rbracket'>]</span>
     <span class='kw'>when</span> <span class='symbol'>:init_connect</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> (UUID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='embexpr_end'>}</span><span class='tstring_content'>) Redirecting stageless connection from </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_request_summary'>request_summary</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+=======
+      <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> (UUID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='embexpr_end'>}</span><span class='tstring_content'>) Redirecting stageless connection ...</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+>>>>>>> origin/gh-pages
 =======
       <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> (UUID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='embexpr_end'>}</span><span class='tstring_content'>) Redirecting stageless connection ...</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
 >>>>>>> origin/gh-pages
@@ -1302,10 +1332,13 @@ active on sub-urls.</p>
       <span class='id identifier rubyid_blob'>blob</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
       <span class='id identifier rubyid_blob'>blob</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_obj'>obj</span><span class='period'>.</span><span class='id identifier rubyid_generate_stage'>generate_stage</span><span class='lparen'>(</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <span class='label'>http_url:</span> <span class='id identifier rubyid_url'>url</span><span class='comma'>,</span>
         <span class='label'>http_user_agent:</span> <span class='id identifier rubyid_datastore'>datastore</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>MeterpreterUserAgent</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='comma'>,</span>
         <span class='label'>http_proxy_host:</span> <span class='id identifier rubyid_datastore'>datastore</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>PayloadProxyHost</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='id identifier rubyid_datastore'>datastore</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>PROXYHOST</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='comma'>,</span>
         <span class='label'>http_proxy_port:</span> <span class='id identifier rubyid_datastore'>datastore</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>PayloadProxyPort</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='id identifier rubyid_datastore'>datastore</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>PROXYPORT</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='comma'>,</span>
+=======
+>>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
         <span class='label'>uuid:</span> <span class='id identifier rubyid_uuid'>uuid</span><span class='comma'>,</span>
@@ -1313,7 +1346,10 @@ active on sub-urls.</p>
       <span class='rparen'>)</span>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/gh-pages
       <span class='id identifier rubyid_var_escape'>var_escape</span> <span class='op'>=</span> <span class='id identifier rubyid_lambda'>lambda</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_txt'>txt</span><span class='op'>|</span>
         <span class='id identifier rubyid_txt'>txt</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>\\</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>\\</span><span class='tstring_end'>&#39;</span></span><span class='op'>*</span><span class='int'>8</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>\&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>%q(</span><span class='tstring_content'>\\\\\\\&#39;</span><span class='tstring_end'>)</span></span><span class='rparen'>)</span>
       <span class='rbrace'>}</span>
@@ -1327,6 +1363,9 @@ active on sub-urls.</p>
         <span class='id identifier rubyid_blob'>blob</span><span class='period'>.</span><span class='id identifier rubyid_sub!'>sub!</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>HTTP_PROXY = None</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>HTTP_PROXY = &#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_var_escape'>var_escape</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span><span class='lparen'>(</span><span class='id identifier rubyid_proxy_url'>proxy_url</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
       <span class='kw'>end</span>
 
+<<<<<<< HEAD
+>>>>>>> origin/gh-pages
+=======
 >>>>>>> origin/gh-pages
       <span class='id identifier rubyid_resp'>resp</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='id identifier rubyid_blob'>blob</span>
 
@@ -1371,7 +1410,10 @@ active on sub-urls.</p>
       <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> (UUID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_uuid'>uuid</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='embexpr_end'>}</span><span class='tstring_content'>) Staging Native payload ...</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
       <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_payload_uri'>payload_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_req'>req</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_conn_id'>conn_id</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/\x00</span><span class='tstring_end'>&quot;</span></span>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <span class='id identifier rubyid_uri'>uri</span> <span class='op'>=</span> <span class='const'>URI</span><span class='lparen'>(</span><span class='id identifier rubyid_payload_uri'>payload_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_req'>req</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_conn_id'>conn_id</span><span class='rparen'>)</span>
+=======
+>>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 
@@ -1382,9 +1424,13 @@ active on sub-urls.</p>
 </span>      <span class='id identifier rubyid_blob'>blob</span> <span class='op'>=</span> <span class='id identifier rubyid_obj'>obj</span><span class='period'>.</span><span class='id identifier rubyid_stage_payload'>stage_payload</span><span class='lparen'>(</span>
         <span class='label'>uuid:</span> <span class='id identifier rubyid_uuid'>uuid</span><span class='comma'>,</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <span class='label'>uri:</span>  <span class='id identifier rubyid_conn_id'>conn_id</span><span class='comma'>,</span>
         <span class='label'>lhost:</span> <span class='id identifier rubyid_uri'>uri</span><span class='period'>.</span><span class='id identifier rubyid_host'>host</span><span class='comma'>,</span>
         <span class='label'>lport:</span> <span class='id identifier rubyid_uri'>uri</span><span class='period'>.</span><span class='id identifier rubyid_port'>port</span>
+=======
+        <span class='label'>uri:</span>  <span class='id identifier rubyid_conn_id'>conn_id</span>
+>>>>>>> origin/gh-pages
 =======
         <span class='label'>uri:</span>  <span class='id identifier rubyid_conn_id'>conn_id</span>
 >>>>>>> origin/gh-pages
@@ -1427,7 +1473,11 @@ active on sub-urls.</p>
     <span class='kw'>else</span>
       <span class='kw'>unless</span> <span class='lbracket'>[</span><span class='symbol'>:unknown_uuid</span><span class='comma'>,</span> <span class='symbol'>:unknown_uuid_url</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_info'>info</span><span class='lbracket'>[</span><span class='symbol'>:mode</span><span class='rbracket'>]</span><span class='rparen'>)</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> Unknown request to </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_request_summary'>request_summary</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+=======
+        <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> Unknown request to </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_req'>req</span><span class='period'>.</span><span class='id identifier rubyid_relative_resource'>relative_resource</span><span class='embexpr_end'>}</span><span class='tstring_content'> with UA </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_req'>req</span><span class='period'>.</span><span class='id identifier rubyid_headers'>headers</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>User-Agent</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>...</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+>>>>>>> origin/gh-pages
 =======
         <span class='id identifier rubyid_print_status'>print_status</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerhost'>peerhost</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cli'>cli</span><span class='period'>.</span><span class='id identifier rubyid_peerport'>peerport</span><span class='embexpr_end'>}</span><span class='tstring_content'> Unknown request to </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_req'>req</span><span class='period'>.</span><span class='id identifier rubyid_relative_resource'>relative_resource</span><span class='embexpr_end'>}</span><span class='tstring_content'> with UA </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_req'>req</span><span class='period'>.</span><span class='id identifier rubyid_headers'>headers</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>User-Agent</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>...</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
 >>>>>>> origin/gh-pages
@@ -1837,9 +1887,15 @@ active on sub-urls.</p>
 
     <div id="footer">
 <<<<<<< HEAD
+<<<<<<< HEAD
   Generated on Tue Dec  8 22:31:28 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.1.7).
+=======
+  Generated on Tue Sep  1 22:32:12 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.5).
+>>>>>>> origin/gh-pages
 =======
   Generated on Tue Sep  1 22:32:12 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
