@@ -52,6 +52,8 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'actionpack', *Metasploit::Framework::RailsVersionConstraint::RAILS_VERSION
   # Needed for some admin modules (cfme_manageiq_evm_pass_reset.rb)
   spec.add_runtime_dependency 'bcrypt'
+  # Needed for actors instead of Threads
+  spec.add_runtime_dependency 'celluloid'
   # Needed for Javascript obfuscation
   spec.add_runtime_dependency 'jsobfu', '~> 0.3.0'
   # Needed for some admin modules (scrutinizer_add_user.rb)
@@ -69,10 +71,48 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'metasploit-model', '1.0.0'
   # Needed for Meterpreter
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.19'
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+>>>>>>> msf-complex-payloads
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+>>>>>>> msf-complex-payloads
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+>>>>>>> payload-generator.rb
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
   # Needed by msfgui and other rpc components
   spec.add_runtime_dependency 'msgpack'
   # get list of network interfaces, like eth* from OS.
@@ -90,10 +130,40 @@ Gem::Specification.new do |spec|
   # required for OS fingerprinting
   spec.add_runtime_dependency 'recog', '2.0.14'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
   # required for bitlocker fvek extraction
   spec.add_runtime_dependency 'openssl-ccm', '1.2.1'
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
 
   # rb-readline doesn't work with Ruby Installer due to error with Fiddle:
   #   NoMethodError undefined method `dlopen' for Fiddle:Module

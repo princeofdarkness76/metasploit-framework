@@ -13,10 +13,48 @@ require 'msf/base/sessions/meterpreter_python'
 module Metasploit4
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
   CachedSize = 50146
 =======
   CachedSize = 49398
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+=======
+  CachedSize = 49398
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  CachedSize = 49398
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  CachedSize = 49398
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  CachedSize = 49398
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+  CachedSize = 49398
+>>>>>>> msf-complex-payloads
+=======
+  CachedSize = 49398
+>>>>>>> msf-complex-payloads
+=======
+  CachedSize = 49398
+>>>>>>> payload-generator.rb
+=======
+  CachedSize = 49398
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
 
   include Msf::Payload::Single
   include Msf::Payload::Python

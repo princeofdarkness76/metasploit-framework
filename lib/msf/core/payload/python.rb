@@ -6,12 +6,50 @@ module Msf::Payload::Python
   #
   # Encode the given python command in base64 and wrap it with a stub
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
   # that will decode and execute it on the fly. The code will be condensed to
   # one line and compatible with all Python versions supported by the Python
   # Meterpreter stage.
 =======
   # that will decode and execute it on the fly.
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> msf-complex-payloads
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> msf-complex-payloads
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> payload-generator.rb
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
   #
   # @param cmd [String] The python code to execute.
   # @return [String] Full python stub to execute the command.

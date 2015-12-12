@@ -11,9 +11,18 @@ class Metasploit3 < Msf::Auxiliary
 
   # Exploit mixins should be called first
   include Msf::Exploit::Remote::SMB::Client
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   include Msf::Exploit::Remote::SMB::Client::Authenticated
   include Msf::Exploit::Remote::SMB::Client::LocalPaths
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
   include Msf::Auxiliary::Report
   include Msf::Auxiliary::Scanner
 

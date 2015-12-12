@@ -6,26 +6,176 @@ PATH
       activerecord (>= 4.0.9, < 4.1.0)
       activesupport (>= 4.0.9, < 4.1.0)
       bcrypt
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
       filesize
       jsobfu (~> 0.3.0)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      celluloid
+      jsobfu (~> 0.2.0)
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> rapid7/master
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> rapid7/master
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> rapid7/master
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> rapid7/master
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> master
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> rapid7/master
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> rapid7/master
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> msf-complex-payloads
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> msf-complex-payloads
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> payload-generator.rb
+=======
+      filesize
+      jsobfu (~> 0.3.0)
+>>>>>>> pod/metasploit-gemfile-
       json
       metasm (~> 1.0.2)
       metasploit-concern (= 1.0.0)
       metasploit-credential (= 1.0.1)
       metasploit-model (= 1.0.0)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
       metasploit-payloads (= 1.0.19)
 =======
       metasploit-payloads (= 1.0.17)
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+=======
+      metasploit-payloads (= 1.0.17)
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+      metasploit-payloads (= 1.0.17)
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+      metasploit-payloads (= 1.0.17)
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+      metasploit-payloads (= 1.0.17)
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+      metasploit-payloads (= 1.0.17)
+>>>>>>> msf-complex-payloads
+=======
+      metasploit-payloads (= 1.0.17)
+>>>>>>> msf-complex-payloads
+=======
+      metasploit-payloads (= 1.0.17)
+>>>>>>> payload-generator.rb
+=======
+      metasploit-payloads (= 1.0.17)
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
       metasploit_data_models (= 1.2.9)
       msgpack
       network_interface (~> 0.0.1)
       nokogiri
 <<<<<<< HEAD
+<<<<<<< HEAD
       openssl-ccm (= 1.2.1)
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      openssl-ccm (= 1.2.1)
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
       packetfu (= 1.1.11)
       pcaprub
       pg (>= 0.11)
@@ -37,15 +187,76 @@ PATH
       sqlite3
       tzinfo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> master
+=======
+>>>>>>> master
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> master
 =======
+=======
 >>>>>>> master
+=======
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+=======
+=======
+>>>>>>> master
+=======
+=======
+>>>>>>> master
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
     metasploit-framework-db (4.11.0.pre.dev)
       activerecord (>= 3.2.21, < 4.0.0)
       metasploit-credential (= 0.14.8)
@@ -58,6 +269,7 @@ PATH
       pcaprub
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -67,6 +279,74 @@ PATH
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
 >>>>>>> master
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+=======
+>>>>>>> rapid7/master
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
 
 GEM
   remote: https://rubygems.org/
@@ -103,14 +383,166 @@ GEM
       cucumber (>= 1.1.1)
       rspec-expectations (>= 2.7.0)
     bcrypt (3.1.10)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     builder (3.1.4)
     capybara (2.4.4)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    builder (3.0.4)
+    capybara (2.4.1)
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> rapid7/master
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> rapid7/master
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> rapid7/master
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> rapid7/master
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> master
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> rapid7/master
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> rapid7/master
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> msf-complex-payloads
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> msf-complex-payloads
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> payload-generator.rb
+=======
+    builder (3.1.4)
+    capybara (2.4.4)
+>>>>>>> pod/metasploit-gemfile-
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     childprocess (0.5.5)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
+    childprocess (0.5.3)
+=======
+    childprocess (0.5.5)
+>>>>>>> rapid7/master
+=======
+    childprocess (0.5.5)
+>>>>>>> rapid7/master
+=======
+    childprocess (0.5.5)
+>>>>>>> rapid7/master
+=======
+    childprocess (0.5.5)
+>>>>>>> rapid7/master
+=======
+    childprocess (0.5.5)
+>>>>>>> master
+=======
+    childprocess (0.5.5)
+>>>>>>> rapid7/master
+=======
+    childprocess (0.5.5)
+>>>>>>> rapid7/master
+=======
+    childprocess (0.5.5)
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    childprocess (0.5.5)
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+    childprocess (0.5.5)
+>>>>>>> msf-complex-payloads
+=======
+    childprocess (0.5.5)
+>>>>>>> msf-complex-payloads
+=======
+    childprocess (0.5.5)
+>>>>>>> payload-generator.rb
+=======
+    childprocess (0.5.5)
+>>>>>>> pod/metasploit-gemfile-
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.0)
     cucumber (1.3.19)
@@ -139,9 +571,43 @@ GEM
     gherkin (2.12.2)
       multi_json (~> 1.3)
     hike (1.2.3)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    hitimes (1.2.2)
     i18n (0.7.0)
     jsobfu (0.3.0)
       rkelly-remix (= 0.0.6)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+    i18n (0.7.0)
+    jsobfu (0.3.0)
+      rkelly-remix (= 0.0.6)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -185,6 +651,49 @@ GEM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> msf-complex-payloads
+=======
+    i18n (0.7.0)
+    jsobfu (0.3.0)
+      rkelly-remix (= 0.0.6)
+>>>>>>> msf-complex-payloads
+=======
+    i18n (0.7.0)
+    jsobfu (0.3.0)
+      rkelly-remix (= 0.0.6)
+=======
+    i18n (0.7.0)
+    jsobfu (0.3.0)
+      rkelly-remix (= 0.0.6)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
     json (1.8.3)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
@@ -197,6 +706,7 @@ GEM
       metasploit-concern (~> 1.0)
       metasploit-model (~> 1.0)
       metasploit_data_models (~> 1.0)
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
@@ -205,10 +715,146 @@ GEM
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
 >>>>>>> master
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
+    json (1.8.2)
+    mail (2.5.4)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    metasploit-concern (0.4.0)
+      activesupport (~> 3.0, >= 3.0.0)
+      railties (< 4.0.0)
+    metasploit-credential (0.14.8)
+      metasploit-concern (= 0.4.0)
+      metasploit-model (~> 0.29.0)
+      metasploit_data_models (= 0.24.5)
+<<<<<<< HEAD
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+    json (1.8.3)
+    mail (2.6.3)
+      mime-types (>= 1.16, < 3)
+    metasm (1.0.2)
+    metasploit-concern (1.0.0)
+      activerecord (>= 4.0.9, < 4.1.0)
+      activesupport (>= 4.0.9, < 4.1.0)
+      railties (>= 4.0.9, < 4.1.0)
+    metasploit-credential (1.0.1)
+      metasploit-concern (~> 1.0)
+      metasploit-model (~> 1.0)
+      metasploit_data_models (~> 1.0)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> rapid7/master
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
       pg
       railties
       rubyntlm
       rubyzip (~> 1.1)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -218,20 +864,155 @@ GEM
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 >>>>>>> master
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
+=======
+<<<<<<< HEAD
+>>>>>>> master
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+    metasploit-model (1.0.0)
+      activemodel (>= 4.0.9, < 4.1.0)
+      activesupport (>= 4.0.9, < 4.1.0)
+      railties (>= 4.0.9, < 4.1.0)
+    metasploit-payloads (1.0.17)
+    metasploit_data_models (1.2.9)
+      activerecord (>= 4.0.9, < 4.1.0)
+      activesupport (>= 4.0.9, < 4.1.0)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
+    metasploit-model (0.29.2)
+      activesupport
+      railties (< 4.0.0)
+    metasploit-payloads (0.0.3)
+    metasploit_data_models (0.24.5)
+      activerecord (>= 3.2.13, < 4.0.0)
+      activesupport
+<<<<<<< HEAD
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
     metasploit-model (1.0.0)
       activemodel (>= 4.0.9, < 4.1.0)
       activesupport (>= 4.0.9, < 4.1.0)
       railties (>= 4.0.9, < 4.1.0)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
     metasploit-payloads (1.0.19)
     metasploit_data_models (1.2.9)
       activerecord (>= 4.0.9, < 4.1.0)
       activesupport (>= 4.0.9, < 4.1.0)
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
     metasploit-payloads (1.0.17)
     metasploit_data_models (1.2.9)
       activerecord (>= 4.0.9, < 4.1.0)
       activesupport (>= 4.0.9, < 4.1.0)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> master
@@ -263,6 +1044,63 @@ GEM
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
       arel-helpers
       metasploit-concern (~> 1.0)
       metasploit-model (~> 1.0)
@@ -273,10 +1111,75 @@ GEM
     method_source (0.8.2)
     mime-types (2.6.1)
     mini_portile (0.6.2)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    msgpack (0.5.11)
+    multi_json (1.0.4)
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
     minitest (4.7.5)
     msgpack (0.7.1)
     multi_json (1.11.2)
     multi_test (0.1.2)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> payload-generator.rb
     network_interface (0.0.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -286,8 +1189,112 @@ GEM
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+    network_interface (0.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+=======
+    network_interface (0.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+    network_interface (0.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+=======
+    network_interface (0.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+>>>>>>> master
+=======
+    network_interface (0.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+>>>>>>> rapid7/master
+=======
+    network_interface (0.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+>>>>>>> rapid7/master
+=======
+    network_interface (0.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+>>>>>>> rapid7/master
+=======
+    network_interface (0.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+>>>>>>> msf-complex-payloads
+=======
+    network_interface (0.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+>>>>>>> msf-complex-payloads
+=======
+=======
+    network_interface (0.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
     packetfu (1.1.11)
       network_interface (~> 0.0)
       pcaprub (~> 0.12)
@@ -300,9 +1307,52 @@ GEM
       pg_array_parser (~> 0.0.9)
     pry (0.10.1)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> master
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    network_interface (0.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+<<<<<<< HEAD
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
     packetfu (1.1.9)
     pcaprub (0.11.3)
     pg (0.18.2)
@@ -310,8 +1360,24 @@ GEM
     pry (0.10.0)
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
     packetfu (1.1.11)
       network_interface (~> 0.0)
       pcaprub (~> 0.12)
@@ -323,6 +1389,7 @@ GEM
       arel (>= 4.0.1)
       pg_array_parser (~> 0.0.9)
     pry (0.10.1)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
@@ -338,6 +1405,65 @@ GEM
     pry (0.10.0)
 >>>>>>> origin/4.11.2_release_pre-rails4
 >>>>>>> master
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> rapid7/master
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
@@ -358,8 +1484,82 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     rb-readline-r7 (0.5.2.0)
     recog (2.0.14)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    rb-readline (0.5.2)
+    rdoc (3.12.2)
+      json (~> 1.4)
+    recog (1.0.7)
+=======
+    rb-readline-r7 (0.5.2.0)
+    recog (2.0.14)
+>>>>>>> rapid7/master
+=======
+    rb-readline-r7 (0.5.2.0)
+    recog (2.0.14)
+>>>>>>> rapid7/master
+=======
+    rb-readline-r7 (0.5.2.0)
+    recog (2.0.14)
+>>>>>>> rapid7/master
+=======
+    rb-readline-r7 (0.5.2.0)
+    recog (2.0.14)
+>>>>>>> rapid7/master
+=======
+    rb-readline-r7 (0.5.2.0)
+    recog (2.0.14)
+>>>>>>> master
+=======
+    rb-readline-r7 (0.5.2.0)
+    recog (2.0.14)
+>>>>>>> rapid7/master
+=======
+    rb-readline-r7 (0.5.2.0)
+    recog (2.0.14)
+>>>>>>> rapid7/master
+=======
+    rb-readline-r7 (0.5.2.0)
+    recog (2.0.14)
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
       nokogiri
     redcarpet (3.2.3)
     rkelly-remix (0.0.6)
@@ -406,8 +1606,95 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     timecop (0.7.3)
     tzinfo (0.3.44)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    timecop (0.7.1)
+    timers (4.0.1)
+      hitimes
+    treetop (1.4.15)
+      polyglot
+      polyglot (>= 0.3.1)
+    tzinfo (0.3.42)
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> rapid7/master
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> rapid7/master
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> rapid7/master
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> rapid7/master
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> master
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> rapid7/master
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> rapid7/master
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> msf-complex-payloads
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> msf-complex-payloads
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> payload-generator.rb
+=======
+    timecop (0.7.3)
+    tzinfo (0.3.44)
+>>>>>>> pod/metasploit-gemfile-
     xpath (2.0.0)
       nokogiri (~> 1.3)
     yard (0.8.7.6)

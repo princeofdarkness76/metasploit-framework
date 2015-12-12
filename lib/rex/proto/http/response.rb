@@ -109,10 +109,48 @@ class Response < Packet
   # @return [Hash]
   def get_json_document
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
     json = {}
 =======
     json = []
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+=======
+    json = []
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    json = []
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    json = []
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    json = []
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+    json = []
+>>>>>>> msf-complex-payloads
+=======
+    json = []
+>>>>>>> msf-complex-payloads
+=======
+    json = []
+>>>>>>> payload-generator.rb
+=======
+    json = []
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
 
     begin
       json = JSON.parse(self.body)

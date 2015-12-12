@@ -211,6 +211,14 @@ module Msf
       encoder_list = get_encoders
       if encoder_list.empty?
         cli_print "No encoder or badchars specified, outputting raw payload"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
         return shellcode
       end
 
@@ -229,6 +237,183 @@ module Msf
         rescue ::Msf::EncodingError => e
           cli_print "#{encoder_mod.refname} failed with #{e.message}"
           next
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+        shellcode
+      else
+        cli_print "Found #{encoder_list.count} compatible encoders"
+        encoder_list.each do |encoder_mod|
+          cli_print "Attempting to encode payload with #{iterations} iterations of #{encoder_mod.refname}"
+          begin
+            encoder_mod.available_space = @space
+            return run_encoder(encoder_mod, shellcode.dup)
+          rescue ::Msf::EncoderSpaceViolation => e
+            cli_print "#{encoder_mod.refname} failed with #{e.message}"
+            next
+          rescue ::Msf::EncodingError => e
+            cli_print "#{encoder_mod.refname} failed with #{e.message}"
+            next
+          end
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+=======
+>>>>>>> msf-complex-payloads
+=======
+=======
+=======
+>>>>>>> pod/metasploit-gemfile-
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+        return shellcode
+      end
+
+      results = {}
+
+      cli_print "Found #{encoder_list.count} compatible encoders"
+      encoder_list.each do |encoder_mod|
+        cli_print "Attempting to encode payload with #{iterations} iterations of #{encoder_mod.refname}"
+        begin
+          encoder_mod.available_space = @encoder_space unless @smallest
+          results[encoder_mod.refname] = run_encoder(encoder_mod, shellcode.dup)
+          break unless @smallest
+        rescue ::Msf::EncoderSpaceViolation => e
+          cli_print "#{encoder_mod.refname} failed with #{e.message}"
+          next
+        rescue ::Msf::EncodingError => e
+          cli_print "#{encoder_mod.refname} failed with #{e.message}"
+          next
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> pod/metasploit-gemfile-
         end
       end
 
