@@ -167,6 +167,9 @@ module Msf::Payload::Windows
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
   #
   # By default, we don't want to send the UUID, but we'll send
   # for certain payloads if requested.
@@ -175,7 +178,10 @@ module Msf::Payload::Windows
     false
   end
 
+<<<<<<< HEAD
 =======
 >>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 end
 

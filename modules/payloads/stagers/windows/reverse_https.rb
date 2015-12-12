@@ -18,6 +18,9 @@ module Metasploit4
   def initialize(info = {})
     super(merge_info(info,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
       'Name'        => 'Windows Reverse HTTPS Stager (wininet)',
       'Description' => 'Tunnel communication over HTTPS (Windows wininet)',
       'Author'      => 'hdm',
@@ -26,6 +29,7 @@ module Metasploit4
       'Arch'        => ARCH_X86,
       'Handler'     => Msf::Handler::ReverseHttps,
       'Convention'  => 'sockedi https'))
+<<<<<<< HEAD
 =======
       'Name'          => 'Reverse HTTPS Stager',
       'Description'   => 'Tunnel communication over HTTP using SSL',
@@ -36,6 +40,8 @@ module Metasploit4
       'Handler'       => Msf::Handler::ReverseHttps,
       'Convention'    => 'sockedi https'))
 >>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
   end
 
 end

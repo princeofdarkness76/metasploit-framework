@@ -212,6 +212,9 @@ module Msf
       if encoder_list.empty?
         cli_print "No encoder or badchars specified, outputting raw payload"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
         return shellcode
       end
 
@@ -230,6 +233,7 @@ module Msf
         rescue ::Msf::EncodingError => e
           cli_print "#{encoder_mod.refname} failed with #{e.message}"
           next
+<<<<<<< HEAD
 =======
         shellcode
       else
@@ -247,6 +251,8 @@ module Msf
             next
           end
 >>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
         end
       end
 

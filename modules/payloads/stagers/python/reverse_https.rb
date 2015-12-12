@@ -9,6 +9,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/python'
 require 'msf/core/payload/python/reverse_http'
 =======
@@ -17,6 +18,8 @@ require 'msf/core/payload/uuid/options'
 
 module Metasploit4
 =======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 require 'msf/core/payload/uuid/options'
 
 module Metasploit3
@@ -24,6 +27,7 @@ module Metasploit3
 =======
 require 'msf/core/payload/uuid/options'
 
+<<<<<<< HEAD
 module Metasploit3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -53,6 +57,12 @@ module Metasploit3
 =======
   include Msf::Payload::UUID::Options
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  CachedSize = 762
+
+  include Msf::Payload::Stager
+  include Msf::Payload::UUID::Options
+>>>>>>> 4.11.2_release_pre-rails4
 
   def initialize(info = {})
     super(merge_info(info,

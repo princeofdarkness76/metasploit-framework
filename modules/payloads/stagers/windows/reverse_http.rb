@@ -9,8 +9,11 @@ require 'msf/core/payload/windows/reverse_http'
 <<<<<<< HEAD
 
 module Metasploit4
+<<<<<<< HEAD
 =======
 >>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 
   CachedSize = 327
 
@@ -21,6 +24,9 @@ module Metasploit4
   def initialize(info = {})
     super(merge_info(info,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
       'Name'        => 'Windows Reverse HTTP Stager (wininet)',
       'Description' => 'Tunnel communication over HTTP (Windows wininet)',
       'Author'      => 'hdm',
@@ -29,6 +35,7 @@ module Metasploit4
       'Arch'        => ARCH_X86,
       'Handler'     => Msf::Handler::ReverseHttp,
       'Convention'  => 'sockedi http'))
+<<<<<<< HEAD
   end
 
 =======
@@ -42,4 +49,8 @@ module Metasploit4
       'Convention'    => 'sockedi http'))
   end
 >>>>>>> feature/complex-payloads
+=======
+  end
+
+>>>>>>> 4.11.2_release_pre-rails4
 end

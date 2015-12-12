@@ -11,6 +11,7 @@ require 'msf/core/payload/python/reverse_http'
 module Metasploit4
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 494
 =======
   CachedSize = 466
@@ -20,6 +21,8 @@ module Metasploit4
 
   CachedSize = 466
 
+=======
+>>>>>>> 4.11.2_release_pre-rails4
   CachedSize = 466
 
   include Msf::Payload::Stager

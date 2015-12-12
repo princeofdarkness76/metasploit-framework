@@ -1251,6 +1251,7 @@ class ReadableText
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       # Make the LPORT show the bind port if it's different
       local_port = ctx[0].datastore['LPORT']
@@ -1272,6 +1273,9 @@ class ReadableText
 =======
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> 4.11.2_release_pre-rails4
 
       if (verbose)
         uripath = ctx[0].get_resource if ctx[0].respond_to?(:get_resource)

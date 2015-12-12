@@ -71,6 +71,7 @@ class Framework
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   require 'rex/json_hash_file'
 =======
 <<<<<<< HEAD
@@ -123,6 +124,9 @@ class Framework
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  require 'rex/json_hash_file'
+>>>>>>> 4.11.2_release_pre-rails4
 
   #
   # Creates an instance of the framework context.
@@ -140,6 +144,7 @@ class Framework
     self.plugins   = PluginManager.new(self)
     self.uuid_db   = Rex::JSONHashFile.new(::File.join(Msf::Config.config_directory, "payloads.json"))
     self.browser_profiles = Hash.new
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -178,6 +183,8 @@ class Framework
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 
     # Configure the thread factory
     Rex::ThreadFactory.provider = Metasploit::Framework::ThreadFactoryProvider.new(framework: self)

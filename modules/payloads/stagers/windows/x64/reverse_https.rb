@@ -6,12 +6,18 @@
 require 'msf/core'
 require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/windows/x64/reverse_https'
 
 module Metasploit4
 =======
 #require 'msf/core/payload/windows/x64/reverse_https'
 >>>>>>> feature/complex-payloads
+=======
+require 'msf/core/payload/windows/x64/reverse_https'
+
+module Metasploit4
+>>>>>>> 4.11.2_release_pre-rails4
 
   CachedSize = 532
 
