@@ -68,7 +68,11 @@ Gem::Specification.new do |spec|
   # are needed when there's no database
   spec.add_runtime_dependency 'metasploit-model', '1.0.0'
   # Needed for Meterpreter
+<<<<<<< HEAD
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.19'
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+>>>>>>> 4.11.2_release_pre-rails4
   # Needed by msfgui and other rpc components
   spec.add_runtime_dependency 'msgpack'
   # get list of network interfaces, like eth* from OS.
@@ -85,8 +89,11 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'railties'
   # required for OS fingerprinting
   spec.add_runtime_dependency 'recog', '2.0.14'
+<<<<<<< HEAD
   # required for bitlocker fvek extraction
   spec.add_runtime_dependency 'openssl-ccm', '1.2.1'
+=======
+>>>>>>> 4.11.2_release_pre-rails4
 
   # rb-readline doesn't work with Ruby Installer due to error with Fiddle:
   #   NoMethodError undefined method `dlopen' for Fiddle:Module

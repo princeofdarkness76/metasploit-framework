@@ -285,6 +285,7 @@ protected
 
         blob = ""
         blob << obj.generate_stage(
+<<<<<<< HEAD
           http_url: url,
           http_user_agent: datastore['MeterpreterUserAgent'],
           http_proxy_host: datastore['PayloadProxyHost'] || datastore['PROXYHOST'],
@@ -292,6 +293,24 @@ protected
           uuid: uuid,
           uri:  conn_id
         )
+=======
+          uuid: uuid,
+          uri:  conn_id
+        )
+
+        var_escape = lambda { |txt|
+          txt.gsub('\\', '\\'*8).gsub('\'', %q(\\\\\\\'))
+        }
+
+        # Patch all the things
+        blob.sub!('HTTP_CONNECTION_URL = None', "HTTP_CONNECTION_URL = '#{var_escape.call(url)}'")
+        blob.sub!('HTTP_USER_AGENT = None', "HTTP_USER_AGENT = '#{var_escape.call(datastore['MeterpreterUserAgent'])}'")
+
+        unless datastore['PayloadProxyHost'].blank?
+          proxy_url = "http://#{datastore['PayloadProxyHost']||datastore['PROXYHOST']}:#{datastore['PayloadProxyPort']||datastore['PROXYPORT']}"
+          blob.sub!('HTTP_PROXY = None', "HTTP_PROXY = '#{var_escape.call(proxy_url)}'")
+        end
+>>>>>>> 4.11.2_release_pre-rails4
 
         resp.body = blob
 
@@ -344,8 +363,13 @@ protected
         blob = obj.stage_payload(
           uuid: uuid,
           uri:  conn_id,
+<<<<<<< HEAD
           lhost: uri.host,
           lport: uri.port
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> 4.11.2_release_pre-rails4
         )
 
         resp.body = encode_stage(blob)
