@@ -1145,6 +1145,7 @@ class ReadableText
     return out
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   end
 
   # Dumps the list of active sessions in verbose mode
@@ -1484,6 +1485,8 @@ class ReadableText
 
     out << "\n"
     return out
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
   end
 
   # Dumps the list of running jobs.
@@ -1515,6 +1518,7 @@ class ReadableText
       ctx = framework.jobs[k].ctx
       row = [ k, framework.jobs[k].name ]
       row << (ctx[1].nil? ? (ctx[0].datastore['PAYLOAD'] || "") : ctx[1].refname)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1566,6 +1570,9 @@ class ReadableText
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 
       if (verbose)
         uripath = ctx[0].get_resource if ctx[0].respond_to?(:get_resource)

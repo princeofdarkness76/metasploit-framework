@@ -12,6 +12,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/windows/x64/reverse_https'
 
 module Metasploit4
@@ -177,6 +178,12 @@ module Metasploit4
 =======
 >>>>>>> master
 >>>>>>> pod/metasploit-gemfile-
+=======
+require 'msf/core/payload/windows/x64/reverse_https'
+
+module Metasploit4
+
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
   CachedSize = 532
 
   include Msf::Payload::Stager

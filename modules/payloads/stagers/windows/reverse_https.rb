@@ -23,8 +23,11 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
       'Name'        => 'Windows Reverse HTTPS Stager (wininet)',
       'Description' => 'Tunnel communication over HTTPS (Windows wininet)',
       'Author'      => 'hdm',
@@ -33,6 +36,7 @@ module Metasploit4
       'Arch'        => ARCH_X86,
       'Handler'     => Msf::Handler::ReverseHttps,
       'Convention'  => 'sockedi https'))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -193,6 +197,8 @@ module Metasploit4
 =======
 >>>>>>> master
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
   end
 
 end

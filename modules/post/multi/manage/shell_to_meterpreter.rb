@@ -43,6 +43,7 @@ class Metasploit3 < Msf::Post
       OptString.new('PAYLOAD_OVERRIDE',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -88,6 +89,9 @@ class Metasploit3 < Msf::Post
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
     ], self.class)
     deregister_options('PERSIST', 'PSH_OLD_METHOD', 'RUN_WOW64')
   end

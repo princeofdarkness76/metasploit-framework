@@ -11,6 +11,7 @@ module Metasploit3
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52,6 +53,9 @@ module Metasploit3
   CachedSize = 314
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+  CachedSize = 314
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 
   include Msf::Payload::Windows
   include Msf::Payload::Single

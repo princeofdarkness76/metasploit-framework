@@ -2257,6 +2257,7 @@ describe 'modules/payloads', :content do
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2308,6 +2309,8 @@ describe 'modules/payloads', :content do
 =======
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
   context 'python/meterpreter_reverse_tcp' do
     it_should_behave_like 'payload cached size is consistent',
                           ancestor_reference_names: [
