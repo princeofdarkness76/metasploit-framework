@@ -10,6 +10,7 @@ require 'msf/core/payload/windows/reverse_http'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 module Metasploit4
 <<<<<<< HEAD
@@ -66,6 +67,8 @@ module Metasploit4
 
 >>>>>>> rapid7/master
 =======
+=======
+>>>>>>> pod/complex-payloads
 
 module Metasploit4
 
@@ -147,6 +150,7 @@ module Metasploit4
       'Arch'          => ARCH_X86,
       'Handler'       => Msf::Handler::ReverseHttp,
       'Convention'    => 'sockedi http'))
+<<<<<<< HEAD
   end
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -217,6 +221,8 @@ module Metasploit4
       'Arch'        => ARCH_X86,
       'Handler'     => Msf::Handler::ReverseHttp,
       'Convention'  => 'sockedi http'))
+=======
+>>>>>>> pod/complex-payloads
   end
 
 <<<<<<< HEAD

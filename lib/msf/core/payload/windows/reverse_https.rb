@@ -6,6 +6,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/transport_config'
 =======
 >>>>>>> feature/complex-payloads
@@ -61,6 +62,8 @@ require 'msf/core/payload/transport_config'
 require 'msf/core/payload/transport_config'
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/complex-payloads
 require 'msf/core/payload/windows/reverse_http'
 
 module Msf
@@ -70,6 +73,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> feature/complex-payloads
@@ -115,12 +119,16 @@ module Msf
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+
+>>>>>>> pod/complex-payloads
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTPS
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -175,6 +183,8 @@ module Payload::Windows::ReverseHttps
 >>>>>>> payload-generator.rb
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> pod/complex-payloads
 
 module Payload::Windows::ReverseHttps
 
@@ -200,11 +210,14 @@ module Payload::Windows::ReverseHttps
   #
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/complex-payloads
   def generate
 
     # Generate the simple version of this stager if we don't have enough space
@@ -228,6 +241,7 @@ module Payload::Windows::ReverseHttps
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   def transport_config(opts={})
     transport_config_reverse_https(opts)
@@ -238,11 +252,14 @@ module Payload::Windows::ReverseHttps
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/complex-payloads
   end
 
   # TODO: Use the CachedSize instead (PR #4894)
   def cached_size
     341
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -331,6 +348,8 @@ module Payload::Windows::ReverseHttps
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/complex-payloads
   end
 
 end

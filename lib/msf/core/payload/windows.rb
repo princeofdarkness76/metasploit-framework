@@ -171,6 +171,7 @@ module Msf::Payload::Windows
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
@@ -265,5 +266,7 @@ module Msf::Payload::Windows
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/complex-payloads
 end
 
