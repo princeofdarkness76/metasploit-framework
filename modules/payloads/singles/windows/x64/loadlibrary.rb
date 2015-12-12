@@ -16,6 +16,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 313
 =======
   CachedSize = 314
@@ -38,6 +39,9 @@ module Metasploit3
 =======
   CachedSize = 314
 >>>>>>> msf-complex-payloads
+=======
+  CachedSize = 314
+>>>>>>> payload-generator.rb
 
   include Msf::Payload::Windows
   include Msf::Payload::Single

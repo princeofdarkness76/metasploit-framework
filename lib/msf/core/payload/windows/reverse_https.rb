@@ -5,6 +5,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/transport_config'
 =======
 >>>>>>> feature/complex-payloads
@@ -15,6 +16,12 @@ require 'msf/core/payload/transport_config'
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -32,10 +39,28 @@ require 'msf/core/payload/transport_config'
 =======
 require 'msf/core/payload/transport_config'
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> rapid7/master
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> master
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> master
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> rapid7/master
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> master
+>>>>>>> payload-generator.rb
 require 'msf/core/payload/windows/reverse_http'
 
 module Msf
@@ -44,6 +69,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> feature/complex-payloads
@@ -53,6 +79,12 @@ module Msf
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -67,15 +99,29 @@ module Msf
 =======
 >>>>>>> rapid7/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTPS
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,6 +167,12 @@ module Payload::Windows::ReverseHttps
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -147,9 +199,12 @@ module Payload::Windows::ReverseHttps
   # Generate the first stage
   #
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
   def generate
 
     # Generate the simple version of this stager if we don't have enough space
@@ -172,6 +227,7 @@ module Payload::Windows::ReverseHttps
     generate_reverse_https(conf)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   def transport_config(opts={})
     transport_config_reverse_https(opts)
@@ -180,11 +236,14 @@ module Payload::Windows::ReverseHttps
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
   end
 
   # TODO: Use the CachedSize instead (PR #4894)
   def cached_size
     341
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> feature/complex-payloads
@@ -193,13 +252,30 @@ module Payload::Windows::ReverseHttps
 >>>>>>> msf-complex-payloads
 =======
 =======
+=======
+=======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> payload-generator.rb
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
 module Payload::Windows::ReverseHttps
 
   include Msf::Payload::TransportConfig
@@ -221,6 +297,14 @@ module Payload::Windows::ReverseHttps
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -231,9 +315,22 @@ module Payload::Windows::ReverseHttps
 =======
 >>>>>>> rapid7/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
   end
 
 end

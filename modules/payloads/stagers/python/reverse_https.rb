@@ -12,6 +12,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/python'
 require 'msf/core/payload/python/reverse_http'
 =======
@@ -47,10 +48,16 @@ require 'msf/core/payload/uuid/options'
 
 module Metasploit3
 >>>>>>> msf-complex-payloads
+=======
+require 'msf/core/payload/uuid/options'
+
+module Metasploit3
+>>>>>>> payload-generator.rb
 
   CachedSize = 762
 
   include Msf::Payload::Stager
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -83,6 +90,9 @@ module Metasploit3
 =======
   include Msf::Payload::UUID::Options
 >>>>>>> msf-complex-payloads
+=======
+  include Msf::Payload::UUID::Options
+>>>>>>> payload-generator.rb
 
   def initialize(info = {})
     super(merge_info(info,
@@ -100,6 +110,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -109,6 +120,8 @@ module Metasploit3
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
 
     register_options(
       [
@@ -119,6 +132,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -128,12 +142,15 @@ module Metasploit3
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
   end
 
   #
   # Constructs the payload
   #
   def generate
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -149,6 +166,8 @@ module Metasploit3
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
     lhost = datastore['LHOST'] || '127.127.127.127'
 
     var_escape = lambda { |txt|
@@ -238,6 +257,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -247,6 +267,8 @@ module Metasploit3
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
   end
 
 end

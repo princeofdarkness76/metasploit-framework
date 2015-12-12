@@ -48,6 +48,7 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil]),
       OptString.new('BOURNE_PATH',
         [false, 'Remote path to drop binary']),
@@ -74,6 +75,9 @@ class Metasploit3 < Msf::Post
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 >>>>>>> msf-complex-payloads
+=======
+        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+>>>>>>> payload-generator.rb
     ], self.class)
     deregister_options('PERSIST', 'PSH_OLD_METHOD', 'RUN_WOW64')
   end

@@ -218,6 +218,7 @@ class Driver < Msf::Ui::Driver
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -261,6 +262,8 @@ class Driver < Msf::Ui::Driver
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
     if framework.db.active && !opts['DeferModuleLoads']
       framework.threads.spawn("ModuleCacheRebuild", true) do
         framework.modules.refresh_cache_from_module_files

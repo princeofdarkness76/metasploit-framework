@@ -115,6 +115,7 @@ class Response < Packet
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     json = {}
 =======
     json = []
@@ -137,6 +138,9 @@ class Response < Packet
 =======
     json = []
 >>>>>>> msf-complex-payloads
+=======
+    json = []
+>>>>>>> payload-generator.rb
 
     begin
       json = JSON.parse(self.body)

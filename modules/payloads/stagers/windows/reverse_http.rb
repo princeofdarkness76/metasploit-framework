@@ -9,6 +9,7 @@ require 'msf/core/payload/windows/reverse_http'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 module Metasploit4
 <<<<<<< HEAD
@@ -21,6 +22,12 @@ module Metasploit4
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -40,6 +47,7 @@ module Metasploit4
 
 module Metasploit4
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -52,10 +60,41 @@ module Metasploit4
 
 =======
 
+=======
+
 module Metasploit4
 
 >>>>>>> rapid7/master
+=======
+
+module Metasploit4
+
+>>>>>>> rapid7/master
+=======
+
+module Metasploit4
+
+>>>>>>> master
+=======
+
+module Metasploit4
+
+>>>>>>> master
+>>>>>>> payload-generator.rb
+=======
+
+module Metasploit4
+
+>>>>>>> rapid7/master
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
+=======
+=======
+
+module Metasploit4
+
+>>>>>>> master
+>>>>>>> payload-generator.rb
   CachedSize = 327
 
   include Msf::Payload::Stager
@@ -68,6 +107,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
       'Name'        => 'Windows Reverse HTTP Stager (wininet)',
@@ -91,6 +131,14 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
       'Name'          => 'Reverse HTTP Stager',
       'Description'   => 'Tunnel communication over HTTP',
       'Author'        => 'hdm',
@@ -100,6 +148,7 @@ module Metasploit4
       'Handler'       => Msf::Handler::ReverseHttp,
       'Convention'    => 'sockedi http'))
   end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> feature/complex-payloads
@@ -112,6 +161,46 @@ module Metasploit4
 >>>>>>> msf-complex-payloads
 =======
 =======
+=======
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+      'Name'        => 'Windows Reverse HTTP Stager (wininet)',
+      'Description' => 'Tunnel communication over HTTP (Windows wininet)',
+      'Author'      => 'hdm',
+      'License'     => MSF_LICENSE,
+      'Platform'    => 'win',
+      'Arch'        => ARCH_X86,
+      'Handler'     => Msf::Handler::ReverseHttp,
+      'Convention'  => 'sockedi http'))
+  end
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -119,6 +208,7 @@ module Metasploit4
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
       'Name'        => 'Windows Reverse HTTP Stager (wininet)',
       'Description' => 'Tunnel communication over HTTP (Windows wininet)',
       'Author'      => 'hdm',
@@ -135,10 +225,13 @@ module Metasploit4
 <<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
->>>>>>> rapid7/master
+>>>>>>> payload-generator.rb
 =======
 >>>>>>> rapid7/master
 =======
+>>>>>>> rapid7/master
+=======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -146,4 +239,13 @@ module Metasploit4
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
 end

@@ -43,6 +43,7 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   # @option opts [String] :http_proxy_host The host to use as a proxy for
   #   HTTP(S) transports.
   # @option opts [String] :http_proxy_port The port to use when a proxy  host is
@@ -65,6 +66,8 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
   # @option opts [String] :stageless_tcp_socket_setup Python code to execute to
   #   setup a tcp socket to allow use of the stage as a stageless payload.
   # @option opts [String] :uuid A specific UUID to use for sessions created by
@@ -72,6 +75,7 @@ module Payload::Python::MeterpreterLoader
   def stage_meterpreter(opts={})
     met = MetasploitPayloads.read('meterpreter', 'meterpreter.py')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -97,6 +101,8 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
     if datastore['PythonMeterpreterDebug']
       met = met.sub("DEBUGGING = False", "DEBUGGING = True")
     end
@@ -110,6 +116,7 @@ module Payload::Python::MeterpreterLoader
     uuid = Rex::Text.to_hex(uuid.to_raw, prefix = '')
     met.sub!("PAYLOAD_UUID = \'\'", "PAYLOAD_UUID = \'#{uuid}\'")
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -140,6 +147,8 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
     # patch in any optional stageless tcp socket setup
     unless opts[:stageless_tcp_socket_setup].nil?
       socket_setup = opts[:stageless_tcp_socket_setup]

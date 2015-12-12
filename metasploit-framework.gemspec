@@ -77,6 +77,7 @@ Gem::Specification.new do |spec|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.19'
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
@@ -99,6 +100,9 @@ Gem::Specification.new do |spec|
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
 >>>>>>> msf-complex-payloads
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+>>>>>>> payload-generator.rb
   # Needed by msfgui and other rpc components
   spec.add_runtime_dependency 'msgpack'
   # get list of network interfaces, like eth* from OS.
@@ -122,6 +126,7 @@ Gem::Specification.new do |spec|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   # required for bitlocker fvek extraction
   spec.add_runtime_dependency 'openssl-ccm', '1.2.1'
 =======
@@ -138,6 +143,8 @@ Gem::Specification.new do |spec|
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
 
   # rb-readline doesn't work with Ruby Installer due to error with Fiddle:
   #   NoMethodError undefined method `dlopen' for Fiddle:Module
