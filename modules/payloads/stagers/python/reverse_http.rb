@@ -41,6 +41,8 @@ module Metasploit4
 
   CachedSize = 466
 
+  CachedSize = 466
+
   include Msf::Payload::Stager
   include Msf::Payload::Python
   include Msf::Payload::Python::ReverseHttp
@@ -153,6 +155,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -166,6 +169,8 @@ module Metasploit4
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 end

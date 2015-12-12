@@ -1146,6 +1146,7 @@ class ReadableText
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   end
 
   # Dumps the list of active sessions in verbose mode
@@ -1485,6 +1486,8 @@ class ReadableText
 
     out << "\n"
     return out
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
   end
@@ -1518,6 +1521,7 @@ class ReadableText
       ctx = framework.jobs[k].ctx
       row = [ k, framework.jobs[k].name ]
       row << (ctx[1].nil? ? (ctx[0].datastore['PAYLOAD'] || "") : ctx[1].refname)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1570,6 +1574,9 @@ class ReadableText
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
