@@ -11,6 +11,7 @@ require 'msf/core/payload/windows'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 module Msf
 
@@ -113,6 +114,11 @@ module Msf
 >>>>>>> master
 
 >>>>>>> pod/metasploit-gemfile-
+=======
+
+module Msf
+
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 
 module Msf
@@ -154,6 +160,7 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
@@ -236,6 +243,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['seh'].to_s(16)}
         push.i8 0              ; push the exit function parameter
         push ebx               ; push the hash of the exit function
@@ -243,6 +252,7 @@ module Payload::Windows::Exitfunk
         push.i8 0
         ret                    ; Return to NULL (crash)
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -327,6 +337,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 
     # On Windows Vista, Server 2008, and newer, it is not possible to call ExitThread
     # on WoW64 processes, instead we need to call RtlExitUserThread. This stub will
@@ -334,6 +346,7 @@ module Payload::Windows::Exitfunk
 
     when 'thread'
       asm << %Q^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -449,6 +462,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['thread'].to_s(16)}
         push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
         call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
@@ -462,6 +477,7 @@ module Payload::Windows::Exitfunk
         push ebx               ; push the hash of the exit function
         call ebp               ; call ExitThread(0) || RtlExitUserThread(0)
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -521,6 +537,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 
     when 'process', nil
       asm << %Q^
@@ -532,6 +550,7 @@ module Payload::Windows::Exitfunk
 
     when 'sleep'
       asm << %Q^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -550,12 +569,15 @@ module Payload::Windows::Exitfunk
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
         mov ebx, #{Rex::Text.block_api_hash('kernel32.dll', 'Sleep')}
         push 300000            ; 300 seconds
         push ebx               ; push the hash of the function
         call ebp               ; Sleep(300000)
         jmp exitfunk           ; repeat
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -620,6 +642,8 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> master
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
