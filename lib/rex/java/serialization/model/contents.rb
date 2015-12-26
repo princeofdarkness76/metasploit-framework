@@ -88,7 +88,36 @@ module Rex
             when NewClassDesc
               encoded << [TC_CLASSDESC].pack('C')
             when ProxyClassDesc
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
               encoded << [TC_PROXYCLASSDESC].pack('C')
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+<<<<<<< HEAD
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> origin/msf-complex-payloads
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> origin/msf-complex-payloads
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
             when NullReference
               encoded << [TC_NULL].pack('C')
             when Reset

@@ -108,7 +108,50 @@ class Response < Packet
   #
   # @return [Hash]
   def get_json_document
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     json = {}
+=======
+    json = []
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+    json = []
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+    json = []
+>>>>>>> origin/msf-complex-payloads
+=======
+    json = []
+>>>>>>> origin/msf-complex-payloads
+=======
+    json = []
+>>>>>>> origin/payload-generator.rb
+=======
+<<<<<<< HEAD
+    json = {}
+=======
+    json = []
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+    json = []
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    json = []
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    json = []
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    json = []
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+    json = []
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
 
     begin
       json = JSON.parse(self.body)

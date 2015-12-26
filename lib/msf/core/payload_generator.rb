@@ -211,6 +211,15 @@ module Msf
       encoder_list = get_encoders
       if encoder_list.empty?
         cli_print "No encoder or badchars specified, outputting raw payload"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-api/_index.html
         return shellcode
       end
 
@@ -229,6 +238,152 @@ module Msf
         rescue ::Msf::EncodingError => e
           cli_print "#{encoder_mod.refname} failed with #{e.message}"
           next
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> origin/payload-generator.rb
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/payload-generator.rb
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
+        shellcode
+      else
+        cli_print "Found #{encoder_list.count} compatible encoders"
+        encoder_list.each do |encoder_mod|
+          cli_print "Attempting to encode payload with #{iterations} iterations of #{encoder_mod.refname}"
+          begin
+            encoder_mod.available_space = @space
+            return run_encoder(encoder_mod, shellcode.dup)
+          rescue ::Msf::EncoderSpaceViolation => e
+            cli_print "#{encoder_mod.refname} failed with #{e.message}"
+            next
+          rescue ::Msf::EncodingError => e
+            cli_print "#{encoder_mod.refname} failed with #{e.message}"
+            next
+          end
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/feature/complex-payloads
+=======
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+=======
+>>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> origin/payload-generator.rb
+>>>>>>> rapid7/master
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
+        return shellcode
+      end
+
+      results = {}
+
+      cli_print "Found #{encoder_list.count} compatible encoders"
+      encoder_list.each do |encoder_mod|
+        cli_print "Attempting to encode payload with #{iterations} iterations of #{encoder_mod.refname}"
+        begin
+          encoder_mod.available_space = @encoder_space unless @smallest
+          results[encoder_mod.refname] = run_encoder(encoder_mod, shellcode.dup)
+          break unless @smallest
+        rescue ::Msf::EncoderSpaceViolation => e
+          cli_print "#{encoder_mod.refname} failed with #{e.message}"
+          next
+        rescue ::Msf::EncodingError => e
+          cli_print "#{encoder_mod.refname} failed with #{e.message}"
+          next
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
         end
       end
 

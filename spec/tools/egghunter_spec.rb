@@ -2,7 +2,23 @@ load Metasploit::Framework.root.join('tools/exploit/egghunter.rb').to_path
 
 require 'stringio'
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Egghunter do
+=======
+describe Egghunter do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+describe Egghunter do
+>>>>>>> origin/msf-complex-payloads
+=======
+describe Egghunter do
+>>>>>>> origin/msf-complex-payloads
+=======
+describe Egghunter do
+>>>>>>> origin/payload-generator.rb
 
   describe Egghunter::Driver do
 

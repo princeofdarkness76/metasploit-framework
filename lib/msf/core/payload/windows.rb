@@ -166,6 +166,63 @@ module Msf::Payload::Windows
     @@exit_types.dup
   end
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/payload-generator.rb
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
   #
   # By default, we don't want to send the UUID, but we'll send
   # for certain payloads if requested.
@@ -174,5 +231,65 @@ module Msf::Payload::Windows
     false
   end
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/feature/complex-payloads
+=======
+>>>>>>> origin/feature/complex-payloads
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/payload-generator.rb
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+=======
+=======
+>>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> rapid7/master
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
 end
 

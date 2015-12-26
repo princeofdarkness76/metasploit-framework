@@ -3,7 +3,23 @@ require 'msf/base/sessions/meterpreter'
 require 'rex/post/meterpreter/extensions/stdapi/net/interface'
 require 'rex/post/meterpreter/extensions/stdapi/net/route'
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Sessions::Meterpreter do
+=======
+describe Msf::Sessions::Meterpreter do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+describe Msf::Sessions::Meterpreter do
+>>>>>>> origin/msf-complex-payloads
+=======
+describe Msf::Sessions::Meterpreter do
+>>>>>>> origin/msf-complex-payloads
+=======
+describe Msf::Sessions::Meterpreter do
+>>>>>>> origin/payload-generator.rb
   before do
     allow_any_instance_of(Rex::Post::Meterpreter::PacketDispatcher).to receive(:monitor_socket)
   end
@@ -34,9 +50,29 @@ RSpec.describe Msf::Sessions::Meterpreter do
 
     subject(:connected_address) do
       m = described_class.new(StringIO.new(""), skip_ssl: true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
       allow(m).to receive_message_chain(:private_methods, :net)
       allow(m).to receive_message_chain(:private_methods, :net, :config, :get_interfaces).and_return(interfaces)
       allow(m).to receive_message_chain(:private_methods, :net, :config, :get_routes).and_return(routes)
+=======
+      m.stub_chain(:net, :config, :get_interfaces).and_return(interfaces)
+      m.stub_chain(:net, :config, :get_routes).and_return(routes)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      m.stub_chain(:net, :config, :get_interfaces).and_return(interfaces)
+      m.stub_chain(:net, :config, :get_routes).and_return(routes)
+>>>>>>> origin/msf-complex-payloads
+=======
+      m.stub_chain(:net, :config, :get_interfaces).and_return(interfaces)
+      m.stub_chain(:net, :config, :get_routes).and_return(routes)
+>>>>>>> origin/msf-complex-payloads
+=======
+      m.stub_chain(:net, :config, :get_interfaces).and_return(interfaces)
+      m.stub_chain(:net, :config, :get_routes).and_return(routes)
+>>>>>>> origin/payload-generator.rb
       m.session_host = session_host
 
       m.send(:find_internet_connected_address)

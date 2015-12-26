@@ -63,3 +63,45 @@ module Payload::Python::ReverseTcp
 end
 
 end
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+
+>>>>>>> origin/msf-complex-payloads
+=======
+
+>>>>>>> origin/msf-complex-payloads
+=======
+
+>>>>>>> origin/payload-generator.rb
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html

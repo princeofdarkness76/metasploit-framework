@@ -3,7 +3,27 @@ load Metasploit::Framework.root.join('tools/exploit/msu_finder.rb').to_path
 require 'nokogiri'
 require 'uri'
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe MicrosoftPatchFinder do
+=======
+describe MicrosoftPatchFinder do
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+describe MicrosoftPatchFinder do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+describe MicrosoftPatchFinder do
+>>>>>>> origin/msf-complex-payloads
+=======
+describe MicrosoftPatchFinder do
+>>>>>>> origin/msf-complex-payloads
+=======
+describe MicrosoftPatchFinder do
+>>>>>>> origin/payload-generator.rb
 
   before(:each) do
     cli = Rex::Proto::Http::Client.new('127.0.0.1')
@@ -301,6 +321,11 @@ RSpec.describe MicrosoftPatchFinder do
       end
 
       let(:download_html_res) do
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         Rex::Proto::Http::Response.new.tap { |response|
           allow(response).to receive(:body).and_return(
                                %Q|
@@ -310,6 +335,37 @@ RSpec.describe MicrosoftPatchFinder do
                                |
                              )
         }
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+        html = %Q|
+        <html>
+        <a href="#{expected_link}">Click here</a>
+        </html>
+        |
+
+        res = Rex::Proto::Http::Response
+        allow(res).to receive(:body).and_return(html)
+        res
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
       end
 
       it 'returns an array of links' do

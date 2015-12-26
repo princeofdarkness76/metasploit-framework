@@ -1,7 +1,23 @@
 require 'spec_helper'
 require 'metasploit/framework/login_scanner/symantec_web_gateway'
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::SymantecWebGateway do
+=======
+describe Metasploit::Framework::LoginScanner::SymantecWebGateway do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+describe Metasploit::Framework::LoginScanner::SymantecWebGateway do
+>>>>>>> origin/msf-complex-payloads
+=======
+describe Metasploit::Framework::LoginScanner::SymantecWebGateway do
+>>>>>>> origin/msf-complex-payloads
+=======
+describe Metasploit::Framework::LoginScanner::SymantecWebGateway do
+>>>>>>> origin/payload-generator.rb
 
     it_behaves_like 'Metasploit::Framework::LoginScanner::Base',  has_realm_key: true, has_default_realm: false
     it_behaves_like 'Metasploit::Framework::LoginScanner::RexSocket'

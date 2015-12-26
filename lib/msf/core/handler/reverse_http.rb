@@ -18,7 +18,19 @@ module Handler
 module ReverseHttp
 
   include Msf::Handler
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   include Msf::Handler::Reverse
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
   include Rex::Payloads::Meterpreter::UriChecksum
   include Msf::Payload::Windows::VerifySsl
 
@@ -51,10 +63,42 @@ module ReverseHttp
 
     register_advanced_options(
       [
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
         OptString.new('MeterpreterUserAgent', [false, 'The user-agent that the payload should use for communication', Rex::UserAgent.shortest]),
         OptString.new('MeterpreterServerName', [false, 'The server header that the handler will send in response to requests', 'Apache']),
         OptAddress.new('ReverseListenerBindAddress', [false, 'The specific IP address to bind to on the local system']),
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+        OptString.new('ReverseListenerComm', [false, 'The specific communication channel to use for this listener']),
+        OptString.new('MeterpreterUserAgent', [false, 'The user-agent that the payload should use for communication', Rex::UserAgent.shortest]),
+        OptString.new('MeterpreterServerName', [false, 'The server header that the handler will send in response to requests', 'Apache']),
+        OptAddress.new('ReverseListenerBindAddress', [false, 'The specific IP address to bind to on the local system']),
+        OptInt.new('ReverseListenerBindPort', [false, 'The port to bind to on the local system if different from LPORT']),
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
         OptBool.new('OverrideRequestHost', [false, 'Forces a specific host and port instead of using what the client requests, defaults to LHOST:LPORT', false]),
         OptString.new('OverrideLHOST', [false, 'When OverrideRequestHost is set, use this value as the host name for secondary requests']),
         OptPort.new('OverrideLPORT', [false, 'When OverrideRequestHost is set, use this value as the port number for secondary requests']),
@@ -81,7 +125,36 @@ module ReverseHttp
   # @return [String] A URI of the form +scheme://host:port/+
   def listener_uri
     uri_host = Rex::Socket.is_ipv6?(listener_address) ? "[#{listener_address}]" : listener_address
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     "#{scheme}://#{uri_host}:#{bind_port}/"
+=======
+    "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+<<<<<<< HEAD
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+    "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+>>>>>>> origin/msf-complex-payloads
+=======
+    "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+>>>>>>> origin/msf-complex-payloads
+=======
+    "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
   end
 
   # Return a URI suitable for placing in a payload.
@@ -96,6 +169,11 @@ module ReverseHttp
     # Extract whatever the client sent us in the Host header
     if req && req.headers && req.headers['Host']
       callback_host = req.headers['Host']
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/msf-complex-payloads
     end
 
     # Override the host and port as appropriate
@@ -108,6 +186,30 @@ module ReverseHttp
       callback_host = "#{callback_name}:#{callback_port}"
     end
 
+<<<<<<< HEAD
+=======
+    end
+
+=======
+    end
+
+>>>>>>> origin/payload-generator.rb
+    # Override the host and port as appropriate
+    if datastore['OverrideRequestHost'] || callback_host.nil?
+      callback_name = datastore['OverrideLHOST'] || datastore['LHOST']
+      callback_port = datastore['OverrideLPORT'] || datastore['LPORT']
+      if Rex::Socket.is_ipv6? callback_name
+        callback_name = "[#{callback_name}]"
+      end
+      callback_host = "#{callback_name}:#{callback_port}"
+    end
+
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
     "#{scheme}://#{callback_host}/"
   end
 
@@ -129,6 +231,16 @@ module ReverseHttp
   #
   def setup_handler
 
+<<<<<<< HEAD
+=======
+    comm = datastore['ReverseListenerComm']
+    if (comm.to_s == 'local')
+      comm = ::Rex::Socket::Comm::Local
+    else
+      comm = nil
+    end
+
+>>>>>>> origin/4.11.2_release_pre-rails4
     local_port = bind_port
 
     # Start the HTTPS server service on this host/port
@@ -140,7 +252,23 @@ module ReverseHttp
         'Msf'        => framework,
         'MsfExploit' => self,
       },
+<<<<<<< HEAD
       nil,
+=======
+      comm,
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
       (ssl?) ? datastore['HandlerSSLCert'] : nil
     )
 
@@ -227,6 +355,47 @@ protected
     resp = Rex::Proto::Http::Response.new
     info = process_uri_resource(req.relative_resource)
     uuid = info[:uuid] || Msf::Payload::UUID.new
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+
+    # Configure the UUID architecture and payload if necessary
+    uuid.arch      ||= obj.arch
+    uuid.platform  ||= obj.platform
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+    conn_id = nil
+    if info[:mode] && info[:mode] != :connect
+      conn_id = generate_uri_uuid(URI_CHECKSUM_CONN, uuid)
+    end
+
+    request_summary = "#{req.relative_resource} with UA '#{req.headers['User-Agent']}'"
+
+    # Validate known UUIDs for all requests if IgnoreUnknownPayloads is set
+    if datastore['IgnoreUnknownPayloads'] && ! framework.uuid_db[uuid.puid_hex]
+      print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Ignoring unknown UUID: #{request_summary}")
+      info[:mode] = :unknown_uuid
+    end
+
+    # Validate known URLs for all session init requests if IgnoreUnknownPayloads is set
+    if datastore['IgnoreUnknownPayloads'] && info[:mode].to_s =~ /^init_/
+      allowed_urls = framework.uuid_db[uuid.puid_hex]['urls'] || []
+      unless allowed_urls.include?(req.relative_resource)
+        print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Ignoring unknown UUID URL: #{request_summary}")
+        info[:mode] = :unknown_uuid_url
+      end
+    end
+
+=======
 
     # Configure the UUID architecture and payload if necessary
     uuid.arch      ||= obj.arch
@@ -254,6 +423,49 @@ protected
       end
     end
 
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+
+=======
+
+>>>>>>> origin/msf-complex-payloads
+    conn_id = nil
+    if info[:mode] && info[:mode] != :connect
+      conn_id = generate_uri_uuid(URI_CHECKSUM_CONN, uuid)
+    end
+
+=======
+
+    conn_id = nil
+    if info[:mode] && info[:mode] != :connect
+      conn_id = generate_uri_uuid(URI_CHECKSUM_CONN, uuid)
+    end
+
+>>>>>>> origin/payload-generator.rb
+    request_summary = "#{req.relative_resource} with UA '#{req.headers['User-Agent']}'"
+
+    # Validate known UUIDs for all requests if IgnoreUnknownPayloads is set
+    if datastore['IgnoreUnknownPayloads'] && ! framework.uuid_db[uuid.puid_hex]
+      print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Ignoring unknown UUID: #{request_summary}")
+      info[:mode] = :unknown_uuid
+    end
+
+    # Validate known URLs for all session init requests if IgnoreUnknownPayloads is set
+    if datastore['IgnoreUnknownPayloads'] && info[:mode].to_s =~ /^init_/
+      allowed_urls = framework.uuid_db[uuid.puid_hex]['urls'] || []
+      unless allowed_urls.include?(req.relative_resource)
+        print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Ignoring unknown UUID URL: #{request_summary}")
+        info[:mode] = :unknown_uuid_url
+      end
+    end
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
     self.pending_connections += 1
 
     # Process the requested resource.
@@ -277,6 +489,15 @@ protected
 
         blob = ""
         blob << obj.generate_stage(
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
           http_url: url,
           http_user_agent: datastore['MeterpreterUserAgent'],
           http_proxy_host: datastore['PayloadProxyHost'] || datastore['PROXYHOST'],
@@ -284,6 +505,48 @@ protected
           uuid: uuid,
           uri:  conn_id
         )
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
+          uuid: uuid,
+          uri:  conn_id
+        )
+
+        var_escape = lambda { |txt|
+          txt.gsub('\\', '\\'*8).gsub('\'', %q(\\\\\\\'))
+        }
+
+        # Patch all the things
+        blob.sub!('HTTP_CONNECTION_URL = None', "HTTP_CONNECTION_URL = '#{var_escape.call(url)}'")
+        blob.sub!('HTTP_USER_AGENT = None', "HTTP_USER_AGENT = '#{var_escape.call(datastore['MeterpreterUserAgent'])}'")
+
+        unless datastore['PayloadProxyHost'].blank?
+          proxy_url = "http://#{datastore['PayloadProxyHost']||datastore['PROXYHOST']}:#{datastore['PayloadProxyPort']||datastore['PROXYPORT']}"
+          blob.sub!('HTTP_PROXY = None', "HTTP_PROXY = '#{var_escape.call(proxy_url)}'")
+        end
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-api/_index.html
 
         resp.body = blob
 
@@ -299,11 +562,26 @@ protected
           :ssl                => ssl?,
           :payload_uuid       => uuid
         })
+<<<<<<< HEAD
+<<<<<<< HEAD
 
       when :init_java
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Java payload ...")
         url = payload_uri(req) + conn_id + "/\x00"
 
+=======
+
+=======
+
+>>>>>>> origin/payload-generator.rb
+      when :init_java
+        print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Java payload ...")
+        url = payload_uri(req) + conn_id + "/\x00"
+
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
         blob = obj.generate_stage(
           uuid: uuid,
           uri:  conn_id
@@ -327,7 +605,29 @@ protected
       when :init_native
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Native payload ...")
         url = payload_uri(req) + conn_id + "/\x00"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         uri = URI(payload_uri(req) + conn_id)
+=======
+<<<<<<< HEAD
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
 
         resp['Content-Type'] = 'application/octet-stream'
 
@@ -336,8 +636,61 @@ protected
         blob = obj.stage_payload(
           uuid: uuid,
           uri:  conn_id,
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
           lhost: uri.host,
           lport: uri.port
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> origin/msf-complex-payloads
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> origin/msf-complex-payloads
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
         )
 
         resp.body = encode_stage(blob)
