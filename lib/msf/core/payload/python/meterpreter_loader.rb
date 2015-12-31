@@ -52,6 +52,7 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -76,6 +77,8 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   # @option opts [String] :http_proxy_host The host to use as a proxy for
   #   HTTP(S) transports.
   # @option opts [String] :http_proxy_port The port to use when a proxy  host is
@@ -84,6 +87,7 @@ module Payload::Python::MeterpreterLoader
   #   allow use of the stage as a stageless payload.
   # @option opts [String] :http_user_agent The value to use for the User-Agent
   #   header for HTTP(S) transports.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -120,6 +124,11 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -127,6 +136,7 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -175,6 +185,8 @@ module Payload::Python::MeterpreterLoader
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   # @option opts [String] :stageless_tcp_socket_setup Python code to execute to
   #   setup a tcp socket to allow use of the stage as a stageless payload.
   # @option opts [String] :uuid A specific UUID to use for sessions created by
@@ -198,6 +210,7 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -222,10 +235,13 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
     var_escape = lambda { |txt|
       txt.gsub('\\', '\\'*8).gsub('\'', %q(\\\\\\\'))
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -262,6 +278,11 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -269,6 +290,7 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -317,6 +339,8 @@ module Payload::Python::MeterpreterLoader
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
     if datastore['PythonMeterpreterDebug']
       met = met.sub("DEBUGGING = False", "DEBUGGING = True")
     end
@@ -346,6 +370,7 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -370,6 +395,8 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
     # patch in the stageless http(s) connection url
     met.sub!('HTTP_CONNECTION_URL = None', "HTTP_CONNECTION_URL = '#{var_escape.call(opts[:http_url])}'") if opts[:http_url].to_s != ''
     met.sub!('HTTP_USER_AGENT = None', "HTTP_USER_AGENT = '#{var_escape.call(opts[:http_user_agent])}'") if opts[:http_user_agent].to_s != ''
@@ -379,6 +406,7 @@ module Payload::Python::MeterpreterLoader
       met.sub!('HTTP_PROXY = None', "HTTP_PROXY = '#{var_escape.call(proxy_url)}'")
     end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -415,6 +443,11 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -422,6 +455,7 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -470,6 +504,8 @@ module Payload::Python::MeterpreterLoader
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
     # patch in any optional stageless tcp socket setup
     unless opts[:stageless_tcp_socket_setup].nil?
       socket_setup = opts[:stageless_tcp_socket_setup]

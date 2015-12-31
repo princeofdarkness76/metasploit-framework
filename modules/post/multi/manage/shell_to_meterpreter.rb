@@ -57,6 +57,7 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -82,11 +83,14 @@ class Metasploit3 < Msf::Post
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil]),
       OptString.new('BOURNE_PATH',
         [false, 'Remote path to drop binary']),
       OptString.new('BOURNE_FILE',
         [false, 'Remote filename to use for dropped binary'])
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -119,6 +123,10 @@ class Metasploit3 < Msf::Post
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> 4.11.2_release_pre-rails4
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
@@ -127,6 +135,7 @@ class Metasploit3 < Msf::Post
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
@@ -165,10 +174,13 @@ class Metasploit3 < Msf::Post
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
 >>>>>>> origin/pod/metasploit-framework
 =======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
@@ -206,6 +218,9 @@ class Metasploit3 < Msf::Post
 >>>>>>> origin/payload-generator.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
     ], self.class)
     deregister_options('PERSIST', 'PSH_OLD_METHOD', 'RUN_WOW64')
   end

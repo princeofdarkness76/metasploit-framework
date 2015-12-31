@@ -25,6 +25,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 313
 =======
   CachedSize = 314
@@ -132,10 +133,22 @@ module Metasploit3
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+=======
+  CachedSize = 313
+=======
+  CachedSize = 314
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+  CachedSize = 314
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  CachedSize = 314
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
   CachedSize = 314
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-framework
 =======
   CachedSize = 314
@@ -166,6 +179,11 @@ module Metasploit3
   CachedSize = 314
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+  CachedSize = 314
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
 
   include Msf::Payload::Windows
   include Msf::Payload::Single

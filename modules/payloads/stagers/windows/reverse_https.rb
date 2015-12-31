@@ -32,6 +32,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -65,6 +66,10 @@ module Metasploit4
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
       'Name'        => 'Windows Reverse HTTPS Stager (wininet)',
       'Description' => 'Tunnel communication over HTTPS (Windows wininet)',
       'Author'      => 'hdm',
@@ -73,6 +78,7 @@ module Metasploit4
       'Arch'        => ARCH_X86,
       'Handler'     => Msf::Handler::ReverseHttps,
       'Convention'  => 'sockedi https'))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -178,6 +184,9 @@ module Metasploit4
 >>>>>>> origin/payload-generator.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
       'Name'          => 'Reverse HTTPS Stager',
       'Description'   => 'Tunnel communication over HTTP using SSL',
       'Author'        => 'hdm',
@@ -201,6 +210,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/feature/complex-payloads
 =======
 >>>>>>> origin/feature/complex-payloads
@@ -583,6 +593,11 @@ module Metasploit4
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
   end
 
 end

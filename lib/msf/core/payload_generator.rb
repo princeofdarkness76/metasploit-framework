@@ -226,6 +226,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -259,6 +260,10 @@ module Msf
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
         return shellcode
       end
 
@@ -277,6 +282,7 @@ module Msf
         rescue ::Msf::EncodingError => e
           cli_print "#{encoder_mod.refname} failed with #{e.message}"
           next
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -384,6 +390,9 @@ module Msf
 >>>>>>> origin/payload-generator.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
         shellcode
       else
         cli_print "Found #{encoder_list.count} compatible encoders"
@@ -399,6 +408,7 @@ module Msf
             cli_print "#{encoder_mod.refname} failed with #{e.message}"
             next
           end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -815,6 +825,11 @@ module Msf
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
         end
       end
 

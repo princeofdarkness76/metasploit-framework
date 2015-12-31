@@ -227,6 +227,7 @@ class Driver < Msf::Ui::Driver
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -254,9 +255,13 @@ class Driver < Msf::Ui::Driver
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 <<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -272,6 +277,11 @@ class Driver < Msf::Ui::Driver
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-excellent.mp3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -297,6 +307,8 @@ class Driver < Msf::Ui::Driver
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
       # Rebuild the module cache in a background thread
       self.framework.modules.async.refresh_cache_from_module_files
 =======
@@ -314,6 +326,7 @@ class Driver < Msf::Ui::Driver
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -340,6 +353,8 @@ class Driver < Msf::Ui::Driver
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -347,6 +362,7 @@ class Driver < Msf::Ui::Driver
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -393,6 +409,8 @@ class Driver < Msf::Ui::Driver
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
     if framework.db.active && !opts['DeferModuleLoads']
       framework.threads.spawn("ModuleCacheRebuild", true) do
         framework.modules.refresh_cache_from_module_files

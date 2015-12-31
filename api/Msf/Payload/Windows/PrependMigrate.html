@@ -632,6 +632,7 @@ for discussion.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
@@ -644,6 +645,8 @@ for discussion.</p>
 >>>>>>> rapid7/gh-pages
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 288
 289
 290
@@ -662,6 +665,7 @@ for discussion.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 288</pre>
 >>>>>>> origin/gh-pages
@@ -686,6 +690,8 @@ for discussion.</p>
 288</pre>
 >>>>>>> origin/gh-pages
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/payload/windows/prepend_migrate.rb', line 59</span>
@@ -881,6 +887,7 @@ for discussion.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
@@ -893,6 +900,8 @@ for discussion.</p>
 >>>>>>> rapid7/gh-pages
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
     add bh, 0x10              ; ebx = 0x1000
     push ebx                  ; MEM_COMMIT
 </span><span class='heredoc_end'>  EOS
@@ -907,6 +916,7 @@ for discussion.</p>
 
   <span class='id identifier rubyid_migrate_asm'>migrate_asm</span> <span class='op'>&lt;&lt;</span> <span class='heredoc_beg'>&lt;&lt;-EOS</span>
 <span class='tstring_content'>    push ebx                  ; size
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -939,6 +949,8 @@ for discussion.</p>
 >>>>>>> rapid7/gh-pages
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
     xor ebx,ebx
     push ebx                  ; address
     push [edi]                ; handle
@@ -1065,6 +1077,7 @@ for discussion.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
@@ -1099,6 +1112,8 @@ for discussion.</p>
 >>>>>>> rapid7/gh-pages
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 302
 303
 304
@@ -1325,6 +1340,7 @@ for discussion.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
@@ -1337,6 +1353,8 @@ for discussion.</p>
 >>>>>>> rapid7/gh-pages
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 521
 522
 523
@@ -1374,6 +1392,7 @@ for discussion.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
@@ -1401,6 +1420,8 @@ for discussion.</p>
 >>>>>>> rapid7/gh-pages
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 
 <span class='kw'>def</span> <span class='id identifier rubyid_prepend_migrate_64'>prepend_migrate_64</span><span class='lparen'>(</span><span class='id identifier rubyid_buf'>buf</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_payloadsize'>payloadsize</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>0x%04x</span><span class='tstring_end'>&quot;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_buf'>buf</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span>
@@ -1566,6 +1587,7 @@ for discussion.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
@@ -1578,11 +1600,14 @@ for discussion.</p>
 >>>>>>> rapid7/gh-pages
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   gotcommand:
     pop rsi                   ; rsi = address of process name (command line)
 
     ; create the process
     push 0                    ; keep the stack aligned
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1616,6 +1641,8 @@ for discussion.</p>
 >>>>>>> rapid7/gh-pages
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
     lea rdi,[rsp+0x110]       ; Offset of empty space for lpProcessInformation
     push rdi                  ; lpProcessInformation : write processinfo here
     lea rcx,[rsp+0x58]
@@ -1648,6 +1675,7 @@ for discussion.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
@@ -1660,6 +1688,8 @@ for discussion.</p>
 >>>>>>> rapid7/gh-pages
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 </span><span class='heredoc_end'>  EOS
 </span>
   <span class='kw'>if</span> <span class='id identifier rubyid_buf'>buf</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&gt;</span> <span class='int'>4096</span>
@@ -1677,6 +1707,7 @@ for discussion.</p>
 
   <span class='id identifier rubyid_migrate_asm'>migrate_asm</span> <span class='op'>&lt;&lt;</span> <span class='heredoc_beg'>&lt;&lt;-EOS</span>
 <span class='tstring_content'>    xor rdx,rdx               ; address
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1708,6 +1739,8 @@ for discussion.</p>
 >>>>>>> rapid7/gh-pages
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
     mov rcx, [rdi]            ; handle
     mov r10d, 0x3F9287AE      ; hash( &quot;kernel32.dll&quot;, &quot;VirtualAllocEx&quot; )
     call rbp                  ; VirtualAllocEx( ...);
@@ -1769,6 +1802,7 @@ for discussion.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Generated on Tue Dec 22 22:32:24 2015 by
 =======
   Generated on Tue Dec  8 22:32:26 2015 by
@@ -1813,6 +1847,11 @@ for discussion.</p>
 >>>>>>> rapid7/gh-pages
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+  Generated on Tue Dec  8 22:32:26 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.7).
+>>>>>>> origin/pod/metasploit-excellent.mp3
 </div>
 
   </body>

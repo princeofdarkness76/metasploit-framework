@@ -23,6 +23,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -629,9 +630,19 @@ module Metasploit4
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 require 'msf/core/payload/windows/x64/reverse_https'
 
 module Metasploit4
+=======
+#require 'msf/core/payload/windows/x64/reverse_https'
+>>>>>>> feature/complex-payloads
+=======
+require 'msf/core/payload/windows/x64/reverse_https'
+
+module Metasploit4
+>>>>>>> 4.11.2_release_pre-rails4
 
 <<<<<<< HEAD
 <<<<<<< HEAD

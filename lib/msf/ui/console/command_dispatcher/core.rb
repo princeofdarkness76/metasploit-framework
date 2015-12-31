@@ -100,6 +100,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -111,17 +112,23 @@ class Core
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-framework
@@ -129,6 +136,8 @@ class Core
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
@@ -137,6 +146,7 @@ class Core
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
 
+<<<<<<< HEAD
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
@@ -202,6 +212,8 @@ class Core
 >>>>>>> origin/payload-generator.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   # The list of data store elements that cannot be set when in defanged
   # mode.
   DefangedProhibitedDataStoreElements = [ "MsfModulePaths" ]
@@ -225,6 +237,7 @@ class Core
       "edit"       => "Edit the current module with $VISUAL or $EDITOR",
       "get"        => "Gets the value of a context-specific variable",
       "getg"       => "Gets the value of a global variable",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -286,15 +299,20 @@ class Core
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 =======
-      "go_pro"     => "Launch Metasploit web GUI",
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-excellent.mp3
 =======
       "go_pro"     => "Launch Metasploit web GUI",
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
       "go_pro"     => "Launch Metasploit web GUI",
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+      "go_pro"     => "Launch Metasploit web GUI",
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
       "grep"       => "Grep the output of another command",
       "help"       => "Help menu",
       "advanced"   => "Displays advanced options for one or more modules",
@@ -810,6 +828,886 @@ class Core
 
     c2n.join
     n2c.join
+
+    sock.close rescue nil
+    infile.close if infile
+
+    true
+  end
+
+  def local_editor
+    Rex::Compat.getenv('VISUAL') || Rex::Compat.getenv('EDITOR') || '/usr/bin/vim'
+  end
+
+  def cmd_edit_help
+    msg = "Edit the currently active module"
+    msg = "#{msg} #{local_editor ? "with #{local_editor}" : "($VISUAL or $EDITOR must be set first)"}."
+    print_line "Usage: edit"
+    print_line
+    print_line msg
+    print_line "When done editing, you must reload the module with 'reload' or 'rexploit'."
+    print_line
+  end
+
+  #
+  # Edit the currently active module
+  #
+  def cmd_edit
+    unless local_editor
+      print_error "$VISUAL or $EDITOR must be set first. Try 'export EDITOR=/usr/bin/vim'"
+      return
+    end
+    if active_module
+      path = active_module.file_path
+      print_status "Launching #{local_editor} #{path}"
+      system(local_editor,path)
+    else
+      print_error "Nothing to edit -- try using a module first."
+    end
+  end
+
+  #
+  # Instructs the driver to stop executing.
+  #
+  def cmd_exit(*args)
+    forced = false
+    forced = true if (args[0] and args[0] =~ /-y/i)
+
+    if(framework.sessions.length > 0 and not forced)
+      print_status("You have active sessions open, to exit anyway type \"exit -y\"")
+      return
+    elsif(driver.confirm_exit and not forced)
+      print("Are you sure you want to exit Metasploit? [y/N]: ")
+      response = gets.downcase.chomp
+      if(response == "y" || response == "yes")
+        driver.stop
+      else
+        return
+      end
+    end
+
+    driver.stop
+  end
+
+  alias cmd_quit cmd_exit
+
+  def cmd_sleep_help
+    print_line "Usage: sleep <seconds>"
+    print_line
+    print_line "Do nothing the specified number of seconds.  This is useful in rc scripts."
+    print_line
+  end
+
+  #
+  # Causes process to pause for the specified number of seconds
+  #
+  def cmd_sleep(*args)
+    return if not (args and args.length == 1)
+    Rex::ThreadSafe.sleep(args[0].to_f)
+  end
+
+  def cmd_advanced_help
+    print_line 'Usage: advanced [mod1 mod2 ...]'
+    print_line
+    print_line 'Queries the supplied module or modules for advanced options. If no module is given,'
+    print_line 'show advanced options for the currently active module.'
+    print_line
+  end
+
+  def cmd_advanced(*args)
+    if args.empty?
+      if (active_module)
+        show_advanced_options(active_module)
+        return true
+      else
+        print_error('No module active')
+        return false
+      end
+    end
+
+    args.each { |name|
+      mod = framework.modules.create(name)
+
+      if (mod == nil)
+        print_error("Invalid module: #{name}")
+      else
+        show_advanced_options(mod)
+      end
+    }
+  end
+
+  def cmd_info_help
+    print_line "Usage: info <module name> [mod2 mod3 ...]"
+    print_line
+    print_line "Queries the supplied module or modules for information. If no module is given,"
+    print_line "show info for the currently active module."
+    print_line
+  end
+
+  #
+  # Displays information about one or more module.
+  #
+  def cmd_info(*args)
+    if (args.length == 0)
+      if (active_module)
+        print(Serializer::ReadableText.dump_module(active_module))
+        return true
+      else
+        cmd_info_help
+        return false
+      end
+    elsif args.include? "-h"
+      cmd_info_help
+      return false
+    end
+
+    args.each { |name|
+      mod = framework.modules.create(name)
+
+      if (mod == nil)
+        print_error("Invalid module: #{name}")
+      else
+        print(Serializer::ReadableText.dump_module(mod))
+      end
+    }
+  end
+
+  def cmd_options_help
+    print_line 'Usage: options [mod1 mod2 ...]'
+    print_line
+    print_line 'Queries the supplied module or modules for options. If no module is given,'
+    print_line 'show options for the currently active module.'
+    print_line
+  end
+
+  def cmd_options(*args)
+    if args.empty?
+      if (active_module)
+        show_options(active_module)
+        return true
+      else
+        show_global_options
+        return true
+      end
+    end
+
+    args.each { |name|
+      mod = framework.modules.create(name)
+
+      if (mod == nil)
+        print_error("Invalid module: #{name}")
+      else
+        show_options(mod)
+      end
+    }
+  end
+
+  #
+  # Tab completion for the advanced command (same as use)
+  #
+  # @param str (see #cmd_use_tabs)
+  # @param words (see #cmd_use_tabs)
+
+  def cmd_advanced_tabs(str, words)
+    cmd_use_tabs(str, words)
+  end
+
+  #
+  # Tab completion for the advanced command (same as use)
+  #
+  # @param str (see #cmd_use_tabs)
+  # @param words (see #cmd_use_tabs)
+
+  def cmd_info_tabs(str, words)
+    cmd_use_tabs(str, words)
+  end
+
+  #
+  # Tab completion for the advanced command (same as use)
+  #
+  # @param str (see #cmd_use_tabs)
+  # @param words (see #cmd_use_tabs)
+
+  def cmd_options_tabs(str, words)
+    cmd_use_tabs(str, words)
+  end
+
+  def cmd_irb_help
+    print_line "Usage: irb"
+    print_line
+    print_line "Execute commands in a Ruby environment"
+    print @@irb_opts.usage
+  end
+
+  #
+  # Goes into IRB scripting mode
+  #
+  def cmd_irb(*args)
+    defanged?
+
+    expressions = []
+
+    # Parse the command options
+    @@irb_opts.parse(args) do |opt, idx, val|
+      case opt
+      when '-e'
+        expressions << val
+      when '-h'
+        cmd_irb_help
+        return false
+      end
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+    end
+
+    if expressions.empty?
+      print_status("Starting IRB shell...\n")
+
+      begin
+        Rex::Ui::Text::IrbShell.new(binding).run
+      rescue
+        print_error("Error during IRB: #{$!}\n\n#{$@.join("\n")}")
+      end
+
+      # Reset tab completion
+      if (driver.input.supports_readline)
+        driver.input.reset_tab_completion
+      end
+    else
+      expressions.each { |expression| eval(expression, binding) }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+    end
+
+    if expressions.empty?
+      print_status("Starting IRB shell...\n")
+
+      begin
+        Rex::Ui::Text::IrbShell.new(binding).run
+      rescue
+        print_error("Error during IRB: #{$!}\n\n#{$@.join("\n")}")
+      end
+
+      # Reset tab completion
+      if (driver.input.supports_readline)
+        driver.input.reset_tab_completion
+      end
+    else
+      expressions.each { |expression| eval(expression, binding) }
+=======
+=======
+>>>>>>> rapid7/master
+    end
+
+    if expressions.empty?
+      print_status("Starting IRB shell...\n")
+
+      begin
+        Rex::Ui::Text::IrbShell.new(binding).run
+      rescue
+        print_error("Error during IRB: #{$!}\n\n#{$@.join("\n")}")
+      end
+
+      # Reset tab completion
+      if (driver.input.supports_readline)
+        driver.input.reset_tab_completion
+      end
+    else
+      expressions.each { |expression| eval(expression, binding) }
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+    end
+
+    if expressions.empty?
+      print_status("Starting IRB shell...\n")
+
+      begin
+        Rex::Ui::Text::IrbShell.new(binding).run
+      rescue
+        print_error("Error during IRB: #{$!}\n\n#{$@.join("\n")}")
+      end
+
+      # Reset tab completion
+      if (driver.input.supports_readline)
+        driver.input.reset_tab_completion
+      end
+    else
+      expressions.each { |expression| eval(expression, binding) }
+=======
+=======
+>>>>>>> rapid7/master
+    end
+
+    if expressions.empty?
+      print_status("Starting IRB shell...\n")
+
+      begin
+        Rex::Ui::Text::IrbShell.new(binding).run
+      rescue
+        print_error("Error during IRB: #{$!}\n\n#{$@.join("\n")}")
+      end
+
+      # Reset tab completion
+      if (driver.input.supports_readline)
+        driver.input.reset_tab_completion
+      end
+    else
+      expressions.each { |expression| eval(expression, binding) }
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+    end
+  end
+
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+    end
+
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+    end
+
+    # This is not respecting the Protected access control, but this seems to be the only way
+    # to rename a job. If you know a more appropriate way, patches accepted.
+    framework.jobs[job_id].send(:name=, job_name)
+    print_status("Job #{job_id} updated")
+
+    true
+  end
+
+  #
+  # Tab completion for the rename_job command
+  #
+  # @param str [String] the string currently being typed before tab was hit
+  # @param words [Array<String>] the previously completed words on the command line.  words is always
+  # at least 1 when tab completion has reached this stage since the command itself has been completed
+
+  def cmd_rename_job_tabs(str, words)
+    return [] if words.length > 1
+    framework.jobs.keys
+<<<<<<< HEAD
+=======
+=======
+    end
+>>>>>>> rapid7/master
+  end
+
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+    end
+
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+    end
+
+    # This is not respecting the Protected access control, but this seems to be the only way
+    # to rename a job. If you know a more appropriate way, patches accepted.
+    framework.jobs[job_id].send(:name=, job_name)
+    print_status("Job #{job_id} updated")
+
+    true
+  end
+
+  #
+  # Tab completion for the rename_job command
+  #
+  # @param str [String] the string currently being typed before tab was hit
+  # @param words [Array<String>] the previously completed words on the command line.  words is always
+  # at least 1 when tab completion has reached this stage since the command itself has been completed
+
+  def cmd_rename_job_tabs(str, words)
+    return [] if words.length > 1
+    framework.jobs.keys
+<<<<<<< HEAD
+  end
+
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+>>>>>>> rapid7/master
+    end
+  end
+
+<<<<<<< HEAD
+=======
+    end
+  end
+
+>>>>>>> rapid7/master
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+    end
+
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+<<<<<<< HEAD
+    end
+
+=======
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+    end
+
+>>>>>>> rapid7/master
+=======
+    end
+
+>>>>>>> rapid7/master
+=======
+    end
+
+    if expressions.empty?
+      print_status("Starting IRB shell...\n")
+
+      begin
+        Rex::Ui::Text::IrbShell.new(binding).run
+      rescue
+        print_error("Error during IRB: #{$!}\n\n#{$@.join("\n")}")
+      end
+
+      # Reset tab completion
+      if (driver.input.supports_readline)
+        driver.input.reset_tab_completion
+      end
+    else
+      expressions.each { |expression| eval(expression, binding) }
+    end
+  end
+
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+    end
+
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+    end
+
+>>>>>>> rapid7/master
+=======
+    end
+
+>>>>>>> rapid7/master
+    # This is not respecting the Protected access control, but this seems to be the only way
+    # to rename a job. If you know a more appropriate way, patches accepted.
+    framework.jobs[job_id].send(:name=, job_name)
+    print_status("Job #{job_id} updated")
+
+    true
+  end
+
+  #
+  # Tab completion for the rename_job command
+  #
+  # @param str [String] the string currently being typed before tab was hit
+  # @param words [Array<String>] the previously completed words on the command line.  words is always
+  # at least 1 when tab completion has reached this stage since the command itself has been completed
+
+  def cmd_rename_job_tabs(str, words)
+    return [] if words.length > 1
+    framework.jobs.keys
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+  end
+
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+    end
+
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+<<<<<<< HEAD
+>>>>>>> master
+    end
+
+    # This is not respecting the Protected access control, but this seems to be the only way
+    # to rename a job. If you know a more appropriate way, patches accepted.
+    framework.jobs[job_id].send(:name=, job_name)
+    print_status("Job #{job_id} updated")
+
+    true
+  end
+
+  #
+  # Tab completion for the rename_job command
+  #
+  # @param str [String] the string currently being typed before tab was hit
+  # @param words [Array<String>] the previously completed words on the command line.  words is always
+  # at least 1 when tab completion has reached this stage since the command itself has been completed
+
+  def cmd_rename_job_tabs(str, words)
+    return [] if words.length > 1
+    framework.jobs.keys
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+    end
+>>>>>>> rapid7/master
+  end
+
+<<<<<<< HEAD
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+=======
+    if expressions.empty?
+      print_status("Starting IRB shell...\n")
+
+      begin
+        Rex::Ui::Text::IrbShell.new(binding).run
+      rescue
+        print_error("Error during IRB: #{$!}\n\n#{$@.join("\n")}")
+      end
+
+      # Reset tab completion
+      if (driver.input.supports_readline)
+        driver.input.reset_tab_completion
+      end
+    else
+      expressions.each { |expression| eval(expression, binding) }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+    end
+
+    if expressions.empty?
+      print_status("Starting IRB shell...\n")
+
+      begin
+        Rex::Ui::Text::IrbShell.new(binding).run
+      rescue
+        print_error("Error during IRB: #{$!}\n\n#{$@.join("\n")}")
+      end
+
+      # Reset tab completion
+      if (driver.input.supports_readline)
+        driver.input.reset_tab_completion
+      end
+    else
+      expressions.each { |expression| eval(expression, binding) }
+=======
+=======
+>>>>>>> rapid7/master
+    end
+
+    if expressions.empty?
+      print_status("Starting IRB shell...\n")
+
+      begin
+        Rex::Ui::Text::IrbShell.new(binding).run
+      rescue
+        print_error("Error during IRB: #{$!}\n\n#{$@.join("\n")}")
+      end
+
+      # Reset tab completion
+      if (driver.input.supports_readline)
+        driver.input.reset_tab_completion
+      end
+    else
+      expressions.each { |expression| eval(expression, binding) }
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+    end
+
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+    end
+
+    # This is not respecting the Protected access control, but this seems to be the only way
+    # to rename a job. If you know a more appropriate way, patches accepted.
+    framework.jobs[job_id].send(:name=, job_name)
+    print_status("Job #{job_id} updated")
+
+    true
+  end
+
+  #
+  # Tab completion for the rename_job command
+  #
+  # @param str [String] the string currently being typed before tab was hit
+  # @param words [Array<String>] the previously completed words on the command line.  words is always
+  # at least 1 when tab completion has reached this stage since the command itself has been completed
+
+  def cmd_rename_job_tabs(str, words)
+    return [] if words.length > 1
+    framework.jobs.keys
+<<<<<<< HEAD
+  end
+
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+>>>>>>> rapid7/master
+    end
+  end
+
+<<<<<<< HEAD
+=======
+    end
+  end
+
+>>>>>>> rapid7/master
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+    end
+
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+<<<<<<< HEAD
+    end
+
+=======
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+    end
+
+>>>>>>> rapid7/master
+=======
+    end
+
+>>>>>>> rapid7/master
+=======
+    end
+
+    if expressions.empty?
+      print_status("Starting IRB shell...\n")
+
+      begin
+        Rex::Ui::Text::IrbShell.new(binding).run
+      rescue
+        print_error("Error during IRB: #{$!}\n\n#{$@.join("\n")}")
+      end
+
+      # Reset tab completion
+      if (driver.input.supports_readline)
+        driver.input.reset_tab_completion
+      end
+    else
+      expressions.each { |expression| eval(expression, binding) }
+    end
+  end
+
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+    end
+
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+    end
+
+<<<<<<< HEAD
+    c2n.join
+    n2c.join
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -832,17 +1730,42 @@ class Core
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> rapid7/master
+=======
+    end
+>>>>>>> origin/pod/metasploit-excellent.mp3
 
-    sock.close rescue nil
-    infile.close if infile
+>>>>>>> rapid7/master
+    # This is not respecting the Protected access control, but this seems to be the only way
+    # to rename a job. If you know a more appropriate way, patches accepted.
+    framework.jobs[job_id].send(:name=, job_name)
+    print_status("Job #{job_id} updated")
 
     true
   end
 
-  def local_editor
-    Rex::Compat.getenv('VISUAL') || Rex::Compat.getenv('EDITOR') || '/usr/bin/vim'
+  #
+  # Tab completion for the rename_job command
+  #
+  # @param str [String] the string currently being typed before tab was hit
+  # @param words [Array<String>] the previously completed words on the command line.  words is always
+  # at least 1 when tab completion has reached this stage since the command itself has been completed
+
+  def cmd_rename_job_tabs(str, words)
+    return [] if words.length > 1
+    framework.jobs.keys
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
   end
 
+<<<<<<< HEAD
   def cmd_edit_help
     msg = "Edit the currently active module"
     msg = "#{msg} #{local_editor ? "with #{local_editor}" : "($VISUAL or $EDITOR must be set first)"}."
@@ -8099,6 +9022,60 @@ class Core
   def cmd_options_help
     print_line 'Usage: options [mod1 mod2 ...]'
 =======
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+    end
+
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
+
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+<<<<<<< HEAD
+>>>>>>> master
+    end
+
+    # This is not respecting the Protected access control, but this seems to be the only way
+    # to rename a job. If you know a more appropriate way, patches accepted.
+    framework.jobs[job_id].send(:name=, job_name)
+    print_status("Job #{job_id} updated")
+
+    true
+  end
+
+  #
+  # Tab completion for the rename_job command
+  #
+  # @param str [String] the string currently being typed before tab was hit
+  # @param words [Array<String>] the previously completed words on the command line.  words is always
+  # at least 1 when tab completion has reached this stage since the command itself has been completed
+
+  def cmd_rename_job_tabs(str, words)
+    return [] if words.length > 1
+    framework.jobs.keys
+=======
+    end
+>>>>>>> rapid7/master
+  end
+
+<<<<<<< HEAD
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
   def cmd_advanced_help
     print_line 'Usage: advanced [mod1 mod2 ...]'
     print_line
@@ -8132,6 +9109,7 @@ class Core
   def cmd_info_help
     print_line "Usage: info <module name> [mod2 mod3 ...]"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/payload-generator.rb
 =======
 >>>>>>> msf-complex-payloads
@@ -8151,17 +9129,50 @@ class Core
         show_global_options
         return true
       end
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+  end
+
+  def cmd_rename_job(*args)
+    if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
+      cmd_rename_job_help
+      return false
+>>>>>>> origin/pod/metasploit-excellent.mp3
     end
 
-    args.each { |name|
-      mod = framework.modules.create(name)
+    job_id   = args[0].to_s
+    job_name = args[1].to_s
 
+<<<<<<< HEAD
       if (mod == nil)
         print_error("Invalid module: #{name}")
       else
         show_options(mod)
       end
     }
+=======
+    unless framework.jobs[job_id]
+      print_error("Job #{job_id} does not exist.")
+      return false
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+    end
+
+    # This is not respecting the Protected access control, but this seems to be the only way
+    # to rename a job. If you know a more appropriate way, patches accepted.
+    framework.jobs[job_id].send(:name=, job_name)
+    print_status("Job #{job_id} updated")
+
+    true
+>>>>>>> origin/pod/metasploit-excellent.mp3
   end
 
   def cmd_options_help
@@ -8197,6 +9208,7 @@ class Core
   #
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   # Tab completion for the rename_job command
 =======
   # Tab completion for the advanced command (same as use)
@@ -8209,7 +9221,12 @@ class Core
   # @param str (see #cmd_use_tabs)
   # @param words (see #cmd_use_tabs)
 =======
+=======
+  # Tab completion for the rename_job command
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   # Tab completion for the advanced command (same as use)
+>>>>>>> 4.11.2_release_pre-rails4
   #
   # @param str (see #cmd_use_tabs)
   # @param words (see #cmd_use_tabs)
@@ -8229,6 +9246,7 @@ class Core
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
 
+<<<<<<< HEAD
   def cmd_advanced_tabs(str, words)
     cmd_use_tabs(str, words)
   end
@@ -8239,9 +9257,12 @@ class Core
   # @param str (see #cmd_use_tabs)
   # @param words (see #cmd_use_tabs)
 
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   def cmd_rename_job_tabs(str, words)
     return [] if words.length > 1
     framework.jobs.keys
+<<<<<<< HEAD
 <<<<<<< HEAD
   end
 
@@ -8263,8 +9284,20 @@ class Core
 
   def cmd_options_tabs(str, words)
     cmd_use_tabs(str, words)
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   end
 
+<<<<<<< HEAD
+  def cmd_rename_job_help
+    print_line "Usage: rename_job [ID] [Name]"
+    print_line
+    print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
+    print_line
+    print_line "Rename a job that's currently active."
+    print_line "You may use the jobs command to see what jobs are available."
+    print_line
+=======
   #
   # Tab completion for the advanced command (same as use)
   #
@@ -8282,10 +9315,14 @@ class Core
     print @@irb_opts.usage
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
   end
 
   def cmd_rename_job(*args)
@@ -8311,12 +9348,15 @@ class Core
     print_line "Rename a job that's currently active."
     print_line "You may use the jobs command to see what jobs are available."
     print_line
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/payload-generator.rb
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   end
 
   def cmd_rename_job(*args)
@@ -8326,6 +9366,9 @@ class Core
     end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
     job_id   = args[0].to_s
     job_name = args[1].to_s
 
@@ -8347,6 +9390,7 @@ class Core
 >>>>>>> rapid7/master
 =======
     end
+<<<<<<< HEAD
 
 >>>>>>> rapid7/master
 =======
@@ -8377,6 +9421,13 @@ class Core
 >>>>>>> 4.11.2_release_pre-rails4
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
+
+>>>>>>> rapid7/master
+=======
+    end
+
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
     expressions = []
 
     # Parse the command options
@@ -8391,10 +9442,14 @@ class Core
     end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/payload-generator.rb
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
     if expressions.empty?
       print_status("Starting IRB shell...\n")
 
@@ -9462,6 +10517,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9574,6 +10630,43 @@ class Core
 =======
       framework.sessions.each_sorted do |s|
         session = framework.sessions.get(s)
+=======
+      framework.sessions.each_sorted do |s|
+        session = framework.sessions.get(s)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      framework.sessions.list.each do |session|
+        if session.respond_to?(:response_timeout)
+          last_known_timeout = session.response_timeout
+          session.response_timeout = response_timeout
+        end
+        begin
+          session.kill
+        ensure
+          session.response_timeout = last_known_timeout if last_known_timeout
+        end
+      end
+    when 'detach'
+      print_status("Detaching the following session(s): #{session_list.join(', ')}")
+      session_list.each do |sess_id|
+        session = verify_session(sess_id)
+        # if session is interactive, it's detachable
+=======
+      framework.sessions.each_sorted do |s|
+        session = framework.sessions.get(s)
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> rapid7/master
 =======
       framework.sessions.each_sorted do |s|
@@ -9609,6 +10702,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -9629,6 +10723,8 @@ class Core
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -9636,6 +10732,7 @@ class Core
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9682,6 +10779,8 @@ class Core
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
         if session
           if session.respond_to?(:response_timeout)
             last_known_timeout = session.response_timeout
@@ -9702,6 +10801,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9729,9 +10829,13 @@ class Core
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 <<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9747,6 +10851,11 @@ class Core
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-excellent.mp3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9772,6 +10881,8 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
           print_status("Detaching session #{sess_id}")
           begin
             session.detach
@@ -9798,6 +10909,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -9818,6 +10930,8 @@ class Core
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -9825,6 +10939,7 @@ class Core
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9871,6 +10986,8 @@ class Core
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
           begin
             session.kill
           ensure
@@ -9892,6 +11009,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9902,11 +11020,14 @@ class Core
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9939,6 +11060,10 @@ class Core
 >>>>>>> origin/pod/metasploit-windows.rb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-excellent.mp3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9960,6 +11085,9 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -9975,6 +11103,7 @@ class Core
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10001,6 +11130,8 @@ class Core
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -10008,6 +11139,7 @@ class Core
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10054,6 +11186,8 @@ class Core
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
           end
         end
       end

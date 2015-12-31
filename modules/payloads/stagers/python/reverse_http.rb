@@ -17,6 +17,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 494
 =======
   CachedSize = 466
@@ -83,6 +84,11 @@ module Metasploit4
 =======
   CachedSize = 466
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+  CachedSize = 494
+=======
+  CachedSize = 466
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> 4.11.2_release_pre-rails4
 
   CachedSize = 466
@@ -92,6 +98,7 @@ module Metasploit4
 =======
 >>>>>>> 4.11.2_release_pre-rails4
   CachedSize = 466
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-windows.rb
 
@@ -120,6 +127,8 @@ module Metasploit4
 >>>>>>> origin/pod/metasploit-api/_index.html
 
   CachedSize = 466
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 
   include Msf::Payload::Stager
   include Msf::Payload::Python
@@ -140,6 +149,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   end
 
 =======
@@ -155,6 +165,11 @@ module Metasploit4
 
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+  end
+
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 
     register_options(
       [
@@ -239,6 +254,7 @@ module Metasploit4
     end
 
     generate_uri_checksum(Rex::Payloads::Meterpreter::UriChecksum::URI_CHECKSUM_INITP, uri_req_len)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -341,17 +357,25 @@ module Metasploit4
 
 >>>>>>> origin/payload-generator.rb
 =======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   end
 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 end

@@ -208,6 +208,7 @@ module ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "#{scheme}://#{uri_host}:#{bind_port}/"
 =======
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
@@ -283,6 +284,11 @@ module ReverseHttp
 >>>>>>> pod/metasploit-gemfile-
 =======
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+=======
+    "#{scheme}://#{uri_host}:#{bind_port}/"
+=======
+    "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
@@ -290,6 +296,7 @@ module ReverseHttp
 =======
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-framework
 =======
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
@@ -316,6 +323,8 @@ module ReverseHttp
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   end
 
   # Return a URI suitable for placing in a payload.
@@ -859,6 +868,7 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -878,6 +888,8 @@ protected
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
           http_url: url,
           http_user_agent: datastore['MeterpreterUserAgent'],
           http_proxy_host: datastore['PayloadProxyHost'] || datastore['PROXYHOST'],
@@ -886,6 +898,7 @@ protected
           uri:  conn_id
         )
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -909,6 +922,9 @@ protected
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -916,6 +932,7 @@ protected
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1081,6 +1098,8 @@ protected
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 >>>>>>> msf-complex-payloads
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
           uuid: uuid,
           uri:  conn_id
         )
@@ -1098,7 +1117,10 @@ protected
           blob.sub!('HTTP_PROXY = None', "HTTP_PROXY = '#{var_escape.call(proxy_url)}'")
         end
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 
         resp.body = blob
 
@@ -1208,6 +1230,7 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         uri = URI(payload_uri(req) + conn_id)
 =======
 <<<<<<< HEAD
@@ -1282,6 +1305,8 @@ protected
 =======
 >>>>>>> origin/payload-generator.rb
 =======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
         uri = URI(payload_uri(req) + conn_id)
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -1289,9 +1314,12 @@ protected
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 
         resp['Content-Type'] = 'application/octet-stream'
 
@@ -1316,6 +1344,7 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -1335,11 +1364,14 @@ protected
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
           lhost: uri.host,
           lport: uri.port
 =======
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1366,6 +1398,8 @@ protected
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> 4.11.2_release_pre-rails4
 =======
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
@@ -1376,6 +1410,7 @@ protected
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
@@ -1391,6 +1426,8 @@ protected
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -1398,6 +1435,7 @@ protected
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 =======
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
@@ -1499,6 +1537,8 @@ protected
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
         )
 
         resp.body = encode_stage(blob)

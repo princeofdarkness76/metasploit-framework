@@ -2281,6 +2281,7 @@ RSpec.describe 'modules/payloads', :content do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -2305,6 +2306,8 @@ RSpec.describe 'modules/payloads', :content do
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   context 'python/meterpreter_reverse_http' do
     it_should_behave_like 'payload cached size is consistent',
                           ancestor_reference_names: [
@@ -2325,6 +2328,7 @@ RSpec.describe 'modules/payloads', :content do
                           reference_name: 'python/meterpreter_reverse_https'
   end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2361,6 +2365,11 @@ RSpec.describe 'modules/payloads', :content do
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -2368,6 +2377,7 @@ RSpec.describe 'modules/payloads', :content do
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2416,6 +2426,8 @@ RSpec.describe 'modules/payloads', :content do
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   context 'python/meterpreter_reverse_tcp' do
     it_should_behave_like 'payload cached size is consistent',
                           ancestor_reference_names: [

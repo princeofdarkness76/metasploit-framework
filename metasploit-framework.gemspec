@@ -241,6 +241,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'metasploit-model', '1.0.0'
   # Needed for Meterpreter
 <<<<<<< HEAD
+<<<<<<< HEAD
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -255,6 +256,8 @@ Gem::Specification.new do |spec|
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -275,10 +278,13 @@ Gem::Specification.new do |spec|
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   # Needed by msfgui and other rpc components
   spec.add_runtime_dependency 'msgpack'
   # get list of network interfaces, like eth* from OS.
@@ -295,6 +301,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'railties'
   # required for OS fingerprinting
   spec.add_runtime_dependency 'recog', '2.0.14'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -391,6 +398,8 @@ Gem::Specification.new do |spec|
 =======
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
   # required for bitlocker fvek extraction
   spec.add_runtime_dependency 'openssl-ccm', '1.2.1'
 =======
@@ -403,6 +412,7 @@ Gem::Specification.new do |spec|
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 <<<<<<< HEAD
@@ -421,6 +431,8 @@ Gem::Specification.new do |spec|
 >>>>>>> origin/payload-generator.rb
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
 
   # rb-readline doesn't work with Ruby Installer due to error with Fiddle:
   #   NoMethodError undefined method `dlopen' for Fiddle:Module

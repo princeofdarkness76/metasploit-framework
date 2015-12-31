@@ -124,6 +124,7 @@ class Response < Packet
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     json = {}
 =======
     json = []
@@ -231,10 +232,22 @@ class Response < Packet
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+=======
+    json = {}
+=======
+    json = []
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+    json = []
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    json = []
+>>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
     json = []
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-framework
 =======
     json = []
@@ -265,6 +278,11 @@ class Response < Packet
     json = []
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+    json = []
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
 
     begin
       json = JSON.parse(self.body)
