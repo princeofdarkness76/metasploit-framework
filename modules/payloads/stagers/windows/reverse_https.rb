@@ -179,6 +179,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/feature/complex-payloads
 =======
 >>>>>>> origin/feature/complex-payloads
@@ -498,6 +499,8 @@ module Metasploit4
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/feature/complex-payloads
   end
 
 end

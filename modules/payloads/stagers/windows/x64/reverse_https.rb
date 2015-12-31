@@ -18,6 +18,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -333,6 +334,9 @@ module Metasploit4
 >>>>>>> msf-complex-payloads
 =======
 require 'msf/core/payload/windows/x64/reverse_https'
+=======
+#require 'msf/core/payload/windows/x64/reverse_https'
+>>>>>>> origin/feature/complex-payloads
 
 module Metasploit4
 <<<<<<< HEAD

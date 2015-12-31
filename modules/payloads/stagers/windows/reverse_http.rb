@@ -18,6 +18,7 @@ require 'msf/core/payload/windows/reverse_http'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 module Metasploit4
 =======
@@ -303,6 +304,8 @@ module Metasploit4
 >>>>>>> master
 >>>>>>> payload-generator.rb
 =======
+=======
+>>>>>>> origin/feature/complex-payloads
 
 module Metasploit4
 
@@ -827,6 +830,7 @@ module Metasploit4
       'Arch'          => ARCH_X86,
       'Handler'       => Msf::Handler::ReverseHttp,
       'Convention'    => 'sockedi http'))
+<<<<<<< HEAD
   end
 >>>>>>> feature/complex-payloads
 =======
@@ -860,6 +864,8 @@ module Metasploit4
       'Convention'  => 'sockedi http'))
 =======
 >>>>>>> pod/complex-payloads
+=======
+>>>>>>> origin/feature/complex-payloads
   end
 
 <<<<<<< HEAD
