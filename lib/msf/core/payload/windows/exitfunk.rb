@@ -15,6 +15,7 @@ require 'msf/core/payload/windows'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
@@ -311,6 +312,11 @@ module Msf
 
 
 >>>>>>> origin/feature/complex-payloads
+=======
+module Msf
+
+
+>>>>>>> rapid7/feature/complex-payloads
 ###
 #
 # Implements arbitrary exit routines for Windows ARCH_X86 payloads
@@ -327,6 +333,7 @@ module Payload::Windows::Exitfunk
 
     when 'seh'
       asm << %Q^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -584,6 +591,8 @@ module Payload::Windows::Exitfunk
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/feature/complex-payloads
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['seh']}
           push.i8 0              ; push the exit function parameter
           push ebx               ; push the hash of the exit function
@@ -591,6 +600,7 @@ module Payload::Windows::Exitfunk
           push.i8 0
           ret                    ; Return to NULL (crash)
         ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-serialized_class_loader
@@ -815,6 +825,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
 
     # On Windows Vista, Server 2008, and newer, it is not possible to call ExitThread
     # on WoW64 processes, instead we need to call RtlExitUserThread. This stub will
@@ -822,6 +834,7 @@ module Payload::Windows::Exitfunk
 
     when 'thread'
       asm << %Q^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -907,6 +920,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
           push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
           call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
@@ -937,6 +952,7 @@ module Payload::Windows::Exitfunk
           call ebp               ; Sleep(300000)
           jmp exitfunk           ; repeat
         ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1556,6 +1572,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
     else
       # Do nothing and continue after the end of the shellcode
     end

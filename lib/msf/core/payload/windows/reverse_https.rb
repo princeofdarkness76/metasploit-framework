@@ -15,6 +15,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/transport_config'
 =======
 >>>>>>> rapid7/feature/complex-payloads
@@ -259,6 +260,8 @@ require 'msf/core/payload/transport_config'
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
 require 'msf/core/payload/windows/reverse_http'
 
 module Msf
@@ -277,6 +280,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> rapid7/feature/complex-payloads
@@ -463,12 +467,16 @@ module Msf
 =======
 
 >>>>>>> origin/feature/complex-payloads
+=======
+
+>>>>>>> rapid7/feature/complex-payloads
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTPS
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -757,6 +765,8 @@ module Payload::Windows::ReverseHttps
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
 
 module Payload::Windows::ReverseHttps
 
@@ -785,6 +795,7 @@ module Payload::Windows::ReverseHttps
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -1046,6 +1057,8 @@ module Payload::Windows::ReverseHttps
 <<<<<<< HEAD
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
   def generate
 
     # Generate the simple version of this stager if we don't have enough space
@@ -1066,6 +1079,7 @@ module Payload::Windows::ReverseHttps
     }
 
     generate_reverse_https(conf)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1190,11 +1204,14 @@ module Payload::Windows::ReverseHttps
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
   end
 
   # TODO: Use the CachedSize instead (PR #4894)
   def cached_size
     341
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 >>>>>>> origin/pod/metasploit-excellent.mp3
@@ -1253,6 +1270,8 @@ module Payload::Windows::ReverseHttps
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
   end
 
 end

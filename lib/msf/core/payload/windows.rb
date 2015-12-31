@@ -180,6 +180,7 @@ module Msf::Payload::Windows
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -593,5 +594,7 @@ module Msf::Payload::Windows
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
 end
 

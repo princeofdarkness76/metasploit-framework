@@ -180,6 +180,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/feature/complex-payloads
 =======
 >>>>>>> origin/feature/complex-payloads
@@ -501,6 +502,8 @@ module Metasploit4
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
   end
 
 end
