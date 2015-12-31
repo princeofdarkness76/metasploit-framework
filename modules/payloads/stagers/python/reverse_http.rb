@@ -110,6 +110,8 @@ module Metasploit4
 
   CachedSize = 466
 
+  CachedSize = 466
+
   include Msf::Payload::Stager
   include Msf::Payload::Python
   include Msf::Payload::Python::ReverseHttp
@@ -225,6 +227,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   end
 
 <<<<<<< HEAD
@@ -317,4 +320,8 @@ module Metasploit4
   end
 
 >>>>>>> origin/msf-complex-payloads
+=======
+  end
+
+>>>>>>> origin/payload-generator.rb
 end

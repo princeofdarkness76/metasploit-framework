@@ -99,6 +99,7 @@ module Rex
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               encoded << [TC_PROXYCLASSDESC].pack('C')
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
@@ -191,6 +192,9 @@ module Rex
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
 >>>>>>> origin/msf-complex-payloads
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> origin/payload-generator.rb
             when NullReference
               encoded << [TC_NULL].pack('C')
             when Reset

@@ -17,6 +17,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/transport_config'
 =======
 >>>>>>> rapid7/feature/complex-payloads
@@ -101,11 +102,16 @@ require 'msf/core/payload/transport_config'
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 require 'msf/core/payload/transport_config'
+=======
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> origin/payload-generator.rb
 >>>>>>> rapid7/master
 =======
 require 'msf/core/payload/transport_config'
 >>>>>>> rapid7/master
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -123,6 +129,8 @@ require 'msf/core/payload/transport_config'
 =======
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
 require 'msf/core/payload/transport_config'
 >>>>>>> rapid7/master
 =======
@@ -131,6 +139,7 @@ require 'msf/core/payload/transport_config'
 =======
 require 'msf/core/payload/transport_config'
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -274,6 +283,20 @@ require 'msf/core/payload/transport_config'
 =======
 >>>>>>> rapid7/master
 >>>>>>> origin/msf-complex-payloads
+=======
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> rapid7/master
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> master
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> master
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> rapid7/master
+>>>>>>> origin/payload-generator.rb
 require 'msf/core/payload/windows/reverse_http'
 
 module Msf
@@ -294,6 +317,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> rapid7/feature/complex-payloads
@@ -370,20 +394,26 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/payload-generator.rb
 
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
+<<<<<<< HEAD
 
 >>>>>>> origin/msf-complex-payloads
 =======
+=======
+>>>>>>> origin/payload-generator.rb
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -414,6 +444,9 @@ module Msf
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+=======
+>>>>>>> origin/payload-generator.rb
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
@@ -421,6 +454,7 @@ module Msf
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -493,12 +527,15 @@ module Msf
 =======
 >>>>>>> rapid7/master
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTPS
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -793,6 +830,8 @@ module Payload::Windows::ReverseHttps
 >>>>>>> rapid7/feature/complex-payloads
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
 
 module Payload::Windows::ReverseHttps
 
@@ -907,6 +946,7 @@ module Payload::Windows::ReverseHttps
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 <<<<<<< HEAD
@@ -994,18 +1034,30 @@ module Payload::Windows::ReverseHttps
 >>>>>>> rapid7/master
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> origin/payload-generator.rb
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+=======
+>>>>>>> origin/payload-generator.rb
 >>>>>>> master
 =======
 >>>>>>> master
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1063,6 +1115,9 @@ module Payload::Windows::ReverseHttps
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/payload-generator.rb
 module Payload::Windows::ReverseHttps
 
   include Msf::Payload::TransportConfig
@@ -1078,6 +1133,7 @@ module Payload::Windows::ReverseHttps
   #
   # Generate the transport-specific configuration
   #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1112,8 +1168,11 @@ module Payload::Windows::ReverseHttps
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/payload-generator.rb
   def transport_config(opts={})
     transport_config_reverse_https(opts)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1340,6 +1399,25 @@ module Payload::Windows::ReverseHttps
 =======
 >>>>>>> rapid7/master
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/payload-generator.rb
   end
 
 end

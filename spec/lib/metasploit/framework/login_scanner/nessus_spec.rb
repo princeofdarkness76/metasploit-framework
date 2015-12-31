@@ -9,6 +9,7 @@ require 'metasploit/framework/login_scanner/nessus'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::Nessus do
 =======
 describe Metasploit::Framework::LoginScanner::Nessus do
@@ -34,6 +35,9 @@ describe Metasploit::Framework::LoginScanner::Nessus do
 =======
 describe Metasploit::Framework::LoginScanner::Nessus do
 >>>>>>> origin/msf-complex-payloads
+=======
+describe Metasploit::Framework::LoginScanner::Nessus do
+>>>>>>> origin/payload-generator.rb
 
     subject(:http_scanner) { described_class.new }
 

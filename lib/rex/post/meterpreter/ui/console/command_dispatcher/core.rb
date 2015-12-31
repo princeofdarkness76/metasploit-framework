@@ -358,6 +358,7 @@ class Console::CommandDispatcher::Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 
@@ -376,6 +377,8 @@ class Console::CommandDispatcher::Core
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
 
     if expressions.empty?
       print_status("Starting IRB shell")
@@ -403,10 +406,13 @@ class Console::CommandDispatcher::Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
   end
 
   def cmd_set_timeouts(*args)
@@ -555,6 +561,7 @@ class Console::CommandDispatcher::Core
       end
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     end
 <<<<<<< HEAD
@@ -582,14 +589,19 @@ class Console::CommandDispatcher::Core
 =======
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
     end
 
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
   #
   # Display help for the sleep.
   #
@@ -680,6 +692,7 @@ class Console::CommandDispatcher::Core
   def cmd_transport(*args)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/4.11.2_release_pre-rails4
     if ( args.length == 0 or args.include?("-h") )
       cmd_set_timeouts_help
@@ -696,15 +709,20 @@ class Console::CommandDispatcher::Core
 =======
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
     if ( args.length == 0 or args.include?("-h") )
       cmd_transport_help
       return
     end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
     command = args.shift
     unless ['list', 'add', 'change', 'prev', 'next', 'remove'].include?(command)
       cmd_transport_help
@@ -756,6 +774,7 @@ class Console::CommandDispatcher::Core
       when '-to'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/4.11.2_release_pre-rails4
         opts[:comm_timeout] = val.to_i if val
       when '-x'
@@ -790,6 +809,8 @@ class Console::CommandDispatcher::Core
 =======
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
         opts[:comm_timeout] = val.to_i if val
       when '-ex'
         opts[:session_exp] = val.to_i if val
@@ -798,9 +819,12 @@ class Console::CommandDispatcher::Core
       when '-rw'
         opts[:retry_wait] = val.to_i if val
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
       when '-p'
         opts[:lport] = val.to_i if val
       when '-l'
@@ -953,6 +977,7 @@ class Console::CommandDispatcher::Core
       print_line('Usage: migrate <pid> [-t timeout]')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/4.11.2_release_pre-rails4
     end
     if timeouts[:comm_timeout]
@@ -961,6 +986,8 @@ class Console::CommandDispatcher::Core
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
     end
     if timeouts[:retry_total]
       print_line("Retry Total Time: #{timeouts[:retry_total]} seconds")
@@ -980,6 +1007,7 @@ class Console::CommandDispatcher::Core
   def cmd_set_timeouts_help
     print_line('Usage: set_timeouts [options]')
     print_line
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1019,6 +1047,8 @@ class Console::CommandDispatcher::Core
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
     print_line('Migrates the server instance to another process.')
     print_line('NOTE: Any open channels or other dynamic state will be lost.')
     print_line
@@ -1056,11 +1086,14 @@ class Console::CommandDispatcher::Core
       end
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
     end
   end
 
@@ -1146,6 +1179,7 @@ class Console::CommandDispatcher::Core
     print_line(@@ssl_verify_opts.usage)
   end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14641,6 +14675,13 @@ class Console::CommandDispatcher::Core
     print_status('Migration completed successfully.')
 
 >>>>>>> origin/msf-complex-payloads
+=======
+    # Do this thang.
+    client.core.migrate(pid, writable_dir, opts)
+
+    print_status('Migration completed successfully.')
+
+>>>>>>> origin/payload-generator.rb
     # Update session info (we may have a new username)
     client.update_session_info
 

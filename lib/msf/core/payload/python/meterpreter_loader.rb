@@ -50,6 +50,7 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -158,6 +159,8 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
   # @option opts [String] :stageless_tcp_socket_setup Python code to execute to
   #   setup a tcp socket to allow use of the stage as a stageless payload.
   # @option opts [String] :uuid A specific UUID to use for sessions created by
@@ -165,6 +168,7 @@ module Payload::Python::MeterpreterLoader
   def stage_meterpreter(opts={})
     met = MetasploitPayloads.read('meterpreter', 'meterpreter.py')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -283,6 +287,8 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
     if datastore['PythonMeterpreterDebug']
       met = met.sub("DEBUGGING = False", "DEBUGGING = True")
     end
@@ -296,6 +302,7 @@ module Payload::Python::MeterpreterLoader
     uuid = Rex::Text.to_hex(uuid.to_raw, prefix = '')
     met.sub!("PAYLOAD_UUID = \'\'", "PAYLOAD_UUID = \'#{uuid}\'")
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -419,6 +426,8 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
     # patch in any optional stageless tcp socket setup
     unless opts[:stageless_tcp_socket_setup].nil?
       socket_setup = opts[:stageless_tcp_socket_setup]

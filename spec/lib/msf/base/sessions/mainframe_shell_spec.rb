@@ -17,6 +17,7 @@ require 'msf/base/sessions/mainframe_shell'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Sessions::MainframeShell do
 =======
 describe Msf::Sessions::MainframeShell do
@@ -48,6 +49,9 @@ describe Msf::Sessions::MainframeShell do
 =======
 describe Msf::Sessions::MainframeShell do
 >>>>>>> origin/msf-complex-payloads
+=======
+describe Msf::Sessions::MainframeShell do
+>>>>>>> origin/payload-generator.rb
   it 'extends Msf::Sessions::CommandShell to include EBCDIC cp1047 codepage translation' do
   args=[0,
    {:datastore=>

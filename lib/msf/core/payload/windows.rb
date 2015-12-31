@@ -182,6 +182,7 @@ module Msf::Payload::Windows
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -304,10 +305,13 @@ module Msf::Payload::Windows
 >>>>>>> rapid7/master
 >>>>>>> origin/payload-generator.rb
 =======
+>>>>>>> origin/payload-generator.rb
+=======
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
@@ -339,11 +343,19 @@ module Msf::Payload::Windows
 <<<<<<< HEAD
 =======
 =======
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> origin/payload-generator.rb
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 =======
 >>>>>>> master
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> master
@@ -384,6 +396,10 @@ module Msf::Payload::Windows
 =======
 >>>>>>> rapid7/master
 >>>>>>> origin/msf-complex-payloads
+=======
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/payload-generator.rb
   #
   # By default, we don't want to send the UUID, but we'll send
   # for certain payloads if requested.
@@ -404,6 +420,7 @@ module Msf::Payload::Windows
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/feature/complex-payloads
 =======
@@ -495,15 +512,25 @@ module Msf::Payload::Windows
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> origin/payload-generator.rb
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
+<<<<<<< HEAD
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -544,11 +571,14 @@ module Msf::Payload::Windows
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> rapid7/master
 =======
+=======
+>>>>>>> origin/payload-generator.rb
 >>>>>>> master
 =======
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -618,5 +648,7 @@ module Msf::Payload::Windows
 >>>>>>> rapid7/feature/complex-payloads
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
 end
 

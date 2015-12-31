@@ -30,6 +30,7 @@ class Android < Extension
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   COLLECT_TYPE_GEO  = 2
   COLLECT_TYPE_CELL = 3
 =======
@@ -52,6 +53,8 @@ class Android < Extension
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
 
   COLLECT_ACTION_START  = 1
   COLLECT_ACTION_PAUSE  = 2
@@ -60,6 +63,7 @@ class Android < Extension
   COLLECT_ACTION_DUMP   = 5
 
   COLLECT_TYPES = {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +107,9 @@ class Android < Extension
 =======
     'wifi' => COLLECT_TYPE_WIFI
 >>>>>>> origin/msf-complex-payloads
+=======
+    'wifi' => COLLECT_TYPE_WIFI
+>>>>>>> origin/payload-generator.rb
   }
 
   COLLECT_ACTIONS = {
@@ -191,6 +198,7 @@ class Android < Extension
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     when COLLECT_TYPE_GEO
       result[:headers] = ['Timestamp', 'Latitude', 'Longitude']
@@ -269,6 +277,8 @@ class Android < Extension
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
     end
 
     result

@@ -12,6 +12,7 @@ require 'rex/arch'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Arch do
 =======
 describe Rex::Arch do
@@ -43,6 +44,9 @@ describe Rex::Arch do
 =======
 describe Rex::Arch do
 >>>>>>> origin/msf-complex-payloads
+=======
+describe Rex::Arch do
+>>>>>>> origin/payload-generator.rb
   describe ".pack_addr" do
     subject { described_class.pack_addr(arch, addr) }
 

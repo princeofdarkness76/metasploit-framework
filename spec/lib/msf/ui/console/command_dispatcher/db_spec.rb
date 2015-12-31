@@ -552,6 +552,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -583,6 +584,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/payload-generator.rb
           "* default"
         ]
       end
@@ -601,6 +605,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -632,6 +637,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/payload-generator.rb
           "  default",
           "* foo"
         ]
@@ -651,6 +659,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -682,6 +691,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/payload-generator.rb
           "Added workspace: foo",
           "Added workspace: bar",
           "Added workspace: baf"
@@ -704,6 +716,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -735,6 +748,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/payload-generator.rb
           "Deleted workspace: foo",
           "Switched workspace: default"
         ]
@@ -756,6 +772,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -787,6 +804,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/payload-generator.rb
           "Deleted and recreated the default workspace",
           "Deleted workspace: foo",
           "Switched workspace: default"

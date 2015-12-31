@@ -19,6 +19,7 @@ module Msf::Payload::Python
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -148,6 +149,9 @@ module Msf::Payload::Python
 =======
   # that will decode and execute it on the fly.
 >>>>>>> origin/msf-complex-payloads
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> origin/payload-generator.rb
   #
   # @param cmd [String] The python code to execute.
   # @return [String] Full python stub to execute the command.

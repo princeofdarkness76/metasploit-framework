@@ -224,6 +224,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -368,6 +369,8 @@ module Msf
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
         shellcode
       else
         cli_print "Found #{encoder_list.count} compatible encoders"
@@ -383,6 +386,7 @@ module Msf
             cli_print "#{encoder_mod.refname} failed with #{e.message}"
             next
           end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -500,12 +504,15 @@ module Msf
 >>>>>>> rapid7/master
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
+>>>>>>> origin/payload-generator.rb
+=======
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> master
@@ -543,9 +550,18 @@ module Msf
 =======
 >>>>>>> master
 =======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> master
+>>>>>>> origin/payload-generator.rb
+=======
 >>>>>>> master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 =======
@@ -555,6 +571,8 @@ module Msf
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
         return shellcode
       end
 
@@ -573,6 +591,7 @@ module Msf
         rescue ::Msf::EncodingError => e
           cli_print "#{encoder_mod.refname} failed with #{e.message}"
           next
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -728,9 +747,23 @@ module Msf
 >>>>>>> rapid7/master
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/payload-generator.rb
+=======
 >>>>>>> master
 =======
 >>>>>>> master
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 =======
@@ -745,6 +778,10 @@ module Msf
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
+=======
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/payload-generator.rb
         end
       end
 

@@ -8,6 +8,7 @@ require 'msf/core/opt'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Opt do
 =======
 describe Msf::Opt do
@@ -33,6 +34,9 @@ describe Msf::Opt do
 =======
 describe Msf::Opt do
 >>>>>>> origin/msf-complex-payloads
+=======
+describe Msf::Opt do
+>>>>>>> origin/payload-generator.rb
   subject(:opt) { described_class }
 
   it { is_expected.to respond_to(:CHOST) }
