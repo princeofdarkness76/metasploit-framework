@@ -697,6 +697,7 @@ class ReadableText
     framework.sessions.each_sorted do |k|
       session = framework.sessions[k]
 
+<<<<<<< HEAD
       sess_info    = session.info.to_s
       sess_id      = session.sid.to_s
       sess_tunnel  = session.tunnel_to_s + " (#{session.session_host})"
@@ -1519,6 +1520,8 @@ class ReadableText
       'Columns' => columns
       )
 
+=======
+>>>>>>> master
     # jobs are stored as a hash with the keys being a numeric job_id.
     framework.jobs.keys.sort{|a,b| a.to_i <=> b.to_i }.each { |k|
       # Job context is stored as an Array with the 0th element being
@@ -1527,6 +1530,7 @@ class ReadableText
       ctx = framework.jobs[k].ctx
       row = [ k, framework.jobs[k].name ]
       row << (ctx[1].nil? ? (ctx[0].datastore['PAYLOAD'] || "") : ctx[1].refname)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1543,6 +1547,8 @@ class ReadableText
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+>>>>>>> master
 
       # Make the LPORT show the bind port if it's different
       local_port = ctx[0].datastore['LPORT']
@@ -1552,6 +1558,7 @@ class ReadableText
         lport << " (#{bind_port})"
       end
       row << lport
+<<<<<<< HEAD
 =======
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> 4.11.2_release_pre-rails4
@@ -1594,6 +1601,8 @@ class ReadableText
 =======
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> master
 
       if (verbose)
         uripath = ctx[0].get_resource if ctx[0].respond_to?(:get_resource)

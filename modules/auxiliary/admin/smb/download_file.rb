@@ -17,6 +17,7 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -32,6 +33,9 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  include Msf::Exploit::Remote::SMB::Client::RemotePaths
+>>>>>>> master
   include Msf::Auxiliary::Report
   include Msf::Auxiliary::Scanner
 
@@ -59,10 +63,13 @@ class Metasploit3 < Msf::Auxiliary
     register_options([
       OptString.new('SMBSHARE', [true, 'The name of a share on the RHOST', 'C$'])
     ], self.class)
+<<<<<<< HEAD
   end
 
   def peer
     "#{rhost}:#{rport}"
+=======
+>>>>>>> master
   end
 
   def smb_download

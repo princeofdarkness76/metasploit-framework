@@ -18,6 +18,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -71,6 +72,9 @@ module Metasploit4
 =======
   CachedSize = 49482
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  CachedSize = 50226
+>>>>>>> master
 
   include Msf::Payload::Single
   include Msf::Payload::Python

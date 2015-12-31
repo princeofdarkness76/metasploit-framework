@@ -114,6 +114,7 @@ class Response < Packet
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -167,6 +168,9 @@ class Response < Packet
 =======
     json = []
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    json = {}
+>>>>>>> master
 
     begin
       json = JSON.parse(self.body)

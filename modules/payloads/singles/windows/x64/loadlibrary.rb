@@ -15,6 +15,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -68,6 +69,9 @@ module Metasploit3
 =======
   CachedSize = 314
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  CachedSize = 313
+>>>>>>> master
 
   include Msf::Payload::Windows
   include Msf::Payload::Single

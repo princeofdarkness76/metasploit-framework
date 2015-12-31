@@ -7,6 +7,7 @@ require 'msf/core'
 require 'msf/core/handler/reverse_http'
 require 'msf/core/payload/python'
 require 'msf/core/payload/python/reverse_http'
+<<<<<<< HEAD
 
 module Metasploit4
 
@@ -44,8 +45,12 @@ module Metasploit4
   CachedSize = 466
 
   CachedSize = 466
+=======
 
-  CachedSize = 466
+module Metasploit4
+>>>>>>> master
+
+  CachedSize = 494
 
   include Msf::Payload::Stager
   include Msf::Payload::Python
@@ -62,6 +67,7 @@ module Metasploit4
       'Handler'       => Msf::Handler::ReverseHttp,
       'Stager'        => {'Payload' => ""}
     ))
+<<<<<<< HEAD
 <<<<<<< HEAD
   end
 
@@ -150,6 +156,8 @@ module Metasploit4
     end
 
     generate_uri_checksum(Rex::Payloads::Meterpreter::UriChecksum::URI_CHECKSUM_INITP, uri_req_len)
+=======
+>>>>>>> master
   end
 
 <<<<<<< HEAD

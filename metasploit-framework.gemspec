@@ -65,11 +65,12 @@ Gem::Specification.new do |spec|
   # Metasploit::Credential database models
   spec.add_runtime_dependency 'metasploit-credential', '1.0.1'
   # Database models shared between framework and Pro.
-  spec.add_runtime_dependency 'metasploit_data_models', '1.2.9'
+  spec.add_runtime_dependency 'metasploit_data_models', '1.2.10'
   # Things that would normally be part of the database model, but which
   # are needed when there's no database
   spec.add_runtime_dependency 'metasploit-model', '1.0.0'
   # Needed for Meterpreter
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -129,6 +130,9 @@ Gem::Specification.new do |spec|
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.21'
+>>>>>>> master
   # Needed by msfgui and other rpc components
   spec.add_runtime_dependency 'msgpack'
   # get list of network interfaces, like eth* from OS.
@@ -145,6 +149,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'railties'
   # required for OS fingerprinting
   spec.add_runtime_dependency 'recog', '2.0.14'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -192,6 +197,10 @@ Gem::Specification.new do |spec|
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  # required for bitlocker fvek extraction
+  spec.add_runtime_dependency 'openssl-ccm', '1.2.1'
+>>>>>>> master
 
   # rb-readline doesn't work with Ruby Installer due to error with Fiddle:
   #   NoMethodError undefined method `dlopen' for Fiddle:Module

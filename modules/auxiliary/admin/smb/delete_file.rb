@@ -17,6 +17,7 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -32,6 +33,9 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  include Msf::Exploit::Remote::SMB::Client::RemotePaths
+>>>>>>> master
   include Msf::Auxiliary::Report
   include Msf::Auxiliary::Scanner
 
@@ -61,10 +65,13 @@ class Metasploit3 < Msf::Auxiliary
     ], self.class)
   end
 
+<<<<<<< HEAD
   def peer
     "#{rhost}:#{rport}"
   end
 
+=======
+>>>>>>> master
   def smb_delete_files
     vprint_status("#{peer}: Connecting to the server...")
     connect()

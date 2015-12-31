@@ -18,6 +18,7 @@ module Handler
 module ReverseHttp
 
   include Msf::Handler
+  include Msf::Handler::Reverse
   include Rex::Payloads::Meterpreter::UriChecksum
   include Msf::Payload::Windows::VerifySsl
 
@@ -50,11 +51,10 @@ module ReverseHttp
 
     register_advanced_options(
       [
-        OptString.new('ReverseListenerComm', [false, 'The specific communication channel to use for this listener']),
+
         OptString.new('MeterpreterUserAgent', [false, 'The user-agent that the payload should use for communication', Rex::UserAgent.shortest]),
         OptString.new('MeterpreterServerName', [false, 'The server header that the handler will send in response to requests', 'Apache']),
         OptAddress.new('ReverseListenerBindAddress', [false, 'The specific IP address to bind to on the local system']),
-        OptInt.new('ReverseListenerBindPort', [false, 'The port to bind to on the local system if different from LPORT']),
         OptBool.new('OverrideRequestHost', [false, 'Forces a specific host and port instead of using what the client requests, defaults to LHOST:LPORT', false]),
         OptString.new('OverrideLHOST', [false, 'When OverrideRequestHost is set, use this value as the host name for secondary requests']),
         OptPort.new('OverrideLPORT', [false, 'When OverrideRequestHost is set, use this value as the port number for secondary requests']),
@@ -81,6 +81,7 @@ module ReverseHttp
   # @return [String] A URI of the form +scheme://host:port/+
   def listener_uri
     uri_host = Rex::Socket.is_ipv6?(listener_address) ? "[#{listener_address}]" : listener_address
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -126,6 +127,9 @@ module ReverseHttp
 =======
     "#{scheme}://#{uri_host}:#{datastore['LPORT']}/"
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+    "#{scheme}://#{uri_host}:#{bind_port}/"
+>>>>>>> master
   end
 
   # Return a URI suitable for placing in a payload.
@@ -173,15 +177,7 @@ module ReverseHttp
   #
   def setup_handler
 
-    comm = datastore['ReverseListenerComm']
-    if (comm.to_s == 'local')
-      comm = ::Rex::Socket::Comm::Local
-    else
-      comm = nil
-    end
-
     local_port = bind_port
-
 
     # Start the HTTPS server service on this host/port
     self.service = Rex::ServiceManager.start(Rex::Proto::Http::Server,
@@ -192,7 +188,7 @@ module ReverseHttp
         'Msf'        => framework,
         'MsfExploit' => self,
       },
-      comm,
+      nil,
       (ssl?) ? datastore['HandlerSSLCert'] : nil
     )
 
@@ -335,6 +331,7 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -345,10 +342,13 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+=======
+>>>>>>> master
           http_url: url,
           http_user_agent: datastore['MeterpreterUserAgent'],
           http_proxy_host: datastore['PayloadProxyHost'] || datastore['PROXYHOST'],
           http_proxy_port: datastore['PayloadProxyPort'] || datastore['PROXYPORT'],
+<<<<<<< HEAD
           uuid: uuid,
           uri:  conn_id
         )
@@ -380,10 +380,13 @@ protected
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> master
           uuid: uuid,
           uri:  conn_id
         )
 
+<<<<<<< HEAD
         var_escape = lambda { |txt|
           txt.gsub('\\', '\\'*8).gsub('\'', %q(\\\\\\\'))
         }
@@ -398,6 +401,8 @@ protected
         end
 >>>>>>> 4.11.2_release_pre-rails4
 
+=======
+>>>>>>> master
         resp.body = blob
 
         # Short-circuit the payload's handle_connection processing for create_session
@@ -451,6 +456,7 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         uri = URI(payload_uri(req) + conn_id)
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -474,6 +480,9 @@ protected
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+        uri = URI(payload_uri(req) + conn_id)
+>>>>>>> master
 
         resp['Content-Type'] = 'application/octet-stream'
 
@@ -482,6 +491,7 @@ protected
         blob = obj.stage_payload(
           uuid: uuid,
           uri:  conn_id,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -555,6 +565,10 @@ protected
           lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
           lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+          lhost: uri.host,
+          lport: uri.port
+>>>>>>> master
         )
 
         resp.body = encode_stage(blob)
@@ -605,13 +619,6 @@ protected
 
     # Force this socket to be closed
     obj.service.close_client( cli )
-  end
-
-protected
-
-  def bind_port
-    port = datastore['ReverseListenerBindPort'].to_i
-    port > 0 ? port : datastore['LPORT'].to_i
   end
 
 end

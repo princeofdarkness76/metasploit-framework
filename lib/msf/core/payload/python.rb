@@ -11,6 +11,7 @@ module Msf::Payload::Python
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -66,6 +67,11 @@ module Msf::Payload::Python
 =======
   # that will decode and execute it on the fly.
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  # that will decode and execute it on the fly. The code will be condensed to
+  # one line and compatible with all Python versions supported by the Python
+  # Meterpreter stage.
+>>>>>>> master
   #
   # @param cmd [String] The python code to execute.
   # @return [String] Full python stub to execute the command.
