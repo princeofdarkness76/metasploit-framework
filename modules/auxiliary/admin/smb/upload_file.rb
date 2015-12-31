@@ -19,15 +19,70 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   include Msf::Exploit::Remote::SMB::Client::Authenticated
   include Msf::Exploit::Remote::SMB::Client::LocalPaths
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+  include Msf::Exploit::Remote::SMB::Client::Authenticated
+  include Msf::Exploit::Remote::SMB::Client::LocalPaths
+  include Msf::Exploit::Remote::SMB::Client::RemotePaths
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/pod/metasploit-framework
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-framework
+=======
+  include Msf::Exploit::Remote::SMB::Client::Authenticated
+  include Msf::Exploit::Remote::SMB::Client::LocalPaths
+  include Msf::Exploit::Remote::SMB::Client::RemotePaths
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+>>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -41,6 +96,9 @@ class Metasploit3 < Msf::Auxiliary
   include Msf::Exploit::Remote::SMB::Client::LocalPaths
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 >>>>>>> master
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
   include Msf::Auxiliary::Report
   include Msf::Auxiliary::Scanner
 
@@ -77,12 +135,15 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   def peer
     "#{rhost}:#{rport}"
   end
 
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> metasploit-api/_index.html
   def run_host(_ip)
     begin
       vprint_status("#{peer}: Connecting to the server...")
@@ -114,8 +175,15 @@ class Metasploit3 < Msf::Auxiliary
     end
   end
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
+=======
+  def peer
+    "#{rhost}:#{rport}"
+  end
+
+>>>>>>> metasploit-api/_index.html
   def run_host(_ip)
     begin
       vprint_status("#{peer}: Connecting to the server...")
@@ -146,5 +214,9 @@ class Metasploit3 < Msf::Auxiliary
       print_error("#{peer} Unable to login: #{e.message}")
     end
   end
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+>>>>>>> metasploit-api/_index.html
 end

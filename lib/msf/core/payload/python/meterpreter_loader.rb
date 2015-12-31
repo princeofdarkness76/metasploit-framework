@@ -43,6 +43,19 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+>>>>>>> metasploit-api/_index.html
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -53,8 +66,17 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
   # @option opts [String] :http_proxy_host The host to use as a proxy for
   #   HTTP(S) transports.
   # @option opts [String] :http_proxy_port The port to use when a proxy  host is
@@ -64,11 +86,42 @@ module Payload::Python::MeterpreterLoader
   # @option opts [String] :http_user_agent The value to use for the User-Agent
   #   header for HTTP(S) transports.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -76,12 +129,30 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
@@ -91,10 +162,21 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> master
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
   # @option opts [String] :stageless_tcp_socket_setup Python code to execute to
   #   setup a tcp socket to allow use of the stage as a stageless payload.
   # @option opts [String] :uuid A specific UUID to use for sessions created by
@@ -109,6 +191,19 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+>>>>>>> metasploit-api/_index.html
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -119,18 +214,58 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
     var_escape = lambda { |txt|
       txt.gsub('\\', '\\'*8).gsub('\'', %q(\\\\\\\'))
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -138,12 +273,30 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
@@ -153,10 +306,21 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> master
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
     if datastore['PythonMeterpreterDebug']
       met = met.sub("DEBUGGING = False", "DEBUGGING = True")
     end
@@ -177,6 +341,19 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+>>>>>>> metasploit-api/_index.html
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -187,8 +364,17 @@ module Payload::Python::MeterpreterLoader
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
     # patch in the stageless http(s) connection url
     met.sub!('HTTP_CONNECTION_URL = None', "HTTP_CONNECTION_URL = '#{var_escape.call(opts[:http_url])}'") if opts[:http_url].to_s != ''
     met.sub!('HTTP_USER_AGENT = None', "HTTP_USER_AGENT = '#{var_escape.call(opts[:http_user_agent])}'") if opts[:http_user_agent].to_s != ''
@@ -199,11 +385,42 @@ module Payload::Python::MeterpreterLoader
     end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -211,12 +428,30 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
@@ -226,10 +461,21 @@ module Payload::Python::MeterpreterLoader
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> master
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
     # patch in any optional stageless tcp socket setup
     unless opts[:stageless_tcp_socket_setup].nil?
       socket_setup = opts[:stageless_tcp_socket_setup]

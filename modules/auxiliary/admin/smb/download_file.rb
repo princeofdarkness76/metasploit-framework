@@ -18,24 +18,73 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
+  include Msf::Exploit::Remote::SMB::Client::RemotePaths
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  include Msf::Exploit::Remote::SMB::Client::RemotePaths
+=======
+=======
+<<<<<<< HEAD
+  include Msf::Exploit::Remote::SMB::Client::RemotePaths
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  include Msf::Exploit::Remote::SMB::Client::RemotePaths
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 >>>>>>> master
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-framework
+=======
+  include Msf::Exploit::Remote::SMB::Client::RemotePaths
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+  include Msf::Exploit::Remote::SMB::Client::RemotePaths
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
   include Msf::Auxiliary::Report
   include Msf::Auxiliary::Scanner
 
@@ -64,14 +113,22 @@ class Metasploit3 < Msf::Auxiliary
       OptString.new('SMBSHARE', [true, 'The name of a share on the RHOST', 'C$'])
     ], self.class)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> metasploit-api/_index.html
   end
 
 <<<<<<< HEAD
 <<<<<<< HEAD
   def peer
     "#{rhost}:#{rport}"
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+>>>>>>> metasploit-api/_index.html
   end
 
 =======

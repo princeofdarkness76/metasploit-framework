@@ -82,6 +82,7 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 describe Rex::Parser::BITLOCKER do
 =======
 RSpec.describe Rex::Parser::BITLOCKER do
@@ -92,6 +93,12 @@ RSpec.describe Rex::Parser::BITLOCKER do
 =======
 RSpec.describe Rex::Parser::BITLOCKER do
 >>>>>>> rapid7/master
+=======
+RSpec.describe Rex::Parser::BITLOCKER do
+=======
+describe Rex::Parser::BITLOCKER do
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+>>>>>>> metasploit-api/_index.html
   Bitlocker = Rex::Parser::BITLOCKER.new(BitlockerDrive.new(volume_header,
                                                              fve_header))
   ##
@@ -99,6 +106,7 @@ RSpec.describe Rex::Parser::BITLOCKER do
   ##
   it "Extract and decrypt recovery key from recovery password" do
     result = Bitlocker.fvek_from_recovery_password_dislocker(recovery_password)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -112,5 +120,11 @@ RSpec.describe Rex::Parser::BITLOCKER do
 =======
     expect(result).to eq fvek_dislocker_format
 >>>>>>> rapid7/master
+=======
+    expect(result).to eq fvek_dislocker_format
+=======
+    result.should eq(fvek_dislocker_format)
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+>>>>>>> metasploit-api/_index.html
   end
 end

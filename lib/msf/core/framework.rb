@@ -80,10 +80,42 @@ class Framework
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   require 'rex/json_hash_file'
 =======
 <<<<<<< HEAD
 =======
+  require 'rex/json_hash_file'
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  require 'rex/json_hash_file'
+=======
+<<<<<<< HEAD
+=======
+  require 'rex/json_hash_file'
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  require 'rex/json_hash_file'
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-framework
+=======
+  require 'rex/json_hash_file'
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
+=======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
 =======
@@ -92,16 +124,40 @@ class Framework
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-framework
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+>>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> metasploit-api/_index.html
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 
   #
   # Attributes
@@ -139,6 +195,30 @@ class Framework
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+  require 'rex/json_hash_file'
+>>>>>>> origin/msf-complex-payloads
+=======
+  require 'rex/json_hash_file'
+>>>>>>> origin/msf-complex-payloads
+=======
+  require 'rex/json_hash_file'
+>>>>>>> origin/payload-generator.rb
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-framework
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -147,6 +227,21 @@ class Framework
 =======
   require 'rex/json_hash_file'
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  require 'rex/json_hash_file'
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 =======
   require 'rex/json_hash_file'
 >>>>>>> msf-complex-payloads
@@ -156,6 +251,10 @@ class Framework
 =======
   require 'rex/json_hash_file'
 >>>>>>> payload-generator.rb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> metasploit-api/_index.html
 =======
   require 'rex/json_hash_file'
 >>>>>>> pod/metasploit-gemfile-
@@ -165,8 +264,20 @@ class Framework
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+  require 'rex/json_hash_file'
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+  require 'rex/json_hash_file'
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 
   #
   # Creates an instance of the framework context.
@@ -195,10 +306,15 @@ class Framework
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> metasploit-api/_index.html
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
 =======
@@ -211,11 +327,60 @@ class Framework
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+<<<<<<< HEAD
+=======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-framework
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 
     self.run_supervision_group!
 =======
@@ -238,6 +403,27 @@ class Framework
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-framework
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -245,12 +431,30 @@ class Framework
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> pod/metasploit-gemfile-
 =======
@@ -259,8 +463,18 @@ class Framework
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 
     # Configure the thread factory
     Rex::ThreadFactory.provider = Metasploit::Framework::ThreadFactoryProvider.new(framework: self)

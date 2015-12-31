@@ -70,6 +70,12 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> metasploit-api/_index.html
 =======
 
 >>>>>>> 4.11.2_release_pre-rails4
@@ -81,9 +87,38 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> metasploit-api/_index.html
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+
+>>>>>>> origin/msf-complex-payloads
+=======
+
+>>>>>>> origin/msf-complex-payloads
+=======
+
+>>>>>>> origin/payload-generator.rb
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+
+>>>>>>> metasploit-api/_index.html
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 
@@ -92,6 +127,20 @@ end
 
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
 
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -106,21 +155,56 @@ end
 =======
 
 >>>>>>> payload-generator.rb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> metasploit-api/_index.html
 =======
 
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> metasploit-api/_index.html
 =======
 
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+>>>>>>> metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
-=======
-
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
