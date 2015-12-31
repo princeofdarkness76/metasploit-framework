@@ -27,6 +27,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -52,6 +53,8 @@ module Metasploit4
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
       'Name'        => 'Windows Reverse HTTPS Stager (wininet)',
       'Description' => 'Tunnel communication over HTTPS (Windows wininet)',
       'Author'      => 'hdm',
@@ -60,6 +63,7 @@ module Metasploit4
       'Arch'        => ARCH_X86,
       'Handler'     => Msf::Handler::ReverseHttps,
       'Convention'  => 'sockedi https'))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -486,6 +490,8 @@ module Metasploit4
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
   end
 
 end

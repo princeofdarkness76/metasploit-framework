@@ -678,6 +678,7 @@ class ReadableText
 
   # Dumps the list of active sessions in verbose mode
   #
+<<<<<<< HEAD
   # @param framework [Msf::Framework] the framework to dump.
   # @param opts [Hash] the options to dump with.
   # @option opts :session_ids [Array] the list of sessions to dump (no
@@ -692,6 +693,19 @@ class ReadableText
     if framework.sessions.length == 0
       out << "No active sessions.\n"
       return out
+=======
+  # @param framework [Msf::Framework] the framework.
+  # @param verbose [Boolean] if true, also prints the payload, LPORT, URIPATH
+  #   and start time, if they exist, for each job.
+  # @param indent [Integer] the indentation amount.
+  # @param col [Integer] the column wrap width.
+  # @return [String] the formatted list of running jobs.
+  def self.dump_jobs(framework, verbose = false, indent = DefaultIndent, col = DefaultColumnWrap)
+    columns = [ 'Id', 'Name', "Payload", "LPORT" ]
+
+    if (verbose)
+      columns += [ "URIPATH", "Start Time" ]
+>>>>>>> origin/4.11.2_release_pre-rails4
     end
 
     framework.sessions.each_sorted do |k|
@@ -705,6 +719,7 @@ class ReadableText
       sess_uuid    = session.payload_uuid.to_s
       sess_puid    = session.payload_uuid.respond_to?(:puid_hex) ? session.payload_uuid.puid_hex : nil
 
+<<<<<<< HEAD
       sess_checkin = "<none>"
       sess_machine_id = session.machine_id.to_s
       sess_registration = "No"
@@ -1685,6 +1700,8 @@ class ReadableText
       'Columns' => columns
       )
 
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
     # jobs are stored as a hash with the keys being a numeric job_id.
     framework.jobs.keys.sort{|a,b| a.to_i <=> b.to_i }.each { |k|
       # Job context is stored as an Array with the 0th element being
@@ -1693,6 +1710,7 @@ class ReadableText
       ctx = framework.jobs[k].ctx
       row = [ k, framework.jobs[k].name ]
       row << (ctx[1].nil? ? (ctx[0].datastore['PAYLOAD'] || "") : ctx[1].refname)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1832,6 +1850,9 @@ class ReadableText
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> origin/4.11.2_release_pre-rails4
 
       if (verbose)
         uripath = ctx[0].get_resource if ctx[0].respond_to?(:get_resource)

@@ -16,6 +16,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -153,6 +154,8 @@ module Metasploit3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> origin/pod/metasploit-framework
 =======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
 require 'msf/core/payload/uuid/options'
 
 module Metasploit3
@@ -171,6 +174,7 @@ module Metasploit3
 =======
 require 'msf/core/payload/uuid/options'
 
+<<<<<<< HEAD
 module Metasploit3
 =======
 require 'msf/core/payload/python'
@@ -290,10 +294,13 @@ module Metasploit3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
   CachedSize = 762
 
   include Msf::Payload::Stager
   include Msf::Payload::UUID::Options
+<<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
 =======
@@ -321,6 +328,8 @@ module Metasploit3
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
 
   def initialize(info = {})
     super(merge_info(info,

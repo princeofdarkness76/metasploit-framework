@@ -71,6 +71,7 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -179,3 +180,6 @@ end
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+
+>>>>>>> origin/4.11.2_release_pre-rails4

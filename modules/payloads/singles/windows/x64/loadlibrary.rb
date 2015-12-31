@@ -20,6 +20,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 313
 =======
   CachedSize = 314
@@ -134,6 +135,9 @@ module Metasploit3
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+  CachedSize = 314
+>>>>>>> origin/4.11.2_release_pre-rails4
 
   include Msf::Payload::Windows
   include Msf::Payload::Single

@@ -119,6 +119,7 @@ class Response < Packet
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     json = {}
 =======
     json = []
@@ -233,6 +234,9 @@ class Response < Packet
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+    json = []
+>>>>>>> origin/4.11.2_release_pre-rails4
 
     begin
       json = JSON.parse(self.body)

@@ -10,6 +10,7 @@ require 'msf/core/post/linux/busy_box'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Post::Linux::BusyBox do
 =======
 describe Msf::Post::Linux::BusyBox do
@@ -32,6 +33,9 @@ describe Msf::Post::Linux::BusyBox do
 =======
 describe Msf::Post::Linux::BusyBox do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+describe Msf::Post::Linux::BusyBox do
+>>>>>>> origin/4.11.2_release_pre-rails4
   subject do
     mod = ::Msf::Module.new
     mod.extend described_class

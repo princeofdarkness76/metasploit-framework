@@ -221,6 +221,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -246,6 +247,8 @@ module Msf
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
         return shellcode
       end
 
@@ -264,6 +267,7 @@ module Msf
         rescue ::Msf::EncodingError => e
           cli_print "#{encoder_mod.refname} failed with #{e.message}"
           next
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -714,6 +718,8 @@ module Msf
 >>>>>>> master
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
         end
       end
 

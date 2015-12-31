@@ -15,6 +15,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 494
 =======
   CachedSize = 466
@@ -101,6 +102,8 @@ module Metasploit4
 
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
   CachedSize = 466
 
   include Msf::Payload::Stager

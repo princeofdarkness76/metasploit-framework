@@ -549,6 +549,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -571,6 +572,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
           "* default"
         ]
       end
@@ -586,6 +590,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -608,6 +613,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
           "  default",
           "* foo"
         ]
@@ -624,6 +632,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -646,6 +655,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
           "Added workspace: foo",
           "Added workspace: bar",
           "Added workspace: baf"
@@ -665,6 +677,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -687,6 +700,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
           "Deleted workspace: foo",
           "Switched workspace: default"
         ]
@@ -705,6 +721,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -727,6 +744,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
           "Deleted and recreated the default workspace",
           "Deleted workspace: foo",
           "Switched workspace: default"

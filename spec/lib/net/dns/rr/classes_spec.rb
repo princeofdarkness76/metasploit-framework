@@ -10,6 +10,7 @@ require 'net/dns'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Net::DNS::RR::Classes do
 =======
 describe Net::DNS::RR::Classes do
@@ -32,6 +33,9 @@ describe Net::DNS::RR::Classes do
 =======
 describe Net::DNS::RR::Classes do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+describe Net::DNS::RR::Classes do
+>>>>>>> origin/4.11.2_release_pre-rails4
 
   subject do
     described_class.new

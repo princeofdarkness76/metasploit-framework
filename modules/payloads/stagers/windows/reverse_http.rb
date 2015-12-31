@@ -284,6 +284,7 @@ module Metasploit4
 
 module Metasploit4
 
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-serialized_class_loader
@@ -376,6 +377,10 @@ module Metasploit4
 =======
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+module Metasploit4
+
+>>>>>>> origin/4.11.2_release_pre-rails4
   CachedSize = 327
 
   include Msf::Payload::Stager
@@ -384,6 +389,7 @@ module Metasploit4
 
   def initialize(info = {})
     super(merge_info(info,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -409,6 +415,8 @@ module Metasploit4
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
       'Name'        => 'Windows Reverse HTTP Stager (wininet)',
       'Description' => 'Tunnel communication over HTTP (Windows wininet)',
       'Author'      => 'hdm',
@@ -417,6 +425,7 @@ module Metasploit4
       'Arch'        => ARCH_X86,
       'Handler'     => Msf::Handler::ReverseHttp,
       'Convention'  => 'sockedi http'))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -957,4 +966,8 @@ module Metasploit4
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+  end
+
+>>>>>>> origin/4.11.2_release_pre-rails4
 end

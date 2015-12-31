@@ -76,6 +76,7 @@ module ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         OptString.new('MeterpreterUserAgent', [false, 'The user-agent that the payload should use for communication', Rex::UserAgent.shortest]),
         OptString.new('MeterpreterServerName', [false, 'The server header that the handler will send in response to requests', 'Apache']),
@@ -91,11 +92,14 @@ module ReverseHttp
 >>>>>>> origin/payload-generator.rb
 =======
 >>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
         OptString.new('ReverseListenerComm', [false, 'The specific communication channel to use for this listener']),
         OptString.new('MeterpreterUserAgent', [false, 'The user-agent that the payload should use for communication', Rex::UserAgent.shortest]),
         OptString.new('MeterpreterServerName', [false, 'The server header that the handler will send in response to requests', 'Apache']),
         OptAddress.new('ReverseListenerBindAddress', [false, 'The specific IP address to bind to on the local system']),
         OptInt.new('ReverseListenerBindPort', [false, 'The port to bind to on the local system if different from LPORT']),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -112,6 +116,8 @@ module ReverseHttp
 >>>>>>> origin/payload-generator.rb
 =======
 >>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
         OptBool.new('OverrideRequestHost', [false, 'Forces a specific host and port instead of using what the client requests, defaults to LHOST:LPORT', false]),
         OptString.new('OverrideLHOST', [false, 'When OverrideRequestHost is set, use this value as the host name for secondary requests']),
         OptPort.new('OverrideLPORT', [false, 'When OverrideRequestHost is set, use this value as the port number for secondary requests']),
@@ -269,6 +275,7 @@ module ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/msf-complex-payloads
 =======
@@ -298,6 +305,10 @@ module ReverseHttp
     end
 
 >>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+    end
+
+>>>>>>> origin/4.11.2_release_pre-rails4
     # Override the host and port as appropriate
     if datastore['OverrideRequestHost'] || callback_host.nil?
       callback_name = datastore['OverrideLHOST'] || datastore['LHOST']
@@ -310,6 +321,7 @@ module ReverseHttp
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -319,6 +331,8 @@ module ReverseHttp
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
     "#{scheme}://#{callback_host}/"
   end
 
@@ -371,6 +385,7 @@ module ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -384,6 +399,8 @@ module ReverseHttp
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
       (ssl?) ? datastore['HandlerSSLCert'] : nil
     )
 
@@ -522,7 +539,10 @@ protected
     end
 
     request_summary = "#{req.relative_resource} with UA '#{req.headers['User-Agent']}'"
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
 
     # Validate known UUIDs for all requests if IgnoreUnknownPayloads is set
     if datastore['IgnoreUnknownPayloads'] && ! framework.uuid_db[uuid.puid_hex]
@@ -531,9 +551,12 @@ protected
     end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
     # Validate known URLs for all session init requests if IgnoreUnknownPayloads is set
     if datastore['IgnoreUnknownPayloads'] && info[:mode].to_s =~ /^init_/
       allowed_urls = framework.uuid_db[uuid.puid_hex]['urls'] || []
@@ -542,6 +565,7 @@ protected
         info[:mode] = :unknown_uuid_url
       end
     end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -622,6 +646,9 @@ protected
 =======
 
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+
+>>>>>>> origin/4.11.2_release_pre-rails4
     self.pending_connections += 1
 
     # Process the requested resource.
@@ -630,8 +657,11 @@ protected
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Redirecting stageless connection from #{request_summary}")
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
 
         # Handle the case where stageless payloads call in on the same URI when they
         # first connect. From there, we tell them to callback on a connect URI that
@@ -649,6 +679,7 @@ protected
 
         blob = ""
         blob << obj.generate_stage(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -790,6 +821,8 @@ protected
 
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
           uuid: uuid,
           uri:  conn_id
         )
@@ -866,6 +899,7 @@ protected
         print_status("#{cli.peerhost}:#{cli.peerport} (UUID: #{uuid.to_s}) Staging Java payload ...")
         url = payload_uri(req) + conn_id + "/\x00"
 
+<<<<<<< HEAD
 =======
 
 =======
@@ -892,6 +926,8 @@ protected
         url = payload_uri(req) + conn_id + "/\x00"
 
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
         blob = obj.generate_stage(
           uuid: uuid,
           uri:  conn_id
@@ -1010,6 +1046,7 @@ protected
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -1149,6 +1186,10 @@ protected
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+          lhost: datastore['OverrideRequestHost'] ? datastore['OverrideLHOST'] : (req && req.headers && req.headers['Host']) ? req.headers['Host'] : datastore['LHOST'],
+          lport: datastore['OverrideRequestHost'] ? datastore['OverrideLPORT'] : datastore['LPORT']
+>>>>>>> origin/4.11.2_release_pre-rails4
         )
 
         resp.body = encode_stage(blob)
