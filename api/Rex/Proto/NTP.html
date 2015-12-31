@@ -92,7 +92,11 @@
     
   
     
+<<<<<<< HEAD
       <strong class="classes">Classes:</strong> <span class='object_link'><a href="NTP/NTPControl.html" title="Rex::Proto::NTP::NTPControl (class)">NTPControl</a></span>, <span class='object_link'><a href="NTP/NTPGeneric.html" title="Rex::Proto::NTP::NTPGeneric (class)">NTPGeneric</a></span>, <span class='object_link'><a href="NTP/NTPPrivate.html" title="Rex::Proto::NTP::NTPPrivate (class)">NTPPrivate</a></span>
+=======
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="NTP/NTPControl.html" title="Rex::Proto::NTP::NTPControl (class)">NTPControl</a></span>, <span class='object_link'><a href="NTP/NTPGeneric.html" title="Rex::Proto::NTP::NTPGeneric (class)">NTPGeneric</a></span>, <span class='object_link'><a href="NTP/NTPPrivate.html" title="Rex::Proto::NTP::NTPPrivate (class)">NTPPrivate</a></span>, <span class='object_link'><a href="NTP/NTPSymmetric.html" title="Rex::Proto::NTP::NTPSymmetric (class)">NTPSymmetric</a></span>
+>>>>>>> rapid7/gh-pages
     
   
 </p>
@@ -270,6 +274,7 @@ inside</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 124
 125
 126
@@ -277,6 +282,15 @@ inside</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/proto/ntp/modes.rb', line 124</span>
+=======
+141
+142
+143
+144</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/proto/ntp/modes.rb', line 141</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_describe'>describe</span><span class='lparen'>(</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_ntp'>ntp</span> <span class='op'>=</span> <span class='const'>NTPGeneric</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span>
@@ -302,6 +316,7 @@ inside</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 95
 96
 97
@@ -316,6 +331,22 @@ inside</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/proto/ntp/modes.rb', line 95</span>
+=======
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/proto/ntp/modes.rb', line 112</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_ntp_control'>ntp_control</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='comma'>,</span> <span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_n'>n</span> <span class='op'>=</span> <span class='const'>NTPControl</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
@@ -348,6 +379,7 @@ inside</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 116
 117
 118
@@ -357,6 +389,17 @@ inside</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/proto/ntp/modes.rb', line 116</span>
+=======
+133
+134
+135
+136
+137
+138</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/proto/ntp/modes.rb', line 133</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_ntp_generic'>ntp_generic</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='comma'>,</span> <span class='id identifier rubyid_mode'>mode</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_n'>n</span> <span class='op'>=</span> <span class='const'>NTPGeneric</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
@@ -384,6 +427,7 @@ inside</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 107
 108
 109
@@ -395,6 +439,19 @@ inside</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/proto/ntp/modes.rb', line 107</span>
+=======
+124
+125
+126
+127
+128
+129
+130
+131</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/proto/ntp/modes.rb', line 124</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_ntp_private'>ntp_private</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='comma'>,</span> <span class='id identifier rubyid_implementation'>implementation</span><span class='comma'>,</span> <span class='id identifier rubyid_request_code'>request_code</span><span class='comma'>,</span> <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_n'>n</span> <span class='op'>=</span> <span class='const'>NTPPrivate</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
@@ -414,6 +471,7 @@ inside</p>
 </div>
 
     <div id="footer">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -447,6 +505,11 @@ inside</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+  Generated on Tue Dec 29 22:33:27 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.7).
+>>>>>>> rapid7/gh-pages
 </div>
 
   </body>

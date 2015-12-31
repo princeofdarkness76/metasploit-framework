@@ -123,6 +123,19 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
         </dt>
         <dd><pre class="code"><span class='int'>1</span></pre></dd>
       
+<<<<<<< HEAD
+=======
+        <dt id="COLLECT_TYPE_GEO-constant" class="">COLLECT_TYPE_GEO =
+          
+        </dt>
+        <dd><pre class="code"><span class='int'>2</span></pre></dd>
+      
+        <dt id="COLLECT_TYPE_CELL-constant" class="">COLLECT_TYPE_CELL =
+          
+        </dt>
+        <dd><pre class="code"><span class='int'>3</span></pre></dd>
+      
+>>>>>>> rapid7/gh-pages
         <dt id="COLLECT_ACTION_START-constant" class="">COLLECT_ACTION_START =
           
         </dt>
@@ -152,7 +165,13 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
           
         </dt>
         <dd><pre class="code"><span class='lbrace'>{</span>
+<<<<<<< HEAD
   <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>wifi</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='const'>COLLECT_TYPE_WIFI</span>
+=======
+  <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>wifi</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='const'>COLLECT_TYPE_WIFI</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>geo</span><span class='tstring_end'>&#39;</span></span>  <span class='op'>=&gt;</span> <span class='const'>COLLECT_TYPE_GEO</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>cell</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='const'>COLLECT_TYPE_CELL</span><span class='comma'>,</span>
+>>>>>>> rapid7/gh-pages
 <span class='rbrace'>}</span></pre></dd>
       
         <dt id="COLLECT_ACTIONS-constant" class="">COLLECT_ACTIONS =
@@ -494,10 +513,13 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 42
 43
 44
 45
+=======
+>>>>>>> rapid7/gh-pages
 46
 47
 48
@@ -506,10 +528,21 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
 51
 52
 53
+<<<<<<< HEAD
 54</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 42</span>
+=======
+54
+55
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 46</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_client'>client</span><span class='rparen'>)</span>
   <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_client'>client</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>android</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -551,6 +584,7 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 177
 178
 179
@@ -559,6 +593,16 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 177</span>
+=======
+239
+240
+241
+242
+243</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 239</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_check_root'>check_root</span>
   <span class='id identifier rubyid_request'>request</span> <span class='op'>=</span> <span class='const'>Packet</span><span class='period'>.</span><span class='id identifier rubyid_create_request'>create_request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>check_root</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -585,12 +629,21 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 56
 57
 58</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 56</span>
+=======
+60
+61
+62</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 60</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_collect_actions'>collect_actions</span>
   <span class='kw'>return</span> <span class='cvar'>@@collect_action_list</span> <span class='op'>||=</span> <span class='const'>COLLECT_ACTIONS</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span>
@@ -615,12 +668,21 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 60
 61
 62</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 60</span>
+=======
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 64</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_collect_types'>collect_types</span>
   <span class='kw'>return</span> <span class='cvar'>@@collect_type_list</span> <span class='op'>||=</span> <span class='const'>COLLECT_TYPES</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span>
@@ -645,6 +707,7 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 64
 65
 66
@@ -654,6 +717,17 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 64</span>
+=======
+68
+69
+70
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 68</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_device_shutdown'>device_shutdown</span><span class='lparen'>(</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_request'>request</span> <span class='op'>=</span> <span class='const'>Packet</span><span class='period'>.</span><span class='id identifier rubyid_create_request'>create_request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>device_shutdown</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -681,6 +755,7 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 160
 161
 162
@@ -700,6 +775,27 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 160</span>
+=======
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 222</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dump_calllog'>dump_calllog</span>
   <span class='id identifier rubyid_log'>log</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
@@ -737,6 +833,7 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 132
 133
 134
@@ -754,6 +851,25 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 132</span>
+=======
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 194</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dump_contacts'>dump_contacts</span>
   <span class='id identifier rubyid_contacts'>contacts</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
@@ -789,6 +905,7 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 115
 116
 117
@@ -808,6 +925,27 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 115</span>
+=======
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 177</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dump_sms'>dump_sms</span>
   <span class='id identifier rubyid_sms'>sms</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
@@ -845,6 +983,7 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 147
 148
 149
@@ -860,6 +999,23 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 147</span>
+=======
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 209</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_geolocate'>geolocate</span>
   <span class='id identifier rubyid_loc'>loc</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
@@ -893,10 +1049,13 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 71
 72
 73
 74
+=======
+>>>>>>> rapid7/gh-pages
 75
 76
 77
@@ -935,10 +1094,79 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
 110
 111
 112
+<<<<<<< HEAD
 113</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 71</span>
+=======
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 75</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_interval_collect'>interval_collect</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_request'>request</span> <span class='op'>=</span> <span class='const'>Packet</span><span class='period'>.</span><span class='id identifier rubyid_create_request'>create_request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>interval_collect</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -979,6 +1207,67 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
     <span class='id identifier rubyid_records'>records</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_v'>v</span><span class='op'>|</span>
       <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='symbol'>:entries</span><span class='rbracket'>]</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_v'>v</span>
     <span class='kw'>end</span>
+<<<<<<< HEAD
+=======
+
+  <span class='kw'>when</span> <span class='const'>COLLECT_TYPE_GEO</span>
+    <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='symbol'>:headers</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Timestamp</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Latitude</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Longitude</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='symbol'>:entries</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_records'>records</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+    <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_COLLECT_RESULT_GROUP</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_g'>g</span><span class='op'>|</span>
+      <span class='id identifier rubyid_timestamp'>timestamp</span> <span class='op'>=</span> <span class='id identifier rubyid_g'>g</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_COLLECT_RESULT_TIMESTAMP</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_timestamp'>timestamp</span> <span class='op'>=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_at'>at</span><span class='lparen'>(</span><span class='id identifier rubyid_timestamp'>timestamp</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_datetime'>to_datetime</span><span class='period'>.</span><span class='id identifier rubyid_strftime'>strftime</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%Y-%m-%d %H:%M:%S</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+
+      <span class='id identifier rubyid_g'>g</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_COLLECT_RESULT_GEO</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_w'>w</span><span class='op'>|</span>
+        <span class='id identifier rubyid_lat'>lat</span> <span class='op'>=</span> <span class='id identifier rubyid_w'>w</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_GEO_LAT</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_lng'>lng</span> <span class='op'>=</span> <span class='id identifier rubyid_w'>w</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_GEO_LONG</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='symbol'>:entries</span><span class='rbracket'>]</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='id identifier rubyid_timestamp'>timestamp</span><span class='comma'>,</span> <span class='id identifier rubyid_lat'>lat</span><span class='comma'>,</span> <span class='id identifier rubyid_lng'>lng</span><span class='rbracket'>]</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+
+  <span class='kw'>when</span> <span class='const'>COLLECT_TYPE_CELL</span>
+    <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='symbol'>:headers</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Timestamp</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Cell Info</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='symbol'>:entries</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_records'>records</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+    <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_COLLECT_RESULT_GROUP</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_g'>g</span><span class='op'>|</span>
+      <span class='id identifier rubyid_timestamp'>timestamp</span> <span class='op'>=</span> <span class='id identifier rubyid_g'>g</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_COLLECT_RESULT_TIMESTAMP</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_timestamp'>timestamp</span> <span class='op'>=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_at'>at</span><span class='lparen'>(</span><span class='id identifier rubyid_timestamp'>timestamp</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_datetime'>to_datetime</span><span class='period'>.</span><span class='id identifier rubyid_strftime'>strftime</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%Y-%m-%d %H:%M:%S</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+
+      <span class='id identifier rubyid_g'>g</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_COLLECT_RESULT_CELL</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_cell'>cell</span><span class='op'>|</span>
+
+        <span class='id identifier rubyid_cell'>cell</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_ACTIVE_GSM</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_info'>info</span><span class='op'>|</span>
+          <span class='id identifier rubyid_cid'>cid</span> <span class='op'>=</span> <span class='id identifier rubyid_info'>info</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_CID</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_lac'>lac</span> <span class='op'>=</span> <span class='id identifier rubyid_info'>info</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_LAC</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_psc'>psc</span> <span class='op'>=</span> <span class='id identifier rubyid_info'>info</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_PSC</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_info'>info</span> <span class='op'>=</span> <span class='id identifier rubyid_sprintf'>sprintf</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>cid=%d lac=%d psc=%d</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_cid'>cid</span><span class='comma'>,</span> <span class='id identifier rubyid_lac'>lac</span><span class='comma'>,</span> <span class='id identifier rubyid_psc'>psc</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='symbol'>:entries</span><span class='rbracket'>]</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='id identifier rubyid_timestamp'>timestamp</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GSM: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_info'>info</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+        <span class='kw'>end</span>
+
+        <span class='id identifier rubyid_cell'>cell</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_ACTIVE_CDMA</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_info'>info</span><span class='op'>|</span>
+          <span class='id identifier rubyid_bid'>bid</span> <span class='op'>=</span> <span class='id identifier rubyid_info'>info</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_BASE_ID</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_lat'>lat</span> <span class='op'>=</span> <span class='id identifier rubyid_info'>info</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_BASE_LAT</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_lng'>lng</span> <span class='op'>=</span> <span class='id identifier rubyid_info'>info</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_BASE_LONG</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_net'>net</span> <span class='op'>=</span> <span class='id identifier rubyid_info'>info</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_NET_ID</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_sys'>sys</span> <span class='op'>=</span> <span class='id identifier rubyid_info'>info</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_SYSTEM_ID</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_info'>info</span> <span class='op'>=</span> <span class='id identifier rubyid_sprintf'>sprintf</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>base_id=%d lat=%d lng=%d net_id=%d sys_id=%d</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_bid'>bid</span><span class='comma'>,</span> <span class='id identifier rubyid_lat'>lat</span><span class='comma'>,</span> <span class='id identifier rubyid_lng'>lng</span><span class='comma'>,</span> <span class='id identifier rubyid_net'>net</span><span class='comma'>,</span> <span class='id identifier rubyid_sys'>sys</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='symbol'>:entries</span><span class='rbracket'>]</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='id identifier rubyid_timestamp'>timestamp</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CDMA: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_info'>info</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+        <span class='kw'>end</span>
+
+        <span class='id identifier rubyid_cell'>cell</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_NEIGHBOR</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_w'>w</span><span class='op'>|</span>
+          <span class='id identifier rubyid_net'>net</span> <span class='op'>=</span> <span class='id identifier rubyid_w'>w</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_NET_TYPE</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_cid'>cid</span> <span class='op'>=</span> <span class='id identifier rubyid_w'>w</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_CID</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_lac'>lac</span> <span class='op'>=</span> <span class='id identifier rubyid_w'>w</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_LAC</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_psc'>psc</span> <span class='op'>=</span> <span class='id identifier rubyid_w'>w</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_PSC</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_sig'>sig</span> <span class='op'>=</span> <span class='id identifier rubyid_w'>w</span><span class='period'>.</span><span class='id identifier rubyid_get_tlv_value'>get_tlv_value</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CELL_RSSI</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='op'>-</span><span class='int'>1</span>
+          <span class='id identifier rubyid_inf'>inf</span> <span class='op'>=</span> <span class='id identifier rubyid_sprintf'>sprintf</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>network_type=%d cid=%d lac=%d psc=%d rssi=%d</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_net'>net</span><span class='comma'>,</span> <span class='id identifier rubyid_cid'>cid</span><span class='comma'>,</span> <span class='id identifier rubyid_lac'>lac</span><span class='comma'>,</span> <span class='id identifier rubyid_psc'>psc</span><span class='comma'>,</span> <span class='id identifier rubyid_sig'>sig</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='symbol'>:entries</span><span class='rbracket'>]</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='id identifier rubyid_timestamp'>timestamp</span><span class='comma'>,</span> <span class='id identifier rubyid_inf'>inf</span><span class='rbracket'>]</span>
+        <span class='kw'>end</span>
+
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+>>>>>>> rapid7/gh-pages
   <span class='kw'>end</span>
 
   <span class='id identifier rubyid_result'>result</span>
@@ -1003,6 +1292,7 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 183
 184
 185
@@ -1022,6 +1312,27 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 183</span>
+=======
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 245</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_send_sms'>send_sms</span><span class='lparen'>(</span><span class='id identifier rubyid_dest'>dest</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_dr'>dr</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_request'>request</span> <span class='op'>=</span> <span class='const'>Packet</span><span class='period'>.</span><span class='id identifier rubyid_create_request'>create_request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>send_sms</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -1059,6 +1370,7 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
 200
 201
 202
@@ -1075,6 +1387,24 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 200</span>
+=======
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/extensions/android/android.rb', line 262</span>
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wlan_geolocate'>wlan_geolocate</span>
   <span class='id identifier rubyid_request'>request</span> <span class='op'>=</span> <span class='const'>Packet</span><span class='period'>.</span><span class='id identifier rubyid_create_request'>create_request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>wlan_geolocate</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -1099,6 +1429,7 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
 </div>
 
     <div id="footer">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1132,6 +1463,11 @@ extension by Anwar Mohamed (@anwarelmakrahy)</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+  Generated on Tue Dec 29 22:35:42 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.7).
+>>>>>>> rapid7/gh-pages
 </div>
 
   </body>

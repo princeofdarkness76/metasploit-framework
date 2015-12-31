@@ -1012,6 +1012,7 @@ objects in pwdump format.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
@@ -1028,6 +1029,8 @@ objects in pwdump format.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 435
 436
 437
@@ -1041,18 +1044,22 @@ objects in pwdump format.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 444
 445
 446</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/db_export.rb', line 435</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1074,6 +1081,8 @@ objects in pwdump format.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_extract_event_info'>extract_event_info</span><span class='lparen'>(</span><span class='id identifier rubyid_report_file'>report_file</span><span class='rparen'>)</span>
   <span class='ivar'>@events</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_e'>e</span><span class='op'>|</span>
@@ -1298,6 +1307,7 @@ counts.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
@@ -1319,6 +1329,11 @@ counts.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+430
+431
+432</pre>
+>>>>>>> rapid7/gh-pages
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/db_export.rb', line 309</span>
@@ -1330,6 +1345,7 @@ counts.</p>
 
     <span class='comment'># Host attributes
 </span>    <span class='id identifier rubyid_h'>h</span><span class='period'>.</span><span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_each_pair'>each_pair</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span><span class='id identifier rubyid_v'>v</span><span class='op'>|</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1352,6 +1368,10 @@ counts.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+      <span class='comment'># Convert IPAddr -&gt; String
+</span>      <span class='id identifier rubyid_v'>v</span> <span class='op'>=</span> <span class='id identifier rubyid_v'>v</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='kw'>if</span> <span class='id identifier rubyid_k'>k</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>address</span><span class='tstring_end'>&#39;</span></span>
+>>>>>>> rapid7/gh-pages
       <span class='id identifier rubyid_el'>el</span> <span class='op'>=</span> <span class='id identifier rubyid_create_xml_element'>create_xml_element</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span><span class='id identifier rubyid_v'>v</span><span class='rparen'>)</span>
       <span class='id identifier rubyid_report_file'>report_file</span><span class='period'>.</span><span class='id identifier rubyid_write'>write</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>    </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_el'>el</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># Not checking types
 </span>    <span class='kw'>end</span>
@@ -1841,6 +1861,7 @@ Mdm::Module::Detail.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
@@ -1857,6 +1878,8 @@ Mdm::Module::Detail.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 449
 450
 451
@@ -1870,18 +1893,22 @@ Mdm::Module::Detail.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 458
 459
 460</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/db_export.rb', line 449</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1903,6 +1930,8 @@ Mdm::Module::Detail.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_extract_service_info'>extract_service_info</span><span class='lparen'>(</span><span class='id identifier rubyid_report_file'>report_file</span><span class='rparen'>)</span>
   <span class='ivar'>@services</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_e'>e</span><span class='op'>|</span>
@@ -2091,18 +2120,22 @@ extraction.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 534
 535
 536</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/db_export.rb', line 534</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2126,6 +2159,8 @@ extraction.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_extract_web_form_info'>extract_web_form_info</span><span class='lparen'>(</span><span class='id identifier rubyid_report_file'>report_file</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_extract_web_info'>extract_web_info</span><span class='lparen'>(</span><span class='id identifier rubyid_report_file'>report_file</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>web_form</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='ivar'>@web_forms</span><span class='rparen'>)</span>
@@ -2165,6 +2200,7 @@ extraction.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
@@ -2181,6 +2217,8 @@ extraction.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 502
 503
 504
@@ -2207,18 +2245,22 @@ extraction.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 524
 525
 526</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/db_export.rb', line 502</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2240,6 +2282,8 @@ extraction.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_extract_web_info'>extract_web_info</span><span class='lparen'>(</span><span class='id identifier rubyid_report_file'>report_file</span><span class='comma'>,</span> <span class='id identifier rubyid_tag'>tag</span><span class='comma'>,</span> <span class='id identifier rubyid_entries'>entries</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_entries'>entries</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_e'>e</span><span class='op'>|</span>
@@ -2301,18 +2345,22 @@ extraction.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 529
 530
 531</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/db_export.rb', line 529</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2336,6 +2384,8 @@ extraction.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_extract_web_page_info'>extract_web_page_info</span><span class='lparen'>(</span><span class='id identifier rubyid_report_file'>report_file</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_extract_web_info'>extract_web_info</span><span class='lparen'>(</span><span class='id identifier rubyid_report_file'>report_file</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>web_page</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='ivar'>@web_pages</span><span class='rparen'>)</span>
@@ -2375,6 +2425,7 @@ extraction.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
@@ -2391,6 +2442,8 @@ extraction.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 478
 479
 480
@@ -2414,18 +2467,22 @@ extraction.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 497
 498
 499</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/db_export.rb', line 478</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2447,6 +2504,8 @@ extraction.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_extract_web_site_info'>extract_web_site_info</span><span class='lparen'>(</span><span class='id identifier rubyid_report_file'>report_file</span><span class='rparen'>)</span>
   <span class='ivar'>@web_sites</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_e'>e</span><span class='op'>|</span>
@@ -2505,18 +2564,22 @@ extraction.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 539
 540
 541</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/msf/core/db_export.rb', line 539</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2540,6 +2603,8 @@ extraction.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 
 <span class='kw'>def</span> <span class='id identifier rubyid_extract_web_vuln_info'>extract_web_vuln_info</span><span class='lparen'>(</span><span class='id identifier rubyid_report_file'>report_file</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_extract_web_info'>extract_web_info</span><span class='lparen'>(</span><span class='id identifier rubyid_report_file'>report_file</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>web_vuln</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='ivar'>@web_vulns</span><span class='rparen'>)</span>
@@ -2990,6 +3055,7 @@ objects in pwdump format</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Generated on Tue Dec 22 22:33:37 2015 by
 =======
   Generated on Tue Dec  8 22:33:40 2015 by
@@ -3018,6 +3084,11 @@ objects in pwdump format</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+  Generated on Tue Dec 29 22:33:46 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.7).
+>>>>>>> rapid7/gh-pages
 </div>
 
   </body>
