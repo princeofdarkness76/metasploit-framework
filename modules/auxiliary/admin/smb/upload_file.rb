@@ -17,6 +17,7 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -75,6 +76,8 @@ class Metasploit3 < Msf::Auxiliary
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   include Msf::Auxiliary::Report
   include Msf::Auxiliary::Scanner
 

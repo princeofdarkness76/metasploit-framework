@@ -13,6 +13,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'msf/core/payload/transport_config'
 =======
 >>>>>>> rapid7/feature/complex-payloads
@@ -252,6 +253,9 @@ require 'msf/core/payload/transport_config'
 =======
 require 'msf/core/payload/transport_config'
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+require 'msf/core/payload/transport_config'
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 require 'msf/core/payload/windows/reverse_http'
 
 module Msf
@@ -268,6 +272,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> rapid7/feature/complex-payloads
@@ -449,6 +454,8 @@ module Msf
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTPS
@@ -467,6 +474,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
@@ -477,6 +485,8 @@ module Msf
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-framework
 =======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 module Payload::Windows::ReverseHttps
 
   include Msf::Payload::TransportConfig
@@ -494,6 +504,7 @@ module Payload::Windows::ReverseHttps
   #
   def transport_config(opts={})
     transport_config_reverse_https(opts)
+<<<<<<< HEAD
 =======
 
 =======
@@ -1221,6 +1232,8 @@ module Payload::Windows::ReverseHttps
   def transport_config(opts={})
     transport_config_reverse_https(opts)
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   end
 
 end

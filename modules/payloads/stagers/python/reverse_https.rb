@@ -17,6 +17,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -190,10 +191,16 @@ module Metasploit3
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+require 'msf/core/payload/uuid/options'
+
+module Metasploit3
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
   CachedSize = 762
 
   include Msf::Payload::Stager
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -330,6 +337,9 @@ module Metasploit3
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+  include Msf::Payload::UUID::Options
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
   def initialize(info = {})
     super(merge_info(info,
@@ -351,6 +361,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -407,6 +418,8 @@ module Metasploit3
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
     register_options(
       [
@@ -422,6 +435,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -479,6 +493,8 @@ module Metasploit3
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   end
 
   #
@@ -494,6 +510,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     super({scheme: 'https'})
 =======
 =======
@@ -705,6 +722,8 @@ module Metasploit3
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
     lhost = datastore['LHOST'] || '127.127.127.127'
 
     var_escape = lambda { |txt|
@@ -795,6 +814,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -807,6 +827,8 @@ module Metasploit3
 =======
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   end
 
 end

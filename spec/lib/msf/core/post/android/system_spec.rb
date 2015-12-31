@@ -10,6 +10,7 @@ require 'msf/core/post/android/system'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Post::Android::System do
 =======
 describe Msf::Post::Android::System do
@@ -35,6 +36,9 @@ describe Msf::Post::Android::System do
 =======
 describe Msf::Post::Android::System do
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+describe Msf::Post::Android::System do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
   subject do
     mod = Module.new

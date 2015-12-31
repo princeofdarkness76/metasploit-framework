@@ -5,7 +5,11 @@ require 'stringio'
 require 'rex/proto/rmi'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::PingAck do
+=======
+describe Rex::Proto::Rmi::Model::PingAck do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 describe Rex::Proto::Rmi::Model::PingAck do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree

@@ -679,6 +679,9 @@ class ReadableText
   # Dumps the list of active sessions in verbose mode
   #
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   # @param framework [Msf::Framework] the framework to dump.
   # @param opts [Hash] the options to dump with.
   # @option opts :session_ids [Array] the list of sessions to dump (no
@@ -693,6 +696,7 @@ class ReadableText
     if framework.sessions.length == 0
       out << "No active sessions.\n"
       return out
+<<<<<<< HEAD
 =======
   # @param framework [Msf::Framework] the framework.
   # @param verbose [Boolean] if true, also prints the payload, LPORT, URIPATH
@@ -706,6 +710,8 @@ class ReadableText
     if (verbose)
       columns += [ "URIPATH", "Start Time" ]
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
     end
 
     framework.sessions.each_sorted do |k|
@@ -720,6 +726,9 @@ class ReadableText
       sess_puid    = session.payload_uuid.respond_to?(:puid_hex) ? session.payload_uuid.puid_hex : nil
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
       sess_checkin = "<none>"
       sess_machine_id = session.machine_id.to_s
       sess_registration = "No"
@@ -1158,6 +1167,7 @@ class ReadableText
 
     out << "\n"
     return out
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1677,6 +1687,8 @@ class ReadableText
 
     out << "\n"
     return out
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   end
 
   # Dumps the list of running jobs.
@@ -1700,8 +1712,11 @@ class ReadableText
       'Columns' => columns
       )
 
+<<<<<<< HEAD
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
     # jobs are stored as a hash with the keys being a numeric job_id.
     framework.jobs.keys.sort{|a,b| a.to_i <=> b.to_i }.each { |k|
       # Job context is stored as an Array with the 0th element being
@@ -1710,6 +1725,7 @@ class ReadableText
       ctx = framework.jobs[k].ctx
       row = [ k, framework.jobs[k].name ]
       row << (ctx[1].nil? ? (ctx[0].datastore['PAYLOAD'] || "") : ctx[1].refname)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1853,6 +1869,9 @@ class ReadableText
 =======
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
       if (verbose)
         uripath = ctx[0].get_resource if ctx[0].respond_to?(:get_resource)

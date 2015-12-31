@@ -11,6 +11,7 @@ require 'rex/java'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::CallData do
 =======
 describe Rex::Proto::Rmi::Model::CallData do
@@ -30,6 +31,9 @@ describe Rex::Proto::Rmi::Model::CallData do
 =======
 describe Rex::Proto::Rmi::Model::CallData do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+describe Rex::Proto::Rmi::Model::CallData do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
   subject(:call_data) do
     described_class.new

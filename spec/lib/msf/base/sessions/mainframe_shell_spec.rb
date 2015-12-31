@@ -15,6 +15,7 @@ require 'msf/base/sessions/mainframe_shell'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Sessions::MainframeShell do
 =======
 describe Msf::Sessions::MainframeShell do
@@ -40,6 +41,9 @@ describe Msf::Sessions::MainframeShell do
 =======
 describe Msf::Sessions::MainframeShell do
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+describe Msf::Sessions::MainframeShell do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   it 'extends Msf::Sessions::CommandShell to include EBCDIC cp1047 codepage translation' do
   args=[0,
    {:datastore=>

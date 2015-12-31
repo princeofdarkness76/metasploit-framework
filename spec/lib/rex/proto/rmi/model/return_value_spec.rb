@@ -11,6 +11,7 @@ require 'rex/java'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::ReturnValue do
 =======
 describe Rex::Proto::Rmi::Model::ReturnValue do
@@ -30,6 +31,9 @@ describe Rex::Proto::Rmi::Model::ReturnValue do
 =======
 describe Rex::Proto::Rmi::Model::ReturnValue do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+describe Rex::Proto::Rmi::Model::ReturnValue do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
   subject(:return_value) do
     described_class.new

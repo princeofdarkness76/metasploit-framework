@@ -17,6 +17,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -532,6 +533,12 @@ require 'msf/core/payload/windows/x64/reverse_https'
 module Metasploit4
 
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+require 'msf/core/payload/windows/x64/reverse_https'
+
+module Metasploit4
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   CachedSize = 532
 
   include Msf::Payload::Stager

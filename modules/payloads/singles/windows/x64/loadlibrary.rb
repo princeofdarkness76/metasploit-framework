@@ -21,6 +21,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 313
 =======
   CachedSize = 314
@@ -138,6 +139,9 @@ module Metasploit3
 =======
   CachedSize = 314
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+  CachedSize = 314
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
   include Msf::Payload::Windows
   include Msf::Payload::Single

@@ -97,6 +97,7 @@ module Rex
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               encoded << [TC_PROXYCLASSDESC].pack('C')
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
@@ -183,6 +184,9 @@ module Rex
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
             when NullReference
               encoded << [TC_NULL].pack('C')
             when Reset

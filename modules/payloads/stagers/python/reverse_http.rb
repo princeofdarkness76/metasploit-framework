@@ -106,6 +106,8 @@ module Metasploit4
 >>>>>>> origin/4.11.2_release_pre-rails4
   CachedSize = 466
 
+  CachedSize = 466
+
   include Msf::Payload::Stager
   include Msf::Payload::Python
   include Msf::Payload::Python::ReverseHttp
@@ -219,6 +221,7 @@ module Metasploit4
 
     generate_uri_checksum(Rex::Payloads::Meterpreter::UriChecksum::URI_CHECKSUM_INITP, uri_req_len)
 <<<<<<< HEAD
+<<<<<<< HEAD
   end
 
 <<<<<<< HEAD
@@ -303,4 +306,8 @@ module Metasploit4
 =======
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+  end
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 end

@@ -10,6 +10,7 @@ require 'msf/core/post/android/priv'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Post::Android::Priv do
 =======
 describe Msf::Post::Android::Priv do
@@ -35,6 +36,9 @@ describe Msf::Post::Android::Priv do
 =======
 describe Msf::Post::Android::Priv do
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+describe Msf::Post::Android::Priv do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
   subject do
     mod = Module.new

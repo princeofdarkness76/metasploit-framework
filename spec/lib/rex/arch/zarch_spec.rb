@@ -10,6 +10,7 @@ require 'rex/arch'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Arch do
 =======
 describe Rex::Arch do
@@ -35,6 +36,9 @@ describe Rex::Arch do
 =======
 describe Rex::Arch do
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+describe Rex::Arch do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   describe ".pack_addr" do
     subject { described_class.pack_addr(arch, addr) }
 

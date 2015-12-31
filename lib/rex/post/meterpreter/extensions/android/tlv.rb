@@ -61,6 +61,7 @@ TLV_TYPE_COLLECT_RESULT_WIFI_LEVEL   = TLV_TYPE_WLAN_LEVEL
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 TLV_TYPE_COLLECT_RESULT_GEO          = TLV_META_TYPE_GROUP     | (TLV_EXTENSIONS + 9030)
@@ -102,6 +103,8 @@ TLV_TYPE_CELL_SYSTEM_ID              = TLV_META_TYPE_UINT      | (TLV_EXTENSIONS
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
 end
 end

@@ -10,6 +10,7 @@ require 'stringio'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Jsobfu do
 =======
 describe Jsobfu do
@@ -29,6 +30,9 @@ describe Jsobfu do
 =======
 describe Jsobfu do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+describe Jsobfu do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
   let(:fname) {
     'test.js'

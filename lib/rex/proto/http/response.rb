@@ -120,6 +120,7 @@ class Response < Packet
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     json = {}
 =======
     json = []
@@ -237,6 +238,9 @@ class Response < Packet
 =======
     json = []
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+    json = []
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
     begin
       json = JSON.parse(self.body)

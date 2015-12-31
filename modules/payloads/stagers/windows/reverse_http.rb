@@ -17,6 +17,7 @@ require 'msf/core/payload/windows/reverse_http'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 module Metasploit4
 =======
@@ -381,6 +382,11 @@ module Metasploit4
 module Metasploit4
 
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+
+module Metasploit4
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   CachedSize = 327
 
   include Msf::Payload::Stager
@@ -389,6 +395,7 @@ module Metasploit4
 
   def initialize(info = {})
     super(merge_info(info,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -417,6 +424,8 @@ module Metasploit4
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
       'Name'        => 'Windows Reverse HTTP Stager (wininet)',
       'Description' => 'Tunnel communication over HTTP (Windows wininet)',
       'Author'      => 'hdm',
@@ -425,6 +434,7 @@ module Metasploit4
       'Arch'        => ARCH_X86,
       'Handler'     => Msf::Handler::ReverseHttp,
       'Convention'  => 'sockedi http'))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -970,4 +980,8 @@ module Metasploit4
   end
 
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+  end
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 end

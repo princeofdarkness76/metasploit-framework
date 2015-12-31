@@ -7,6 +7,7 @@ require 'metasploit/framework/login_scanner/nessus'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::Nessus do
 =======
 describe Metasploit::Framework::LoginScanner::Nessus do
@@ -26,6 +27,9 @@ describe Metasploit::Framework::LoginScanner::Nessus do
 =======
 describe Metasploit::Framework::LoginScanner::Nessus do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+describe Metasploit::Framework::LoginScanner::Nessus do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
     subject(:http_scanner) { described_class.new }
 

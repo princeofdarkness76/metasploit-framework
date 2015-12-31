@@ -62,6 +62,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'metasm', '~> 1.0.2'
   # Metasploit::Concern hooks
 <<<<<<< HEAD
+<<<<<<< HEAD
   spec.add_runtime_dependency 'metasploit-concern', '~> 1.0.0'
   # Metasploit::Credential database models
   spec.add_runtime_dependency 'metasploit-credential', '~> 1.0.1'
@@ -220,6 +221,8 @@ Gem::Specification.new do |spec|
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   spec.add_runtime_dependency 'metasploit-concern', '1.0.0'
   # Metasploit::Credential database models
   spec.add_runtime_dependency 'metasploit-credential', '1.0.1'
@@ -230,7 +233,10 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'metasploit-model', '1.0.0'
   # Needed for Meterpreter
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.17'
+<<<<<<< HEAD
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
   # Needed by msfgui and other rpc components
   spec.add_runtime_dependency 'msgpack'
   # get list of network interfaces, like eth* from OS.
@@ -247,6 +253,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'railties'
   # required for OS fingerprinting
   spec.add_runtime_dependency 'recog', '2.0.14'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -358,6 +365,8 @@ Gem::Specification.new do |spec|
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 
   # rb-readline doesn't work with Ruby Installer due to error with Fiddle:
   #   NoMethodError undefined method `dlopen' for Fiddle:Module

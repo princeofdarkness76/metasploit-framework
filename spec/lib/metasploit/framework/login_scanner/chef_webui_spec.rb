@@ -3,7 +3,11 @@ require 'spec_helper'
 require 'metasploit/framework/login_scanner/chef_webui'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::ChefWebUI do
+=======
+describe Metasploit::Framework::LoginScanner::ChefWebUI do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 describe Metasploit::Framework::LoginScanner::ChefWebUI do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
