@@ -18,6 +18,7 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -32,10 +33,13 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
   include Msf::Exploit::Remote::SMB::Client::Authenticated
   include Msf::Exploit::Remote::SMB::Client::LocalPaths
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -78,6 +82,13 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-api/_index.html
   include Msf::Auxiliary::Report
   include Msf::Auxiliary::Scanner
 

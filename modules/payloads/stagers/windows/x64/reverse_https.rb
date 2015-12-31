@@ -22,6 +22,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -104,6 +105,8 @@ module Metasploit4
 =======
 >>>>>>> master
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 require 'msf/core/payload/windows/x64/reverse_https'
 
 module Metasploit4
@@ -111,6 +114,7 @@ module Metasploit4
 #require 'msf/core/payload/windows/x64/reverse_https'
 >>>>>>> feature/complex-payloads
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
@@ -139,6 +143,10 @@ module Metasploit4
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
 #require 'msf/core/payload/windows/x64/reverse_https'
 =======
 require 'msf/core/payload/windows/x64/reverse_https'
@@ -155,6 +163,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
@@ -165,9 +174,14 @@ module Metasploit4
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 require 'msf/core/payload/windows/x64/reverse_https'
 
 module Metasploit4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -606,11 +620,20 @@ module Metasploit4
 =======
 >>>>>>> master
 =======
+>>>>>>> 4.11.2_release_pre-rails4
+
+=======
+>>>>>>> rapid7/master
+
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
 >>>>>>> rapid7/master
 require 'msf/core/payload/windows/x64/reverse_https'
 
 module Metasploit4
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -628,6 +651,12 @@ module Metasploit4
 =======
 >>>>>>> rapid7/master
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
   CachedSize = 532
 
   include Msf::Payload::Stager

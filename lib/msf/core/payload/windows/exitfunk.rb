@@ -18,6 +18,7 @@ require 'msf/core/payload/windows'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
@@ -28,6 +29,8 @@ require 'msf/core/payload/windows'
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 
 module Msf
 
@@ -35,6 +38,7 @@ module Msf
 module Msf
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,6 +112,14 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> feature/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
 module Msf
 
 =======
@@ -118,6 +130,7 @@ module Msf
 
 module Msf
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -133,9 +146,7 @@ module Msf
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
-
-module Msf
->>>>>>> rapid7/master
+>>>>>>> origin/pod/metasploit-api/_index.html
 =======
 
 module Msf
@@ -144,6 +155,11 @@ module Msf
 
 module Msf
 >>>>>>> rapid7/master
+=======
+
+module Msf
+>>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -384,6 +400,10 @@ module Msf
 
 
 >>>>>>> rapid7/feature/complex-payloads
+=======
+
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
 ###
 #
 # Implements arbitrary exit routines for Windows ARCH_X86 payloads
@@ -417,6 +437,7 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -433,8 +454,11 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
@@ -491,6 +515,10 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> origin/payload-generator.rb
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['seh']}
           push.i8 0              ; push the exit function parameter
           push ebx               ; push the hash of the exit function
@@ -498,6 +526,7 @@ module Payload::Windows::Exitfunk
           push.i8 0
           ret                    ; Return to NULL (crash)
         ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -519,6 +548,8 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> origin/payload-generator.rb
 =======
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
 =======
 >>>>>>> rapid7/master
 =======
@@ -527,6 +558,7 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -844,6 +876,9 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['seh'].to_s(16)}
         push.i8 0              ; push the exit function parameter
         push ebx               ; push the hash of the exit function
@@ -851,6 +886,7 @@ module Payload::Windows::Exitfunk
         push.i8 0
         ret                    ; Return to NULL (crash)
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -944,6 +980,33 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> rapid7/master
 >>>>>>> origin/payload-generator.rb
+=======
+=======
+          mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['seh']}
+          push.i8 0              ; push the exit function parameter
+          push ebx               ; push the hash of the exit function
+          call ebp               ; SetUnhandledExceptionFilter(0)
+          push.i8 0
+          ret                    ; Return to NULL (crash)
+        ^
+>>>>>>> feature/complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
 
     # On Windows Vista, Server 2008, and newer, it is not possible to call ExitThread
     # on WoW64 processes, instead we need to call RtlExitUserThread. This stub will
@@ -951,6 +1014,7 @@ module Payload::Windows::Exitfunk
 
     when 'thread'
       asm << %Q^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -980,8 +1044,11 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
@@ -1045,6 +1112,10 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/payload-generator.rb
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
           push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
           call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
@@ -1083,6 +1154,7 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1104,9 +1176,13 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> origin/payload-generator.rb
 =======
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1232,6 +1308,13 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> rapid7/master
 >>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['thread'].to_s(16)}
         push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
         call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
@@ -1256,6 +1339,7 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
@@ -1368,6 +1452,10 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> origin/pod/metasploit-framework
+=======
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
 
     when 'process', nil
       asm << %Q^
@@ -1381,6 +1469,7 @@ module Payload::Windows::Exitfunk
       asm << %Q^
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           mov ebx, #{"0x%.8x" % Rex::Text.ror13_hash('Sleep')}
           push 300000            ; 300 seconds
           push ebx               ; push the hash of the function
@@ -1391,6 +1480,8 @@ module Payload::Windows::Exitfunk
 =======
 =======
 >>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
         mov ebx, #{Rex::Text.block_api_hash('kernel32.dll', 'Sleep')}
         push 300000            ; 300 seconds
         push ebx               ; push the hash of the function
@@ -1400,10 +1491,13 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 =======
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
           push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
@@ -1420,6 +1514,7 @@ module Payload::Windows::Exitfunk
         ^
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1513,6 +1608,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 
     when 'process', nil
       asm << %Q^
@@ -1526,12 +1623,16 @@ module Payload::Windows::Exitfunk
       asm << %Q^
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
           mov ebx, #{"0x%.8x" % Rex::Text.ror13_hash('Sleep')}
           push 300000            ; 300 seconds
           push ebx               ; push the hash of the function
           call ebp               ; Sleep(300000)
           jmp exitfunk           ; repeat
         ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/feature/complex-payloads
 =======
@@ -1745,12 +1846,17 @@ module Payload::Windows::Exitfunk
 =======
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> feature/complex-payloads
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
         mov ebx, #{Rex::Text.block_api_hash('kernel32.dll', 'Sleep')}
         push 300000            ; 300 seconds
         push ebx               ; push the hash of the function
         call ebp               ; Sleep(300000)
         jmp exitfunk           ; repeat
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
@@ -1765,6 +1871,24 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
     else
       # Do nothing and continue after the end of the shellcode
     end

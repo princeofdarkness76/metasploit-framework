@@ -24,6 +24,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   CachedSize = 313
 =======
   CachedSize = 314
@@ -50,6 +51,11 @@ module Metasploit3
 =======
   CachedSize = 314
 >>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+  CachedSize = 313
+=======
+  CachedSize = 314
+>>>>>>> origin/pod/metasploit-api/_index.html
 >>>>>>> 4.11.2_release_pre-rails4
 =======
   CachedSize = 314
@@ -58,6 +64,7 @@ module Metasploit3
   CachedSize = 314
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,10 +115,13 @@ module Metasploit3
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
 >>>>>>> origin/pod/metasploit-framework
 =======
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
   CachedSize = 314
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
   CachedSize = 314
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
@@ -150,6 +160,12 @@ module Metasploit3
 =======
   CachedSize = 314
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+  CachedSize = 314
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
 
   include Msf::Payload::Windows
   include Msf::Payload::Single

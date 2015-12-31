@@ -75,6 +75,7 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -123,6 +124,10 @@ end
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 <<<<<<< HEAD
+=======
+=======
+
+>>>>>>> origin/pod/metasploit-api/_index.html
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 
@@ -131,8 +136,11 @@ end
 
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -141,6 +149,7 @@ end
 =======
 
 >>>>>>> msf-complex-payloads
+<<<<<<< HEAD
 =======
 
 >>>>>>> msf-complex-payloads
@@ -195,3 +204,5 @@ end
 =======
 
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html

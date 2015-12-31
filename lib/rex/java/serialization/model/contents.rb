@@ -100,6 +100,7 @@ module Rex
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               encoded << [TC_PROXYCLASSDESC].pack('C')
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
@@ -157,11 +158,19 @@ module Rex
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> origin/pod/metasploit-framework
 =======
+=======
+              encoded << [TC_PROXYCLASSDESC].pack('C')
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
               content = [TC_PROXYCLASSDESC].pack('C')
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -195,6 +204,11 @@ module Rex
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
 >>>>>>> origin/payload-generator.rb
+=======
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
             when NullReference
               encoded << [TC_NULL].pack('C')
             when Reset

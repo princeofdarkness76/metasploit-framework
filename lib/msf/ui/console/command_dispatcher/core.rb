@@ -99,6 +99,7 @@ class Core
     "-e" => [ true,  "Expression to evaluate."                        ])
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -114,15 +115,20 @@ class Core
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
@@ -134,6 +140,7 @@ class Core
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -143,11 +150,14 @@ class Core
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 
   @@irb_opts = Rex::Parser::Arguments.new(
     "-h" => [ false, "Help banner."                                   ],
     "-e" => [ true,  "Expression to evaluate."                        ])
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -190,6 +200,8 @@ class Core
 =======
 
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
   # The list of data store elements that cannot be set when in defanged
   # mode.
   DefangedProhibitedDataStoreElements = [ "MsfModulePaths" ]
@@ -213,6 +225,7 @@ class Core
       "edit"       => "Edit the current module with $VISUAL or $EDITOR",
       "get"        => "Gets the value of a context-specific variable",
       "getg"       => "Gets the value of a global variable",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -271,6 +284,17 @@ class Core
 =======
       "go_pro"     => "Launch Metasploit web GUI",
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+=======
+      "go_pro"     => "Launch Metasploit web GUI",
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+      "go_pro"     => "Launch Metasploit web GUI",
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+      "go_pro"     => "Launch Metasploit web GUI",
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-api/_index.html
       "grep"       => "Grep the output of another command",
       "help"       => "Help menu",
       "advanced"   => "Displays advanced options for one or more modules",
@@ -922,6 +946,9 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
     print_line "Queries the supplied module or modules for information. If no module is given,"
     print_line "show info for the currently active module."
     print_line
@@ -1757,6 +1784,7 @@ class Core
 
   #
   # Tab completion for the rename_job command
+<<<<<<< HEAD
   #
   # @param str [String] the string currently being typed before tab was hit
   # @param words [Array<String>] the previously completed words on the command line.  words is always
@@ -7977,6 +8005,8 @@ class Core
 
   #
   # Tab completion for the rename_job command
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
   #
   # @param str [String] the string currently being typed before tab was hit
   # @param words [Array<String>] the previously completed words on the command line.  words is always
@@ -8026,7 +8056,11 @@ class Core
 
   def cmd_info_help
     print_line "Usage: info <module name> [mod2 mod3 ...]"
+<<<<<<< HEAD
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-api/_index.html
     print_line
     print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
     print_line
@@ -8097,7 +8131,11 @@ class Core
 
   def cmd_info_help
     print_line "Usage: info <module name> [mod2 mod3 ...]"
+<<<<<<< HEAD
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
     print_line
     print_line 'Queries the supplied module or modules for options. If no module is given,'
     print_line 'show options for the currently active module.'
@@ -8162,7 +8200,11 @@ class Core
   # Tab completion for the rename_job command
 =======
   # Tab completion for the advanced command (same as use)
+<<<<<<< HEAD
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-api/_index.html
   #
   # @param str (see #cmd_use_tabs)
   # @param words (see #cmd_use_tabs)
@@ -8181,7 +8223,11 @@ class Core
   #
   # @param str (see #cmd_use_tabs)
   # @param words (see #cmd_use_tabs)
+<<<<<<< HEAD
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
 
   def cmd_advanced_tabs(str, words)
     cmd_use_tabs(str, words)
@@ -8235,7 +8281,11 @@ class Core
     print_line "Execute commands in a Ruby environment"
     print @@irb_opts.usage
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-api/_index.html
   end
 
   def cmd_rename_job(*args)
@@ -8262,7 +8312,11 @@ class Core
     print_line "You may use the jobs command to see what jobs are available."
     print_line
 =======
+<<<<<<< HEAD
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
   end
 
   def cmd_rename_job(*args)
@@ -8296,6 +8350,11 @@ class Core
 
 >>>>>>> rapid7/master
 =======
+<<<<<<< HEAD
+=======
+    end
+
+>>>>>>> origin/pod/metasploit-api/_index.html
 =======
     expressions = []
 
@@ -8308,10 +8367,16 @@ class Core
         cmd_irb_help
         return false
       end
+<<<<<<< HEAD
 >>>>>>> origin/msf-complex-payloads
     end
 
 =======
+    end
+
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
     expressions = []
 
     # Parse the command options
@@ -8325,7 +8390,11 @@ class Core
       end
     end
 
+<<<<<<< HEAD
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
     if expressions.empty?
       print_status("Starting IRB shell...\n")
 
@@ -9392,6 +9461,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9443,9 +9513,17 @@ class Core
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
+=======
+      framework.sessions.each_sorted do |s|
+        session = framework.sessions.get(s)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 <<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -9467,6 +9545,13 @@ class Core
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9523,6 +9608,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -9541,6 +9627,8 @@ class Core
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -9548,6 +9636,7 @@ class Core
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9589,11 +9678,16 @@ class Core
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
         if session
           if session.respond_to?(:response_timeout)
             last_known_timeout = session.response_timeout
             session.response_timeout = response_timeout
           end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9616,9 +9710,12 @@ class Core
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9630,9 +9727,12 @@ class Core
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 <<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9667,6 +9767,11 @@ class Core
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
           print_status("Detaching session #{sess_id}")
           begin
             session.detach
@@ -9692,6 +9797,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -9710,6 +9816,8 @@ class Core
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -9717,6 +9825,7 @@ class Core
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9758,6 +9867,10 @@ class Core
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
           begin
             session.kill
           ensure
@@ -9778,6 +9891,7 @@ class Core
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9786,9 +9900,12 @@ class Core
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9800,9 +9917,12 @@ class Core
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 <<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9836,6 +9956,10 @@ class Core
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -9851,6 +9975,7 @@ class Core
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9874,6 +9999,8 @@ class Core
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -9881,6 +10008,7 @@ class Core
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9922,6 +10050,10 @@ class Core
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
           end
         end
       end

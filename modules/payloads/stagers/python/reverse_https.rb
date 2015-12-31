@@ -20,6 +20,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -39,10 +40,13 @@ require 'msf/core/handler/reverse_https'
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 require 'msf/core/payload/python'
 require 'msf/core/payload/python/reverse_http'
 =======
 require 'msf/core/payload/uuid/options'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52,6 +56,34 @@ require 'msf/core/payload/uuid/options'
 module Metasploit4
 =======
 require 'msf/core/payload/uuid/options'
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+
+module Metasploit4
+=======
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+require 'msf/core/payload/uuid/options'
+
+module Metasploit3
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+require 'msf/core/payload/uuid/options'
+
+<<<<<<< HEAD
+module Metasploit3
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+require 'msf/core/payload/uuid/options'
+
+module Metasploit3
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+require 'msf/core/payload/uuid/options'
+
+module Metasploit3
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
 
 module Metasploit3
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -287,6 +319,7 @@ module Metasploit3
   CachedSize = 762
 
   include Msf::Payload::Stager
+<<<<<<< HEAD
   include Msf::Payload::UUID::Options
 >>>>>>> 4.11.2_release_pre-rails4
 =======
@@ -360,6 +393,36 @@ module Metasploit3
 =======
   include Msf::Payload::UUID::Options
 >>>>>>> origin/payload-generator.rb
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  include Msf::Payload::Python
+  include Msf::Payload::Python::ReverseHttp
+=======
+  include Msf::Payload::UUID::Options
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+  include Msf::Payload::UUID::Options
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  include Msf::Payload::UUID::Options
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  include Msf::Payload::UUID::Options
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+  CachedSize = 762
+
+  include Msf::Payload::Stager
+  include Msf::Payload::UUID::Options
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+  include Msf::Payload::UUID::Options
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
 
   def initialize(info = {})
     super(merge_info(info,
@@ -384,6 +447,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -396,9 +460,13 @@ module Metasploit3
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
@@ -446,6 +514,10 @@ module Metasploit3
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
 
     register_options(
       [
@@ -464,6 +536,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -474,11 +547,14 @@ module Metasploit3
 =======
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
@@ -527,6 +603,10 @@ module Metasploit3
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
   end
 
   #
@@ -545,6 +625,7 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     super({scheme: 'https'})
 =======
 =======
@@ -744,6 +825,8 @@ module Metasploit3
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
     super({scheme: 'https'})
 =======
 =======
@@ -752,6 +835,7 @@ module Metasploit3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> msf-complex-payloads
+<<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
@@ -762,6 +846,8 @@ module Metasploit3
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
     lhost = datastore['LHOST'] || '127.127.127.127'
 
     var_escape = lambda { |txt|
@@ -855,6 +941,9 @@ module Metasploit3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -862,6 +951,7 @@ module Metasploit3
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> msf-complex-payloads
+<<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
@@ -873,6 +963,8 @@ module Metasploit3
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> origin/pod/metasploit-api/_index.html
   end
 
 end
