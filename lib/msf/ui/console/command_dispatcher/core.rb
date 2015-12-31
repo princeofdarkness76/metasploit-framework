@@ -3855,17 +3855,28 @@ class Core
 >>>>>>> master
     end
 
+<<<<<<< HEAD
     # This is not respecting the Protected access control, but this seems to be the only way
     # to rename a job. If you know a more appropriate way, patches accepted.
     framework.jobs[job_id].send(:name=, job_name)
     print_status("Job #{job_id} updated")
 
     true
+=======
+  def cmd_info_help
+    print_line "Usage: info <module name> [mod2 mod3 ...]"
+    print_line
+    print_line "Optionally the flag '-j' will print the data in json format"
+    print_line "Queries the supplied module or modules for information. If no module is given,"
+    print_line "show info for the currently active module."
+    print_line
+>>>>>>> rapid7/master
   end
 
   #
   # Tab completion for the rename_job command
   #
+<<<<<<< HEAD
   # @param str [String] the string currently being typed before tab was hit
   # @param words [Array<String>] the previously completed words on the command line.  words is always
   # at least 1 when tab completion has reached this stage since the command itself has been completed
@@ -3875,6 +3886,43 @@ class Core
     framework.jobs.keys
 =======
     end
+>>>>>>> rapid7/master
+=======
+  def cmd_info(*args)
+    dump_json = false
+    if args.include?('-j')
+      args.delete('-j')
+      dump_json = true
+    end
+
+    if (args.length == 0)
+      if (active_module)
+        if dump_json
+          print(Serializer::Json.dump_module(active_module) + "\n")
+        else
+          print(Serializer::ReadableText.dump_module(active_module))
+        end
+        return true
+      else
+        cmd_info_help
+        return false
+      end
+    elsif args.include? "-h"
+      cmd_info_help
+      return false
+    end
+
+    args.each { |name|
+      mod = framework.modules.create(name)
+
+      if (mod == nil)
+        print_error("Invalid module: #{name}")
+      elsif dump_json
+        print(Serializer::Json.dump_module(mod) + "\n")
+      else
+        print(Serializer::ReadableText.dump_module(mod))
+      end
+    }
 >>>>>>> rapid7/master
   end
 

@@ -66,12 +66,15 @@ class Metasploit3 < Msf::Auxiliary
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   def peer
     "#{rhost}:#{rport}"
   end
 
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
   def smb_delete_files
     vprint_status("#{peer}: Connecting to the server...")
     connect()
