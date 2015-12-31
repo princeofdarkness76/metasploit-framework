@@ -20,6 +20,7 @@ require 'msf/core/handler/reverse_https'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -454,9 +455,13 @@ module Metasploit4
 #require 'msf/core/payload/windows/x64/reverse_https'
 >>>>>>> feature/complex-payloads
 =======
+#require 'msf/core/payload/windows/x64/reverse_https'
+>>>>>>> origin/msf-complex-payloads
+=======
 require 'msf/core/payload/windows/x64/reverse_https'
 
 module Metasploit4
+<<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
 
 <<<<<<< HEAD
@@ -547,6 +552,31 @@ require 'msf/core/payload/windows/x64/reverse_https'
 module Metasploit4
 
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> rapid7/master
+=======
+require 'msf/core/payload/windows/x64/reverse_https'
+
+module Metasploit4
+>>>>>>> rapid7/master
+=======
+require 'msf/core/payload/windows/x64/reverse_https'
+
+module Metasploit4
+>>>>>>> rapid7/master
+
+=======
+=======
+>>>>>>> rapid7/master
+require 'msf/core/payload/windows/x64/reverse_https'
+
+module Metasploit4
+
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
   CachedSize = 532
 
   include Msf::Payload::Stager

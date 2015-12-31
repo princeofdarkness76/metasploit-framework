@@ -61,6 +61,7 @@ RSpec.describe Msf::EncodedPayload do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -71,12 +72,15 @@ RSpec.describe Msf::EncodedPayload do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
 
     specify { expect(encoded_payload).to respond_to(:encoded) }
 
     it 'is an Msf::EncodedPayload' do
       expect(encoded_payload).to be_a(described_class)
     end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94,6 +98,8 @@ RSpec.describe Msf::EncodedPayload do
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
 
     specify { expect(encoded_payload).to respond_to(:encoded) }
 

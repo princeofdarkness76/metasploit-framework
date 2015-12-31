@@ -20,6 +20,7 @@ require 'msf/core/payload/windows/reverse_http'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 module Metasploit4
 =======
@@ -129,6 +130,13 @@ module Metasploit4
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+=======
+
+module Metasploit4
+>>>>>>> rapid7/master
+=======
+>>>>>>> origin/msf-complex-payloads
 
 module Metasploit4
 >>>>>>> rapid7/master
@@ -140,6 +148,7 @@ module Metasploit4
 
 module Metasploit4
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -360,8 +369,12 @@ module Metasploit4
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 
+>>>>>>> origin/msf-complex-payloads
+=======
+
 module Metasploit4
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -393,6 +406,9 @@ module Metasploit4
 module Metasploit4
 
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
   CachedSize = 327
 
   include Msf::Payload::Stager
@@ -413,6 +429,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -532,6 +549,8 @@ module Metasploit4
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/msf-complex-payloads
       'Name'          => 'Reverse HTTP Stager',
       'Description'   => 'Tunnel communication over HTTP',
       'Author'        => 'hdm',
@@ -701,6 +720,7 @@ module Metasploit4
       'Handler'     => Msf::Handler::ReverseHttp,
       'Convention'  => 'sockedi http'))
   end
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -781,10 +801,15 @@ module Metasploit4
 =======
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+=======
+=======
+>>>>>>> origin/msf-complex-payloads
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
@@ -858,6 +883,11 @@ module Metasploit4
 >>>>>>> master
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
       'Name'        => 'Windows Reverse HTTP Stager (wininet)',
       'Description' => 'Tunnel communication over HTTP (Windows wininet)',
       'Author'      => 'hdm',
@@ -866,14 +896,18 @@ module Metasploit4
       'Arch'        => ARCH_X86,
       'Handler'     => Msf::Handler::ReverseHttp,
       'Convention'  => 'sockedi http'))
+<<<<<<< HEAD
 =======
 >>>>>>> pod/complex-payloads
 =======
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
   end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -927,12 +961,15 @@ module Metasploit4
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 =======
+=======
+>>>>>>> origin/msf-complex-payloads
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 >>>>>>> master
 =======
@@ -996,4 +1033,9 @@ module Metasploit4
   end
 
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
 end

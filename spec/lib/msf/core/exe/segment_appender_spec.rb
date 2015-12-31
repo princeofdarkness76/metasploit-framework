@@ -8,6 +8,7 @@ require 'msf/core/exe/segment_appender'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Exe::SegmentAppender do
 =======
 describe Msf::Exe::SegmentAppender do
@@ -30,6 +31,9 @@ describe Msf::Exe::SegmentAppender do
 =======
 describe Msf::Exe::SegmentAppender do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+describe Msf::Exe::SegmentAppender do
+>>>>>>> origin/msf-complex-payloads
 
   let(:opts) do
     option_hash = {
@@ -40,6 +44,7 @@ describe Msf::Exe::SegmentAppender do
   end
   subject(:injector) { Msf::Exe::SegmentInjector.new(opts) }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -70,6 +75,8 @@ describe Msf::Exe::SegmentAppender do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
   it { should respond_to :payload }
   it { should respond_to :template }
   it { should respond_to :arch }
@@ -80,6 +87,7 @@ describe Msf::Exe::SegmentAppender do
     injector.processor.class.should == Metasm::Ia32
     injector.arch = :x64
     injector.processor.class.should == Metasm::X86_64
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -99,10 +107,13 @@ describe Msf::Exe::SegmentAppender do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
   end
 
   context '#create_thread_stub' do
     it 'should use edx as a default buffer register' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -132,6 +143,9 @@ describe Msf::Exe::SegmentAppender do
 =======
       injector.buffer_register.should == 'edx'
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      injector.buffer_register.should == 'edx'
+>>>>>>> origin/msf-complex-payloads
     end
 
     context 'when given a non-default buffer register' do
@@ -144,6 +158,7 @@ describe Msf::Exe::SegmentAppender do
         }
       end
       it 'should use the correct buffer register' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -173,12 +188,16 @@ describe Msf::Exe::SegmentAppender do
 =======
         injector.buffer_register.should == 'eax'
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        injector.buffer_register.should == 'eax'
+>>>>>>> origin/msf-complex-payloads
       end
     end
   end
 
   describe '#generate_pe' do
     it 'should return a string' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -208,6 +227,9 @@ describe Msf::Exe::SegmentAppender do
 =======
       injector.generate_pe.kind_of?(String).should == true
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      injector.generate_pe.kind_of?(String).should == true
+>>>>>>> origin/msf-complex-payloads
     end
 
     it 'should produce a valid PE exe' do
@@ -217,6 +239,7 @@ describe Msf::Exe::SegmentAppender do
     context 'the generated exe' do
       let(:exe) { Metasm::PE.decode(injector.generate_pe) }
       it 'should be the propper arch' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -242,11 +265,14 @@ describe Msf::Exe::SegmentAppender do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
         exe.bitsize.should == 32
       end
 
       it 'should have 5 sections' do
         exe.sections.count.should == 5
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -266,11 +292,14 @@ describe Msf::Exe::SegmentAppender do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
       end
 
       it 'should have all the right original section names' do
         s_names = []
         exe.sections.collect {|s| s_names << s.name}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -300,6 +329,8 @@ describe Msf::Exe::SegmentAppender do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
         s_names[0,4].should == [".text", ".rdata", ".data", ".rsrc"]
       end
 
@@ -309,6 +340,7 @@ describe Msf::Exe::SegmentAppender do
 
       it 'should have an entrypoint that points to the last section' do
         exe.optheader.entrypoint.should == exe.sections.last.virtaddr
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -328,6 +360,8 @@ describe Msf::Exe::SegmentAppender do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
       end
     end
   end

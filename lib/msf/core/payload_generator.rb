@@ -223,6 +223,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -365,6 +366,8 @@ module Msf
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/msf-complex-payloads
         shellcode
       else
         cli_print "Found #{encoder_list.count} compatible encoders"
@@ -380,6 +383,7 @@ module Msf
             cli_print "#{encoder_mod.refname} failed with #{e.message}"
             next
           end
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -421,9 +425,13 @@ module Msf
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -442,9 +450,12 @@ module Msf
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+>>>>>>> origin/msf-complex-payloads
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -542,6 +553,8 @@ module Msf
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/msf-complex-payloads
         return shellcode
       end
 
@@ -569,6 +582,7 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -615,6 +629,8 @@ module Msf
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/msf-complex-payloads
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -624,6 +640,7 @@ module Msf
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -726,6 +743,8 @@ module Msf
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
         end
       end
 

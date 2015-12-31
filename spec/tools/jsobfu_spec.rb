@@ -11,6 +11,7 @@ require 'stringio'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Jsobfu do
 =======
 describe Jsobfu do
@@ -33,6 +34,9 @@ describe Jsobfu do
 =======
 describe Jsobfu do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+describe Jsobfu do
+>>>>>>> origin/msf-complex-payloads
 
   let(:fname) {
     'test.js'

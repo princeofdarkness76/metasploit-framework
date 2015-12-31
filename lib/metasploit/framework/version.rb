@@ -30,7 +30,11 @@ module Metasploit
         end
       end
 
+<<<<<<< HEAD
       VERSION = "4.11.6"
+=======
+      VERSION = "4.11.5"
+>>>>>>> origin/msf-complex-payloads
       MAJOR, MINOR, PATCH = VERSION.split('.').map { |x| x.to_i }
       PRERELEASE = 'dev'
       HASH = get_hash

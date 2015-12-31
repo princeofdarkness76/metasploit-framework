@@ -31,6 +31,7 @@ RSpec.describe Msf::Exe::SegmentInjector do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -44,6 +45,8 @@ RSpec.describe Msf::Exe::SegmentInjector do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
   end
 
   context '#create_thread_stub' do

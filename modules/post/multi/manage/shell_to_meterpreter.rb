@@ -54,6 +54,7 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -184,6 +185,9 @@ class Metasploit3 < Msf::Post
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+>>>>>>> origin/msf-complex-payloads
     ], self.class)
     deregister_options('PERSIST', 'PSH_OLD_METHOD', 'RUN_WOW64')
   end
@@ -240,6 +244,7 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       target_info = cmd_exec('uname -ms')
 =======
 =======
@@ -258,6 +263,8 @@ class Metasploit3 < Msf::Post
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
       target_info = cmd_exec('uname -mo')
 >>>>>>> origin/4.11.2_release_pre-rails4
       if target_info =~ /linux/i && target_info =~ /86/
@@ -267,6 +274,7 @@ class Metasploit3 < Msf::Post
         lplat = [Msf::Platform::Linux]
         larch = [ARCH_X86]
         vprint_status("Platform: Linux")
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -298,6 +306,8 @@ class Metasploit3 < Msf::Post
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
       elsif cmd_exec('python -V') =~ /Python (2|3)\.(\d)/
 >>>>>>> origin/4.11.2_release_pre-rails4
         # Generic fallback for OSX, Solaris, Linux/ARM

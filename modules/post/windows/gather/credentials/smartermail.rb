@@ -208,6 +208,7 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       ip: rhost,
 =======
       ip: r_host,
@@ -236,6 +237,9 @@ class Metasploit3 < Msf::Post
 =======
       ip: r_host,
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      ip: r_host,
+>>>>>>> origin/msf-complex-payloads
       port: port,
       service_name: 'http',
       user: user,
