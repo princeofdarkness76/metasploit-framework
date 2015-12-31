@@ -67,12 +67,15 @@ class Metasploit3 < Msf::Auxiliary
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   def peer
     "#{rhost}:#{rport}"
   end
 
 =======
 >>>>>>> master
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
   def smb_delete_files

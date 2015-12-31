@@ -81,10 +81,14 @@ end
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 describe Rex::Parser::BITLOCKER do
 =======
 RSpec.describe Rex::Parser::BITLOCKER do
 >>>>>>> master
+=======
+RSpec.describe Rex::Parser::BITLOCKER do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Rex::Parser::BITLOCKER do
 >>>>>>> rapid7/master
@@ -97,10 +101,14 @@ RSpec.describe Rex::Parser::BITLOCKER do
     result = Bitlocker.fvek_from_recovery_password_dislocker(recovery_password)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     result.should eq(fvek_dislocker_format)
 =======
     expect(result).to eq fvek_dislocker_format
 >>>>>>> master
+=======
+    expect(result).to eq fvek_dislocker_format
+>>>>>>> rapid7/master
 =======
     expect(result).to eq fvek_dislocker_format
 >>>>>>> rapid7/master

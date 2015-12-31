@@ -78,6 +78,7 @@ Gem::Specification.new do |spec|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -134,6 +135,9 @@ Gem::Specification.new do |spec|
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.21'
 >>>>>>> master
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.21'
+>>>>>>> rapid7/master
 =======
   spec.add_runtime_dependency 'metasploit-payloads', '1.0.21'
 >>>>>>> rapid7/master
