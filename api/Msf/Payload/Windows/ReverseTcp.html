@@ -615,12 +615,15 @@ certain payloads if requested.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 =======
 >>>>>>> rapid7/gh-pages
 249
@@ -646,6 +649,7 @@ certain payloads if requested.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 249</pre>
 >>>>>>> origin/gh-pages
@@ -661,6 +665,8 @@ certain payloads if requested.</p>
 249</pre>
 >>>>>>> origin/gh-pages
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 =======
 >>>>>>> rapid7/gh-pages
     </td>
@@ -685,12 +691,15 @@ certain payloads if requested.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 =======
 >>>>>>> rapid7/gh-pages
       push &#39;32&#39;               ; Push the bytes &#39;ws2_32&#39;,0,0 onto the stack.
@@ -739,6 +748,7 @@ certain payloads if requested.</p>
     handle_connect_failure:
       ; decrement our attempt count and try again
       dec [esi+8]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -803,11 +813,14 @@ certain payloads if requested.</p>
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> rapid7/gh-pages
+=======
+>>>>>>> rapid7/gh-pages
       jnz try_connect
   </span><span class='tstring_end'>^</span></span>
 
   <span class='kw'>if</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:exitfunk</span><span class='rbracket'>]</span>
     <span class='id identifier rubyid_asm'>asm</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>%Q^</span><span class='tstring_content'>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -819,6 +832,8 @@ certain payloads if requested.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 =======
 >>>>>>> rapid7/gh-pages
     failure:
@@ -837,6 +852,7 @@ certain payloads if requested.</p>
     ; the UUID stuff if required.
     connected:
   </span><span class='tstring_end'>^</span></span>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -880,6 +896,8 @@ certain payloads if requested.</p>
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> rapid7/gh-pages
+=======
+>>>>>>> rapid7/gh-pages
 
   <span class='id identifier rubyid_asm'>asm</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_asm_send_uuid'>asm_send_uuid</span> <span class='kw'>if</span> <span class='id identifier rubyid_include_send_uuid'>include_send_uuid</span>
 
@@ -891,12 +909,15 @@ certain payloads if requested.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 =======
 >>>>>>> rapid7/gh-pages
       push 0                  ; flags
@@ -914,6 +935,7 @@ certain payloads if requested.</p>
       cmp eax, 0
       jle cleanup_socket
     </span><span class='tstring_end'>^</span></span>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -949,10 +971,13 @@ certain payloads if requested.</p>
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> rapid7/gh-pages
+=======
+>>>>>>> rapid7/gh-pages
   <span class='kw'>end</span>
 
   <span class='id identifier rubyid_asm'>asm</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>%Q^</span><span class='tstring_content'>
       ; Alloc a RWX buffer for the second stage
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -964,6 +989,8 @@ certain payloads if requested.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 =======
 >>>>>>> rapid7/gh-pages
       mov esi, [esi]          ; dereference the pointer to the second stage length
@@ -1018,6 +1045,7 @@ certain payloads if requested.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
@@ -1060,10 +1088,13 @@ certain payloads if requested.</p>
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> rapid7/gh-pages
+=======
+>>>>>>> rapid7/gh-pages
     </span><span class='tstring_end'>^</span></span>
   <span class='kw'>end</span>
 
   <span class='id identifier rubyid_asm'>asm</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>%Q^</span><span class='tstring_content'>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1077,11 +1108,14 @@ certain payloads if requested.</p>
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> rapid7/gh-pages
+=======
+>>>>>>> rapid7/gh-pages
     read_successful:
       add ebx, eax            ; buffer += bytes_received
       sub esi, eax            ; length -= bytes_received, will set flags
       jnz read_more           ; continue if we have more to read
       ret                     ; return into the second stage
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1104,6 +1138,8 @@ certain payloads if requested.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 =======
 >>>>>>> rapid7/gh-pages
   </span><span class='tstring_end'>^</span></span>
@@ -1339,6 +1375,7 @@ certain payloads if requested.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
@@ -1347,11 +1384,14 @@ certain payloads if requested.</p>
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
 >>>>>>> rapid7/gh-pages
+=======
+>>>>>>> rapid7/gh-pages
   <span class='comment'># EXITFUNK &#39;thread&#39; is the biggest by far, adds 29 bytes.
 </span>  <span class='id identifier rubyid_space'>space</span> <span class='op'>+=</span> <span class='int'>29</span>
 
   <span class='comment'># Reliability adds some bytes!
 </span>  <span class='id identifier rubyid_space'>space</span> <span class='op'>+=</span> <span class='int'>44</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1375,6 +1415,8 @@ certain payloads if requested.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> rapid7/gh-pages
 =======
 >>>>>>> rapid7/gh-pages
 
@@ -1429,6 +1471,7 @@ certain payloads if requested.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Generated on Tue Dec 22 22:32:07 2015 by
 =======
   Generated on Tue Dec  8 22:32:13 2015 by
@@ -1457,6 +1500,11 @@ certain payloads if requested.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+=======
+  Generated on Tue Dec 29 22:32:19 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.7).
+>>>>>>> rapid7/gh-pages
 =======
   Generated on Tue Dec 29 22:32:19 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
