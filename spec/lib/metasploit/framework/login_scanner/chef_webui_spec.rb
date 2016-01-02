@@ -6,10 +6,14 @@ require 'metasploit/framework/login_scanner/chef_webui'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::ChefWebUI do
 =======
 describe Metasploit::Framework::LoginScanner::ChefWebUI do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+RSpec.describe Metasploit::Framework::LoginScanner::ChefWebUI do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Metasploit::Framework::LoginScanner::ChefWebUI do
 >>>>>>> rapid7/master

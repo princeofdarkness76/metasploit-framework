@@ -13,6 +13,7 @@ require 'net/dns'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Net::DNS::RR::Types do
 =======
 describe Net::DNS::RR::Types do
@@ -35,6 +36,9 @@ describe Net::DNS::RR::Types do
 =======
 describe Net::DNS::RR::Types do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Net::DNS::RR::Types do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Net::DNS::RR::Types do
 >>>>>>> rapid7/master

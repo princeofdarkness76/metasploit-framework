@@ -10,6 +10,7 @@ require 'msf/core/exe/segment_appender'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Exe::SegmentAppender do
 =======
 describe Msf::Exe::SegmentAppender do
@@ -38,6 +39,9 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
 RSpec.describe Msf::Exe::SegmentAppender do
 >>>>>>> rapid7/master
+=======
+RSpec.describe Msf::Exe::SegmentAppender do
+>>>>>>> rapid7/master
 
   let(:opts) do
     option_hash = {
@@ -57,6 +61,9 @@ RSpec.describe Msf::Exe::SegmentAppender do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -68,6 +75,7 @@ RSpec.describe Msf::Exe::SegmentAppender do
   it { is_expected.to respond_to :arch }
   it { is_expected.to respond_to :processor }
   it { is_expected.to respond_to :buffer_register }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -98,10 +106,13 @@ RSpec.describe Msf::Exe::SegmentAppender do
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
 
   it 'should return the correct processor for the arch' do
     expect(injector.processor.class).to eq Metasm::Ia32
     injector.arch = :x64
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -131,10 +142,14 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
     expect(injector.processor.class).to eq Metasm::X86_64
 >>>>>>> rapid7/master
+=======
+    expect(injector.processor.class).to eq Metasm::X86_64
+>>>>>>> rapid7/master
   end
 
   context '#create_thread_stub' do
     it 'should use edx as a default buffer register' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -163,6 +178,9 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
       injector.buffer_register.should == 'edx'
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(injector.buffer_register).to eq 'edx'
+>>>>>>> rapid7/master
 =======
       expect(injector.buffer_register).to eq 'edx'
 >>>>>>> rapid7/master
@@ -193,6 +211,7 @@ RSpec.describe Msf::Exe::SegmentAppender do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(injector.buffer_register).to eq 'eax'
 =======
         injector.buffer_register.should == 'eax'
@@ -212,6 +231,9 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
         injector.buffer_register.should == 'eax'
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(injector.buffer_register).to eq 'eax'
+>>>>>>> rapid7/master
 =======
         expect(injector.buffer_register).to eq 'eax'
 >>>>>>> rapid7/master
@@ -236,6 +258,7 @@ RSpec.describe Msf::Exe::SegmentAppender do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(injector.generate_pe.kind_of?(String)).to eq true
 =======
       injector.generate_pe.kind_of?(String).should == true
@@ -264,6 +287,9 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
       expect(injector.generate_pe.kind_of?(String)).to eq true
 >>>>>>> rapid7/master
+=======
+      expect(injector.generate_pe.kind_of?(String)).to eq true
+>>>>>>> rapid7/master
     end
 
     it 'should produce a valid PE exe' do
@@ -273,6 +299,7 @@ RSpec.describe Msf::Exe::SegmentAppender do
     context 'the generated exe' do
       let(:exe) { Metasm::PE.decode(injector.generate_pe) }
       it 'should be the propper arch' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -340,11 +367,19 @@ RSpec.describe Msf::Exe::SegmentAppender do
       it 'should have 5 sections' do
         expect(exe.sections.count).to eq 5
 >>>>>>> rapid7/master
+=======
+        expect(exe.bitsize).to eq 32
+      end
+
+      it 'should have 5 sections' do
+        expect(exe.sections.count).to eq 5
+>>>>>>> rapid7/master
       end
 
       it 'should have all the right original section names' do
         s_names = []
         exe.sections.collect {|s| s_names << s.name}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -384,6 +419,9 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
         expect(s_names[0,4]).to eq [".text", ".rdata", ".data", ".rsrc"]
 >>>>>>> rapid7/master
+=======
+        expect(s_names[0,4]).to eq [".text", ".rdata", ".data", ".rsrc"]
+>>>>>>> rapid7/master
       end
 
       it 'should have the last section set to RWX' do
@@ -391,6 +429,7 @@ RSpec.describe Msf::Exe::SegmentAppender do
       end
 
       it 'should have an entrypoint that points to the last section' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -411,6 +450,9 @@ RSpec.describe Msf::Exe::SegmentAppender do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(exe.optheader.entrypoint).to eq exe.sections.last.virtaddr
+>>>>>>> rapid7/master
 =======
         expect(exe.optheader.entrypoint).to eq exe.sections.last.virtaddr
 >>>>>>> rapid7/master

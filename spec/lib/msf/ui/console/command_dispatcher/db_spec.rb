@@ -552,6 +552,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -574,6 +575,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(@output).to match_array [
+>>>>>>> rapid7/master
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
@@ -601,6 +605,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -623,6 +628,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(@output).to match_array [
+>>>>>>> rapid7/master
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
@@ -651,6 +659,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -673,6 +682,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(@output).to match_array [
+>>>>>>> rapid7/master
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
@@ -704,6 +716,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -726,6 +739,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(@output).to match_array [
+>>>>>>> rapid7/master
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
@@ -756,6 +772,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -778,6 +795,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(@output).to match_array [
+>>>>>>> rapid7/master
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master

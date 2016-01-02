@@ -25,6 +25,7 @@ RSpec.describe Msf::Exe::SegmentInjector do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     expect(injector.processor.class).to eq Metasm::X86_64
 =======
     injector.processor.class.should == Metasm::X86_64
@@ -44,6 +45,9 @@ RSpec.describe Msf::Exe::SegmentInjector do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+    expect(injector.processor.class).to eq Metasm::X86_64
+>>>>>>> rapid7/master
 =======
     expect(injector.processor.class).to eq Metasm::X86_64
 >>>>>>> rapid7/master

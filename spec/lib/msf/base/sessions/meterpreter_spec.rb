@@ -12,6 +12,7 @@ require 'rex/post/meterpreter/extensions/stdapi/net/route'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Sessions::Meterpreter do
 =======
 describe Msf::Sessions::Meterpreter do
@@ -31,6 +32,9 @@ describe Msf::Sessions::Meterpreter do
 =======
 describe Msf::Sessions::Meterpreter do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Msf::Sessions::Meterpreter do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Msf::Sessions::Meterpreter do
 >>>>>>> rapid7/master
@@ -79,6 +83,7 @@ RSpec.describe Msf::Sessions::Meterpreter do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       allow(m).to receive_message_chain(:private_methods, :net)
       allow(m).to receive_message_chain(:private_methods, :net, :config, :get_interfaces).and_return(interfaces)
       allow(m).to receive_message_chain(:private_methods, :net, :config, :get_routes).and_return(routes)
@@ -106,6 +111,11 @@ RSpec.describe Msf::Sessions::Meterpreter do
       m.stub_chain(:net, :config, :get_interfaces).and_return(interfaces)
       m.stub_chain(:net, :config, :get_routes).and_return(routes)
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      allow(m).to receive_message_chain(:private_methods, :net)
+      allow(m).to receive_message_chain(:private_methods, :net, :config, :get_interfaces).and_return(interfaces)
+      allow(m).to receive_message_chain(:private_methods, :net, :config, :get_routes).and_return(routes)
+>>>>>>> rapid7/master
 =======
       allow(m).to receive_message_chain(:private_methods, :net)
       allow(m).to receive_message_chain(:private_methods, :net, :config, :get_interfaces).and_return(interfaces)

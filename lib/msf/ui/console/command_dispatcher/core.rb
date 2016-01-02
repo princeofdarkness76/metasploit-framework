@@ -10478,6 +10478,9 @@ class Core
     print_line "Usage: info <module name> [mod2 mod3 ...]"
     print_line
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master

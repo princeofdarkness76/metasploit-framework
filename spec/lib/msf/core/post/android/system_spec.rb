@@ -12,6 +12,7 @@ require 'msf/core/post/android/system'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Post::Android::System do
 =======
 describe Msf::Post::Android::System do
@@ -34,6 +35,9 @@ describe Msf::Post::Android::System do
 =======
 describe Msf::Post::Android::System do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Msf::Post::Android::System do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Msf::Post::Android::System do
 >>>>>>> rapid7/master

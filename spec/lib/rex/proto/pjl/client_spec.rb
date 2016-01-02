@@ -108,6 +108,7 @@ RSpec.describe Rex::Proto::PJL::Client do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         allow(tmp_sock).to receive(:put).with(an_instance_of(String))
         allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
@@ -118,6 +119,12 @@ RSpec.describe Rex::Proto::PJL::Client do
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
         tmp_cli.fsquery("1:").should eq(true)
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        allow(tmp_sock).to receive(:put).with(an_instance_of(String))
+        allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
+        tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
+        expect(tmp_cli.fsquery("1:")).to eq(true)
+>>>>>>> rapid7/master
 =======
         allow(tmp_sock).to receive(:put).with(an_instance_of(String))
         allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
@@ -167,6 +174,9 @@ RSpec.describe Rex::Proto::PJL::Client do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -201,6 +211,7 @@ RSpec.describe Rex::Proto::PJL::Client do
         tmp_sock = double("sock")
         allow(tmp_sock).to receive(:put).with(an_instance_of(String))
         allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
@@ -237,6 +248,8 @@ RSpec.describe Rex::Proto::PJL::Client do
         tmp_sock = double("sock")
         allow(tmp_sock).to receive(:put).with(an_instance_of(String))
         allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======

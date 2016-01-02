@@ -10,6 +10,7 @@ require 'metasploit/framework/login_scanner/symantec_web_gateway'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::SymantecWebGateway do
 =======
 describe Metasploit::Framework::LoginScanner::SymantecWebGateway do
@@ -29,6 +30,9 @@ describe Metasploit::Framework::LoginScanner::SymantecWebGateway do
 =======
 describe Metasploit::Framework::LoginScanner::SymantecWebGateway do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Metasploit::Framework::LoginScanner::SymantecWebGateway do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Metasploit::Framework::LoginScanner::SymantecWebGateway do
 >>>>>>> rapid7/master

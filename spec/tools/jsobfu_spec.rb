@@ -13,6 +13,7 @@ require 'stringio'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Jsobfu do
 =======
 describe Jsobfu do
@@ -32,6 +33,9 @@ describe Jsobfu do
 =======
 describe Jsobfu do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Jsobfu do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Jsobfu do
 >>>>>>> rapid7/master

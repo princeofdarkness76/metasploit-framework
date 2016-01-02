@@ -25,6 +25,9 @@ RSpec.shared_examples "datastore" do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -37,6 +40,7 @@ RSpec.shared_examples "datastore" do
       expect(subject.delete("Fizz")).to eq "buzz"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
     end
@@ -45,6 +49,8 @@ RSpec.shared_examples "datastore" do
     it "should delete the specified case-insensitive key" do
       expect(subject.delete("foo")).to eq "bar"
       expect(subject.delete("Fizz")).to eq "buzz"
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======

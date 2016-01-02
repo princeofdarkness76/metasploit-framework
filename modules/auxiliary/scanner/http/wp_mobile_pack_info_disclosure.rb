@@ -32,6 +32,7 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           ['PACKETSTORM', '132750']
 =======
           ['URL', 'https://packetstormsecurity.com/files/132750/']
@@ -54,6 +55,9 @@ class Metasploit3 < Msf::Auxiliary
 =======
           ['URL', 'https://packetstormsecurity.com/files/132750/']
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+          ['PACKETSTORM', '132750']
+>>>>>>> rapid7/master
 =======
           ['PACKETSTORM', '132750']
 >>>>>>> rapid7/master

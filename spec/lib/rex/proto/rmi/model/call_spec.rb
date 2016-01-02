@@ -9,10 +9,14 @@ require 'rex/java'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::Call do
 =======
 describe Rex::Proto::Rmi::Model::Call do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+RSpec.describe Rex::Proto::Rmi::Model::Call do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Rex::Proto::Rmi::Model::Call do
 >>>>>>> rapid7/master

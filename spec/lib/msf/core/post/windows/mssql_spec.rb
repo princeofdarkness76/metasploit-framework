@@ -12,6 +12,7 @@ require 'msf/core/post/windows/mssql'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Post::Windows::MSSQL do
   let(:subject) do
     mod = double(Module.new)
@@ -40,10 +41,14 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
 RSpec.describe Msf::Post::Windows::MSSQL do
 >>>>>>> rapid7/master
+=======
+RSpec.describe Msf::Post::Windows::MSSQL do
+>>>>>>> rapid7/master
   let(:subject) do
     mod = double(Module.new)
     mod.extend described_class
     stubs = [ :vprint_status, :print_status, :vprint_good, :print_good, :print_error, :print_warning ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,6 +70,10 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+    stubs.each { |meth| allow(mod).to receive(meth) }
+    allow(mod).to receive(:service_info).and_return({})
+>>>>>>> rapid7/master
 =======
     stubs.each { |meth| allow(mod).to receive(meth) }
     allow(mod).to receive(:service_info).and_return({})
@@ -197,6 +206,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to be_nil
 =======
         result.should be_nil
@@ -216,6 +226,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should be_nil
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to be_nil
+>>>>>>> rapid7/master
 =======
         expect(result).to be_nil
 >>>>>>> rapid7/master
@@ -239,6 +252,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_2k8_sql_instance
 =======
         result.should eq running_2k8_sql_instance
@@ -258,6 +272,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_2k8_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_2k8_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_2k8_sql_instance
 >>>>>>> rapid7/master
@@ -281,6 +298,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_2k8_sql_instance
 =======
         result.should eq running_2k8_sql_instance
@@ -300,6 +318,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_2k8_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_2k8_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_2k8_sql_instance
 >>>>>>> rapid7/master
@@ -325,6 +346,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_7_sql_instance
 =======
         result.should eq running_7_sql_instance
@@ -344,6 +366,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_7_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_7_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_7_sql_instance
 >>>>>>> rapid7/master
@@ -369,6 +394,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_2k_sql_instance
 =======
         result.should eq running_2k_sql_instance
@@ -397,11 +423,15 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_2k_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_2k_sql_instance
+>>>>>>> rapid7/master
       end
 
       it "should identify a named SQL instance" do
         allow(subject).to receive(:each_service).and_yield(normal_service).and_yield(running_analysis_service).and_yield(running_named_2k_sql_instance)
         result = subject.check_for_sqlserver(instance)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -430,6 +460,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_named_2k_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_named_2k_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_named_2k_sql_instance
 >>>>>>> rapid7/master
@@ -455,6 +488,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_2k5_sql_instance
 =======
         result.should eq running_2k5_sql_instance
@@ -483,11 +517,15 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_2k5_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_2k5_sql_instance
+>>>>>>> rapid7/master
       end
 
       it "should identify a named SQL instance" do
         allow(subject).to receive(:each_service).and_yield(normal_service).and_yield(running_sql_server_agent_service).and_yield(running_named_2k5_sql_instance)
         result = subject.check_for_sqlserver(instance)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -516,6 +554,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_named_2k5_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_named_2k5_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_named_2k5_sql_instance
 >>>>>>> rapid7/master
@@ -541,6 +582,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_2k8_sql_instance
 =======
         result.should eq running_2k8_sql_instance
@@ -569,11 +611,15 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_2k8_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_2k8_sql_instance
+>>>>>>> rapid7/master
       end
 
       it "should identify a named SQL instance" do
         allow(subject).to receive(:each_service).and_yield(normal_service).and_yield(running_sql_server_agent_service).and_yield(running_named_2k8_sql_instance)
         result = subject.check_for_sqlserver(instance)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -602,6 +648,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_named_2k8_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_named_2k8_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_named_2k8_sql_instance
 >>>>>>> rapid7/master
@@ -631,6 +680,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to be_nil
 =======
         result.should be_nil
@@ -650,6 +700,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should be_nil
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to be_nil
+>>>>>>> rapid7/master
 =======
         expect(result).to be_nil
 >>>>>>> rapid7/master
@@ -673,6 +726,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k8_sql_instance
 =======
         result.should eq running_named_2k8_sql_instance
@@ -692,6 +746,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_named_2k8_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_named_2k8_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_named_2k8_sql_instance
 >>>>>>> rapid7/master
@@ -715,6 +772,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k8_sql_instance
 =======
         result.should eq running_named_2k8_sql_instance
@@ -734,6 +792,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_named_2k8_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_named_2k8_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_named_2k8_sql_instance
 >>>>>>> rapid7/master
@@ -757,6 +818,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k8_sql_instance
 =======
         result.should eq running_named_2k8_sql_instance
@@ -776,6 +838,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_named_2k8_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_named_2k8_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_named_2k8_sql_instance
 >>>>>>> rapid7/master
@@ -805,6 +870,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_7_sql_instance
 =======
         result.should eq running_7_sql_instance
@@ -824,6 +890,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_7_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_7_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_7_sql_instance
 >>>>>>> rapid7/master
@@ -854,6 +923,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k_sql_instance
 =======
         result.should eq running_named_2k_sql_instance
@@ -873,6 +943,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_named_2k_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_named_2k_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_named_2k_sql_instance
 >>>>>>> rapid7/master
@@ -903,6 +976,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k5_sql_instance
 =======
         result.should eq running_named_2k5_sql_instance
@@ -922,6 +996,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_named_2k5_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_named_2k5_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_named_2k5_sql_instance
 >>>>>>> rapid7/master
@@ -952,6 +1029,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k8_sql_instance
 =======
         result.should eq running_named_2k8_sql_instance
@@ -971,6 +1049,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         result.should eq running_named_2k8_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(result).to eq running_named_2k8_sql_instance
+>>>>>>> rapid7/master
 =======
         expect(result).to eq running_named_2k8_sql_instance
 >>>>>>> rapid7/master
@@ -1011,6 +1092,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.impersonate_sql_user(nil)).to be_falsey
       expect(subject.impersonate_sql_user(pid: nil)).to be_falsey
       expect(subject.impersonate_sql_user(pid: 0)).to be_falsey
@@ -1059,10 +1141,16 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       expect(subject.impersonate_sql_user(pid: nil)).to be_falsey
       expect(subject.impersonate_sql_user(pid: 0)).to be_falsey
 >>>>>>> rapid7/master
+=======
+      expect(subject.impersonate_sql_user(nil)).to be_falsey
+      expect(subject.impersonate_sql_user(pid: nil)).to be_falsey
+      expect(subject.impersonate_sql_user(pid: 0)).to be_falsey
+>>>>>>> rapid7/master
     end
 
     context 'user has privs to impersonate' do
       before(:each) do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1120,6 +1208,11 @@ RSpec.describe Msf::Post::Windows::MSSQL do
         allow(subject).to receive_message_chain('client.sys.config.getprivs').and_return(['SeAssignPrimaryTokenPrivilege'])
         allow(subject).to receive_message_chain('session.sys.process.each_process').and_yield(process)
 >>>>>>> rapid7/master
+=======
+        allow(subject).to receive_message_chain('session.sys.config.getuid').and_return('Superman')
+        allow(subject).to receive_message_chain('client.sys.config.getprivs').and_return(['SeAssignPrimaryTokenPrivilege'])
+        allow(subject).to receive_message_chain('session.sys.process.each_process').and_yield(process)
+>>>>>>> rapid7/master
       end
 
       it 'should return true if successful impersonating' do
@@ -1133,6 +1226,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       end
 
       it 'should return false if unable to find process username' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1166,11 +1260,16 @@ RSpec.describe Msf::Post::Windows::MSSQL do
         allow(subject).to receive_message_chain('session.sys.process.each_process').and_yield('pid' => 0)
         expect(subject.impersonate_sql_user(service)).to be false
 >>>>>>> rapid7/master
+=======
+        allow(subject).to receive_message_chain('session.sys.process.each_process').and_yield('pid' => 0)
+        expect(subject.impersonate_sql_user(service)).to be false
+>>>>>>> rapid7/master
       end
     end
 
     context 'user does not have privs to impersonate' do
       before(:each) do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1206,6 +1305,10 @@ RSpec.describe Msf::Post::Windows::MSSQL do
         subject.stub_chain('session.sys.config.getuid').and_return('Superman')
         subject.stub_chain('client.sys.config.getprivs').and_return([])
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        allow(subject).to receive_message_chain('session.sys.config.getuid').and_return('Superman')
+        allow(subject).to receive_message_chain('client.sys.config.getprivs').and_return([])
+>>>>>>> rapid7/master
 =======
         allow(subject).to receive_message_chain('session.sys.config.getuid').and_return('Superman')
         allow(subject).to receive_message_chain('client.sys.config.getprivs').and_return([])
@@ -1231,6 +1334,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         allow(subject).to receive_message_chain('session.core.migrate').with(pid).and_return(true)
         expect(subject.impersonate_sql_user(service)).to be true
 =======
@@ -1269,10 +1373,15 @@ RSpec.describe Msf::Post::Windows::MSSQL do
         allow(subject).to receive_message_chain('session.core.migrate').with(pid).and_return(true)
         expect(subject.impersonate_sql_user(service)).to be true
 >>>>>>> rapid7/master
+=======
+        allow(subject).to receive_message_chain('session.core.migrate').with(pid).and_return(true)
+        expect(subject.impersonate_sql_user(service)).to be true
+>>>>>>> rapid7/master
       end
 
       it 'should rescue an exception if migration fails' do
         expect(subject).to receive(:print_warning)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1308,6 +1417,10 @@ RSpec.describe Msf::Post::Windows::MSSQL do
         subject.stub_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
         subject.impersonate_sql_user(service).should be false
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        allow(subject).to receive_message_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
+        expect(subject.impersonate_sql_user(service)).to be false
+>>>>>>> rapid7/master
 =======
         allow(subject).to receive_message_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
         expect(subject.impersonate_sql_user(service)).to be false
@@ -1336,6 +1449,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.get_system).to be_truthy
 =======
       subject.get_system.should be_truthy
@@ -1355,6 +1469,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       subject.get_system.should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(subject.get_system).to be_truthy
+>>>>>>> rapid7/master
 =======
       expect(subject.get_system).to be_truthy
 >>>>>>> rapid7/master
@@ -1378,6 +1495,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       allow(subject).to receive_message_chain('session.priv.getsystem').and_return([true])
       expect(subject.get_system).to be_truthy
 =======
@@ -1416,11 +1534,16 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       allow(subject).to receive_message_chain('session.priv.getsystem').and_return([true])
       expect(subject.get_system).to be_truthy
 >>>>>>> rapid7/master
+=======
+      allow(subject).to receive_message_chain('session.priv.getsystem').and_return([true])
+      expect(subject.get_system).to be_truthy
+>>>>>>> rapid7/master
     end
 
     it 'should return false if unable to get SYSTEM and print a warning' do
       expect(subject).to receive(:is_system?).and_return(false)
       expect(subject).to receive(:print_warning)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1456,6 +1579,10 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       subject.stub_chain('session.priv.getsystem').and_return([false])
       subject.get_system.should be_falsey
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      allow(subject).to receive_message_chain('session.priv.getsystem').and_return([false])
+      expect(subject.get_system).to be_falsey
+>>>>>>> rapid7/master
 =======
       allow(subject).to receive_message_chain('session.priv.getsystem').and_return([false])
       expect(subject.get_system).to be_falsey
@@ -1484,6 +1611,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       allow(p).to receive(:channel).and_return(c)
       allow(subject).to receive_message_chain('session.sys.process.execute').and_return(p)
 =======
@@ -1522,10 +1650,15 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       allow(p).to receive(:channel).and_return(c)
       allow(subject).to receive_message_chain('session.sys.process.execute').and_return(p)
 >>>>>>> rapid7/master
+=======
+      allow(p).to receive(:channel).and_return(c)
+      allow(subject).to receive_message_chain('session.sys.process.execute').and_return(p)
+>>>>>>> rapid7/master
       expect(c).to receive(:read).and_return('hello')
       expect(c).to receive(:read).and_return(nil)
       expect(c).to receive(:close)
       expect(p).to receive(:close)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1554,6 +1687,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       subject.run_cmd(nil).should eq 'hello'
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(subject.run_cmd(nil)).to eq 'hello'
+>>>>>>> rapid7/master
 =======
       expect(subject.run_cmd(nil)).to eq 'hello'
 >>>>>>> rapid7/master
@@ -1599,6 +1735,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           expect(args.first.include?(sqlclient)).to be_truthy
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S . ")).to be_truthy
@@ -1632,6 +1769,11 @@ RSpec.describe Msf::Post::Windows::MSSQL do
           args.first.include?("-Q \"#{query}\" ").should be_truthy
           args.first.include?("-S . ").should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+          expect(args.first.include?(sqlclient)).to be_truthy
+          expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
+          expect(args.first.include?("-S . ")).to be_truthy
+>>>>>>> rapid7/master
 =======
           expect(args.first.include?(sqlclient)).to be_truthy
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
@@ -1664,6 +1806,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           expect(args.first.include?(sqlclient)).to be_truthy
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S .\\#{instance} ")).to be_truthy
@@ -1697,6 +1840,11 @@ RSpec.describe Msf::Post::Windows::MSSQL do
           args.first.include?("-Q \"#{query}\" ").should be_truthy
           args.first.include?("-S .\\#{instance} ").should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+          expect(args.first.include?(sqlclient)).to be_truthy
+          expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
+          expect(args.first.include?("-S .\\#{instance} ")).to be_truthy
+>>>>>>> rapid7/master
 =======
           expect(args.first.include?(sqlclient)).to be_truthy
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
@@ -1727,6 +1875,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           expect(args.first.include?(sqlclient)).to be_truthy
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S . ")).to be_truthy
@@ -1775,6 +1924,11 @@ RSpec.describe Msf::Post::Windows::MSSQL do
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S . ")).to be_truthy
 >>>>>>> rapid7/master
+=======
+          expect(args.first.include?(sqlclient)).to be_truthy
+          expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
+          expect(args.first.include?("-S . ")).to be_truthy
+>>>>>>> rapid7/master
         end
         subject.run_sql(query, 'mssqlsErver')
       end
@@ -1783,6 +1937,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
     context 'when a query, instance, and server is supplied' do
       it 'should pass the @sql_client, query, instance, and server to run_cmd' do
         expect(subject).to receive(:run_cmd) do |*args|
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1825,6 +1980,11 @@ RSpec.describe Msf::Post::Windows::MSSQL do
           args.first.include?("-Q \"#{query}\" ").should be_truthy
           args.first.include?("-S #{server}\\#{instance} ").should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+          expect(args.first.include?(sqlclient)).to be_truthy
+          expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
+          expect(args.first.include?("-S #{server}\\#{instance} ")).to be_truthy
+>>>>>>> rapid7/master
 =======
           expect(args.first.include?(sqlclient)).to be_truthy
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
@@ -1866,6 +2026,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.check_osql).to be_falsey
 =======
       subject.check_osql.should be_falsey
@@ -1894,10 +2055,14 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       expect(subject.check_osql).to be_falsey
 >>>>>>> rapid7/master
+=======
+      expect(subject.check_osql).to be_falsey
+>>>>>>> rapid7/master
     end
 
     it "should return true if present" do
       expect(subject).to receive(:run_cmd).with('osql -?').and_return('(usage: osql)')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1926,6 +2091,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       subject.check_osql.should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(subject.check_osql).to be_truthy
+>>>>>>> rapid7/master
 =======
       expect(subject.check_osql).to be_truthy
 >>>>>>> rapid7/master
@@ -1950,6 +2118,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.check_sqlcmd).to be_falsey
 =======
       subject.check_sqlcmd.should be_falsey
@@ -1969,6 +2138,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       subject.check_sqlcmd.should be_falsey
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(subject.check_sqlcmd).to be_falsey
+>>>>>>> rapid7/master
 =======
       expect(subject.check_sqlcmd).to be_falsey
 >>>>>>> rapid7/master
@@ -1991,6 +2163,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.check_sqlcmd).to be_truthy
 =======
       subject.check_sqlcmd.should be_truthy
@@ -2019,6 +2192,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       expect(subject.check_sqlcmd).to be_truthy
 >>>>>>> rapid7/master
+=======
+      expect(subject.check_sqlcmd).to be_truthy
+>>>>>>> rapid7/master
     end
   end
 
@@ -2026,6 +2202,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
     it "should return nil if no client is available" do
       expect(subject).to receive(:check_sqlcmd).and_return(false)
       expect(subject).to receive(:check_osql).and_return(false)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2061,6 +2238,10 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       subject.get_sql_client.should be_nil
       subject.sql_client.should be_nil
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(subject.get_sql_client).to be_nil
+      expect(subject.sql_client).to be_nil
+>>>>>>> rapid7/master
 =======
       expect(subject.get_sql_client).to be_nil
       expect(subject.sql_client).to be_nil
@@ -2087,6 +2268,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.get_sql_client).to eq osql
       expect(subject.sql_client).to eq osql
 =======
@@ -2125,11 +2307,16 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       expect(subject.get_sql_client).to eq osql
       expect(subject.sql_client).to eq osql
 >>>>>>> rapid7/master
+=======
+      expect(subject.get_sql_client).to eq osql
+      expect(subject.sql_client).to eq osql
+>>>>>>> rapid7/master
     end
 
     it "should return 'sqlcmd' if sqlcmd is available" do
       allow(subject).to receive(:check_osql).and_return(true)
       expect(subject).to receive(:check_sqlcmd).and_return(true)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2165,6 +2352,10 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       subject.get_sql_client.should eq sql_command
       subject.sql_client.should eq sql_command
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(subject.get_sql_client).to eq sql_command
+      expect(subject.sql_client).to eq sql_command
+>>>>>>> rapid7/master
 =======
       expect(subject.get_sql_client).to eq sql_command
       expect(subject.sql_client).to eq sql_command

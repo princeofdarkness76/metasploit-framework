@@ -13,6 +13,7 @@ require 'msf/core/post/linux/busy_box'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Post::Linux::BusyBox do
 =======
 describe Msf::Post::Linux::BusyBox do
@@ -35,6 +36,9 @@ describe Msf::Post::Linux::BusyBox do
 =======
 describe Msf::Post::Linux::BusyBox do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Msf::Post::Linux::BusyBox do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Msf::Post::Linux::BusyBox do
 >>>>>>> rapid7/master

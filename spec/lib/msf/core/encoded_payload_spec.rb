@@ -87,6 +87,7 @@ RSpec.describe Msf::EncodedPayload do
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     it 'is an Msf::EncodedPayload' do
       expect(encoded_payload).to be_a(described_class)
     end
@@ -112,6 +113,8 @@ RSpec.describe Msf::EncodedPayload do
       expect(encoded_payload).to be_a(described_class)
     end
 
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
