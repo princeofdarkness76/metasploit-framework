@@ -20,10 +20,28 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> pod/metasploit-development-environment
   include Msf::Exploit::Remote::SMB::Client::Authenticated
   include Msf::Exploit::Remote::SMB::Client::LocalPaths
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 =======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -42,6 +60,8 @@ class Metasploit3 < Msf::Auxiliary
   include Msf::Exploit::Remote::SMB::Client::LocalPaths
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -75,13 +95,17 @@ class Metasploit3 < Msf::Auxiliary
   include Msf::Exploit::Remote::SMB::Client::LocalPaths
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 >>>>>>> origin/pod/metasploit-serialized_class_loader
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -99,6 +123,11 @@ class Metasploit3 < Msf::Auxiliary
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   include Msf::Auxiliary::Report
   include Msf::Auxiliary::Scanner
 
@@ -140,6 +169,7 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   def peer
     "#{rhost}:#{rport}"
   end
@@ -148,6 +178,8 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> rapid7/master
 =======
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
   def run_host(_ip)
     begin
       vprint_status("#{peer}: Connecting to the server...")
@@ -180,13 +212,17 @@ class Metasploit3 < Msf::Auxiliary
   end
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
   def peer
     "#{rhost}:#{rport}"
   end
 
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
 >>>>>>> rapid7/master
@@ -196,6 +232,8 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-development-environment
   def run_host(_ip)
     begin
       vprint_status("#{peer}: Connecting to the server...")
@@ -226,9 +264,13 @@ class Metasploit3 < Msf::Auxiliary
       print_error("#{peer} Unable to login: #{e.message}")
     end
   end
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> master
 =======
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+>>>>>>> pod/metasploit-development-environment
 end

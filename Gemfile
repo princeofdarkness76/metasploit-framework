@@ -34,6 +34,9 @@ group :development, :test do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
   gem 'rspec-rails' , '~> 3.3'
 =======
   gem 'rspec-rails' , '>= 2.12', '< 3.0.0'
@@ -43,6 +46,11 @@ group :development, :test do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -57,6 +65,7 @@ group :development, :test do
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
   gem 'rspec-rails' , '~> 3.3'
 >>>>>>> rapid7/master
 =======
@@ -68,6 +77,11 @@ group :development, :test do
 =======
   gem 'rspec-rails' , '~> 3.3'
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 end
 
 group :test do

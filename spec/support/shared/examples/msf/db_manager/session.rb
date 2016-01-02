@@ -94,6 +94,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
               attr_accessor :arch
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -108,6 +111,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
               attr_accessor :arch
 >>>>>>> rapid7/master
 =======
@@ -119,6 +123,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
               attr_accessor :arch
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
               attr_accessor :exploit
               attr_accessor :datastore
               attr_accessor :platform
@@ -169,6 +176,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               allow(db_manager).to receive(:create_match_for_vuln).and_return(nil)
 =======
               MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
@@ -203,6 +211,36 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
               allow(db_manager).to receive(:create_match_for_vuln).and_return(nil)
 >>>>>>> rapid7/master
+=======
+              allow(db_manager).to receive(:create_match_for_vuln).and_return(nil)
+=======
+              MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+              MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+              MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
+>>>>>>> origin/msf-complex-payloads
+=======
+              MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
+>>>>>>> origin/msf-complex-payloads
+=======
+              MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
+>>>>>>> origin/payload-generator.rb
+=======
+              MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+              MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+              MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+              MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
             end
 
             let(:match_set) do
@@ -210,6 +248,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             end
 
             let(:run) do
@@ -402,6 +441,10 @@ shared_examples_for 'Msf::DBManager::Session' do
               it 'should find workspace from session' do
                 db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
             end
 =======
             context 'with workspace from either :workspace or session' do
@@ -420,6 +463,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 
             let(:run) do
               FactoryGirl.create(:automatic_exploitation_run, workspace: session_workspace, match_set_id: match_set.id)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             end
 
             let(:user_data) do
@@ -434,7 +480,11 @@ shared_examples_for 'Msf::DBManager::Session' do
               end
 
               it 'should not find workspace from session' do
+<<<<<<< HEAD
                 expect(db_manager).not_to receive(:find_workspace)
+=======
+                db_manager.should_not_receive(:find_workspace)
+>>>>>>> origin/4.11.2_release_pre-rails4
 
                 expect { report_session }.to change(Mdm::Vuln, :count).by(1)
               end
@@ -2253,6 +2303,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
                 expect(db_manager).to receive(:find_workspace).with(session.workspace).and_call_original
 =======
                 db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
@@ -2291,6 +2344,2971 @@ shared_examples_for 'Msf::DBManager::Session' do
                     hash_including(
                         :workspace => session_workspace
                     )
+                ).and_return(host)
+
+=======
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+
+=======
+            end
+
+            let(:user_data) do
+              {
+                run_id: run.id
+              }
+            end
+
+            context 'with :workspace' do
+              before(:each) do
+                options[:workspace] = options_workspace
+              end
+
+              it 'should not find workspace from session' do
+                db_manager.should_not_receive(:find_workspace)
+=======
+            end
+
+            let(:user_data) do
+              {
+                run_id: run.id
+              }
+            end
+
+            context 'with :workspace' do
+              before(:each) do
+                options[:workspace] = options_workspace
+              end
+
+              it 'should not find workspace from session' do
+                db_manager.should_not_receive(:find_workspace)
+=======
+            end
+
+            let(:user_data) do
+              {
+                run_id: run.id
+              }
+            end
+
+            context 'with :workspace' do
+              before(:each) do
+                options[:workspace] = options_workspace
+              end
+
+              it 'should not find workspace from session' do
+                db_manager.should_not_receive(:find_workspace)
+=======
+            end
+
+            let(:run) do
+              FactoryGirl.create(:automatic_exploitation_run, workspace: session_workspace, match_set_id: match_set.id)
+            end
+
+            let(:user_data) do
+              {
+                run_id: run.id
+              }
+            end
+
+            context 'with :workspace' do
+              before(:each) do
+                options[:workspace] = options_workspace
+=======
+            end
+
+            let(:run) do
+              FactoryGirl.create(:automatic_exploitation_run, workspace: session_workspace, match_set_id: match_set.id)
+            end
+
+            let(:user_data) do
+              {
+                run_id: run.id
+              }
+            end
+
+            context 'with :workspace' do
+              before(:each) do
+                options[:workspace] = options_workspace
+              end
+
+              it 'should not find workspace from session' do
+                db_manager.should_not_receive(:find_workspace)
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+            end
+
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+
+                report_session
+              end
+
+              it 'should pass session.workspace to #find_or_create_host' do
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :workspace => session_workspace
+                  )
+                ).and_return(host)
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+              end
+
+              it 'should not find workspace from session' do
+                db_manager.should_not_receive(:find_workspace)
+
+=======
+            end
+
+<<<<<<< HEAD
+            let(:run) do
+              FactoryGirl.create(:automatic_exploitation_run, workspace: session_workspace, match_set_id: match_set.id)
+            end
+
+            let(:user_data) do
+              {
+                run_id: run.id
+              }
+            end
+
+            context 'with :workspace' do
+              before(:each) do
+                options[:workspace] = options_workspace
+              end
+
+              it 'should not find workspace from session' do
+                db_manager.should_not_receive(:find_workspace)
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+            end
+
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+
+                report_session
+              end
+
+              it 'should pass session.workspace to #find_or_create_host' do
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :workspace => session_workspace
+                  )
+                ).and_return(host)
+
+>>>>>>> origin/pod/metasploit-gemfile-
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+            end
+
+<<<<<<< HEAD
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+
+                report_session
+              end
+
+              it 'should pass session.workspace to #find_or_create_host' do
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :workspace => session_workspace
+                  )
+                ).and_return(host)
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+            end
+
+<<<<<<< HEAD
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+=======
+            end
+=======
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                db_manager.stub(:report_vuln)
+
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :host => normalized_host
+                  )
+                ).and_return(host)
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+
+=======
+            end
+
+>>>>>>> origin/4.11.2_release_pre-rails4
+            let(:run) do
+              FactoryGirl.create(:automatic_exploitation_run, workspace: session_workspace, match_set_id: match_set.id)
+            end
+
+            let(:user_data) do
+              {
+                run_id: run.id
+              }
+            end
+
+            context 'with :workspace' do
+              before(:each) do
+                options[:workspace] = options_workspace
+              end
+
+              it 'should not find workspace from session' do
+                db_manager.should_not_receive(:find_workspace)
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+=======
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                db_manager.stub(:report_vuln)
+
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :host => normalized_host
+                  )
+                ).and_return(host)
+
+                report_session
+              end
+
+              context 'with session responds to arch' do
+                let(:arch) do
+                  FactoryGirl.generate :mdm_host_arch
+                end
+
+                before(:each) do
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                      :arch => arch
+                    )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+              context 'without session responds to arch' do
+                it 'should not pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_excluding(
+                      :arch
+                    )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+              it 'should create an Mdm::Session' do
+                expect {
+                  report_session
+                }.to change(Mdm::Session, :count).by(1)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+              end
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+=======
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                db_manager.stub(:report_vuln)
+
+<<<<<<< HEAD
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :host => normalized_host
+                  )
+                ).and_return(host)
+
+                report_session
+              end
+
+              context 'with session responds to arch' do
+                let(:arch) do
+                  FactoryGirl.generate :mdm_host_arch
+                end
+
+                before(:each) do
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                      :arch => arch
+                    )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+=======
+              it { should be_an Mdm::Session }
+
+              it 'should set session.db_record to created Mdm::Session' do
+                mdm_session = report_session
+
+                session.db_record.should == mdm_session
+              end
+
+              context 'with session.via_exploit' do
+
+                it 'should create Mdm::Vuln' do
+                  expect {
+                    report_session
+                  }.to change(Mdm::Vuln, :count).by(1)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+                end
+              end
+
+<<<<<<< HEAD
+              context 'without session responds to arch' do
+                it 'should not pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_excluding(
+                      :arch
+                    )
+                  ).and_call_original
+>>>>>>> origin/pod/metasploit-gemfile-
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+<<<<<<< HEAD
+              it 'should pass session.workspace to #find_or_create_host' do
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :workspace => session_workspace
+                  )
+                ).and_return(host)
+>>>>>>> origin/payload-generator.rb
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+
+              it 'should pass session.workspace to #find_or_create_host' do
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :workspace => session_workspace
+                  )
+                ).and_return(host)
+>>>>>>> origin/msf-complex-payloads
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+            end
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+=======
+=======
+>>>>>>> origin/payload-generator.rb
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                db_manager.stub(:report_vuln)
+
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :host => normalized_host
+                  )
+                ).and_return(host)
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+
+                report_session
+              end
+
+<<<<<<< HEAD
+              it 'should pass session.workspace to #find_or_create_host' do
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :workspace => session_workspace
+                  )
+                ).and_return(host)
+>>>>>>> origin/msf-complex-payloads
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+            end
+
+<<<<<<< HEAD
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+=======
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                db_manager.stub(:report_vuln)
+
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :host => normalized_host
+                  )
+                ).and_return(host)
+>>>>>>> origin/msf-complex-payloads
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+                report_session
+=======
+              context 'with session responds to arch' do
+                let(:arch) do
+                  FactoryGirl.generate :mdm_host_arch
+                end
+
+                before(:each) do
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                      :arch => arch
+                    )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+              context 'without session responds to arch' do
+                it 'should not pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_excluding(
+                      :arch
+                    )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+              end
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+              it 'should pass session.workspace to #find_or_create_host' do
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :workspace => session_workspace
+                  )
+                ).and_return(host)
+
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+=======
+              it 'should create an Mdm::Session' do
+                expect {
+                  report_session
+                }.to change(Mdm::Session, :count).by(1)
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+              end
+            end
+
+<<<<<<< HEAD
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+<<<<<<< HEAD
+<<<<<<< HEAD
+                expect(db_manager).to receive(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                expect(db_manager).to receive(:report_vuln)
+
+                expect(db_manager).to receive(:find_or_create_host).with(
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                db_manager.stub(:report_vuln)
+
+                db_manager.should_receive(:find_or_create_host).with(
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+                  hash_including(
+                    :host => normalized_host
+                  )
+                ).and_return(host)
+=======
+              context 'with session responds to arch' do
+                let(:arch) do
+                  FactoryGirl.generate :mdm_host_arch
+=======
+                context 'created Mdm::Vuln' do
+                  let(:mdm_session) do
+                    Mdm::Session.last
+                  end
+
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:vuln) do
+                    Mdm::Vuln.last
+                  end
+
+                  it { expect(subject.host).to eq(Mdm::Host.last) }
+                  it { expect(subject.refs).to eq([]) }
+                  it { expect(subject.exploited_at).to be_within(1.second).of(Time.now.utc) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.exploit_datastore['ParentModule']" do
+                      it { expect(subject.info).to eq("Exploited by #{parent_module_fullname} to create Session #{mdm_session.id}") }
+                      it { expect(subject.name).to eq(parent_module_name) }
+                    end
+                  end
+
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    let(:reference_name) do
+                      'windows/smb/ms08_067_netapi'
+                    end
+
+                    before(:each) do
+                      path = File.join(
+                        parent_path,
+                        'exploits',
+                        "#{reference_name}.rb"
+                      )
+                      type = 'exploit'
+
+                      # fake cache data for ParentModule so it can be loaded
+                      framework.modules.send(
+                        :module_info_by_path=,
+                        {
+                          path =>
+                            {
+                              :parent_path => parent_path,
+                              :reference_name => reference_name,
+                              :type => type,
+                            }
+                        }
+                      )
+
+                      session.via_exploit = "#{type}/#{reference_name}"
+                    end
+
+                    it { expect(subject.info).to eq("Exploited by #{session.via_exploit} to create Session #{mdm_session.id}") }
+                    it { expect(subject.name).to eq(reference_name) }
+                  end
+
+                  context 'with RPORT' do
+                    let(:rport) do
+                      # use service.port instead of having service use rport so
+                      # that service is forced to exist before call to
+                      # report_service, which happens right after using rport in
+                      # outer context's before(:each)
+                      service.port
+                    end
+
+                    let(:service) do
+                      FactoryGirl.create(
+                        :mdm_service,
+                        :host => host
+                      )
+                    end
+
+                    it { expect(subject.service).to eq(service) }
+                  end
+
+                  context 'without RPORT' do
+                    it { expect(subject.service).to be_nil }
+                  end
+                end
+
+                context 'created Mdm::ExploitAttempt' do
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:exploit_attempt) do
+                    Mdm::ExploitAttempt.last
+                  end
+
+                  it { expect(subject.attempted_at).to be_within(1.second).of(Time.now.utc) }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.session_id).to eq(Mdm::Session.last.id) }
+                  it { expect(subject.exploited).to be_truthy }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.vuln_id).to eq(Mdm::Vuln.last.id) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.datastore['ParentModule']" do
+                      it { expect(subject.module).to eq(parent_module_fullname) }
+                    end
+                  end
+
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    before(:each) do
+                      session.via_exploit = parent_module_fullname
+                    end
+
+                    it { expect(subject.module).to eq(session.via_exploit) }
+                  end
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+                end
+              end
+
+              context 'returned Mdm::Session' do
+                before(:each) do
+<<<<<<< HEAD
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                      :arch => arch
+=======
+
+                report_session
+              end
+
+              context 'with session responds to arch' do
+                let(:arch) do
+                  FactoryGirl.generate :mdm_host_arch
+                end
+
+                before(:each) do
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                      :arch => arch
+                    )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+=======
+                  Timecop.freeze
+                end
+
+                after(:each) do
+                  Timecop.return
+                end
+
+                subject(:mdm_session) do
+                  report_session
+                end
+
+                #
+                # Ensure session has attributes present so its on mdm_session are
+                # not just comparing nils.
+                #
+
+                it 'should have session.info present' do
+                  session.info.should be_present
+                end
+
+                it 'should have session.sid present' do
+                  session.sid.should be_present
+                end
+
+                it 'should have session.platform present' do
+                  session.platform.should be_present
+                end
+
+                it 'should have session.type present' do
+                  session.type.should be_present
+                end
+
+                it 'should have session.via_exploit present' do
+                  session.via_exploit.should be_present
+                end
+
+                it 'should have session.via_payload present' do
+                  session.via_exploit.should be_present
+                end
+
+                it { expect(subject.datastore).to eq(session.exploit_datastore.to_h) }
+                it { expect(subject.desc).to eq(session.info) }
+                it { expect(subject.host_id).to eq(Mdm::Host.last.id) }
+                it { expect(subject.last_seen).to be_within(1.second).of(Time.now.utc) }
+                it { expect(subject.local_id).to eq(session.sid) }
+                it { expect(subject.opened_at).to be_within(1.second).of(Time.now.utc) }
+                it { expect(subject.platform).to eq(session.platform) }
+                it { expect(subject.routes).to eq([]) }
+                it { expect(subject.stype).to eq(session.type) }
+                it { expect(subject.via_payload).to eq(session.via_payload) }
+
+                context "with session.via_exploit 'exploit/multi/handler'" do
+                  it "should have session.via_exploit of 'exploit/multi/handler'" do
+                    session.via_exploit.should == 'exploit/multi/handler'
+                  end
+
+                  context "with session.exploit_datastore['ParentModule']" do
+                    it "should have session.exploit_datastore['ParentModule']" do
+                      session.exploit_datastore['ParentModule'].should_not be_nil
+                    end
+
+                    it { expect(subject.via_exploit).to eq(parent_module_fullname) }
+                  end
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+                end
+              end
+
+<<<<<<< HEAD
+              context 'without session responds to arch' do
+                it 'should not pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_excluding(
+                      :arch
+>>>>>>> origin/payload-generator.rb
+                    )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+<<<<<<< HEAD
+              context 'without session responds to arch' do
+                it 'should not pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_excluding(
+                      :arch
+                    )
+                  ).and_call_original
+>>>>>>> origin/msf-complex-payloads
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+=======
+                context "without session.via_exploit 'exploit/multi/handler'" do
+                  before(:each) do
+                    reference_name = 'windows/smb/ms08_067_netapi'
+                    path = File.join(
+                      parent_path,
+                      'exploits',
+                      "#{reference_name}.rb"
+                    )
+                    type = 'exploit'
+
+                    # fake cache data for ParentModule so it can be loaded
+                    framework.modules.send(
+                      :module_info_by_path=,
+                      {
+                        path =>
+                          {
+                            :parent_path => parent_path,
+                            :reference_name => reference_name,
+                            :type => type,
+                          }
+                      }
+                    )
+
+                    session.via_exploit = "#{type}/#{reference_name}"
+                  end
+
+                  it "should not have session.via_exploit of 'exploit/multi/handler'" do
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+                  end
+
+                  it { expect(subject.via_exploit).to eq(session.via_exploit) }
+                end
+              end
+            end
+          end
+
+          context 'without user_data' do
+            let(:user_data) { nil }
+
+            context 'with :workspace' do
+              before(:each) do
+                options[:workspace] = options_workspace
+              end
+
+              it 'should not find workspace from session' do
+                db_manager.should_not_receive(:find_workspace)
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+              end
+            end
+
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/msf-complex-payloads
+              context 'with session responds to arch' do
+                let(:arch) do
+                  FactoryGirl.generate :mdm_host_arch
+                end
+
+                before(:each) do
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                  allow(session).to receive(:arch).and_return(arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  expect(db_manager).to receive(:find_or_create_host).with(
+=======
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> origin/4.11.2_release_pre-rails4
+                    hash_including(
+                      :arch => arch
+                    )
+                  ).and_call_original
+
+=======
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                      :arch => arch
+                    )
+                  ).and_call_original
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                      :arch => arch
+                    )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+=======
+                report_session
+              end
+
+              it 'should pass session.workspace to #find_or_create_host' do
+                db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                        :workspace => session_workspace
+                    )
+                ).and_return(host)
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+            end
+
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                db_manager.stub(:report_vuln)
+
+                db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                        :host => normalized_host
+                    )
+                ).and_return(host)
+
+                report_session
+              end
+
+              context 'with session responds to arch' do
+                let(:arch) do
+                  FactoryGirl.generate :mdm_host_arch
+                end
+
+                before(:each) do
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                      hash_including(
+                          :arch => arch
+                      )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+              context 'without session responds to arch' do
+                it 'should not pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                      hash_excluding(
+                          :arch
+                      )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+              it 'should create an Mdm::Session' do
+                expect {
+                  report_session
+                }.to change(Mdm::Session, :count).by(1)
+              end
+
+              it { should be_an Mdm::Session }
+
+              it 'should set session.db_record to created Mdm::Session' do
+                mdm_session = report_session
+
+                session.db_record.should == mdm_session
+              end
+
+              context 'with session.via_exploit' do
+
+                it 'should create Mdm::Vuln' do
+                  expect {
+                    report_session
+                  }.to change(Mdm::Vuln, :count).by(1)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+                end
+              end
+
+<<<<<<< HEAD
+              context 'without session responds to arch' do
+                it 'should not pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                    hash_excluding(
+                      :arch
+                    )
+                  ).and_call_original
+
+>>>>>>> origin/msf-complex-payloads
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+=======
+                context 'created Mdm::Vuln' do
+                  let(:mdm_session) do
+                    Mdm::Session.last
+                  end
+
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:vuln) do
+                    Mdm::Vuln.last
+                  end
+
+                  it { expect(subject.host).to eq(Mdm::Host.last) }
+                  it { expect(subject.refs).to eq([]) }
+                  it { expect(subject.exploited_at).to be_within(1.second).of(Time.now.utc) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.exploit_datastore['ParentModule']" do
+                      it { expect(subject.info).to eq("Exploited by #{parent_module_fullname} to create Session #{mdm_session.id}") }
+                      it { expect(subject.name).to eq(parent_module_name) }
+                    end
+                  end
+
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    let(:reference_name) do
+                      'windows/smb/ms08_067_netapi'
+                    end
+
+                    before(:each) do
+                      path = File.join(
+                          parent_path,
+                          'exploits',
+                          "#{reference_name}.rb"
+                      )
+                      type = 'exploit'
+
+                      # fake cache data for ParentModule so it can be loaded
+                      framework.modules.send(
+                          :module_info_by_path=,
+                          {
+                              path =>
+                                  {
+                                      :parent_path => parent_path,
+                                      :reference_name => reference_name,
+                                      :type => type,
+                                  }
+                          }
+                      )
+
+                      session.via_exploit = "#{type}/#{reference_name}"
+                    end
+
+                    it { expect(subject.info).to eq("Exploited by #{session.via_exploit} to create Session #{mdm_session.id}") }
+                    it { expect(subject.name).to eq(reference_name) }
+                  end
+
+                  context 'with RPORT' do
+                    let(:rport) do
+                      # use service.port instead of having service use rport so
+                      # that service is forced to exist before call to
+                      # report_service, which happens right after using rport in
+                      # outer context's before(:each)
+                      service.port
+                    end
+
+                    let(:service) do
+                      FactoryGirl.create(
+                          :mdm_service,
+                          :host => host
+                      )
+                    end
+
+                    it { expect(subject.service).to eq(service) }
+                  end
+
+                  context 'without RPORT' do
+                    it { expect(subject.service).to be_nil }
+                  end
+                end
+
+                context 'created Mdm::ExploitAttempt' do
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:exploit_attempt) do
+                    Mdm::ExploitAttempt.last
+                  end
+
+                  it { expect(subject.attempted_at).to be_within(1.second).of(Time.now.utc) }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.session_id).to eq(Mdm::Session.last.id) }
+                  it { expect(subject.exploited).to be_truthy }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.vuln_id).to eq(Mdm::Vuln.last.id) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.datastore['ParentModule']" do
+                      it { expect(subject.module).to eq(parent_module_fullname) }
+                    end
+                  end
+
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    before(:each) do
+                      session.via_exploit = parent_module_fullname
+                    end
+
+                    it { expect(subject.module).to eq(session.via_exploit) }
+                  end
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+                end
+=======
+              it 'should create an Mdm::Session' do
+                expect {
+                  report_session
+                }.to change(Mdm::Session, :count).by(1)
+              end
+
+<<<<<<< HEAD
+              it { should be_an Mdm::Session }
+
+              it 'should set session.db_record to created Mdm::Session' do
+                mdm_session = report_session
+
+                session.db_record.should == mdm_session
+              end
+
+              context 'with session.via_exploit' do
+
+                it 'should create Mdm::Vuln' do
+                  expect {
+                    report_session
+                  }.to change(Mdm::Vuln, :count).by(1)
+                end
+
+                context 'created Mdm::Vuln' do
+                  let(:mdm_session) do
+                    Mdm::Session.last
+                  end
+
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:vuln) do
+                    Mdm::Vuln.last
+                  end
+
+                  it { expect(subject.host).to eq(Mdm::Host.last) }
+                  it { expect(subject.refs).to eq([]) }
+                  it { expect(subject.exploited_at).to be_within(1.second).of(Time.now.utc) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.exploit_datastore['ParentModule']" do
+                      it { expect(subject.info).to eq("Exploited by #{parent_module_fullname} to create Session #{mdm_session.id}") }
+                      it { expect(subject.name).to eq(parent_module_name) }
+                    end
+                  end
+
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    let(:reference_name) do
+                      'windows/smb/ms08_067_netapi'
+                    end
+
+                    before(:each) do
+                      path = File.join(
+                        parent_path,
+                        'exploits',
+                        "#{reference_name}.rb"
+                      )
+                      type = 'exploit'
+
+                      # fake cache data for ParentModule so it can be loaded
+                      framework.modules.send(
+                        :module_info_by_path=,
+                        {
+                          path =>
+                            {
+                              :parent_path => parent_path,
+                              :reference_name => reference_name,
+                              :type => type,
+                            }
+                        }
+                      )
+
+                      session.via_exploit = "#{type}/#{reference_name}"
+                    end
+
+                    it { expect(subject.info).to eq("Exploited by #{session.via_exploit} to create Session #{mdm_session.id}") }
+                    it { expect(subject.name).to eq(reference_name) }
+                  end
+
+                  context 'with RPORT' do
+                    let(:rport) do
+                      # use service.port instead of having service use rport so
+                      # that service is forced to exist before call to
+                      # report_service, which happens right after using rport in
+                      # outer context's before(:each)
+                      service.port
+                    end
+
+                    let(:service) do
+                      FactoryGirl.create(
+                        :mdm_service,
+                        :host => host
+                      )
+                    end
+
+                    it { expect(subject.service).to eq(service) }
+                  end
+
+                  context 'without RPORT' do
+                    it { expect(subject.service).to be_nil }
+                  end
+                end
+
+                context 'created Mdm::ExploitAttempt' do
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:exploit_attempt) do
+                    Mdm::ExploitAttempt.last
+                  end
+
+                  it { expect(subject.attempted_at).to be_within(1.second).of(Time.now.utc) }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.session_id).to eq(Mdm::Session.last.id) }
+                  it { expect(subject.exploited).to be_truthy }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.vuln_id).to eq(Mdm::Vuln.last.id) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.datastore['ParentModule']" do
+                      it { expect(subject.module).to eq(parent_module_fullname) }
+                    end
+                  end
+
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    before(:each) do
+                      session.via_exploit = parent_module_fullname
+                    end
+
+                    it { expect(subject.module).to eq(session.via_exploit) }
+                  end
+                end
+              end
+
+              context 'returned Mdm::Session' do
+                before(:each) do
+                  Timecop.freeze
+                end
+
+                after(:each) do
+                  Timecop.return
+                end
+
+                subject(:mdm_session) do
+                  report_session
+                end
+
+                #
+                # Ensure session has attributes present so its on mdm_session are
+                # not just comparing nils.
+                #
+
+                it 'should have session.info present' do
+                  session.info.should be_present
+                end
+
+                it 'should have session.sid present' do
+                  session.sid.should be_present
+                end
+
+                it 'should have session.platform present' do
+                  session.platform.should be_present
+                end
+
+                it 'should have session.type present' do
+                  session.type.should be_present
+                end
+
+                it 'should have session.via_exploit present' do
+                  session.via_exploit.should be_present
+                end
+
+                it 'should have session.via_payload present' do
+                  session.via_exploit.should be_present
+                end
+
+                it { expect(subject.datastore).to eq(session.exploit_datastore.to_h) }
+                it { expect(subject.desc).to eq(session.info) }
+                it { expect(subject.host_id).to eq(Mdm::Host.last.id) }
+                it { expect(subject.last_seen).to be_within(1.second).of(Time.now.utc) }
+                it { expect(subject.local_id).to eq(session.sid) }
+                it { expect(subject.opened_at).to be_within(1.second).of(Time.now.utc) }
+                it { expect(subject.platform).to eq(session.platform) }
+                it { expect(subject.routes).to eq([]) }
+                it { expect(subject.stype).to eq(session.type) }
+                it { expect(subject.via_payload).to eq(session.via_payload) }
+
+                context "with session.via_exploit 'exploit/multi/handler'" do
+                  it "should have session.via_exploit of 'exploit/multi/handler'" do
+                    session.via_exploit.should == 'exploit/multi/handler'
+                  end
+
+                  context "with session.exploit_datastore['ParentModule']" do
+                    it "should have session.exploit_datastore['ParentModule']" do
+                      session.exploit_datastore['ParentModule'].should_not be_nil
+                    end
+
+                    it { expect(subject.via_exploit).to eq(parent_module_fullname) }
+                  end
+                end
+
+                context "without session.via_exploit 'exploit/multi/handler'" do
+                  before(:each) do
+                    reference_name = 'windows/smb/ms08_067_netapi'
+                    path = File.join(
+                      parent_path,
+                      'exploits',
+                      "#{reference_name}.rb"
+                    )
+                    type = 'exploit'
+
+                    # fake cache data for ParentModule so it can be loaded
+                    framework.modules.send(
+                      :module_info_by_path=,
+                      {
+                        path =>
+                          {
+                            :parent_path => parent_path,
+                            :reference_name => reference_name,
+                            :type => type,
+                          }
+                      }
+                    )
+
+                    session.via_exploit = "#{type}/#{reference_name}"
+                  end
+
+                  it "should not have session.via_exploit of 'exploit/multi/handler'" do
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+                  end
+
+                  it { expect(subject.via_exploit).to eq(session.via_exploit) }
+                end
+              end
+            end
+          end
+
+          context 'without user_data' do
+            let(:user_data) { nil }
+
+            context 'with :workspace' do
+              before(:each) do
+                options[:workspace] = options_workspace
+              end
+
+              it 'should not find workspace from session' do
+                db_manager.should_not_receive(:find_workspace)
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+>>>>>>> origin/pod/metasploit-gemfile-
+              end
+            end
+
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+              context 'without session responds to arch' do
+                it 'should not pass :arch to #find_or_create_host' do
+<<<<<<< HEAD
+<<<<<<< HEAD
+                  expect(db_manager).to receive(:find_or_create_host).with(
+=======
+                  db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+                  db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+                    hash_excluding(
+                      :arch
+                    )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+=======
+>>>>>>> origin/msf-complex-payloads
+              it 'should create an Mdm::Session' do
+                expect {
+=======
+              it { should be_an Mdm::Session }
+
+              it 'should set session.db_record to created Mdm::Session' do
+                mdm_session = report_session
+
+                session.db_record.should == mdm_session
+              end
+
+              context 'with session.via_exploit' do
+
+                it 'should create Mdm::Vuln' do
+                  expect {
+                    report_session
+                  }.to change(Mdm::Vuln, :count).by(1)
+                end
+
+                context 'created Mdm::Vuln' do
+                  let(:mdm_session) do
+                    Mdm::Session.last
+                  end
+
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:vuln) do
+                    Mdm::Vuln.last
+                  end
+
+                  it { expect(subject.host).to eq(Mdm::Host.last) }
+                  it { expect(subject.refs).to eq([]) }
+                  it { expect(subject.exploited_at).to be_within(1.second).of(Time.now.utc) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.exploit_datastore['ParentModule']" do
+                      it { expect(subject.info).to eq("Exploited by #{parent_module_fullname} to create Session #{mdm_session.id}") }
+                      it { expect(subject.name).to eq(parent_module_name) }
+                    end
+                  end
+
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    let(:reference_name) do
+                      'windows/smb/ms08_067_netapi'
+                    end
+
+                    before(:each) do
+                      path = File.join(
+                        parent_path,
+                        'exploits',
+                        "#{reference_name}.rb"
+                      )
+                      type = 'exploit'
+
+                      # fake cache data for ParentModule so it can be loaded
+                      framework.modules.send(
+                        :module_info_by_path=,
+                        {
+                          path =>
+                            {
+                              :parent_path => parent_path,
+                              :reference_name => reference_name,
+                              :type => type,
+                            }
+                        }
+                      )
+
+                      session.via_exploit = "#{type}/#{reference_name}"
+                    end
+
+                    it { expect(subject.info).to eq("Exploited by #{session.via_exploit} to create Session #{mdm_session.id}") }
+                    it { expect(subject.name).to eq(reference_name) }
+                  end
+
+                  context 'with RPORT' do
+                    let(:rport) do
+                      # use service.port instead of having service use rport so
+                      # that service is forced to exist before call to
+                      # report_service, which happens right after using rport in
+                      # outer context's before(:each)
+                      service.port
+                    end
+
+                    let(:service) do
+                      FactoryGirl.create(
+                        :mdm_service,
+                        :host => host
+                      )
+                    end
+
+                    it { expect(subject.service).to eq(service) }
+                  end
+
+                  context 'without RPORT' do
+                    it { expect(subject.service).to be_nil }
+                  end
+                end
+
+                context 'created Mdm::ExploitAttempt' do
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:exploit_attempt) do
+                    Mdm::ExploitAttempt.last
+                  end
+
+                  it { expect(subject.attempted_at).to be_within(1.second).of(Time.now.utc) }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.session_id).to eq(Mdm::Session.last.id) }
+                  it { expect(subject.exploited).to be_truthy }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.vuln_id).to eq(Mdm::Vuln.last.id) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.datastore['ParentModule']" do
+                      it { expect(subject.module).to eq(parent_module_fullname) }
+                    end
+                  end
+
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    before(:each) do
+                      session.via_exploit = parent_module_fullname
+                    end
+
+                    it { expect(subject.module).to eq(session.via_exploit) }
+                  end
+                end
+              end
+
+              context 'returned Mdm::Session' do
+                before(:each) do
+                  Timecop.freeze
+                end
+
+                after(:each) do
+                  Timecop.return
+                end
+
+                subject(:mdm_session) do
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+                  report_session
+                }.to change(Mdm::Session, :count).by(1)
+              end
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+              it { is_expected.to be_an Mdm::Session }
+=======
+              it { should be_an Mdm::Session }
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+              it { should be_an Mdm::Session }
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+
+              it 'should set session.db_record to created Mdm::Session' do
+                mdm_session = report_session
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+                expect(session.db_record).to eq mdm_session
+=======
+                session.db_record.should == mdm_session
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+                session.db_record.should == mdm_session
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+              end
+
+              context 'with session.via_exploit' do
+
+                it 'should create Mdm::Vuln' do
+                  expect {
+                    report_session
+                  }.to change(Mdm::Vuln, :count).by(1)
+                end
+
+                context 'created Mdm::Vuln' do
+                  let(:mdm_session) do
+                    Mdm::Session.last
+                  end
+
+                  let(:rport) do
+                    nil
+=======
+                #
+                # Ensure session has attributes present so its on mdm_session are
+                # not just comparing nils.
+                #
+
+                it 'should have session.info present' do
+                  session.info.should be_present
+                end
+
+                it 'should have session.sid present' do
+                  session.sid.should be_present
+                end
+
+                it 'should have session.platform present' do
+                  session.platform.should be_present
+                end
+
+                it 'should have session.type present' do
+                  session.type.should be_present
+                end
+
+                it 'should have session.via_exploit present' do
+                  session.via_exploit.should be_present
+                end
+
+                it 'should have session.via_payload present' do
+                  session.via_exploit.should be_present
+                end
+
+                it { expect(subject.datastore).to eq(session.exploit_datastore.to_h) }
+                it { expect(subject.desc).to eq(session.info) }
+                it { expect(subject.host_id).to eq(Mdm::Host.last.id) }
+                it { expect(subject.last_seen).to be_within(1.second).of(Time.now.utc) }
+                it { expect(subject.local_id).to eq(session.sid) }
+                it { expect(subject.opened_at).to be_within(1.second).of(Time.now.utc) }
+                it { expect(subject.platform).to eq(session.platform) }
+                it { expect(subject.routes).to eq([]) }
+                it { expect(subject.stype).to eq(session.type) }
+                it { expect(subject.via_payload).to eq(session.via_payload) }
+
+                context "with session.via_exploit 'exploit/multi/handler'" do
+                  it "should have session.via_exploit of 'exploit/multi/handler'" do
+                    session.via_exploit.should == 'exploit/multi/handler'
+                  end
+
+                  context "with session.exploit_datastore['ParentModule']" do
+                    it "should have session.exploit_datastore['ParentModule']" do
+                      session.exploit_datastore['ParentModule'].should_not be_nil
+                    end
+
+                    it { expect(subject.via_exploit).to eq(parent_module_fullname) }
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+                  end
+
+                  before(:each) do
+<<<<<<< HEAD
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:vuln) do
+                    Mdm::Vuln.last
+                  end
+
+                  it { expect(subject.host).to eq(Mdm::Host.last) }
+                  it { expect(subject.refs).to eq([]) }
+                  it { expect(subject.exploited_at).to be_within(1.second).of(Time.now.utc) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.exploit_datastore['ParentModule']" do
+                      it { expect(subject.info).to eq("Exploited by #{parent_module_fullname} to create Session #{mdm_session.id}") }
+                      it { expect(subject.name).to eq(parent_module_name) }
+                    end
+                  end
+
+=======
+              it { should be_an Mdm::Session }
+
+              it 'should set session.db_record to created Mdm::Session' do
+                mdm_session = report_session
+
+                session.db_record.should == mdm_session
+              end
+
+              context 'with session.via_exploit' do
+
+                it 'should create Mdm::Vuln' do
+                  expect {
+                    report_session
+                  }.to change(Mdm::Vuln, :count).by(1)
+                end
+
+                context 'created Mdm::Vuln' do
+                  let(:mdm_session) do
+                    Mdm::Session.last
+                  end
+
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+=======
+=======
+                    reference_name = 'windows/smb/ms08_067_netapi'
+                    path = File.join(
+                      parent_path,
+                      'exploits',
+                      "#{reference_name}.rb"
+                    )
+                    type = 'exploit'
+
+                    # fake cache data for ParentModule so it can be loaded
+                    framework.modules.send(
+                      :module_info_by_path=,
+                      {
+                        path =>
+                          {
+                            :parent_path => parent_path,
+                            :reference_name => reference_name,
+                            :type => type,
+                          }
+                      }
+                    )
+
+                    session.via_exploit = "#{type}/#{reference_name}"
+                  end
+
+                  it "should not have session.via_exploit of 'exploit/multi/handler'" do
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+                  end
+
+                  it { expect(subject.via_exploit).to eq(session.via_exploit) }
+                end
+              end
+            end
+          end
+
+          context 'without user_data' do
+            let(:user_data) { nil }
+
+            context 'with :workspace' do
+              before(:each) do
+                options[:workspace] = options_workspace
+              end
+
+              it 'should not find workspace from session' do
+                db_manager.should_not_receive(:find_workspace)
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+            end
+
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+
+                report_session
+              end
+
+              it 'should pass session.workspace to #find_or_create_host' do
+                db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                        :workspace => session_workspace
+                    )
+                ).and_return(host)
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+            end
+
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                db_manager.stub(:report_vuln)
+
+                db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                        :host => normalized_host
+                    )
+                ).and_return(host)
+
+                report_session
+              end
+
+              context 'with session responds to arch' do
+                let(:arch) do
+                  FactoryGirl.generate :mdm_host_arch
+                end
+
+                before(:each) do
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                      hash_including(
+                          :arch => arch
+                      )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+              context 'without session responds to arch' do
+                it 'should not pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+                      hash_excluding(
+                          :arch
+                      )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+              it 'should create an Mdm::Session' do
+                expect {
+                  report_session
+                }.to change(Mdm::Session, :count).by(1)
+              end
+
+              it { should be_an Mdm::Session }
+
+              it 'should set session.db_record to created Mdm::Session' do
+                mdm_session = report_session
+
+                session.db_record.should == mdm_session
+              end
+
+              context 'with session.via_exploit' do
+
+                it 'should create Mdm::Vuln' do
+                  expect {
+                    report_session
+                  }.to change(Mdm::Vuln, :count).by(1)
+                end
+
+                context 'created Mdm::Vuln' do
+                  let(:mdm_session) do
+                    Mdm::Session.last
+<<<<<<< HEAD
+                  end
+
+=======
+                  end
+
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:vuln) do
+                    Mdm::Vuln.last
+                  end
+
+                  it { expect(subject.host).to eq(Mdm::Host.last) }
+                  it { expect(subject.refs).to eq([]) }
+                  it { expect(subject.exploited_at).to be_within(1.second).of(Time.now.utc) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.exploit_datastore['ParentModule']" do
+                      it { expect(subject.info).to eq("Exploited by #{parent_module_fullname} to create Session #{mdm_session.id}") }
+                      it { expect(subject.name).to eq(parent_module_name) }
+                    end
+                  end
+
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    let(:reference_name) do
+                      'windows/smb/ms08_067_netapi'
+                    end
+
+                    before(:each) do
+                      path = File.join(
+                          parent_path,
+                          'exploits',
+                          "#{reference_name}.rb"
+                      )
+                      type = 'exploit'
+
+                      # fake cache data for ParentModule so it can be loaded
+                      framework.modules.send(
+                          :module_info_by_path=,
+                          {
+                              path =>
+                                  {
+                                      :parent_path => parent_path,
+                                      :reference_name => reference_name,
+                                      :type => type,
+                                  }
+                          }
+                      )
+
+                      session.via_exploit = "#{type}/#{reference_name}"
+                    end
+
+                    it { expect(subject.info).to eq("Exploited by #{session.via_exploit} to create Session #{mdm_session.id}") }
+                    it { expect(subject.name).to eq(reference_name) }
+                  end
+
+                  context 'with RPORT' do
+                    let(:rport) do
+                      # use service.port instead of having service use rport so
+                      # that service is forced to exist before call to
+                      # report_service, which happens right after using rport in
+                      # outer context's before(:each)
+                      service.port
+                    end
+
+                    let(:service) do
+                      FactoryGirl.create(
+                          :mdm_service,
+                          :host => host
+                      )
+                    end
+
+                    it { expect(subject.service).to eq(service) }
+                  end
+
+                  context 'without RPORT' do
+                    it { expect(subject.service).to be_nil }
+                  end
+                end
+
+                context 'created Mdm::ExploitAttempt' do
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+              it 'should create an Mdm::Session' do
+                expect {
+                  report_session
+                }.to change(Mdm::Session, :count).by(1)
+              end
+
+              it { should be_an Mdm::Session }
+
+              it 'should set session.db_record to created Mdm::Session' do
+                mdm_session = report_session
+
+                session.db_record.should == mdm_session
+              end
+
+              context 'with session.via_exploit' do
+
+                it 'should create Mdm::Vuln' do
+                  expect {
+                    report_session
+                  }.to change(Mdm::Vuln, :count).by(1)
+                end
+
+                context 'created Mdm::Vuln' do
+                  let(:mdm_session) do
+                    Mdm::Session.last
+                  end
+
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+>>>>>>> origin/payload-generator.rb
+                  subject(:vuln) do
+                    Mdm::Vuln.last
+                  end
+
+                  it { expect(subject.host).to eq(Mdm::Host.last) }
+                  it { expect(subject.refs).to eq([]) }
+                  it { expect(subject.exploited_at).to be_within(1.second).of(Time.now.utc) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.exploit_datastore['ParentModule']" do
+                      it { expect(subject.info).to eq("Exploited by #{parent_module_fullname} to create Session #{mdm_session.id}") }
+                      it { expect(subject.name).to eq(parent_module_name) }
+                    end
+                  end
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    let(:reference_name) do
+                      'windows/smb/ms08_067_netapi'
+                    end
+
+                    before(:each) do
+                      path = File.join(
+                        parent_path,
+                        'exploits',
+                        "#{reference_name}.rb"
+                      )
+                      type = 'exploit'
+
+                      # fake cache data for ParentModule so it can be loaded
+                      framework.modules.send(
+                        :module_info_by_path=,
+                        {
+                          path =>
+                            {
+                              :parent_path => parent_path,
+                              :reference_name => reference_name,
+                              :type => type,
+                            }
+                        }
+                      )
+
+                      session.via_exploit = "#{type}/#{reference_name}"
+                    end
+
+                    it { expect(subject.info).to eq("Exploited by #{session.via_exploit} to create Session #{mdm_session.id}") }
+                    it { expect(subject.name).to eq(reference_name) }
+<<<<<<< HEAD
+                  end
+
+                  context 'with RPORT' do
+                    let(:rport) do
+                      # use service.port instead of having service use rport so
+                      # that service is forced to exist before call to
+                      # report_service, which happens right after using rport in
+                      # outer context's before(:each)
+                      service.port
+                    end
+
+                    let(:service) do
+                      FactoryGirl.create(
+                        :mdm_service,
+                        :host => host
+                      )
+                    end
+
+                    it { expect(subject.service).to eq(service) }
+                  end
+
+=======
+                  end
+
+                  context 'with RPORT' do
+                    let(:rport) do
+                      # use service.port instead of having service use rport so
+                      # that service is forced to exist before call to
+                      # report_service, which happens right after using rport in
+                      # outer context's before(:each)
+                      service.port
+                    end
+
+                    let(:service) do
+                      FactoryGirl.create(
+                        :mdm_service,
+                        :host => host
+                      )
+                    end
+
+                    it { expect(subject.service).to eq(service) }
+                  end
+
+>>>>>>> origin/payload-generator.rb
+                  context 'without RPORT' do
+                    it { expect(subject.service).to be_nil }
+                  end
+                end
+
+                context 'created Mdm::ExploitAttempt' do
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:exploit_attempt) do
+                    Mdm::ExploitAttempt.last
+                  end
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+
+                  it { expect(subject.attempted_at).to be_within(1.second).of(Time.now.utc) }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.session_id).to eq(Mdm::Session.last.id) }
+                  it { expect(subject.exploited).to be_truthy }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.vuln_id).to eq(Mdm::Vuln.last.id) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.datastore['ParentModule']" do
+                      it { expect(subject.module).to eq(parent_module_fullname) }
+                    end
+                  end
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+
+                  it { expect(subject.attempted_at).to be_within(1.second).of(Time.now.utc) }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.session_id).to eq(Mdm::Session.last.id) }
+                  it { expect(subject.exploited).to be_truthy }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.vuln_id).to eq(Mdm::Vuln.last.id) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.datastore['ParentModule']" do
+                      it { expect(subject.module).to eq(parent_module_fullname) }
+                    end
+                  end
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+
+>>>>>>> origin/msf-complex-payloads
+=======
+
+>>>>>>> origin/msf-complex-payloads
+=======
+
+>>>>>>> origin/payload-generator.rb
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    before(:each) do
+                      session.via_exploit = parent_module_fullname
+                    end
+
+                    it { expect(subject.module).to eq(session.via_exploit) }
+                  end
+                end
+              end
+
+              context 'returned Mdm::Session' do
+                before(:each) do
+                  Timecop.freeze
+                end
+
+                after(:each) do
+                  Timecop.return
+                end
+
+                subject(:mdm_session) do
+                  report_session
+                end
+
+                #
+                # Ensure session has attributes present so its on mdm_session are
+                # not just comparing nils.
+                #
+
+                it 'should have session.info present' do
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                  expect(session.info).to be_present
+                end
+
+                it 'should have session.sid present' do
+                  expect(session.sid).to be_present
+                end
+
+                it 'should have session.platform present' do
+                  expect(session.platform).to be_present
+                end
+
+                it 'should have session.type present' do
+                  expect(session.type).to be_present
+                end
+
+                it 'should have session.via_exploit present' do
+                  expect(session.via_exploit).to be_present
+                end
+
+                it 'should have session.via_payload present' do
+                  expect(session.via_exploit).to be_present
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+                  session.info.should be_present
+                end
+
+                it 'should have session.sid present' do
+                  session.sid.should be_present
+                end
+
+                it 'should have session.platform present' do
+                  session.platform.should be_present
+                end
+
+                it 'should have session.type present' do
+                  session.type.should be_present
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/msf-complex-payloads
+                end
+
+                it 'should have session.via_exploit present' do
+                  session.via_exploit.should be_present
+                end
+
+                it 'should have session.via_payload present' do
+                  session.via_exploit.should be_present
+<<<<<<< HEAD
+>>>>>>> origin/4.11.2_release_pre-rails4
+                end
+
+=======
+                end
+
+                it 'should have session.via_exploit present' do
+                  session.via_exploit.should be_present
+                end
+
+                it 'should have session.via_payload present' do
+                  session.via_exploit.should be_present
+                end
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+                end
+
+>>>>>>> origin/msf-complex-payloads
+=======
+                end
+
+                it 'should have session.via_exploit present' do
+                  session.via_exploit.should be_present
+                end
+
+                it 'should have session.via_payload present' do
+                  session.via_exploit.should be_present
+                end
+
+>>>>>>> origin/msf-complex-payloads
+=======
+                  session.info.should be_present
+                end
+
+                it 'should have session.sid present' do
+                  session.sid.should be_present
+                end
+
+                it 'should have session.platform present' do
+                  session.platform.should be_present
+                end
+
+                it 'should have session.type present' do
+                  session.type.should be_present
+                end
+
+                it 'should have session.via_exploit present' do
+                  session.via_exploit.should be_present
+                end
+
+                it 'should have session.via_payload present' do
+                  session.via_exploit.should be_present
+                end
+
+>>>>>>> origin/payload-generator.rb
+                it { expect(subject.datastore).to eq(session.exploit_datastore.to_h) }
+                it { expect(subject.desc).to eq(session.info) }
+                it { expect(subject.host_id).to eq(Mdm::Host.last.id) }
+                it { expect(subject.last_seen).to be_within(1.second).of(Time.now.utc) }
+                it { expect(subject.local_id).to eq(session.sid) }
+                it { expect(subject.opened_at).to be_within(1.second).of(Time.now.utc) }
+                it { expect(subject.platform).to eq(session.platform) }
+                it { expect(subject.routes).to eq([]) }
+                it { expect(subject.stype).to eq(session.type) }
+                it { expect(subject.via_payload).to eq(session.via_payload) }
+
+                context "with session.via_exploit 'exploit/multi/handler'" do
+                  it "should have session.via_exploit of 'exploit/multi/handler'" do
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    expect(session.via_exploit).to eq 'exploit/multi/handler'
+=======
+                    session.via_exploit.should == 'exploit/multi/handler'
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+                    session.via_exploit.should == 'exploit/multi/handler'
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+                    session.via_exploit.should == 'exploit/multi/handler'
+>>>>>>> origin/msf-complex-payloads
+=======
+                    session.via_exploit.should == 'exploit/multi/handler'
+>>>>>>> origin/msf-complex-payloads
+=======
+                    session.via_exploit.should == 'exploit/multi/handler'
+>>>>>>> origin/payload-generator.rb
+                  end
+
+                  context "with session.exploit_datastore['ParentModule']" do
+                    it "should have session.exploit_datastore['ParentModule']" do
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                      expect(session.exploit_datastore['ParentModule']).not_to be_nil
+=======
+                      session.exploit_datastore['ParentModule'].should_not be_nil
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+                      session.exploit_datastore['ParentModule'].should_not be_nil
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+                      session.exploit_datastore['ParentModule'].should_not be_nil
+>>>>>>> origin/msf-complex-payloads
+=======
+                      session.exploit_datastore['ParentModule'].should_not be_nil
+>>>>>>> origin/msf-complex-payloads
+=======
+                      session.exploit_datastore['ParentModule'].should_not be_nil
+>>>>>>> origin/payload-generator.rb
+                    end
+
+                    it { expect(subject.via_exploit).to eq(parent_module_fullname) }
+                  end
+                end
+
+                context "without session.via_exploit 'exploit/multi/handler'" do
+                  before(:each) do
+                    reference_name = 'windows/smb/ms08_067_netapi'
+                    path = File.join(
+                      parent_path,
+                      'exploits',
+                      "#{reference_name}.rb"
+                    )
+                    type = 'exploit'
+
+                    # fake cache data for ParentModule so it can be loaded
+                    framework.modules.send(
+                      :module_info_by_path=,
+                      {
+                        path =>
+                          {
+                            :parent_path => parent_path,
+                            :reference_name => reference_name,
+                            :type => type,
+                          }
+                      }
+                    )
+
+                    session.via_exploit = "#{type}/#{reference_name}"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                  end
+
+                  it "should not have session.via_exploit of 'exploit/multi/handler'" do
+<<<<<<< HEAD
+                    expect(session.via_exploit).not_to eq 'exploit/multi/handler'
+=======
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+>>>>>>> origin/4.11.2_release_pre-rails4
+                  end
+
+=======
+=======
+>>>>>>> origin/msf-complex-payloads
+                  end
+
+                  it "should not have session.via_exploit of 'exploit/multi/handler'" do
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+                  end
+
+<<<<<<< HEAD
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+=======
+>>>>>>> origin/payload-generator.rb
+                  end
+
+                  it "should not have session.via_exploit of 'exploit/multi/handler'" do
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+                  end
+
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+                  it { expect(subject.via_exploit).to eq(session.via_exploit) }
+                end
+              end
+            end
+          end
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+
+          context 'without user_data' do
+            let(:user_data) { nil }
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+          context 'without user_data' do
+            let(:user_data) { nil }
+
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+            context 'with :workspace' do
+              before(:each) do
+                options[:workspace] = options_workspace
+              end
+
+              it 'should not find workspace from session' do
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                expect(db_manager).not_to receive(:find_workspace)
+=======
+                db_manager.should_not_receive(:find_workspace)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+                db_manager.should_not_receive(:find_workspace)
+>>>>>>> origin/msf-complex-payloads
+=======
+                db_manager.should_not_receive(:find_workspace)
+>>>>>>> origin/msf-complex-payloads
+=======
+                db_manager.should_not_receive(:find_workspace)
+>>>>>>> origin/payload-generator.rb
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+            end
+
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                expect(db_manager).to receive(:find_workspace).with(session.workspace).and_call_original
+=======
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+>>>>>>> origin/msf-complex-payloads
+=======
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+>>>>>>> origin/msf-complex-payloads
+=======
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+>>>>>>> origin/payload-generator.rb
+
+                report_session
+              end
+
+              it 'should pass session.workspace to #find_or_create_host' do
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                expect(db_manager).to receive(:find_or_create_host).with(
+=======
+                db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+                db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> origin/msf-complex-payloads
+=======
+                db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> origin/msf-complex-payloads
+=======
+                db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> origin/payload-generator.rb
+                    hash_including(
+                        :workspace => session_workspace
+                    )
+                ).and_return(host)
+
+                expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+              end
+            end
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/msf-complex-payloads
+
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+<<<<<<< HEAD
+                allow(db_manager).to receive(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                allow(db_manager).to receive(:report_vuln)
+
+                expect(db_manager).to receive(:find_or_create_host).with(
+                    hash_including(
+                        :host => normalized_host
+                    )
+                ).and_return(host)
+
+=======
+
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+=======
+>>>>>>> origin/msf-complex-payloads
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                db_manager.stub(:report_vuln)
+
+                db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                        :host => normalized_host
+                    )
+                ).and_return(host)
+
+<<<<<<< HEAD
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                db_manager.stub(:report_vuln)
+
+=======
+
+            context 'with workspace from either :workspace or session' do
+              it 'should pass normalized host from session as :host to #find_or_create_host' do
+                normalized_host = double('Normalized Host')
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
+                db_manager.stub(:report_vuln)
+
+>>>>>>> origin/payload-generator.rb
+                db_manager.should_receive(:find_or_create_host).with(
+                    hash_including(
+                        :host => normalized_host
+                    )
+                ).and_return(host)
+
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+                report_session
+              end
+
+              context 'with session responds to arch' do
+                let(:arch) do
+                  FactoryGirl.generate :mdm_host_arch
+                end
+
+                before(:each) do
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                  allow(session).to receive(:arch).and_return(arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  expect(db_manager).to receive(:find_or_create_host).with(
+=======
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+                      hash_including(
+                          :arch => arch
+                      )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+              context 'without session responds to arch' do
+                it 'should not pass :arch to #find_or_create_host' do
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                  expect(db_manager).to receive(:find_or_create_host).with(
+=======
+                  db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+                  db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> origin/msf-complex-payloads
+=======
+                  db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> origin/msf-complex-payloads
+=======
+                  db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> origin/payload-generator.rb
+                      hash_excluding(
+                          :arch
+                      )
+                  ).and_call_original
+
+                  expect { report_session }.to change(Mdm::Vuln, :count).by(1)
+                end
+              end
+
+              it 'should create an Mdm::Session' do
+                expect {
+                  report_session
+                }.to change(Mdm::Session, :count).by(1)
+              end
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+              it { is_expected.to be_an Mdm::Session }
+=======
+              it { should be_an Mdm::Session }
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+              it { should be_an Mdm::Session }
+>>>>>>> origin/msf-complex-payloads
+=======
+              it { should be_an Mdm::Session }
+>>>>>>> origin/msf-complex-payloads
+=======
+              it { should be_an Mdm::Session }
+>>>>>>> origin/payload-generator.rb
+
+              it 'should set session.db_record to created Mdm::Session' do
+                mdm_session = report_session
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                expect(session.db_record).to eq mdm_session
+=======
+                session.db_record.should == mdm_session
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+                session.db_record.should == mdm_session
+>>>>>>> origin/msf-complex-payloads
+=======
+                session.db_record.should == mdm_session
+>>>>>>> origin/msf-complex-payloads
+=======
+                session.db_record.should == mdm_session
+>>>>>>> origin/payload-generator.rb
+              end
+
+              context 'with session.via_exploit' do
+
+                it 'should create Mdm::Vuln' do
+                  expect {
+                    report_session
+                  }.to change(Mdm::Vuln, :count).by(1)
+                end
+
+                context 'created Mdm::Vuln' do
+                  let(:mdm_session) do
+                    Mdm::Session.last
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/payload-generator.rb
+                  end
+
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/payload-generator.rb
+                  end
+
+                  subject(:vuln) do
+                    Mdm::Vuln.last
+<<<<<<< HEAD
+                  end
+
+=======
+                  end
+
+                  subject(:vuln) do
+                    Mdm::Vuln.last
+                  end
+
+>>>>>>> origin/msf-complex-payloads
+=======
+                  end
+
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:vuln) do
+                    Mdm::Vuln.last
+                  end
+
+>>>>>>> origin/msf-complex-payloads
+=======
+                  end
+
+>>>>>>> origin/payload-generator.rb
+                  it { expect(subject.host).to eq(Mdm::Host.last) }
+                  it { expect(subject.refs).to eq([]) }
+                  it { expect(subject.exploited_at).to be_within(1.second).of(Time.now.utc) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.exploit_datastore['ParentModule']" do
+                      it { expect(subject.info).to eq("Exploited by #{parent_module_fullname} to create Session #{mdm_session.id}") }
+                      it { expect(subject.name).to eq(parent_module_name) }
+                    end
+                  end
+
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    let(:reference_name) do
+                      'windows/smb/ms08_067_netapi'
+                    end
+
+                    before(:each) do
+                      path = File.join(
+                          parent_path,
+                          'exploits',
+                          "#{reference_name}.rb"
+                      )
+                      type = 'exploit'
+
+                      # fake cache data for ParentModule so it can be loaded
+                      framework.modules.send(
+                          :module_info_by_path=,
+                          {
+                              path =>
+                                  {
+                                      :parent_path => parent_path,
+                                      :reference_name => reference_name,
+                                      :type => type,
+                                  }
+                          }
+                      )
+
+                      session.via_exploit = "#{type}/#{reference_name}"
+                    end
+
+                    it { expect(subject.info).to eq("Exploited by #{session.via_exploit} to create Session #{mdm_session.id}") }
+                    it { expect(subject.name).to eq(reference_name) }
+                  end
+
+=======
+            end
+
+            context 'without :workspace' do
+              it 'should find workspace from session' do
+                db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
+
+                report_session
+              end
+
+              it 'should pass session.workspace to #find_or_create_host' do
+                db_manager.should_receive(:find_or_create_host).with(
+                  hash_including(
+                    :workspace => session_workspace
+                  )
                 ).and_return(host)
 
                 expect { report_session }.to change(Mdm::Vuln, :count).by(1)
@@ -2383,10 +5401,11 @@ shared_examples_for 'Msf::DBManager::Session' do
             context 'with workspace from either :workspace or session' do
               it 'should pass normalized host from session as :host to #find_or_create_host' do
                 normalized_host = double('Normalized Host')
-                expect(db_manager).to receive(:normalize_host).with(session).and_return(normalized_host)
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
                 # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
-                expect(db_manager).to receive(:report_vuln)
+                db_manager.stub(:report_vuln)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/payload-generator.rb
                 db_manager.should_receive(:find_or_create_host).with(
@@ -2403,6 +5422,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 
 >>>>>>> rapid7/master
                 expect(db_manager).to receive(:find_or_create_host).with(
+=======
+                db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> pod/metasploit-development-environment
                   hash_including(
                     :host => normalized_host
                   )
@@ -2422,6 +5444,7 @@ shared_examples_for 'Msf::DBManager::Session' do
                 end
 
                 before(:each) do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2484,6 +5507,13 @@ shared_examples_for 'Msf::DBManager::Session' do
                 it 'should pass :arch to #find_or_create_host' do
 >>>>>>> rapid7/master
                   expect(db_manager).to receive(:find_or_create_host).with(
+=======
+                  session.stub(:arch => arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+                  db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> pod/metasploit-development-environment
                     hash_including(
                       :arch => arch
                     )
@@ -2496,6 +5526,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 
               context 'without session responds to arch' do
                 it 'should not pass :arch to #find_or_create_host' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2528,6 +5559,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
 >>>>>>> rapid7/master
                   expect(db_manager).to receive(:find_or_create_host).with(
+=======
+                  db_manager.should_receive(:find_or_create_host).with(
+>>>>>>> pod/metasploit-development-environment
                     hash_excluding(
                       :arch
                     )
@@ -2552,6 +5586,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               it { is_expected.to be_an Mdm::Session }
 =======
               it { should be_an Mdm::Session }
@@ -2577,6 +5612,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
               it { is_expected.to be_an Mdm::Session }
 >>>>>>> rapid7/master
+=======
+              it { should be_an Mdm::Session }
+>>>>>>> pod/metasploit-development-environment
 
               it 'should set session.db_record to created Mdm::Session' do
                 mdm_session = report_session
@@ -2589,6 +5627,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 expect(session.db_record).to eq mdm_session
 =======
                 session.db_record.should == mdm_session
@@ -2614,6 +5653,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
                 expect(session.db_record).to eq mdm_session
 >>>>>>> rapid7/master
+=======
+                session.db_record.should == mdm_session
+>>>>>>> pod/metasploit-development-environment
               end
 
               context 'with session.via_exploit' do
@@ -2689,11 +5731,6 @@ shared_examples_for 'Msf::DBManager::Session' do
                     Mdm::Vuln.last
                   end
 
->>>>>>> origin/msf-complex-payloads
-=======
-                  end
-
->>>>>>> origin/payload-generator.rb
                   it { expect(subject.host).to eq(Mdm::Host.last) }
                   it { expect(subject.refs).to eq([]) }
                   it { expect(subject.exploited_at).to be_within(1.second).of(Time.now.utc) }
@@ -2710,6 +5747,180 @@ shared_examples_for 'Msf::DBManager::Session' do
                       'windows/smb/ms08_067_netapi'
                     end
 
+                    before(:each) do
+                      path = File.join(
+                        parent_path,
+                        'exploits',
+                        "#{reference_name}.rb"
+                      )
+                      type = 'exploit'
+
+                      # fake cache data for ParentModule so it can be loaded
+                      framework.modules.send(
+                        :module_info_by_path=,
+                        {
+                          path =>
+                            {
+                              :parent_path => parent_path,
+                              :reference_name => reference_name,
+                              :type => type,
+                            }
+                        }
+                      )
+
+                      session.via_exploit = "#{type}/#{reference_name}"
+                    end
+
+                    it { expect(subject.info).to eq("Exploited by #{session.via_exploit} to create Session #{mdm_session.id}") }
+                    it { expect(subject.name).to eq(reference_name) }
+                  end
+
+>>>>>>> origin/4.11.2_release_pre-rails4
+                  context 'with RPORT' do
+                    let(:rport) do
+                      # use service.port instead of having service use rport so
+                      # that service is forced to exist before call to
+                      # report_service, which happens right after using rport in
+                      # outer context's before(:each)
+                      service.port
+                    end
+<<<<<<< HEAD
+=======
+
+                    let(:service) do
+                      FactoryGirl.create(
+                        :mdm_service,
+                        :host => host
+                      )
+                    end
+
+                    it { expect(subject.service).to eq(service) }
+                  end
+
+                  context 'without RPORT' do
+                    it { expect(subject.service).to be_nil }
+                  end
+                end
+
+                context 'created Mdm::ExploitAttempt' do
+                  let(:rport) do
+                    nil
+                  end
+
+                  before(:each) do
+                    Timecop.freeze
+
+                    session.exploit_datastore['RPORT'] = rport
+
+                    report_session
+                  end
+
+                  after(:each) do
+                    Timecop.return
+                  end
+
+                  subject(:exploit_attempt) do
+                    Mdm::ExploitAttempt.last
+                  end
+
+                  it { expect(subject.attempted_at).to be_within(1.second).of(Time.now.utc) }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.session_id).to eq(Mdm::Session.last.id) }
+                  it { expect(subject.exploited).to be_truthy }
+                  # @todo https://www.pivotaltracker.com/story/show/48362615
+                  it { expect(subject.vuln_id).to eq(Mdm::Vuln.last.id) }
+
+                  context "with session.via_exploit 'exploit/multi/handler'" do
+                    context "with session.datastore['ParentModule']" do
+                      it { expect(subject.module).to eq(parent_module_fullname) }
+                    end
+                  end
+
+                  context "without session.via_exploit 'exploit/multi/handler'" do
+                    before(:each) do
+                      session.via_exploit = parent_module_fullname
+                    end
+
+                    it { expect(subject.module).to eq(session.via_exploit) }
+                  end
+                end
+              end
+
+              context 'returned Mdm::Session' do
+                before(:each) do
+                  Timecop.freeze
+                end
+
+                after(:each) do
+                  Timecop.return
+                end
+
+                subject(:mdm_session) do
+                  report_session
+                end
+
+                #
+                # Ensure session has attributes present so its on mdm_session are
+                # not just comparing nils.
+                #
+
+                it 'should have session.info present' do
+                  session.info.should be_present
+                end
+
+                it 'should have session.sid present' do
+                  session.sid.should be_present
+                end
+
+                it 'should have session.platform present' do
+                  session.platform.should be_present
+                end
+
+                it 'should have session.type present' do
+                  session.type.should be_present
+                end
+
+                it 'should have session.via_exploit present' do
+                  session.via_exploit.should be_present
+                end
+
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+                  end
+
+>>>>>>> origin/payload-generator.rb
+                  it { expect(subject.host).to eq(Mdm::Host.last) }
+                  it { expect(subject.refs).to eq([]) }
+                  it { expect(subject.exploited_at).to be_within(1.second).of(Time.now.utc) }
+=======
+                it 'should have session.via_payload present' do
+                  session.via_exploit.should be_present
+                end
+>>>>>>> pod/metasploit-development-environment
+
+                it { expect(subject.datastore).to eq(session.exploit_datastore.to_h) }
+                it { expect(subject.desc).to eq(session.info) }
+                it { expect(subject.host_id).to eq(Mdm::Host.last.id) }
+                it { expect(subject.last_seen).to be_within(1.second).of(Time.now.utc) }
+                it { expect(subject.local_id).to eq(session.sid) }
+                it { expect(subject.opened_at).to be_within(1.second).of(Time.now.utc) }
+                it { expect(subject.platform).to eq(session.platform) }
+                it { expect(subject.routes).to eq([]) }
+                it { expect(subject.stype).to eq(session.type) }
+                it { expect(subject.via_payload).to eq(session.via_payload) }
+
+                context "with session.via_exploit 'exploit/multi/handler'" do
+                  it "should have session.via_exploit of 'exploit/multi/handler'" do
+                    session.via_exploit.should == 'exploit/multi/handler'
+                  end
+
+                  context "with session.exploit_datastore['ParentModule']" do
+                    it "should have session.exploit_datastore['ParentModule']" do
+                      session.exploit_datastore['ParentModule'].should_not be_nil
+                    end
+
+<<<<<<< HEAD
                     before(:each) do
                       path = File.join(
                           parent_path,
@@ -2730,22 +5941,48 @@ shared_examples_for 'Msf::DBManager::Session' do
                                   }
                           }
                       )
+=======
+                    it { expect(subject.via_exploit).to eq(parent_module_fullname) }
+                  end
+                end
 
-                      session.via_exploit = "#{type}/#{reference_name}"
-                    end
+                context "without session.via_exploit 'exploit/multi/handler'" do
+                  before(:each) do
+                    reference_name = 'windows/smb/ms08_067_netapi'
+                    path = File.join(
+                      parent_path,
+                      'exploits',
+                      "#{reference_name}.rb"
+                    )
+                    type = 'exploit'
+>>>>>>> pod/metasploit-development-environment
 
-                    it { expect(subject.info).to eq("Exploited by #{session.via_exploit} to create Session #{mdm_session.id}") }
-                    it { expect(subject.name).to eq(reference_name) }
+                    # fake cache data for ParentModule so it can be loaded
+                    framework.modules.send(
+                      :module_info_by_path=,
+                      {
+                        path =>
+                          {
+                            :parent_path => parent_path,
+                            :reference_name => reference_name,
+                            :type => type,
+                          }
+                      }
+                    )
+
+                    session.via_exploit = "#{type}/#{reference_name}"
                   end
 
-                  context 'with RPORT' do
-                    let(:rport) do
-                      # use service.port instead of having service use rport so
-                      # that service is forced to exist before call to
-                      # report_service, which happens right after using rport in
-                      # outer context's before(:each)
-                      service.port
-                    end
+                  it "should not have session.via_exploit of 'exploit/multi/handler'" do
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+                  end
+
+                  it { expect(subject.via_exploit).to eq(session.via_exploit) }
+                end
+              end
+            end
+          end
+>>>>>>> origin/4.11.2_release_pre-rails4
 
                     let(:service) do
                       FactoryGirl.create(
@@ -2833,6 +6070,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -2841,6 +6079,8 @@ shared_examples_for 'Msf::DBManager::Session' do
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-development-environment
                   expect(session.info).to be_present
                 end
 
@@ -2936,6 +6176,9 @@ shared_examples_for 'Msf::DBManager::Session' do
                   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
                   it { expect(subject.attempted_at).to be_within(1.second).of(Time.now.utc) }
                   # @todo https://www.pivotaltracker.com/story/show/48362615
                   it { expect(subject.session_id).to eq(Mdm::Session.last.id) }
@@ -2947,6 +6190,7 @@ shared_examples_for 'Msf::DBManager::Session' do
                     context "with session.datastore['ParentModule']" do
                       it { expect(subject.module).to eq(parent_module_fullname) }
                     end
+<<<<<<< HEAD
 =======
                   it "should not have session.via_exploit of 'exploit/multi/handler'" do
                     expect(session.via_exploit).not_to eq 'exploit/multi/handler'
@@ -2960,6 +6204,8 @@ shared_examples_for 'Msf::DBManager::Session' do
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-development-environment
                   end
 
                   context "without session.via_exploit 'exploit/multi/handler'" do
@@ -2982,6 +6228,7 @@ shared_examples_for 'Msf::DBManager::Session' do
                 end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 subject(:mdm_session) do
                   report_session
                 end
@@ -2998,11 +6245,17 @@ shared_examples_for 'Msf::DBManager::Session' do
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+                subject(:mdm_session) do
+                  report_session
+                end
+>>>>>>> pod/metasploit-development-environment
 
                 #
                 # Ensure session has attributes present so its on mdm_session are
                 # not just comparing nils.
                 #
+<<<<<<< HEAD
 
 <<<<<<< HEAD
                 it 'should have session.info present' do
@@ -3039,11 +6292,32 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
 
 >>>>>>> rapid7/master
+=======
+
+                it 'should have session.info present' do
+                  session.info.should be_present
+                end
+
+                it 'should have session.sid present' do
+                  session.sid.should be_present
+                end
+
+                it 'should have session.platform present' do
+                  session.platform.should be_present
+                end
+
+                it 'should have session.type present' do
+                  session.type.should be_present
+                end
+
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> pod/metasploit-development-environment
                 report_session
               end
 
               it 'should pass session.workspace to #find_or_create_host' do
-                expect(db_manager).to receive(:find_or_create_host).with(
+                db_manager.should_receive(:find_or_create_host).with(
                     hash_including(
                         :workspace => session_workspace
                     )
@@ -3056,11 +6330,11 @@ shared_examples_for 'Msf::DBManager::Session' do
             context 'with workspace from either :workspace or session' do
               it 'should pass normalized host from session as :host to #find_or_create_host' do
                 normalized_host = double('Normalized Host')
-                allow(db_manager).to receive(:normalize_host).with(session).and_return(normalized_host)
+                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
                 # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
-                allow(db_manager).to receive(:report_vuln)
+                db_manager.stub(:report_vuln)
 
-                expect(db_manager).to receive(:find_or_create_host).with(
+                db_manager.should_receive(:find_or_create_host).with(
                     hash_including(
                         :host => normalized_host
                     )
@@ -3075,11 +6349,11 @@ shared_examples_for 'Msf::DBManager::Session' do
                 end
 
                 before(:each) do
-                  allow(session).to receive(:arch).and_return(arch)
+                  session.stub(:arch => arch)
                 end
 
                 it 'should pass :arch to #find_or_create_host' do
-                  expect(db_manager).to receive(:find_or_create_host).with(
+                  db_manager.should_receive(:find_or_create_host).with(
                       hash_including(
                           :arch => arch
                       )
@@ -3091,7 +6365,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 
               context 'without session responds to arch' do
                 it 'should not pass :arch to #find_or_create_host' do
-                  expect(db_manager).to receive(:find_or_create_host).with(
+                  db_manager.should_receive(:find_or_create_host).with(
                       hash_excluding(
                           :arch
                       )
@@ -3107,12 +6381,12 @@ shared_examples_for 'Msf::DBManager::Session' do
                 }.to change(Mdm::Session, :count).by(1)
               end
 
-              it { is_expected.to be_an Mdm::Session }
+              it { should be_an Mdm::Session }
 
               it 'should set session.db_record to created Mdm::Session' do
                 mdm_session = report_session
 
-                expect(session.db_record).to eq mdm_session
+                session.db_record.should == mdm_session
               end
 
               context 'with session.via_exploit' do
@@ -3279,28 +6553,68 @@ shared_examples_for 'Msf::DBManager::Session' do
                 #
 
                 it 'should have session.info present' do
-                  expect(session.info).to be_present
+                  session.info.should be_present
                 end
 
                 it 'should have session.sid present' do
-                  expect(session.sid).to be_present
+                  session.sid.should be_present
                 end
 
                 it 'should have session.platform present' do
-                  expect(session.platform).to be_present
+                  session.platform.should be_present
                 end
 
                 it 'should have session.type present' do
-                  expect(session.type).to be_present
+                  session.type.should be_present
                 end
 
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+              context 'returned Mdm::Session' do
+                before(:each) do
+                  Timecop.freeze
+                end
+
+                after(:each) do
+                  Timecop.return
+                end
+
+                subject(:mdm_session) do
+                  report_session
+                end
+
+                #
+                # Ensure session has attributes present so its on mdm_session are
+                # not just comparing nils.
+                #
+
+                it 'should have session.info present' do
+                  session.info.should be_present
+                end
+
+                it 'should have session.sid present' do
+                  session.sid.should be_present
+                end
+
+                it 'should have session.platform present' do
+                  session.platform.should be_present
+                end
+
+                it 'should have session.type present' do
+                  session.type.should be_present
+                end
+
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
                 it 'should have session.via_exploit present' do
-                  expect(session.via_exploit).to be_present
+                  session.via_exploit.should be_present
                 end
 
                 it 'should have session.via_payload present' do
-                  expect(session.via_exploit).to be_present
+                  session.via_exploit.should be_present
                 end
 
                 it { expect(subject.datastore).to eq(session.exploit_datastore.to_h) }
@@ -3316,12 +6630,12 @@ shared_examples_for 'Msf::DBManager::Session' do
 
                 context "with session.via_exploit 'exploit/multi/handler'" do
                   it "should have session.via_exploit of 'exploit/multi/handler'" do
-                    expect(session.via_exploit).to eq 'exploit/multi/handler'
+                    session.via_exploit.should == 'exploit/multi/handler'
                   end
 
                   context "with session.exploit_datastore['ParentModule']" do
                     it "should have session.exploit_datastore['ParentModule']" do
-                      expect(session.exploit_datastore['ParentModule']).not_to be_nil
+                      session.exploit_datastore['ParentModule'].should_not be_nil
                     end
 
                     it { expect(subject.via_exploit).to eq(parent_module_fullname) }
@@ -3333,6 +6647,10 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -3344,6 +6662,11 @@ shared_examples_for 'Msf::DBManager::Session' do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
                 context "without session.via_exploit 'exploit/multi/handler'" do
                   before(:each) do
                     reference_name = 'windows/smb/ms08_067_netapi'
@@ -3381,6 +6704,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     expect(session.via_exploit).not_to eq 'exploit/multi/handler'
 =======
                     session.via_exploit.should_not == 'exploit/multi/handler'
@@ -3412,6 +6736,30 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
                     expect(session.via_exploit).not_to eq 'exploit/multi/handler'
 >>>>>>> rapid7/master
+=======
+                    expect(session.via_exploit).not_to eq 'exploit/multi/handler'
+=======
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+>>>>>>> origin/msf-complex-payloads
+=======
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+>>>>>>> origin/msf-complex-payloads
+=======
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+>>>>>>> origin/payload-generator.rb
+=======
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+                    session.via_exploit.should_not == 'exploit/multi/handler'
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
                   end
 
                   it { expect(subject.via_exploit).to eq(session.via_exploit) }

@@ -67,6 +67,9 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -80,6 +83,13 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   def peer
     "#{rhost}:#{rport}"
   end
@@ -90,6 +100,11 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -104,6 +119,7 @@ class Metasploit3 < Msf::Auxiliary
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -111,6 +127,11 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   def read_timeout
     datastore['READ_TIMEOUT']
   end

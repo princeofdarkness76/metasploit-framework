@@ -13,7 +13,11 @@ module Msf::Payload::Python
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,7 +28,10 @@ module Msf::Payload::Python
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -36,19 +43,28 @@ module Msf::Payload::Python
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> pod/metasploit-development-environment
   # that will decode and execute it on the fly. The code will be condensed to
   # one line and compatible with all Python versions supported by the Python
   # Meterpreter stage.
 =======
   # that will decode and execute it on the fly.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -79,7 +95,10 @@ module Msf::Payload::Python
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
 =======
@@ -91,10 +110,15 @@ module Msf::Payload::Python
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> pod/metasploit-development-environment
   # that will decode and execute it on the fly.
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -112,6 +136,7 @@ module Msf::Payload::Python
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
   # that will decode and execute it on the fly.
@@ -123,15 +148,24 @@ module Msf::Payload::Python
 >>>>>>> metasploit-api/_index.html
 =======
   # that will decode and execute it on the fly.
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> pod/metasploit-development-environment
+=======
+  # that will decode and execute it on the fly.
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
   # that will decode and execute it on the fly.
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
   # that will decode and execute it on the fly.
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
 =======
@@ -141,11 +175,15 @@ module Msf::Payload::Python
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
   # that will decode and execute it on the fly.
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
@@ -153,12 +191,20 @@ module Msf::Payload::Python
   # that will decode and execute it on the fly.
 >>>>>>> metasploit-api/_index.html
 =======
+>>>>>>> origin/pod/metasploit-framework
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> pod/metasploit-development-environment
+=======
   # that will decode and execute it on the fly. The code will be condensed to
   # one line and compatible with all Python versions supported by the Python
   # Meterpreter stage.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> rapid7/master
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
@@ -166,7 +212,16 @@ module Msf::Payload::Python
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+  # that will decode and execute it on the fly.
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   #
   # @param cmd [String] The python code to execute.
   # @return [String] Full python stub to execute the command.

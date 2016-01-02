@@ -14,6 +14,7 @@ module Metasploit4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
@@ -59,6 +60,14 @@ module Metasploit4
   CachedSize = 494
 =======
   CachedSize = 466
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  CachedSize = 494
+=======
+  CachedSize = 466
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
@@ -142,6 +151,13 @@ module Metasploit4
 
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+  CachedSize = 466
+
+>>>>>>> pod/metasploit-development-environment
   CachedSize = 466
 
   include Msf::Payload::Stager
@@ -167,17 +183,23 @@ module Metasploit4
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   end
 
 =======
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
   end
 
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 
     register_options(
       [
@@ -263,9 +285,12 @@ module Metasploit4
 
     generate_uri_checksum(Rex::Payloads::Meterpreter::UriChecksum::URI_CHECKSUM_INITP, uri_req_len)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
   end
 
@@ -332,6 +357,7 @@ module Metasploit4
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
   end
 
@@ -373,4 +399,29 @@ module Metasploit4
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
+=======
+  end
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
+>>>>>>> origin/pod/metasploit-windows.rb
+=======
+  end
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 end

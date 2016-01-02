@@ -104,11 +104,61 @@
   
     <dl class="constants">
       
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
         <dt id="PacketTimeout-constant" class="">PacketTimeout =
           
         </dt>
         <dd><pre class="code"><span class='int'>600</span></pre></dd>
       
+<<<<<<< HEAD
+=======
+=======
+        <dt id="PACKET_TIMEOUT-constant" class="">PACKET_TIMEOUT =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>Defualt time, in seconds, to wait for a response after sending a packet</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='int'>600</span></pre></dd>
+      
+        <dt id="PING_TIME-constant" class="">PING_TIME =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>Number of seconds to wait without getting any packets before we try to send
+a liveness check. A minute should be generous even on the highest latency
+networks</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#keepalive-instance_method" title="Rex::Post::Meterpreter::PacketDispatcher#keepalive (method)">#keepalive</a></span></li>
+    
+  </ul>
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='int'>60</span></pre></dd>
+      
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
     </dl>
   
 
@@ -139,7 +189,15 @@
 
   
     <span class="summary_desc"><div class='inline'>
+<<<<<<< HEAD
 <p>Synchronization.</p>
+=======
+<<<<<<< HEAD
+<p>Synchronization.</p>
+=======
+<p>This mutex is used to lock out new commands during an active migration.</p>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 </div></span>
   
 </li>
@@ -175,7 +233,15 @@
       <li class="public ">
   <span class="summary_signature">
     
+<<<<<<< HEAD
       <a href="#passive_service-instance_method" title="#passive_service (instance method)">- (Object) <strong>passive_service</strong> </a>
+=======
+<<<<<<< HEAD
+      <a href="#passive_service-instance_method" title="#passive_service (instance method)">- (Object) <strong>passive_service</strong> </a>
+=======
+      <a href="#passive_service-instance_method" title="#passive_service (instance method)">- (Rex::ServiceManager<sup>?</sup>) <strong>passive_service</strong> </a>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
     
 
     
@@ -229,7 +295,15 @@
       <li class="public ">
   <span class="summary_signature">
     
+<<<<<<< HEAD
       <a href="#recv_queue-instance_method" title="#recv_queue (instance method)">- (Object) <strong>recv_queue</strong> </a>
+=======
+<<<<<<< HEAD
+      <a href="#recv_queue-instance_method" title="#recv_queue (instance method)">- (Object) <strong>recv_queue</strong> </a>
+=======
+      <a href="#recv_queue-instance_method" title="#recv_queue (instance method)">- (Array) <strong>recv_queue</strong> </a>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
     
 
     
@@ -246,9 +320,19 @@
   
 
   
+<<<<<<< HEAD
     <span class="summary_desc"><div class='inline'>
 <p>Passive Dispatching.</p>
 </div></span>
+=======
+<<<<<<< HEAD
+    <span class="summary_desc"><div class='inline'>
+<p>Passive Dispatching.</p>
+</div></span>
+=======
+    <span class="summary_desc"><div class='inline'></div></span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
   
 </li>
 
@@ -256,7 +340,15 @@
       <li class="public ">
   <span class="summary_signature">
     
+<<<<<<< HEAD
       <a href="#send_queue-instance_method" title="#send_queue (instance method)">- (Object) <strong>send_queue</strong> </a>
+=======
+<<<<<<< HEAD
+      <a href="#send_queue-instance_method" title="#send_queue (instance method)">- (Object) <strong>send_queue</strong> </a>
+=======
+      <a href="#send_queue-instance_method" title="#send_queue (instance method)">- (Array) <strong>send_queue</strong> </a>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
     
 
     
@@ -273,9 +365,19 @@
   
 
   
+<<<<<<< HEAD
     <span class="summary_desc"><div class='inline'>
 <p>Passive Dispatching.</p>
 </div></span>
+=======
+<<<<<<< HEAD
+    <span class="summary_desc"><div class='inline'>
+<p>Passive Dispatching.</p>
+</div></span>
+=======
+    <span class="summary_desc"><div class='inline'></div></span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
   
 </li>
 
@@ -371,7 +473,15 @@
         <li class="public ">
   <span class="summary_signature">
     
+<<<<<<< HEAD
       <a href="#dispatch_inbound_packet-instance_method" title="#dispatch_inbound_packet (instance method)">- (Object) <strong>dispatch_inbound_packet</strong>(packet, client = nil) </a>
+=======
+<<<<<<< HEAD
+      <a href="#dispatch_inbound_packet-instance_method" title="#dispatch_inbound_packet (instance method)">- (Object) <strong>dispatch_inbound_packet</strong>(packet, client = nil) </a>
+=======
+      <a href="#dispatch_inbound_packet-instance_method" title="#dispatch_inbound_packet (instance method)">- (Object) <strong>dispatch_inbound_packet</strong>(packet) </a>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
     
 
     
@@ -441,6 +551,36 @@
         <li class="public ">
   <span class="summary_signature">
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+      <a href="#keepalive-instance_method" title="#keepalive (instance method)">- (void) <strong>keepalive</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Send a ping to the server.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
       <a href="#monitor_socket-instance_method" title="#monitor_socket (instance method)">- (Object) <strong>monitor_socket</strong> </a>
     
 
@@ -633,7 +773,15 @@ InboundPacketHandler interface.</p>
         <li class="public ">
   <span class="summary_signature">
     
+<<<<<<< HEAD
       <a href="#send_packet_wait_response-instance_method" title="#send_packet_wait_response (instance method)">- (Object) <strong>send_packet_wait_response</strong>(packet, t) </a>
+=======
+<<<<<<< HEAD
+      <a href="#send_packet_wait_response-instance_method" title="#send_packet_wait_response (instance method)">- (Object) <strong>send_packet_wait_response</strong>(packet, t) </a>
+=======
+      <a href="#send_packet_wait_response-instance_method" title="#send_packet_wait_response (instance method)">- (Object) <strong>send_packet_wait_response</strong>(packet, timeout) </a>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
     
 
     
@@ -657,7 +805,15 @@ InboundPacketHandler interface.</p>
         <li class="public ">
   <span class="summary_signature">
     
+<<<<<<< HEAD
       <a href="#send_request-instance_method" title="#send_request (instance method)">- (Object) <strong>send_request</strong>(packet, t = self.response_timeout) </a>
+=======
+<<<<<<< HEAD
+      <a href="#send_request-instance_method" title="#send_request (instance method)">- (Object) <strong>send_request</strong>(packet, t = self.response_timeout) </a>
+=======
+      <a href="#send_request-instance_method" title="#send_request (instance method)">- (Object) <strong>send_request</strong>(packet, timeout = self.response_timeout) </a>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
     
 
     
@@ -721,7 +877,16 @@ InboundPacketHandler interface.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
+<<<<<<< HEAD
 <p>Synchronization</p>
+=======
+<<<<<<< HEAD
+<p>Synchronization</p>
+=======
+<p>This mutex is used to lock out new commands during an active migration.
+Unused if this is a passive dispatcher</p>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 
   </div>
@@ -735,12 +900,27 @@ InboundPacketHandler interface.</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 52
 53
 54</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 52</span>
+<<<<<<< HEAD
+=======
+=======
+57
+58
+59</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 57</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_comm_mutex'>comm_mutex</span>
   <span class='ivar'>@comm_mutex</span>
@@ -781,7 +961,10 @@ InboundPacketHandler interface.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -790,7 +973,10 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 559
 560
 561</pre>
@@ -798,11 +984,14 @@ InboundPacketHandler interface.</p>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 559</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -810,7 +999,10 @@ InboundPacketHandler interface.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 557
 558
 559</pre>
@@ -819,10 +1011,13 @@ InboundPacketHandler interface.</p>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 557</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -832,7 +1027,18 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+550
+551
+552</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 550</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dispatcher_thread'>dispatcher_thread</span>
   <span class='ivar'>@dispatcher_thread</span>
@@ -847,7 +1053,15 @@ InboundPacketHandler interface.</p>
       <div class="method_details ">
   <h3 class="signature " id="passive_service-instance_method">
   
+<<<<<<< HEAD
     - (<tt>Object</tt>) <strong>passive_service</strong> 
+=======
+<<<<<<< HEAD
+    - (<tt>Object</tt>) <strong>passive_service</strong> 
+=======
+    - (<tt><span class='object_link'><a href="../../ServiceManager.html" title="Rex::ServiceManager (class)">Rex::ServiceManager</a></span></tt><sup>?</sup>) <strong>passive_service</strong> 
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
   
 
   
@@ -863,6 +1077,39 @@ InboundPacketHandler interface.</p>
 </div>
 <div class="tags">
   
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../../ServiceManager.html" title="Rex::ServiceManager (class)">Rex::ServiceManager</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if this is not a passive dispatcher</p>
+</div>
+      
+    </li>
+  
+</ul>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 </div><table class="source_code">
   <tr>
@@ -870,12 +1117,27 @@ InboundPacketHandler interface.</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 61
 62
 63</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 61</span>
+<<<<<<< HEAD
+=======
+=======
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 64</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_passive_service'>passive_service</span>
   <span class='ivar'>@passive_service</span>
@@ -916,7 +1178,10 @@ InboundPacketHandler interface.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -925,7 +1190,10 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 558
 559
 560</pre>
@@ -933,11 +1201,14 @@ InboundPacketHandler interface.</p>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 558</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -945,7 +1216,10 @@ InboundPacketHandler interface.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 556
 557
 558</pre>
@@ -954,10 +1228,13 @@ InboundPacketHandler interface.</p>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 556</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -967,7 +1244,18 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+549
+550
+551</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 549</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_receiver_thread'>receiver_thread</span>
   <span class='ivar'>@receiver_thread</span>
@@ -982,7 +1270,15 @@ InboundPacketHandler interface.</p>
       <div class="method_details ">
   <h3 class="signature " id="recv_queue-instance_method">
   
+<<<<<<< HEAD
     - (<tt>Object</tt>) <strong>recv_queue</strong> 
+=======
+<<<<<<< HEAD
+    - (<tt>Object</tt>) <strong>recv_queue</strong> 
+=======
+    - (<tt>Array</tt>) <strong>recv_queue</strong> 
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
   
 
   
@@ -991,13 +1287,40 @@ InboundPacketHandler interface.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
+<<<<<<< HEAD
 <p>Passive Dispatching</p>
 
+=======
+<<<<<<< HEAD
+<p>Passive Dispatching</p>
+
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
   </div>
 </div>
 <div class="tags">
   
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 </div><table class="source_code">
   <tr>
@@ -1005,12 +1328,27 @@ InboundPacketHandler interface.</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 61
 62
 63</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 61</span>
+<<<<<<< HEAD
+=======
+=======
+70
+71
+72</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 70</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_recv_queue'>recv_queue</span>
   <span class='ivar'>@recv_queue</span>
@@ -1025,7 +1363,15 @@ InboundPacketHandler interface.</p>
       <div class="method_details ">
   <h3 class="signature " id="send_queue-instance_method">
   
+<<<<<<< HEAD
     - (<tt>Object</tt>) <strong>send_queue</strong> 
+=======
+<<<<<<< HEAD
+    - (<tt>Object</tt>) <strong>send_queue</strong> 
+=======
+    - (<tt>Array</tt>) <strong>send_queue</strong> 
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
   
 
   
@@ -1034,13 +1380,40 @@ InboundPacketHandler interface.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
+<<<<<<< HEAD
 <p>Passive Dispatching</p>
 
+=======
+<<<<<<< HEAD
+<p>Passive Dispatching</p>
+
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
   </div>
 </div>
 <div class="tags">
   
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 </div><table class="source_code">
   <tr>
@@ -1048,12 +1421,27 @@ InboundPacketHandler interface.</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 61
 62
 63</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 61</span>
+<<<<<<< HEAD
+=======
+=======
+67
+68
+69</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 67</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_send_queue'>send_queue</span>
   <span class='ivar'>@send_queue</span>
@@ -1094,7 +1482,10 @@ InboundPacketHandler interface.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1103,7 +1494,10 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 560
 561
 562</pre>
@@ -1111,11 +1505,14 @@ InboundPacketHandler interface.</p>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 560</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1123,7 +1520,10 @@ InboundPacketHandler interface.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 558
 559
 560</pre>
@@ -1132,10 +1532,13 @@ InboundPacketHandler interface.</p>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 558</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1145,7 +1548,18 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+551
+552
+553</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 551</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_waiters'>waiters</span>
   <span class='ivar'>@waiters</span>
@@ -1191,6 +1605,7 @@ InboundPacketHandler interface.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1200,6 +1615,11 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 444
 >>>>>>> origin/gh-pages
 =======
@@ -1214,7 +1634,10 @@ InboundPacketHandler interface.</p>
 444
 >>>>>>> origin/gh-pages
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 445
 446
 447
@@ -1223,8 +1646,11 @@ InboundPacketHandler interface.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
@@ -1232,18 +1658,24 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 450
 451</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 445</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1251,17 +1683,23 @@ InboundPacketHandler interface.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 450</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 444</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1271,7 +1709,22 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+442
+443
+444
+445
+446
+447
+448</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 442</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_response_waiter'>add_response_waiter</span><span class='lparen'>(</span><span class='id identifier rubyid_request'>request</span><span class='comma'>,</span> <span class='id identifier rubyid_completion_routine'>completion_routine</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_completion_param'>completion_param</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_waiter'>waiter</span> <span class='op'>=</span> <span class='const'>PacketResponseWaiter</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_request'>request</span><span class='period'>.</span><span class='id identifier rubyid_rid'>rid</span><span class='comma'>,</span> <span class='id identifier rubyid_completion_routine'>completion_routine</span><span class='comma'>,</span> <span class='id identifier rubyid_completion_param'>completion_param</span><span class='rparen'>)</span>
@@ -1314,7 +1767,10 @@ InboundPacketHandler interface.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1323,7 +1779,10 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 552
 553
 554</pre>
@@ -1331,11 +1790,14 @@ InboundPacketHandler interface.</p>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 552</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1343,7 +1805,10 @@ InboundPacketHandler interface.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 550
 551
 552</pre>
@@ -1352,10 +1817,13 @@ InboundPacketHandler interface.</p>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 550</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1365,7 +1833,18 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+543
+544
+545</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 543</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deregister_inbound_handler'>deregister_inbound_handler</span><span class='lparen'>(</span><span class='id identifier rubyid_handler'>handler</span><span class='rparen'>)</span>
   <span class='ivar'>@inbound_handlers</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_handler'>handler</span><span class='rparen'>)</span>
@@ -1378,7 +1857,15 @@ InboundPacketHandler interface.</p>
       <div class="method_details ">
   <h3 class="signature " id="dispatch_inbound_packet-instance_method">
   
+<<<<<<< HEAD
     - (<tt>Object</tt>) <strong>dispatch_inbound_packet</strong>(packet, client = nil) 
+=======
+<<<<<<< HEAD
+    - (<tt>Object</tt>) <strong>dispatch_inbound_packet</strong>(packet, client = nil) 
+=======
+    - (<tt>Object</tt>) <strong>dispatch_inbound_packet</strong>(packet) 
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
   
 
   
@@ -1407,25 +1894,34 @@ success.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 494
 495
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 494
 495
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
@@ -1433,7 +1929,15 @@ success.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+493
+494
+495
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 496
 497
 498
@@ -1468,6 +1972,10 @@ success.</p>
 527
 528
 529
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 530
 531
 532
@@ -1478,8 +1986,11 @@ success.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
@@ -1487,7 +1998,10 @@ success.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 537
 538
 539</pre>
@@ -1495,11 +2009,14 @@ success.</p>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 496</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1507,17 +2024,23 @@ success.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 537</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 494</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1527,7 +2050,10 @@ success.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dispatch_inbound_packet'>dispatch_inbound_packet</span><span class='lparen'>(</span><span class='id identifier rubyid_packet'>packet</span><span class='comma'>,</span> <span class='id identifier rubyid_client'>client</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_handled'>handled</span> <span class='op'>=</span> <span class='kw'>false</span>
@@ -1544,6 +2070,25 @@ success.</p>
   <span class='comment'># If the packet is a response, try to notify any potential
 </span>  <span class='comment'># waiters
 </span>  <span class='kw'>if</span> <span class='lparen'>(</span><span class='lparen'>(</span><span class='id identifier rubyid_resp'>resp</span> <span class='op'>=</span> <span class='id identifier rubyid_packet'>packet</span><span class='period'>.</span><span class='id identifier rubyid_response?'>response?</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<<<<<<< HEAD
+=======
+=======
+530</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 493</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dispatch_inbound_packet'>dispatch_inbound_packet</span><span class='lparen'>(</span><span class='id identifier rubyid_packet'>packet</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_handled'>handled</span> <span class='op'>=</span> <span class='kw'>false</span>
+
+  <span class='comment'># Update our last reply time
+</span>  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_last_checkin'>last_checkin</span> <span class='op'>=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span>
+
+  <span class='comment'># If the packet is a response, try to notify any potential
+</span>  <span class='comment'># waiters
+</span>  <span class='kw'>if</span> <span class='id identifier rubyid_packet'>packet</span><span class='period'>.</span><span class='id identifier rubyid_response?'>response?</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
     <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_notify_response_waiter'>notify_response_waiter</span><span class='lparen'>(</span><span class='id identifier rubyid_packet'>packet</span><span class='rparen'>)</span><span class='rparen'>)</span>
       <span class='kw'>return</span> <span class='kw'>true</span>
     <span class='kw'>end</span>
@@ -1556,11 +2101,25 @@ success.</p>
     <span class='id identifier rubyid_handled'>handled</span> <span class='op'>=</span> <span class='kw'>nil</span>
     <span class='kw'>begin</span>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
     <span class='kw'>if</span> <span class='op'>!</span> <span class='id identifier rubyid_resp'>resp</span>
       <span class='id identifier rubyid_handled'>handled</span> <span class='op'>=</span> <span class='id identifier rubyid_handler'>handler</span><span class='period'>.</span><span class='id identifier rubyid_request_handler'>request_handler</span><span class='lparen'>(</span><span class='id identifier rubyid_client'>client</span><span class='comma'>,</span> <span class='id identifier rubyid_packet'>packet</span><span class='rparen'>)</span>
     <span class='kw'>else</span>
       <span class='id identifier rubyid_handled'>handled</span> <span class='op'>=</span> <span class='id identifier rubyid_handler'>handler</span><span class='period'>.</span><span class='id identifier rubyid_response_handler'>response_handler</span><span class='lparen'>(</span><span class='id identifier rubyid_client'>client</span><span class='comma'>,</span> <span class='id identifier rubyid_packet'>packet</span><span class='rparen'>)</span>
     <span class='kw'>end</span>
+<<<<<<< HEAD
+=======
+=======
+      <span class='kw'>if</span> <span class='id identifier rubyid_packet'>packet</span><span class='period'>.</span><span class='id identifier rubyid_response?'>response?</span>
+        <span class='id identifier rubyid_handled'>handled</span> <span class='op'>=</span> <span class='id identifier rubyid_handler'>handler</span><span class='period'>.</span><span class='id identifier rubyid_response_handler'>response_handler</span><span class='lparen'>(</span><span class='kw'>self</span><span class='comma'>,</span> <span class='id identifier rubyid_packet'>packet</span><span class='rparen'>)</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_handled'>handled</span> <span class='op'>=</span> <span class='id identifier rubyid_handler'>handler</span><span class='period'>.</span><span class='id identifier rubyid_request_handler'>request_handler</span><span class='lparen'>(</span><span class='kw'>self</span><span class='comma'>,</span> <span class='id identifier rubyid_packet'>packet</span><span class='rparen'>)</span>
+      <span class='kw'>end</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
     <span class='kw'>rescue</span> <span class='op'>::</span><span class='const'>Exception</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
       <span class='id identifier rubyid_dlog'>dlog</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Exception caught in dispatch_inbound_packet: handler=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_handler'>handler</span><span class='embexpr_end'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='embexpr_end'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_e'>e</span><span class='embexpr_end'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_backtrace'>backtrace</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>meterpreter</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>LEV_1</span><span class='rparen'>)</span>
@@ -1607,7 +2166,10 @@ success.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1616,7 +2178,10 @@ success.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 486
 487
 488</pre>
@@ -1624,11 +2189,14 @@ success.</p>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 486</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1636,7 +2204,10 @@ success.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 484
 485
 486</pre>
@@ -1645,10 +2216,13 @@ success.</p>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 484</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1658,7 +2232,18 @@ success.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+483
+484
+485</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 483</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize_inbound_handlers'>initialize_inbound_handlers</span>
   <span class='ivar'>@inbound_handlers</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
@@ -1683,6 +2268,10 @@ success.</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 63
 64
 65
@@ -1692,16 +2281,43 @@ success.</p>
 69
 70
 71
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 72
 73
 74
 75
 76
 77
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 78</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 63</span>
+<<<<<<< HEAD
+=======
+=======
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 72</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize_passive_dispatcher'>initialize_passive_dispatcher</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_send_queue'>send_queue</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
@@ -1718,6 +2334,139 @@ success.</p>
     <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Proc</span><span class='tstring_end'>&#39;</span></span>             <span class='op'>=&gt;</span> <span class='const'>Proc</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_cli'>cli</span><span class='comma'>,</span> <span class='id identifier rubyid_req'>req</span><span class='op'>|</span> <span class='id identifier rubyid_on_passive_request'>on_passive_request</span><span class='lparen'>(</span><span class='id identifier rubyid_cli'>cli</span><span class='comma'>,</span> <span class='id identifier rubyid_req'>req</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='comma'>,</span>
     <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>VirtualDirectory</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='kw'>true</span>
   <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+<<<<<<< HEAD
+  <h3 class="signature " id="monitor_socket-instance_method">
+  
+    - (<tt>Object</tt>) <strong>monitor_socket</strong> 
+=======
+<<<<<<< HEAD
+  <h3 class="signature " id="monitor_socket-instance_method">
+  
+    - (<tt>Object</tt>) <strong>monitor_socket</strong> 
+=======
+  <h3 class="signature " id="keepalive-instance_method">
+  
+    - (<tt>void</tt>) <strong>keepalive</strong> 
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
+    
+<p>Reception</p>
+
+<p>Monitors the PacketDispatcher&#39;s sock for data in its own thread context
+and parsers all inbound packets.</p>
+<<<<<<< HEAD
+=======
+=======
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Send a ping to the server.</p>
+
+<p>Our &#39;ping&#39; is a check for eof on channel id 0. This method has no
+side effects and always returns an answer (regardless of the existence of
+chan 0), which is all that&#39;s needed for a liveness check. The answer
+itself is unimportant and is ignored.</p>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+<<<<<<< HEAD
+=======
+=======
+272</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 259</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_keepalive'>keepalive</span>
+  <span class='kw'>if</span> <span class='ivar'>@ping_sent</span>
+    <span class='kw'>if</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>-</span> <span class='id identifier rubyid_last_checkin'>last_checkin</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>&gt;</span> <span class='const'>PING_TIME</span><span class='op'>*</span><span class='int'>2</span>
+      <span class='id identifier rubyid_dlog'>dlog</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>No response to ping, session </span><span class='embexpr_beg'>#{</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_sid'>sid</span><span class='embexpr_end'>}</span><span class='tstring_content'> is dead</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>LEV_3</span><span class='rparen'>)</span>
+      <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_alive'>alive</span> <span class='op'>=</span> <span class='kw'>false</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_pkt'>pkt</span> <span class='op'>=</span> <span class='const'>Packet</span><span class='period'>.</span><span class='id identifier rubyid_create_request'>create_request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>core_channel_eof</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_pkt'>pkt</span><span class='period'>.</span><span class='id identifier rubyid_add_tlv'>add_tlv</span><span class='lparen'>(</span><span class='const'>TLV_TYPE_CHANNEL_ID</span><span class='comma'>,</span> <span class='int'>0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_add_response_waiter'>add_response_waiter</span><span class='lparen'>(</span><span class='id identifier rubyid_pkt'>pkt</span><span class='comma'>,</span> <span class='const'>Proc</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='lbrace'>{</span> <span class='ivar'>@ping_sent</span> <span class='op'>=</span> <span class='kw'>false</span> <span class='rbrace'>}</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_send_packet'>send_packet</span><span class='lparen'>(</span><span class='id identifier rubyid_pkt'>pkt</span><span class='rparen'>)</span>
+    <span class='ivar'>@ping_sent</span> <span class='op'>=</span> <span class='kw'>true</span>
+  <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1753,42 +2502,8 @@ and parsers all inbound packets.</p>
       <pre class="lines">
 
 
-247
-248
-249
-250
-251
-252
-253
-254
-255
-256
-257
-258
-259
-260
-261
-262
-263
-264
-265
-266
-267
-268
-269
-270
-271
-272
-273
-274
-275
-276
-277
-278
-279
-280
-281
-282
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 283
 284
 285
@@ -1913,30 +2628,43 @@ and parsers all inbound packets.</p>
 404
 405
 406
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 407
 408
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 409
 410</pre>
 =======
 409</pre>
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 409</pre>
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 =======
 409
@@ -1946,10 +2674,22 @@ and parsers all inbound packets.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 247</span>
+=======
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 247</span>
+=======
+407</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 283</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_monitor_socket'>monitor_socket</span>
 
@@ -1963,24 +2703,33 @@ and parsers all inbound packets.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
   <span class='ivar'>@pqueue</span> <span class='op'>=</span> <span class='op'>::</span><span class='const'>Queue</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
 =======
   <span class='ivar'>@pqueue</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   <span class='ivar'>@pqueue</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 =======
   <span class='ivar'>@pqueue</span> <span class='op'>=</span> <span class='op'>::</span><span class='const'>Queue</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
@@ -1989,17 +2738,32 @@ and parsers all inbound packets.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
   <span class='ivar'>@finish</span> <span class='op'>=</span> <span class='kw'>false</span>
   <span class='ivar'>@last_recvd</span> <span class='op'>=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span>
   <span class='ivar'>@ping_sent</span> <span class='op'>=</span> <span class='kw'>false</span>
 
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_alive'>alive</span> <span class='op'>=</span> <span class='kw'>true</span>
 
+<<<<<<< HEAD
+=======
+=======
+  <span class='ivar'>@pqueue</span> <span class='op'>=</span> <span class='op'>::</span><span class='const'>Queue</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='ivar'>@ping_sent</span> <span class='op'>=</span> <span class='kw'>false</span>
+
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
   <span class='comment'># Spawn a thread for receiving packets
 </span>  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_receiver_thread'>receiver_thread</span> <span class='op'>=</span> <span class='const'>Rex</span><span class='op'>::</span><span class='const'>ThreadFactory</span><span class='period'>.</span><span class='id identifier rubyid_spawn'>spawn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>MeterpreterReceiver</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='kw'>false</span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='kw'>while</span> <span class='lparen'>(</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_alive'>alive</span><span class='rparen'>)</span>
       <span class='kw'>begin</span>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
         <span class='id identifier rubyid_rv'>rv</span> <span class='op'>=</span> <span class='const'>Rex</span><span class='op'>::</span><span class='const'>ThreadSafe</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span><span class='lparen'>(</span><span class='lbracket'>[</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_sock'>sock</span><span class='period'>.</span><span class='id identifier rubyid_fd'>fd</span> <span class='rbracket'>]</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='float'>0.25</span><span class='rparen'>)</span>
         <span class='id identifier rubyid_ping_time'>ping_time</span> <span class='op'>=</span> <span class='int'>60</span>
         <span class='comment'># If there&#39;s nothing to read, and it&#39;s been awhile since we
@@ -2042,6 +2806,21 @@ and parsers all inbound packets.</p>
       <span class='kw'>rescue</span> <span class='op'>::</span><span class='const'>Exception</span>
         <span class='id identifier rubyid_dlog'>dlog</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Exception caught in monitor_socket: </span><span class='embexpr_beg'>#{</span><span class='gvar'>$!</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>meterpreter</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>LEV_1</span><span class='rparen'>)</span>
         <span class='ivar'>@finish</span> <span class='op'>=</span> <span class='kw'>true</span>
+<<<<<<< HEAD
+=======
+=======
+        <span class='id identifier rubyid_rv'>rv</span> <span class='op'>=</span> <span class='const'>Rex</span><span class='op'>::</span><span class='const'>ThreadSafe</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span><span class='lparen'>(</span><span class='lbracket'>[</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_sock'>sock</span><span class='period'>.</span><span class='id identifier rubyid_fd'>fd</span> <span class='rbracket'>]</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='const'>PING_TIME</span><span class='rparen'>)</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_rv'>rv</span>
+          <span class='id identifier rubyid_packet'>packet</span> <span class='op'>=</span> <span class='id identifier rubyid_receive_packet'>receive_packet</span>
+          <span class='ivar'>@pqueue</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_packet'>packet</span> <span class='kw'>if</span> <span class='id identifier rubyid_packet'>packet</span>
+        <span class='kw'>elsif</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_send_keepalives'>send_keepalives</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@pqueue</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+          <span class='id identifier rubyid_keepalive'>keepalive</span>
+        <span class='kw'>end</span>
+      <span class='kw'>rescue</span> <span class='op'>::</span><span class='const'>Exception</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+        <span class='id identifier rubyid_dlog'>dlog</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Exception caught in monitor_socket: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='embexpr_end'>}</span><span class='tstring_content'>: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_e'>e</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>meterpreter</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>LEV_1</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_dlog'>dlog</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Call stack: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_backtrace'>backtrace</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>meterpreter</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>LEV_2</span><span class='rparen'>)</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
         <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_alive'>alive</span> <span class='op'>=</span> <span class='kw'>false</span>
         <span class='kw'>break</span>
       <span class='kw'>end</span>
@@ -2051,14 +2830,21 @@ and parsers all inbound packets.</p>
   <span class='comment'># Spawn a new thread that monitors the socket
 </span>  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_dispatcher_thread'>dispatcher_thread</span> <span class='op'>=</span> <span class='const'>Rex</span><span class='op'>::</span><span class='const'>ThreadFactory</span><span class='period'>.</span><span class='id identifier rubyid_spawn'>spawn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>MeterpreterDispatcher</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='kw'>false</span><span class='rparen'>)</span> <span class='kw'>do</span>
     <span class='kw'>begin</span>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
     <span class='comment'># Whether we&#39;re finished or not is determined by the receiver
 </span>    <span class='comment'># thread above.
 </span>    <span class='kw'>while</span><span class='lparen'>(</span><span class='kw'>not</span> <span class='ivar'>@finish</span><span class='rparen'>)</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
@@ -2066,7 +2852,13 @@ and parsers all inbound packets.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+    <span class='kw'>while</span> <span class='lparen'>(</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_alive'>alive</span><span class='rparen'>)</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
       <span class='id identifier rubyid_incomplete'>incomplete</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
       <span class='id identifier rubyid_backlog'>backlog</span>    <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
 
@@ -2074,10 +2866,13 @@ and parsers all inbound packets.</p>
       <span class='kw'>while</span><span class='lparen'>(</span><span class='ivar'>@pqueue</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&gt;</span> <span class='int'>0</span><span class='rparen'>)</span>
         <span class='id identifier rubyid_backlog'>backlog</span> <span class='op'>&lt;&lt;</span> <span class='ivar'>@pqueue</span><span class='period'>.</span><span class='id identifier rubyid_pop'>pop</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2086,7 +2881,10 @@ and parsers all inbound packets.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
       <span class='kw'>if</span><span class='lparen'>(</span><span class='ivar'>@pqueue</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span><span class='rparen'>)</span>
         <span class='op'>::</span><span class='const'>IO</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span><span class='lparen'>(</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='float'>0.10</span><span class='rparen'>)</span>
         <span class='kw'>next</span>
@@ -2099,10 +2897,13 @@ and parsers all inbound packets.</p>
         <span class='id identifier rubyid_backlog'>backlog</span> <span class='op'>&lt;&lt;</span> <span class='ivar'>@pqueue</span><span class='period'>.</span><span class='id identifier rubyid_shift'>shift</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2112,7 +2913,12 @@ and parsers all inbound packets.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
       <span class='kw'>end</span>
 
       <span class='comment'>#
@@ -2141,7 +2947,14 @@ and parsers all inbound packets.</p>
       <span class='id identifier rubyid_backlog'>backlog</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_tmp_channel'>tmp_channel</span><span class='rparen'>)</span>
       <span class='id identifier rubyid_backlog'>backlog</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_tmp_close'>tmp_close</span><span class='rparen'>)</span>
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
       <span class='comment'>#
 </span>      <span class='comment'># Process the message queue
 </span>      <span class='comment'>#
@@ -2152,12 +2965,28 @@ and parsers all inbound packets.</p>
         <span class='kw'>if</span> <span class='op'>!</span> <span class='id identifier rubyid_dispatch_inbound_packet'>dispatch_inbound_packet</span><span class='lparen'>(</span><span class='id identifier rubyid_pkt'>pkt</span><span class='rparen'>)</span>
           <span class='comment'># Keep Packets in the receive queue until a handler is registered
 </span>          <span class='comment'># for them. Packets will live in the receive queue for up to
+<<<<<<< HEAD
 </span>          <span class='comment'># PacketTimeout, after which they will be dropped.
+=======
+<<<<<<< HEAD
+</span>          <span class='comment'># PacketTimeout, after which they will be dropped.
+=======
+</span>          <span class='comment'># PACKET_TIMEOUT seconds, after which they will be dropped.
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 </span>          <span class='comment'>#
 </span>          <span class='comment'># A common reason why there would not immediately be a handler for
 </span>          <span class='comment'># a received Packet is in channels, where a connection may
 </span>          <span class='comment'># open and receive data before anything has asked to read.
+<<<<<<< HEAD
 </span>          <span class='kw'>if</span> <span class='lparen'>(</span><span class='op'>::</span><span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>-</span> <span class='id identifier rubyid_pkt'>pkt</span><span class='period'>.</span><span class='id identifier rubyid_created_at'>created_at</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>&lt;</span> <span class='const'>PacketTimeout</span><span class='rparen'>)</span>
+=======
+<<<<<<< HEAD
+</span>          <span class='kw'>if</span> <span class='lparen'>(</span><span class='op'>::</span><span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>-</span> <span class='id identifier rubyid_pkt'>pkt</span><span class='period'>.</span><span class='id identifier rubyid_created_at'>created_at</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>&lt;</span> <span class='const'>PacketTimeout</span><span class='rparen'>)</span>
+=======
+</span>          <span class='kw'>if</span> <span class='lparen'>(</span><span class='op'>::</span><span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>-</span> <span class='id identifier rubyid_pkt'>pkt</span><span class='period'>.</span><span class='id identifier rubyid_created_at'>created_at</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>&lt;</span> <span class='const'>PACKET_TIMEOUT</span><span class='rparen'>)</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
             <span class='id identifier rubyid_incomplete'>incomplete</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_pkt'>pkt</span>
           <span class='kw'>end</span>
         <span class='kw'>end</span>
@@ -2181,7 +3010,10 @@ and parsers all inbound packets.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2190,7 +3022,12 @@ and parsers all inbound packets.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
       <span class='kw'>while</span> <span class='id identifier rubyid_incomplete'>incomplete</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&gt;</span> <span class='int'>0</span>
         <span class='ivar'>@pqueue</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_incomplete'>incomplete</span><span class='period'>.</span><span class='id identifier rubyid_shift'>shift</span>
       <span class='kw'>end</span>
@@ -2202,10 +3039,13 @@ and parsers all inbound packets.</p>
         <span class='rbrace'>}</span>
         <span class='id identifier rubyid_dlog'>dlog</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Backlog has grown to over 100 in monitor_socket, dropping older packets: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_removed'>removed</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> - </span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>meterpreter</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>LEV_1</span><span class='rparen'>)</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2214,7 +3054,10 @@ and parsers all inbound packets.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
       <span class='ivar'>@pqueue</span><span class='period'>.</span><span class='id identifier rubyid_unshift'>unshift</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_incomplete'>incomplete</span><span class='rparen'>)</span>
 
       <span class='kw'>if</span><span class='lparen'>(</span><span class='ivar'>@pqueue</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&gt;</span> <span class='int'>100</span><span class='rparen'>)</span>
@@ -2222,10 +3065,13 @@ and parsers all inbound packets.</p>
         <span class='ivar'>@pqueue</span> <span class='op'>=</span> <span class='ivar'>@pqueue</span><span class='lbracket'>[</span><span class='int'>25</span> <span class='op'>..</span> <span class='int'>100</span><span class='rbracket'>]</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2235,7 +3081,12 @@ and parsers all inbound packets.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
       <span class='kw'>end</span>
     <span class='kw'>end</span>
     <span class='kw'>rescue</span> <span class='op'>::</span><span class='const'>Exception</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
@@ -2279,6 +3130,7 @@ and parsers all inbound packets.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2288,6 +3140,11 @@ and parsers all inbound packets.</p>
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 423
 >>>>>>> origin/gh-pages
 =======
@@ -2302,7 +3159,15 @@ and parsers all inbound packets.</p>
 423
 >>>>>>> origin/gh-pages
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+421
+422
+423
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 424
 425
 426
@@ -2310,13 +3175,20 @@ and parsers all inbound packets.</p>
 428
 429
 430
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 431
 432
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
@@ -2324,18 +3196,24 @@ and parsers all inbound packets.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 433
 434</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 424</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2343,17 +3221,23 @@ and parsers all inbound packets.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 433</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 423</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2363,7 +3247,16 @@ and parsers all inbound packets.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+431</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 421</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_monitor_stop'>monitor_stop</span>
   <span class='kw'>if</span><span class='lparen'>(</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_receiver_thread'>receiver_thread</span><span class='rparen'>)</span>
@@ -2410,6 +3303,7 @@ and parsers all inbound packets.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 456
 >>>>>>> origin/gh-pages
@@ -2417,6 +3311,8 @@ and parsers all inbound packets.</p>
 456
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2434,7 +3330,15 @@ and parsers all inbound packets.</p>
 456
 >>>>>>> origin/gh-pages
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+454
+455
+456
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 457
 458
 459
@@ -2443,11 +3347,18 @@ and parsers all inbound packets.</p>
 462
 463
 464
+<<<<<<< HEAD
 465
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+465
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2456,13 +3367,25 @@ and parsers all inbound packets.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 466
 467
 468</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 457</span>
+<<<<<<< HEAD
+=======
+=======
+465</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 454</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_notify_response_waiter'>notify_response_waiter</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_handled'>handled</span> <span class='op'>=</span> <span class='kw'>false</span>
@@ -2476,10 +3399,13 @@ and parsers all inbound packets.</p>
   <span class='rbrace'>}</span>
   <span class='kw'>return</span> <span class='id identifier rubyid_handled'>handled</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2488,7 +3414,10 @@ and parsers all inbound packets.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 466</pre>
     </td>
     <td>
@@ -2506,10 +3435,13 @@ and parsers all inbound packets.</p>
   <span class='rbrace'>}</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2519,7 +3451,12 @@ and parsers all inbound packets.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2541,6 +3478,10 @@ and parsers all inbound packets.</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 101
 102
 103
@@ -2550,6 +3491,11 @@ and parsers all inbound packets.</p>
 107
 108
 109
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 110
 111
 112
@@ -2574,10 +3520,32 @@ and parsers all inbound packets.</p>
 131
 132
 133
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 134</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 101</span>
+<<<<<<< HEAD
+=======
+=======
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 110</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_on_passive_request'>on_passive_request</span><span class='lparen'>(</span><span class='id identifier rubyid_cli'>cli</span><span class='comma'>,</span> <span class='id identifier rubyid_req'>req</span><span class='rparen'>)</span>
 
@@ -2648,7 +3616,10 @@ once a full packet has been received.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2657,7 +3628,10 @@ once a full packet has been received.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 417
 418
 419</pre>
@@ -2665,11 +3639,14 @@ once a full packet has been received.</p>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 417</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2677,7 +3654,10 @@ once a full packet has been received.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 416
 417
 418</pre>
@@ -2686,10 +3666,13 @@ once a full packet has been received.</p>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 416</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2699,7 +3682,18 @@ once a full packet has been received.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+414
+415
+416</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 414</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_receive_packet'>receive_packet</span>
   <span class='kw'>return</span> <span class='id identifier rubyid_parser'>parser</span><span class='period'>.</span><span class='id identifier rubyid_recv'>recv</span><span class='lparen'>(</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_sock'>sock</span><span class='rparen'>)</span>
@@ -2739,7 +3733,10 @@ InboundPacketHandler interface.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2748,7 +3745,10 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 545
 546
 547</pre>
@@ -2756,11 +3756,14 @@ InboundPacketHandler interface.</p>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 545</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2768,7 +3771,10 @@ InboundPacketHandler interface.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 543
 544
 545</pre>
@@ -2777,10 +3783,13 @@ InboundPacketHandler interface.</p>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 543</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2790,7 +3799,18 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+536
+537
+538</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 536</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_register_inbound_handler'>register_inbound_handler</span><span class='lparen'>(</span><span class='id identifier rubyid_handler'>handler</span><span class='rparen'>)</span>
   <span class='ivar'>@inbound_handlers</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_handler'>handler</span>
@@ -2829,7 +3849,10 @@ InboundPacketHandler interface.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2838,7 +3861,10 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 473
 474
 475</pre>
@@ -2846,11 +3872,14 @@ InboundPacketHandler interface.</p>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 473</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2858,7 +3887,10 @@ InboundPacketHandler interface.</p>
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 471
 472
 473</pre>
@@ -2867,10 +3899,13 @@ InboundPacketHandler interface.</p>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 471</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/gh-pages
 =======
 >>>>>>> origin/gh-pages
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2880,7 +3915,18 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+470
+471
+472</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 470</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_response_waiter'>remove_response_waiter</span><span class='lparen'>(</span><span class='id identifier rubyid_waiter'>waiter</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_waiters'>waiters</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_waiter'>waiter</span><span class='rparen'>)</span>
@@ -2916,6 +3962,10 @@ InboundPacketHandler interface.</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 145
 146
 147
@@ -2925,6 +3975,11 @@ InboundPacketHandler interface.</p>
 151
 152
 153
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 154
 155
 156
@@ -2957,10 +4012,26 @@ InboundPacketHandler interface.</p>
 183
 184
 185
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 186</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 145</span>
+<<<<<<< HEAD
+=======
+=======
+186
+187
+188
+189</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 154</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_send_packet'>send_packet</span><span class='lparen'>(</span><span class='id identifier rubyid_packet'>packet</span><span class='comma'>,</span> <span class='id identifier rubyid_completion_routine'>completion_routine</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_completion_param'>completion_param</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_completion_routine'>completion_routine</span><span class='rparen'>)</span>
@@ -2979,9 +4050,18 @@ InboundPacketHandler interface.</p>
 
   <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_raw'>raw</span><span class='rparen'>)</span>
 
+<<<<<<< HEAD
     <span class='comment'># This mutex is used to lock out new commands during an
 </span>    <span class='comment'># active migration.
 </span>
+=======
+<<<<<<< HEAD
+    <span class='comment'># This mutex is used to lock out new commands during an
+</span>    <span class='comment'># active migration.
+</span>
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
     <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_comm_mutex'>comm_mutex</span><span class='period'>.</span><span class='id identifier rubyid_synchronize'>synchronize</span> <span class='kw'>do</span>
       <span class='kw'>begin</span>
         <span class='id identifier rubyid_bytes'>bytes</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_sock'>sock</span><span class='period'>.</span><span class='id identifier rubyid_write'>write</span><span class='lparen'>(</span><span class='id identifier rubyid_raw'>raw</span><span class='rparen'>)</span>
@@ -2994,9 +4074,18 @@ InboundPacketHandler interface.</p>
       <span class='comment'># Mark the session itself as dead
 </span>      <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_alive'>alive</span> <span class='op'>=</span> <span class='kw'>false</span>
 
+<<<<<<< HEAD
       <span class='comment'># Indicate that the dispatcher should shut down too
 </span>      <span class='ivar'>@finish</span> <span class='op'>=</span> <span class='kw'>true</span>
 
+=======
+<<<<<<< HEAD
+      <span class='comment'># Indicate that the dispatcher should shut down too
+</span>      <span class='ivar'>@finish</span> <span class='op'>=</span> <span class='kw'>true</span>
+
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
       <span class='comment'># Reraise the error to the top-level caller
 </span>      <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_err'>err</span> <span class='kw'>if</span> <span class='id identifier rubyid_err'>err</span>
     <span class='kw'>end</span>
@@ -3012,7 +4101,15 @@ InboundPacketHandler interface.</p>
       <div class="method_details ">
   <h3 class="signature " id="send_packet_wait_response-instance_method">
   
+<<<<<<< HEAD
     - (<tt>Object</tt>) <strong>send_packet_wait_response</strong>(packet, t) 
+=======
+<<<<<<< HEAD
+    - (<tt>Object</tt>) <strong>send_packet_wait_response</strong>(packet, t) 
+=======
+    - (<tt>Object</tt>) <strong>send_packet_wait_response</strong>(packet, timeout) 
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
   
 
   
@@ -3027,7 +4124,51 @@ InboundPacketHandler interface.</p>
   </div>
 </div>
 <div class="tags">
+<<<<<<< HEAD
   
+=======
+<<<<<<< HEAD
+  
+=======
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>packet</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Packet.html" title="Rex::Post::Meterpreter::Packet (class)">Packet</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the request packet to send</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>timeout</span>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>, <tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number of seconds to wait, or nil to wait forever</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 </div><table class="source_code">
   <tr>
@@ -3035,6 +4176,10 @@ InboundPacketHandler interface.</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 216
 217
 218
@@ -3042,6 +4187,11 @@ InboundPacketHandler interface.</p>
 220
 221
 222
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 223
 224
 225
@@ -3055,6 +4205,10 @@ InboundPacketHandler interface.</p>
 233
 234
 235
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 236</pre>
     </td>
     <td>
@@ -3066,11 +4220,46 @@ InboundPacketHandler interface.</p>
 
   <span class='comment'># Transmit the packet
 </span>  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_send_packet'>send_packet</span><span class='lparen'>(</span><span class='id identifier rubyid_packet'>packet</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>&lt;=</span> <span class='int'>0</span><span class='rparen'>)</span>
+<<<<<<< HEAD
+=======
+=======
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 223</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_send_packet_wait_response'>send_packet_wait_response</span><span class='lparen'>(</span><span class='id identifier rubyid_packet'>packet</span><span class='comma'>,</span> <span class='id identifier rubyid_timeout'>timeout</span><span class='rparen'>)</span>
+  <span class='comment'># First, add the waiter association for the supplied packet
+</span>  <span class='id identifier rubyid_waiter'>waiter</span> <span class='op'>=</span> <span class='id identifier rubyid_add_response_waiter'>add_response_waiter</span><span class='lparen'>(</span><span class='id identifier rubyid_packet'>packet</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_bytes_written'>bytes_written</span> <span class='op'>=</span> <span class='id identifier rubyid_send_packet'>send_packet</span><span class='lparen'>(</span><span class='id identifier rubyid_packet'>packet</span><span class='rparen'>)</span>
+
+  <span class='comment'># Transmit the packet
+</span>  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_bytes_written'>bytes_written</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>&lt;=</span> <span class='int'>0</span><span class='rparen'>)</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
     <span class='comment'># Remove the waiter if we failed to send the packet.
 </span>    <span class='id identifier rubyid_remove_response_waiter'>remove_response_waiter</span><span class='lparen'>(</span><span class='id identifier rubyid_waiter'>waiter</span><span class='rparen'>)</span>
     <span class='kw'>return</span> <span class='kw'>nil</span>
   <span class='kw'>end</span>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
   <span class='comment'># Wait for the supplied time interval
 </span>  <span class='id identifier rubyid_waiter'>waiter</span><span class='period'>.</span><span class='id identifier rubyid_wait'>wait</span><span class='lparen'>(</span><span class='id identifier rubyid_t'>t</span><span class='rparen'>)</span>
 
@@ -3080,6 +4269,24 @@ InboundPacketHandler interface.</p>
 
   <span class='comment'># Return the response packet, if any
 </span>  <span class='kw'>return</span> <span class='id identifier rubyid_waiter'>waiter</span><span class='period'>.</span><span class='id identifier rubyid_response'>response</span>
+<<<<<<< HEAD
+=======
+=======
+  <span class='kw'>if</span> <span class='kw'>not</span> <span class='id identifier rubyid_timeout'>timeout</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'># Wait for the supplied time interval
+</span>  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='id identifier rubyid_waiter'>waiter</span><span class='period'>.</span><span class='id identifier rubyid_wait'>wait</span><span class='lparen'>(</span><span class='id identifier rubyid_timeout'>timeout</span><span class='rparen'>)</span>
+
+  <span class='comment'># Remove the waiter from the list of waiters in case it wasn&#39;t
+</span>  <span class='comment'># removed. This happens if the waiter timed out above.
+</span>  <span class='id identifier rubyid_remove_response_waiter'>remove_response_waiter</span><span class='lparen'>(</span><span class='id identifier rubyid_waiter'>waiter</span><span class='rparen'>)</span>
+
+  <span class='comment'># Return the response packet, if any
+</span>  <span class='kw'>return</span> <span class='id identifier rubyid_response'>response</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3089,7 +4296,15 @@ InboundPacketHandler interface.</p>
       <div class="method_details ">
   <h3 class="signature " id="send_request-instance_method">
   
+<<<<<<< HEAD
     - (<tt>Object</tt>) <strong>send_request</strong>(packet, t = self.response_timeout) 
+=======
+<<<<<<< HEAD
+    - (<tt>Object</tt>) <strong>send_request</strong>(packet, t = self.response_timeout) 
+=======
+    - (<tt>Object</tt>) <strong>send_request</strong>(packet, timeout = self.response_timeout) 
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
   
 
   
@@ -3104,7 +4319,54 @@ InboundPacketHandler interface.</p>
   </div>
 </div>
 <div class="tags">
+<<<<<<< HEAD
   
+=======
+<<<<<<< HEAD
+  
+=======
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>packet</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Packet.html" title="Rex::Post::Meterpreter::Packet (class)">Packet</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>request to send</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>timeout</span>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>self.response_timeout</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>seconds to wait for response, or nil to ignore the response and return
+immediately</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 </div><table class="source_code">
   <tr>
@@ -3112,6 +4374,10 @@ InboundPacketHandler interface.</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 191
 192
 193
@@ -3119,6 +4385,11 @@ InboundPacketHandler interface.</p>
 195
 196
 197
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 198
 199
 200
@@ -3132,6 +4403,10 @@ InboundPacketHandler interface.</p>
 208
 209
 210
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 211</pre>
     </td>
     <td>
@@ -3146,6 +4421,26 @@ InboundPacketHandler interface.</p>
   <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='id identifier rubyid_send_packet_wait_response'>send_packet_wait_response</span><span class='lparen'>(</span><span class='id identifier rubyid_packet'>packet</span><span class='comma'>,</span> <span class='id identifier rubyid_t'>t</span><span class='rparen'>)</span>
 
   <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span> <span class='op'>==</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<<<<<<< HEAD
+=======
+=======
+211
+212
+213
+214
+215</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 198</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_send_request'>send_request</span><span class='lparen'>(</span><span class='id identifier rubyid_packet'>packet</span><span class='comma'>,</span> <span class='id identifier rubyid_timeout'>timeout</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_response_timeout'>response_timeout</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='id identifier rubyid_send_packet_wait_response'>send_packet_wait_response</span><span class='lparen'>(</span><span class='id identifier rubyid_packet'>packet</span><span class='comma'>,</span> <span class='id identifier rubyid_timeout'>timeout</span><span class='rparen'>)</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_timeout'>timeout</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>elsif</span> <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
     <span class='id identifier rubyid_raise'>raise</span> <span class='const'>TimeoutError</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Send timed out</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
   <span class='kw'>elsif</span> <span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_result'>result</span> <span class='op'>!=</span> <span class='int'>0</span><span class='rparen'>)</span>
     <span class='id identifier rubyid_einfo'>einfo</span> <span class='op'>=</span> <span class='id identifier rubyid_lookup_error'>lookup_error</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_result'>result</span><span class='rparen'>)</span>
@@ -3178,6 +4473,10 @@ InboundPacketHandler interface.</p>
       <pre class="lines">
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 80
 81
 82
@@ -3187,6 +4486,11 @@ InboundPacketHandler interface.</p>
 86
 87
 88
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 89
 90
 91
@@ -3197,10 +4501,32 @@ InboundPacketHandler interface.</p>
 96
 97
 98
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 99</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 80</span>
+<<<<<<< HEAD
+=======
+=======
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rex/post/meterpreter/packet_dispatcher.rb', line 89</span>
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 
 <span class='kw'>def</span> <span class='id identifier rubyid_shutdown_passive_dispatcher'>shutdown_passive_dispatcher</span>
   <span class='kw'>return</span> <span class='kw'>if</span> <span class='kw'>not</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_passive_service'>passive_service</span>
@@ -3235,8 +4561,11 @@ InboundPacketHandler interface.</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Generated on Tue Dec  8 22:33:26 2015 by
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3250,7 +4579,10 @@ InboundPacketHandler interface.</p>
 =======
   Generated on Tue Dec  8 22:33:26 2015 by
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.1.7).
 =======
@@ -3259,6 +4591,7 @@ InboundPacketHandler interface.</p>
   0.8.7.6 (ruby-2.1.5).
 >>>>>>> origin/gh-pages
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   Generated on Tue Sep  1 22:33:42 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
@@ -3266,6 +4599,8 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/gh-pages
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 =======
   Generated on Tue Dec  8 22:33:26 2015 by
@@ -3276,7 +4611,15 @@ InboundPacketHandler interface.</p>
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+  Generated on Tue Dec 29 22:33:32 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.7).
+>>>>>>> rapid7/gh-pages
+>>>>>>> pod/metasploit-development-environment
 </div>
 
   </body>

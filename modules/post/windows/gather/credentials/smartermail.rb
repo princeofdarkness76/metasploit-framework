@@ -210,6 +210,9 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
       ip: rhost,
 =======
       ip: r_host,
@@ -233,6 +236,7 @@ class Metasploit3 < Msf::Post
       ip: r_host,
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
       ip: rhost,
 >>>>>>> rapid7/master
 =======
@@ -244,6 +248,13 @@ class Metasploit3 < Msf::Post
 =======
       ip: rhost,
 >>>>>>> rapid7/master
+=======
+      ip: r_host,
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+      ip: r_host,
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       port: port,
       service_name: 'http',
       user: user,

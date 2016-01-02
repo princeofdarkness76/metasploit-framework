@@ -663,6 +663,9 @@ RSpec.describe Msf::PayloadGenerator do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
         expect(payload_generator).to receive(:generate_java_payload).and_call_original
 =======
         payload_generator.should_receive(:generate_java_payload).and_call_original
@@ -686,6 +689,7 @@ RSpec.describe Msf::PayloadGenerator do
         payload_generator.should_receive(:generate_java_payload).and_call_original
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
         expect(payload_generator).to receive(:generate_java_payload).and_call_original
 >>>>>>> rapid7/master
 =======
@@ -697,6 +701,13 @@ RSpec.describe Msf::PayloadGenerator do
 =======
         expect(payload_generator).to receive(:generate_java_payload).and_call_original
 >>>>>>> rapid7/master
+=======
+        payload_generator.should_receive(:generate_java_payload).and_call_original
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+        payload_generator.should_receive(:generate_java_payload).and_call_original
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         payload_generator.generate_payload
       end
     end

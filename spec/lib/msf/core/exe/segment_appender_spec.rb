@@ -11,6 +11,9 @@ require 'msf/core/exe/segment_appender'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Msf::Exe::SegmentAppender do
 =======
 describe Msf::Exe::SegmentAppender do
@@ -31,6 +34,7 @@ describe Msf::Exe::SegmentAppender do
 describe Msf::Exe::SegmentAppender do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Msf::Exe::SegmentAppender do
 >>>>>>> rapid7/master
 =======
@@ -42,6 +46,10 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
 RSpec.describe Msf::Exe::SegmentAppender do
 >>>>>>> rapid7/master
+=======
+describe Msf::Exe::SegmentAppender do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
   let(:opts) do
     option_hash = {
@@ -62,6 +70,7 @@ RSpec.describe Msf::Exe::SegmentAppender do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -70,6 +79,8 @@ RSpec.describe Msf::Exe::SegmentAppender do
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-development-environment
   it { is_expected.to respond_to :payload }
   it { is_expected.to respond_to :template }
   it { is_expected.to respond_to :arch }
@@ -144,11 +155,57 @@ RSpec.describe Msf::Exe::SegmentAppender do
 >>>>>>> rapid7/master
 =======
     expect(injector.processor.class).to eq Metasm::X86_64
+<<<<<<< HEAD
 >>>>>>> rapid7/master
+=======
+=======
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+  it { should respond_to :payload }
+  it { should respond_to :template }
+  it { should respond_to :arch }
+  it { should respond_to :processor }
+  it { should respond_to :buffer_register }
+
+  it 'should return the correct processor for the arch' do
+    injector.processor.class.should == Metasm::Ia32
+    injector.arch = :x64
+    injector.processor.class.should == Metasm::X86_64
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   end
 
   context '#create_thread_stub' do
     it 'should use edx as a default buffer register' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -190,6 +247,30 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
       expect(injector.buffer_register).to eq 'edx'
 >>>>>>> rapid7/master
+=======
+      expect(injector.buffer_register).to eq 'edx'
+=======
+      injector.buffer_register.should == 'edx'
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      injector.buffer_register.should == 'edx'
+>>>>>>> origin/msf-complex-payloads
+=======
+      injector.buffer_register.should == 'edx'
+>>>>>>> origin/msf-complex-payloads
+=======
+      injector.buffer_register.should == 'edx'
+>>>>>>> origin/payload-generator.rb
+=======
+      injector.buffer_register.should == 'edx'
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      injector.buffer_register.should == 'edx'
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      injector.buffer_register.should == 'edx'
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
 
     context 'when given a non-default buffer register' do
@@ -212,6 +293,9 @@ RSpec.describe Msf::Exe::SegmentAppender do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
         expect(injector.buffer_register).to eq 'eax'
 =======
         injector.buffer_register.should == 'eax'
@@ -232,6 +316,7 @@ RSpec.describe Msf::Exe::SegmentAppender do
         injector.buffer_register.should == 'eax'
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
         expect(injector.buffer_register).to eq 'eax'
 >>>>>>> rapid7/master
 =======
@@ -243,6 +328,10 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
         expect(injector.buffer_register).to eq 'eax'
 >>>>>>> rapid7/master
+=======
+        injector.buffer_register.should == 'eax'
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
   end
@@ -259,6 +348,7 @@ RSpec.describe Msf::Exe::SegmentAppender do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(injector.generate_pe.kind_of?(String)).to eq true
 =======
       injector.generate_pe.kind_of?(String).should == true
@@ -290,6 +380,30 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
       expect(injector.generate_pe.kind_of?(String)).to eq true
 >>>>>>> rapid7/master
+=======
+      expect(injector.generate_pe.kind_of?(String)).to eq true
+=======
+      injector.generate_pe.kind_of?(String).should == true
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      injector.generate_pe.kind_of?(String).should == true
+>>>>>>> origin/msf-complex-payloads
+=======
+      injector.generate_pe.kind_of?(String).should == true
+>>>>>>> origin/msf-complex-payloads
+=======
+      injector.generate_pe.kind_of?(String).should == true
+>>>>>>> origin/payload-generator.rb
+=======
+      injector.generate_pe.kind_of?(String).should == true
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      injector.generate_pe.kind_of?(String).should == true
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      injector.generate_pe.kind_of?(String).should == true
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
 
     it 'should produce a valid PE exe' do
@@ -299,6 +413,7 @@ RSpec.describe Msf::Exe::SegmentAppender do
     context 'the generated exe' do
       let(:exe) { Metasm::PE.decode(injector.generate_pe) }
       it 'should be the propper arch' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -368,12 +483,54 @@ RSpec.describe Msf::Exe::SegmentAppender do
         expect(exe.sections.count).to eq 5
 >>>>>>> rapid7/master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
         expect(exe.bitsize).to eq 32
       end
 
       it 'should have 5 sections' do
         expect(exe.sections.count).to eq 5
+<<<<<<< HEAD
 >>>>>>> rapid7/master
+=======
+=======
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+        exe.bitsize.should == 32
+      end
+
+      it 'should have 5 sections' do
+        exe.sections.count.should == 5
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/payload-generator.rb
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it 'should have all the right original section names' do
@@ -389,6 +546,9 @@ RSpec.describe Msf::Exe::SegmentAppender do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
         expect(s_names[0,4]).to eq [".text", ".rdata", ".data", ".rsrc"]
       end
 
@@ -409,6 +569,7 @@ RSpec.describe Msf::Exe::SegmentAppender do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
         s_names[0,4].should == [".text", ".rdata", ".data", ".rsrc"]
 =======
         expect(s_names[0,4]).to eq [".text", ".rdata", ".data", ".rsrc"]
@@ -433,12 +594,28 @@ RSpec.describe Msf::Exe::SegmentAppender do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+        s_names[0,4].should == [".text", ".rdata", ".data", ".rsrc"]
+      end
+
+      it 'should have the last section set to RWX' do
+        exe.sections.last.characteristics.should == ["CONTAINS_CODE", "MEM_EXECUTE", "MEM_READ", "MEM_WRITE"]
+      end
+
+      it 'should have an entrypoint that points to the last section' do
+>>>>>>> pod/metasploit-development-environment
         exe.optheader.entrypoint.should == exe.sections.last.virtaddr
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -451,6 +628,7 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
         expect(exe.optheader.entrypoint).to eq exe.sections.last.virtaddr
 >>>>>>> rapid7/master
 =======
@@ -462,6 +640,9 @@ RSpec.describe Msf::Exe::SegmentAppender do
 =======
         expect(exe.optheader.entrypoint).to eq exe.sections.last.virtaddr
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
   end

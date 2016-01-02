@@ -31,6 +31,9 @@ class Android < Extension
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
   COLLECT_TYPE_GEO  = 2
   COLLECT_TYPE_CELL = 3
 =======
@@ -48,6 +51,7 @@ class Android < Extension
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
   COLLECT_TYPE_GEO  = 2
   COLLECT_TYPE_CELL = 3
 >>>>>>> rapid7/master
@@ -63,6 +67,11 @@ class Android < Extension
   COLLECT_TYPE_GEO  = 2
   COLLECT_TYPE_CELL = 3
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
   COLLECT_ACTION_START  = 1
   COLLECT_ACTION_PAUSE  = 2
@@ -82,6 +91,7 @@ class Android < Extension
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'wifi' => COLLECT_TYPE_WIFI,
     'geo'  => COLLECT_TYPE_GEO,
     'cell' => COLLECT_TYPE_CELL,
@@ -126,6 +136,38 @@ class Android < Extension
     'geo'  => COLLECT_TYPE_GEO,
     'cell' => COLLECT_TYPE_CELL,
 >>>>>>> rapid7/master
+=======
+    'wifi' => COLLECT_TYPE_WIFI,
+    'geo'  => COLLECT_TYPE_GEO,
+    'cell' => COLLECT_TYPE_CELL,
+=======
+    'wifi' => COLLECT_TYPE_WIFI
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+    'wifi' => COLLECT_TYPE_WIFI
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+    'wifi' => COLLECT_TYPE_WIFI
+>>>>>>> origin/msf-complex-payloads
+=======
+    'wifi' => COLLECT_TYPE_WIFI
+>>>>>>> origin/msf-complex-payloads
+=======
+    'wifi' => COLLECT_TYPE_WIFI
+>>>>>>> origin/payload-generator.rb
+=======
+    'wifi' => COLLECT_TYPE_WIFI
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+    'wifi' => COLLECT_TYPE_WIFI
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+    'wifi' => COLLECT_TYPE_WIFI
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+    'wifi' => COLLECT_TYPE_WIFI
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   }
 
   COLLECT_ACTIONS = {
@@ -215,6 +257,7 @@ class Android < Extension
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -223,6 +266,8 @@ class Android < Extension
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-development-environment
 
     when COLLECT_TYPE_GEO
       result[:headers] = ['Timestamp', 'Latitude', 'Longitude']
@@ -285,6 +330,9 @@ class Android < Extension
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
@@ -300,6 +348,7 @@ class Android < Extension
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -307,6 +356,11 @@ class Android < Extension
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
 
     result

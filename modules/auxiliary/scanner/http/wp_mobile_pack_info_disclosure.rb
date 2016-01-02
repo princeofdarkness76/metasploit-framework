@@ -33,6 +33,9 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
           ['PACKETSTORM', '132750']
 =======
           ['URL', 'https://packetstormsecurity.com/files/132750/']
@@ -56,6 +59,7 @@ class Metasploit3 < Msf::Auxiliary
           ['URL', 'https://packetstormsecurity.com/files/132750/']
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
           ['PACKETSTORM', '132750']
 >>>>>>> rapid7/master
 =======
@@ -67,6 +71,13 @@ class Metasploit3 < Msf::Auxiliary
 =======
           ['PACKETSTORM', '132750']
 >>>>>>> rapid7/master
+=======
+          ['URL', 'https://packetstormsecurity.com/files/132750/']
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+          ['URL', 'https://packetstormsecurity.com/files/132750/']
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         ],
       'Author'         =>
         [

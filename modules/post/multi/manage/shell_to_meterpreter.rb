@@ -49,7 +49,11 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -60,7 +64,10 @@ class Metasploit3 < Msf::Post
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -72,9 +79,12 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
@@ -82,7 +92,10 @@ class Metasploit3 < Msf::Post
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil]),
       OptString.new('BOURNE_PATH',
         [false, 'Remote path to drop binary']),
@@ -92,10 +105,13 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -128,7 +144,10 @@ class Metasploit3 < Msf::Post
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
 =======
@@ -140,10 +159,15 @@ class Metasploit3 < Msf::Post
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> pod/metasploit-development-environment
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -160,6 +184,7 @@ class Metasploit3 < Msf::Post
 >>>>>>> payload-generator.rb
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
@@ -180,6 +205,17 @@ class Metasploit3 < Msf::Post
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 =======
+=======
+        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+>>>>>>> origin/pod/metasploit-framework
+=======
+        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
@@ -190,15 +226,21 @@ class Metasploit3 < Msf::Post
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
         [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> rapid7/master
@@ -208,7 +250,16 @@ class Metasploit3 < Msf::Post
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+        [false, 'Define the payload to use (meterpreter/reverse_tcp by default) .', nil])
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     ], self.class)
     deregister_options('PERSIST', 'PSH_OLD_METHOD', 'RUN_WOW64')
   end
@@ -267,6 +318,9 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
       target_info = cmd_exec('uname -ms')
 =======
 =======
@@ -281,6 +335,7 @@ class Metasploit3 < Msf::Post
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
       target_info = cmd_exec('uname -mo')
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
@@ -295,6 +350,14 @@ class Metasploit3 < Msf::Post
 =======
       target_info = cmd_exec('uname -ms')
 >>>>>>> rapid7/master
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+      target_info = cmd_exec('uname -mo')
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-development-environment
       if target_info =~ /linux/i && target_info =~ /86/
         # Handle linux shells that were identified as 'unix'
         platform = 'linux'
@@ -313,6 +376,7 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -321,6 +385,8 @@ class Metasploit3 < Msf::Post
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-development-environment
       elsif target_info =~ /darwin/i
         platform = 'python'
         payload_name = 'python/meterpreter/reverse_tcp'
@@ -330,6 +396,9 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -343,6 +412,7 @@ class Metasploit3 < Msf::Post
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
       elsif cmd_exec('python -V') =~ /Python (2|3)\.(\d)/
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
@@ -353,6 +423,14 @@ class Metasploit3 < Msf::Post
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+      elsif cmd_exec('python -V') =~ /Python (2|3)\.(\d)/
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-development-environment
         # Generic fallback for OSX, Solaris, Linux/ARM
         platform = 'python'
         payload_name = 'python/meterpreter/reverse_tcp'

@@ -7,11 +7,15 @@ require 'metasploit/framework/login_scanner/chef_webui'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Metasploit::Framework::LoginScanner::ChefWebUI do
 =======
 describe Metasploit::Framework::LoginScanner::ChefWebUI do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::ChefWebUI do
 >>>>>>> rapid7/master
 =======
@@ -23,6 +27,10 @@ RSpec.describe Metasploit::Framework::LoginScanner::ChefWebUI do
 =======
 RSpec.describe Metasploit::Framework::LoginScanner::ChefWebUI do
 >>>>>>> rapid7/master
+=======
+describe Metasploit::Framework::LoginScanner::ChefWebUI do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
   subject(:http_scanner) { described_class.new }
 

@@ -26,6 +26,9 @@ RSpec.describe Msf::Exe::SegmentInjector do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
     expect(injector.processor.class).to eq Metasm::X86_64
 =======
     injector.processor.class.should == Metasm::X86_64
@@ -34,6 +37,10 @@ RSpec.describe Msf::Exe::SegmentInjector do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -46,6 +53,7 @@ RSpec.describe Msf::Exe::SegmentInjector do
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
     expect(injector.processor.class).to eq Metasm::X86_64
 >>>>>>> rapid7/master
 =======
@@ -57,6 +65,9 @@ RSpec.describe Msf::Exe::SegmentInjector do
 =======
     expect(injector.processor.class).to eq Metasm::X86_64
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   end
 
   context '#create_thread_stub' do

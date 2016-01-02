@@ -28,6 +28,9 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
     register_options(
       [
@@ -50,6 +53,7 @@ class Metasploit3 < Msf::Auxiliary
     end
     return os
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -58,6 +62,8 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-development-environment
   end
 
   def get_server_header

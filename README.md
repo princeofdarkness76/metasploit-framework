@@ -3,11 +3,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 Metasploit [![Build Status](https://travis-ci.org/rapid7/metasploit-framework.svg?branch=master)](https://travis-ci.org/rapid7/metasploit-framework) [![Code Climate](https://img.shields.io/codeclimate/github/rapid7/metasploit-framework.svg)](https://codeclimate.com/github/rapid7/metasploit-framework)
 =======
 Metasploit [![Build Status](https://travis-ci.org/rapid7/metasploit-framework.png?branch=master)](https://travis-ci.org/rapid7/metasploit-framework) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/rapid7/metasploit-framework)
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
 Metasploit [![Build Status](https://travis-ci.org/rapid7/metasploit-framework.svg?branch=master)](https://travis-ci.org/rapid7/metasploit-framework) [![Code Climate](https://img.shields.io/codeclimate/github/rapid7/metasploit-framework.svg)](https://codeclimate.com/github/rapid7/metasploit-framework)
 >>>>>>> rapid7/master
 =======
@@ -19,6 +23,10 @@ Metasploit [![Build Status](https://travis-ci.org/rapid7/metasploit-framework.sv
 =======
 Metasploit [![Build Status](https://travis-ci.org/rapid7/metasploit-framework.svg?branch=master)](https://travis-ci.org/rapid7/metasploit-framework) [![Code Climate](https://img.shields.io/codeclimate/github/rapid7/metasploit-framework.svg)](https://codeclimate.com/github/rapid7/metasploit-framework)
 >>>>>>> rapid7/master
+=======
+Metasploit [![Build Status](https://travis-ci.org/rapid7/metasploit-framework.png?branch=master)](https://travis-ci.org/rapid7/metasploit-framework) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/rapid7/metasploit-framework)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 ==
 The Metasploit Framework is released under a BSD-style license. See
 COPYING for more details.

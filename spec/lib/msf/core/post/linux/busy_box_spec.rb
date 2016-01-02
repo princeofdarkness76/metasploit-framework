@@ -14,6 +14,9 @@ require 'msf/core/post/linux/busy_box'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Msf::Post::Linux::BusyBox do
 =======
 describe Msf::Post::Linux::BusyBox do
@@ -37,6 +40,7 @@ describe Msf::Post::Linux::BusyBox do
 describe Msf::Post::Linux::BusyBox do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Msf::Post::Linux::BusyBox do
 >>>>>>> rapid7/master
 =======
@@ -48,6 +52,13 @@ RSpec.describe Msf::Post::Linux::BusyBox do
 =======
 RSpec.describe Msf::Post::Linux::BusyBox do
 >>>>>>> rapid7/master
+=======
+describe Msf::Post::Linux::BusyBox do
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+describe Msf::Post::Linux::BusyBox do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   subject do
     mod = ::Msf::Module.new
     mod.extend described_class

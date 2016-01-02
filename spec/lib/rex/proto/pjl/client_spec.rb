@@ -109,15 +109,24 @@ RSpec.describe Rex::Proto::PJL::Client do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
         allow(tmp_sock).to receive(:put).with(an_instance_of(String))
         allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
         expect(tmp_cli.fsquery("1:")).to eq(true)
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         tmp_sock.stub(:put).with(an_instance_of(String))
         tmp_sock.stub(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
         tmp_cli.fsquery("1:").should eq(true)
+<<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
         allow(tmp_sock).to receive(:put).with(an_instance_of(String))
@@ -143,6 +152,12 @@ RSpec.describe Rex::Proto::PJL::Client do
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
         expect(tmp_cli.fsquery("1:")).to eq(true)
 >>>>>>> rapid7/master
+=======
+<<<<<<< HEAD
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
 
@@ -256,6 +271,66 @@ RSpec.describe Rex::Proto::PJL::Client do
 >>>>>>> rapid7/master
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
         expect(tmp_cli.fsdelete("1:")).to eq(true)
+      end
+    end
+
+    context "#fsdownload" do
+      it "should raise an exception due to an invalid path" do
+        expect { cli.fsdownload("/dev/null", "BAD") }.to raise_error(ArgumentError)
+      end
+
+      it "should upload a file" do
+        response = "TYPE=FILE SIZE=1337\r\n\f"
+        tmp_sock = double("sock")
+        tmp_sock.stub(:put).with(an_instance_of(String))
+        tmp_sock.stub(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
+        tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
+        tmp_cli.fsdownload("/dev/null", "1:").should eq(true)
+      end
+    end
+
+    context "#fsdelete" do
+      it "should raise an exception due to an invalid path" do
+        expect { cli.fsdelete("BAD") }.to raise_error(ArgumentError)
+      end
+
+      it "should delete a file" do
+        response = "FILEERROR=3\r\n\f"
+        tmp_sock = double("sock")
+        tmp_sock.stub(:put).with(an_instance_of(String))
+        tmp_sock.stub(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
+        tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
+        tmp_cli.fsdelete("1:").should eq(true)
+      end
+    end
+
+    context "#fsdownload" do
+      it "should raise an exception due to an invalid path" do
+        expect { cli.fsdownload("/dev/null", "BAD") }.to raise_error(ArgumentError)
+      end
+
+      it "should upload a file" do
+        response = "TYPE=FILE SIZE=1337\r\n\f"
+        tmp_sock = double("sock")
+        tmp_sock.stub(:put).with(an_instance_of(String))
+        tmp_sock.stub(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
+        tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
+        tmp_cli.fsdownload("/dev/null", "1:").should eq(true)
+      end
+    end
+
+    context "#fsdelete" do
+      it "should raise an exception due to an invalid path" do
+        expect { cli.fsdelete("BAD") }.to raise_error(ArgumentError)
+      end
+
+      it "should delete a file" do
+        response = "FILEERROR=3\r\n\f"
+        tmp_sock = double("sock")
+        tmp_sock.stub(:put).with(an_instance_of(String))
+        tmp_sock.stub(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
+        tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
+        tmp_cli.fsdelete("1:").should eq(true)
       end
     end
   end

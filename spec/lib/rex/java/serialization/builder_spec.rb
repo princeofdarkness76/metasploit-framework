@@ -8,11 +8,15 @@ require 'rex/java'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Rex::Java::Serialization::Builder do
 =======
 describe Rex::Java::Serialization::Builder do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
 RSpec.describe Rex::Java::Serialization::Builder do
 >>>>>>> rapid7/master
 =======
@@ -24,6 +28,10 @@ RSpec.describe Rex::Java::Serialization::Builder do
 =======
 RSpec.describe Rex::Java::Serialization::Builder do
 >>>>>>> rapid7/master
+=======
+describe Rex::Java::Serialization::Builder do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   subject(:builder) do
     described_class.new
   end

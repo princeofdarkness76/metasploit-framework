@@ -101,6 +101,7 @@ module Rex
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               encoded << [TC_PROXYCLASSDESC].pack('C')
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
@@ -108,6 +109,11 @@ module Rex
               encoded << [TC_PROXYCLASSDESC].pack('C')
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
+=======
+              encoded << [TC_PROXYCLASSDESC].pack('C')
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -140,7 +146,10 @@ module Rex
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
@@ -161,6 +170,7 @@ module Rex
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
 >>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -176,15 +186,21 @@ module Rex
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
 =======
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> pod/metasploit-development-environment
+=======
               content = [TC_PROXYCLASSDESC].pack('C')
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
               content = [TC_PROXYCLASSDESC].pack('C')
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
               encoded << [TC_PROXYCLASSDESC].pack('C')
 >>>>>>> master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -209,7 +225,13 @@ module Rex
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+              content = [TC_PROXYCLASSDESC].pack('C')
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
             when NullReference
               encoded << [TC_NULL].pack('C')
             when Reset

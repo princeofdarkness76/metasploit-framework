@@ -2273,7 +2273,11 @@ RSpec.describe 'modules/payloads', :content do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2284,7 +2288,10 @@ RSpec.describe 'modules/payloads', :content do
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2296,16 +2303,22 @@ RSpec.describe 'modules/payloads', :content do
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 =======
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
   context 'python/meterpreter_reverse_http' do
     it_should_behave_like 'payload cached size is consistent',
                           ancestor_reference_names: [
@@ -2330,8 +2343,11 @@ RSpec.describe 'modules/payloads', :content do
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/4.11.2_release_pre-rails4
@@ -2347,14 +2363,20 @@ RSpec.describe 'modules/payloads', :content do
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 >>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 =======
@@ -2362,7 +2384,10 @@ RSpec.describe 'modules/payloads', :content do
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -2371,8 +2396,11 @@ RSpec.describe 'modules/payloads', :content do
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2383,7 +2411,10 @@ RSpec.describe 'modules/payloads', :content do
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> msf-complex-payloads
 =======
@@ -2393,8 +2424,11 @@ RSpec.describe 'modules/payloads', :content do
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
 =======
@@ -2404,11 +2438,14 @@ RSpec.describe 'modules/payloads', :content do
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> rapid7/master
@@ -2417,7 +2454,14 @@ RSpec.describe 'modules/payloads', :content do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   context 'python/meterpreter_reverse_tcp' do
     it_should_behave_like 'payload cached size is consistent',
                           ancestor_reference_names: [

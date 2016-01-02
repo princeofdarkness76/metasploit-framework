@@ -14,6 +14,9 @@ require 'uri'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe MicrosoftPatchFinder do
 =======
 describe MicrosoftPatchFinder do
@@ -37,6 +40,7 @@ describe MicrosoftPatchFinder do
 describe MicrosoftPatchFinder do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe MicrosoftPatchFinder do
 >>>>>>> rapid7/master
 =======
@@ -48,6 +52,13 @@ RSpec.describe MicrosoftPatchFinder do
 =======
 RSpec.describe MicrosoftPatchFinder do
 >>>>>>> rapid7/master
+=======
+describe MicrosoftPatchFinder do
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+describe MicrosoftPatchFinder do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
   before(:each) do
     cli = Rex::Proto::Http::Client.new('127.0.0.1')
@@ -356,6 +367,7 @@ RSpec.describe MicrosoftPatchFinder do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -364,6 +376,8 @@ RSpec.describe MicrosoftPatchFinder do
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-development-environment
         Rex::Proto::Http::Response.new.tap { |response|
           allow(response).to receive(:body).and_return(
                                %Q|
@@ -377,6 +391,9 @@ RSpec.describe MicrosoftPatchFinder do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -390,6 +407,13 @@ RSpec.describe MicrosoftPatchFinder do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         html = %Q|
         <html>
         <a href="#{expected_link}">Click here</a>
@@ -405,6 +429,11 @@ RSpec.describe MicrosoftPatchFinder do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -419,6 +448,7 @@ RSpec.describe MicrosoftPatchFinder do
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -426,6 +456,11 @@ RSpec.describe MicrosoftPatchFinder do
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it 'returns an array of links' do

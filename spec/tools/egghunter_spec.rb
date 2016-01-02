@@ -12,6 +12,9 @@ require 'stringio'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Egghunter do
 =======
 describe Egghunter do
@@ -32,6 +35,7 @@ describe Egghunter do
 describe Egghunter do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Egghunter do
 >>>>>>> rapid7/master
 =======
@@ -43,6 +47,10 @@ RSpec.describe Egghunter do
 =======
 RSpec.describe Egghunter do
 >>>>>>> rapid7/master
+=======
+describe Egghunter do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
   describe Egghunter::Driver do
 

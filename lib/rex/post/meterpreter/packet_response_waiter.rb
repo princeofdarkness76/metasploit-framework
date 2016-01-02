@@ -109,6 +109,9 @@ class PacketResponseWaiter
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -122,6 +125,7 @@ class PacketResponseWaiter
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
   attr_accessor :rid, :mutex, :cond, :response # :nodoc:
   attr_accessor :completion_routine, :completion_param # :nodoc:
 >>>>>>> origin/4.11.2_release_pre-rails4
@@ -133,6 +137,15 @@ class PacketResponseWaiter
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+  attr_accessor :rid, :mutex, :cond, :response # :nodoc:
+  attr_accessor :completion_routine, :completion_param # :nodoc:
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-development-environment
 end
 
 end; end; end

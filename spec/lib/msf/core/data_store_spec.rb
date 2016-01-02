@@ -57,6 +57,18 @@ RSpec.shared_examples "datastore" do
 >>>>>>> rapid7/master
     end
   end
+  context "#delete" do
+    it "should delete the specified case-insensitive key" do
+      subject.delete("foo").should == "bar"
+      subject.delete("Fizz").should == "buzz"
+    end
+  end
+  context "#delete" do
+    it "should delete the specified case-insensitive key" do
+      subject.delete("foo").should == "bar"
+      subject.delete("Fizz").should == "buzz"
+    end
+  end
 end
 
 RSpec.describe Msf::DataStore do

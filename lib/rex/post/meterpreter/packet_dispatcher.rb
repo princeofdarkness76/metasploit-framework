@@ -197,6 +197,7 @@ module PacketDispatcher
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -205,6 +206,8 @@ module PacketDispatcher
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-development-environment
   # @param packet [Packet] request to send
   # @param timeout [Fixnum,nil] seconds to wait for response, or nil to ignore the
   #   response and return immediately
@@ -217,6 +220,9 @@ module PacketDispatcher
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -224,6 +230,7 @@ module PacketDispatcher
     if not t
       send_packet(packet)
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
 =======
@@ -232,6 +239,8 @@ module PacketDispatcher
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> pod/metasploit-development-environment
       return nil
     elsif response.nil?
       raise TimeoutError.new("Send timed out")
@@ -334,6 +343,9 @@ module PacketDispatcher
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -347,6 +359,7 @@ module PacketDispatcher
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
     @finish = false
     @last_recvd = Time.now
 >>>>>>> origin/4.11.2_release_pre-rails4
@@ -358,6 +371,15 @@ module PacketDispatcher
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+    @finish = false
+    @last_recvd = Time.now
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-development-environment
     @ping_sent = false
 
     # Spawn a thread for receiving packets
@@ -388,6 +410,9 @@ module PacketDispatcher
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
       while (self.alive)
 =======
       # Whether we're finished or not is determined by the receiver
@@ -399,6 +424,11 @@ module PacketDispatcher
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -413,6 +443,7 @@ module PacketDispatcher
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
       while (self.alive)
 >>>>>>> rapid7/master
 =======
@@ -424,6 +455,11 @@ module PacketDispatcher
 =======
       while (self.alive)
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         incomplete = []
         backlog    = []
 
@@ -633,6 +669,27 @@ module PacketDispatcher
 >>>>>>> rapid7/master
     # Update our last reply time
     self.last_checkin = Time.now
+
+    # Update our last reply time
+    client.last_checkin = Time.now
+
+    # Update our last reply time
+    client.last_checkin = Time.now
+
+    # Update our last reply time
+    client.last_checkin = Time.now
+
+    # Update our last reply time
+    client.last_checkin = Time.now
+
+    # Update our last reply time
+    client.last_checkin = Time.now
+
+    # Update our last reply time
+    client.last_checkin = Time.now
+
+    # Update our last reply time
+    client.last_checkin = Time.now
 
     # If the packet is a response, try to notify any potential
     # waiters

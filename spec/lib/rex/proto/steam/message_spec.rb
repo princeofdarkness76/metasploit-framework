@@ -12,6 +12,9 @@ require 'rex/proto/steam/message'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Rex::Proto::Steam do
 =======
 describe Rex::Proto::Steam do
@@ -32,6 +35,7 @@ describe Rex::Proto::Steam do
 describe Rex::Proto::Steam do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Steam do
 >>>>>>> rapid7/master
 =======
@@ -43,6 +47,10 @@ RSpec.describe Rex::Proto::Steam do
 =======
 RSpec.describe Rex::Proto::Steam do
 >>>>>>> rapid7/master
+=======
+describe Rex::Proto::Steam do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   subject(:steam) do
     mod = Module.new
     mod.extend described_class

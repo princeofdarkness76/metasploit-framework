@@ -71,11 +71,18 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 =======
 
 >>>>>>> 4.11.2_release_pre-rails4
@@ -87,16 +94,23 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
 
@@ -118,7 +132,10 @@ end
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 
@@ -128,8 +145,11 @@ end
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 
@@ -140,7 +160,10 @@ end
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -157,6 +180,7 @@ end
 >>>>>>> payload-generator.rb
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
@@ -177,6 +201,17 @@ end
 =======
 
 =======
+=======
+
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+>>>>>>> origin/pod/metasploit-framework
+=======
+
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
@@ -187,15 +222,21 @@ end
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 
@@ -207,4 +248,13 @@ end
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment

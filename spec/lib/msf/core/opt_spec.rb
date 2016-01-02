@@ -10,6 +10,9 @@ require 'msf/core/opt'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Msf::Opt do
 =======
 describe Msf::Opt do
@@ -30,6 +33,7 @@ describe Msf::Opt do
 describe Msf::Opt do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Msf::Opt do
 >>>>>>> rapid7/master
 =======
@@ -41,6 +45,10 @@ RSpec.describe Msf::Opt do
 =======
 RSpec.describe Msf::Opt do
 >>>>>>> rapid7/master
+=======
+describe Msf::Opt do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   subject(:opt) { described_class }
 
   it { is_expected.to respond_to(:CHOST) }

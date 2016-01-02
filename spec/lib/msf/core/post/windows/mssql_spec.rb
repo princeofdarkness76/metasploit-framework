@@ -13,6 +13,9 @@ require 'msf/core/post/windows/mssql'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Msf::Post::Windows::MSSQL do
   let(:subject) do
     mod = double(Module.new)
@@ -31,6 +34,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
 describe Msf::Post::Windows::MSSQL do
 =======
 RSpec.describe Msf::Post::Windows::MSSQL do
@@ -52,6 +56,15 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+describe Msf::Post::Windows::MSSQL do
+  let(:subject) do
+    mod = Module.new
+    mod.extend described_class
+    stubs = [ :vprint_status, :print_status, :vprint_good, :print_good, :print_error, :print_warning ]
+>>>>>>> pod/metasploit-development-environment
     stubs.each { |meth| mod.stub(meth) }
     mod.stub(:service_info).and_return({})
 <<<<<<< HEAD
@@ -59,6 +72,10 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -71,6 +88,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
     stubs.each { |meth| allow(mod).to receive(meth) }
     allow(mod).to receive(:service_info).and_return({})
 >>>>>>> rapid7/master
@@ -86,6 +104,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
     stubs.each { |meth| allow(mod).to receive(meth) }
     allow(mod).to receive(:service_info).and_return({})
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     mod
   end
 
@@ -207,6 +228,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to be_nil
 =======
         result.should be_nil
@@ -238,6 +260,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to be_nil
 >>>>>>> rapid7/master
+=======
+        expect(result).to be_nil
+=======
+        result.should be_nil
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should be_nil
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should be_nil
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should be_nil
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should be_nil
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should be_nil
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should be_nil
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it "should identify a running SQL instance" do
@@ -253,6 +299,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_2k8_sql_instance
 =======
         result.should eq running_2k8_sql_instance
@@ -284,6 +331,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_2k8_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_2k8_sql_instance
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it "shouldn't identify a non running SQL instance" do
@@ -299,6 +370,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_2k8_sql_instance
 =======
         result.should eq running_2k8_sql_instance
@@ -330,6 +402,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_2k8_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_2k8_sql_instance
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
 
@@ -347,6 +443,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_7_sql_instance
 =======
         result.should eq running_7_sql_instance
@@ -378,6 +475,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_7_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_7_sql_instance
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
 
@@ -395,6 +516,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_2k_sql_instance
 =======
         result.should eq running_2k_sql_instance
@@ -426,6 +548,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_2k_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_2k_sql_instance
+=======
+        result.should eq running_2k_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_2k_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_2k_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_2k_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_2k_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_2k_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_2k_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it "should identify a named SQL instance" do
@@ -441,6 +587,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k_sql_instance
 =======
         result.should eq running_named_2k_sql_instance
@@ -472,6 +619,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_named_2k_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_named_2k_sql_instance
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
 
@@ -489,6 +660,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_2k5_sql_instance
 =======
         result.should eq running_2k5_sql_instance
@@ -520,6 +692,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_2k5_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_2k5_sql_instance
+=======
+        result.should eq running_2k5_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_2k5_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_2k5_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_2k5_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_2k5_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_2k5_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_2k5_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it "should identify a named SQL instance" do
@@ -535,6 +731,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
         expect(result).to eq running_named_2k5_sql_instance
 =======
         result.should eq running_named_2k5_sql_instance
@@ -555,6 +754,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
         result.should eq running_named_2k5_sql_instance
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
         expect(result).to eq running_named_2k5_sql_instance
 >>>>>>> rapid7/master
 =======
@@ -566,6 +766,10 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_named_2k5_sql_instance
 >>>>>>> rapid7/master
+=======
+        result.should eq running_named_2k5_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
 
@@ -583,6 +787,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_2k8_sql_instance
 =======
         result.should eq running_2k8_sql_instance
@@ -614,6 +819,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_2k8_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_2k8_sql_instance
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it "should identify a named SQL instance" do
@@ -629,6 +858,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k8_sql_instance
 =======
         result.should eq running_named_2k8_sql_instance
@@ -660,6 +890,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_named_2k8_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_named_2k8_sql_instance
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
 
@@ -681,6 +935,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to be_nil
 =======
         result.should be_nil
@@ -712,6 +967,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to be_nil
 >>>>>>> rapid7/master
+=======
+        expect(result).to be_nil
+=======
+        result.should be_nil
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should be_nil
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should be_nil
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should be_nil
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should be_nil
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should be_nil
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should be_nil
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it "should identify a running SQL instance" do
@@ -727,6 +1006,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k8_sql_instance
 =======
         result.should eq running_named_2k8_sql_instance
@@ -758,6 +1038,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_named_2k8_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_named_2k8_sql_instance
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it "shouldn't identify a non running SQL instance" do
@@ -773,6 +1077,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k8_sql_instance
 =======
         result.should eq running_named_2k8_sql_instance
@@ -804,6 +1109,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_named_2k8_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_named_2k8_sql_instance
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it "should only identify that instance" do
@@ -819,6 +1148,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k8_sql_instance
 =======
         result.should eq running_named_2k8_sql_instance
@@ -850,6 +1180,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_named_2k8_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_named_2k8_sql_instance
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
 
@@ -871,6 +1225,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_7_sql_instance
 =======
         result.should eq running_7_sql_instance
@@ -902,6 +1257,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_7_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_7_sql_instance
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_7_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
 
@@ -924,6 +1303,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k_sql_instance
 =======
         result.should eq running_named_2k_sql_instance
@@ -955,6 +1335,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_named_2k_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_named_2k_sql_instance
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_named_2k_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
 
@@ -977,6 +1381,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k5_sql_instance
 =======
         result.should eq running_named_2k5_sql_instance
@@ -1008,6 +1413,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_named_2k5_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_named_2k5_sql_instance
+=======
+        result.should eq running_named_2k5_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_named_2k5_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k5_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k5_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_named_2k5_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_named_2k5_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_named_2k5_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
 
@@ -1030,6 +1459,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(result).to eq running_named_2k8_sql_instance
 =======
         result.should eq running_named_2k8_sql_instance
@@ -1061,6 +1491,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
         expect(result).to eq running_named_2k8_sql_instance
 >>>>>>> rapid7/master
+=======
+        expect(result).to eq running_named_2k8_sql_instance
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/msf-complex-payloads
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/payload-generator.rb
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        result.should eq running_named_2k8_sql_instance
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
   end
@@ -1093,6 +1547,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
       expect(subject.impersonate_sql_user(nil)).to be_falsey
       expect(subject.impersonate_sql_user(pid: nil)).to be_falsey
       expect(subject.impersonate_sql_user(pid: 0)).to be_falsey
@@ -1127,6 +1584,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       subject.impersonate_sql_user(pid: 0).should be_falsey
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
       expect(subject.impersonate_sql_user(nil)).to be_falsey
       expect(subject.impersonate_sql_user(pid: nil)).to be_falsey
       expect(subject.impersonate_sql_user(pid: 0)).to be_falsey
@@ -1146,6 +1604,12 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       expect(subject.impersonate_sql_user(pid: nil)).to be_falsey
       expect(subject.impersonate_sql_user(pid: 0)).to be_falsey
 >>>>>>> rapid7/master
+=======
+      subject.impersonate_sql_user(nil).should be_falsey
+      subject.impersonate_sql_user(pid: nil).should be_falsey
+      subject.impersonate_sql_user(pid: 0).should be_falsey
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
 
     context 'user has privs to impersonate' do
@@ -1160,6 +1624,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
         allow(subject).to receive_message_chain('session.sys.config.getuid').and_return('Superman')
         allow(subject).to receive_message_chain('client.sys.config.getprivs').and_return(['SeAssignPrimaryTokenPrivilege'])
         allow(subject).to receive_message_chain('session.sys.process.each_process').and_yield(process)
@@ -1189,10 +1656,16 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         subject.stub_chain('session.sys.config.getuid').and_return('Superman')
         subject.stub_chain('client.sys.config.getprivs').and_return(['SeAssignPrimaryTokenPrivilege'])
         subject.stub_chain('session.incognito').and_return(true)
         subject.stub_chain('session.sys.process.each_process').and_yield(process)
+<<<<<<< HEAD
 =======
         allow(subject).to receive_message_chain('session.sys.config.getuid').and_return('Superman')
         allow(subject).to receive_message_chain('client.sys.config.getprivs').and_return(['SeAssignPrimaryTokenPrivilege'])
@@ -1230,6 +1703,21 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+      end
+
+      it 'should return true if successful impersonating' do
+        subject.stub_chain('session.incognito.incognito_impersonate_token').with(user).and_return('Successfully')
+        subject.impersonate_sql_user(service).should be true
+      end
+
+      it 'should return false if fails impersonating' do
+        subject.stub_chain('session.incognito.incognito_impersonate_token').with(user).and_return('guff')
+        subject.impersonate_sql_user(service).should be false
+      end
+
+      it 'should return false if unable to find process username' do
+>>>>>>> pod/metasploit-development-environment
         subject.stub_chain('session.sys.process.each_process').and_yield('pid' => 0)
         subject.impersonate_sql_user(service).should be false
 <<<<<<< HEAD
@@ -1237,6 +1725,10 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -1249,6 +1741,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
         allow(subject).to receive_message_chain('session.sys.process.each_process').and_yield('pid' => 0)
         expect(subject.impersonate_sql_user(service)).to be false
 >>>>>>> rapid7/master
@@ -1264,6 +1757,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
         allow(subject).to receive_message_chain('session.sys.process.each_process').and_yield('pid' => 0)
         expect(subject.impersonate_sql_user(service)).to be false
 >>>>>>> rapid7/master
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
 
@@ -1279,6 +1775,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         allow(subject).to receive_message_chain('session.sys.config.getuid').and_return('Superman')
         allow(subject).to receive_message_chain('client.sys.config.getprivs').and_return([])
 =======
@@ -1321,6 +1818,38 @@ RSpec.describe Msf::Post::Windows::MSSQL do
         allow(subject).to receive_message_chain('session.sys.config.getuid').and_return('Superman')
         allow(subject).to receive_message_chain('client.sys.config.getprivs').and_return([])
 >>>>>>> rapid7/master
+=======
+        allow(subject).to receive_message_chain('session.sys.config.getuid').and_return('Superman')
+        allow(subject).to receive_message_chain('client.sys.config.getprivs').and_return([])
+=======
+        subject.stub_chain('session.sys.config.getuid').and_return('Superman')
+        subject.stub_chain('client.sys.config.getprivs').and_return([])
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        subject.stub_chain('session.sys.config.getuid').and_return('Superman')
+        subject.stub_chain('client.sys.config.getprivs').and_return([])
+>>>>>>> origin/msf-complex-payloads
+=======
+        subject.stub_chain('session.sys.config.getuid').and_return('Superman')
+        subject.stub_chain('client.sys.config.getprivs').and_return([])
+>>>>>>> origin/msf-complex-payloads
+=======
+        subject.stub_chain('session.sys.config.getuid').and_return('Superman')
+        subject.stub_chain('client.sys.config.getprivs').and_return([])
+>>>>>>> origin/payload-generator.rb
+=======
+        subject.stub_chain('session.sys.config.getuid').and_return('Superman')
+        subject.stub_chain('client.sys.config.getprivs').and_return([])
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        subject.stub_chain('session.sys.config.getuid').and_return('Superman')
+        subject.stub_chain('client.sys.config.getprivs').and_return([])
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        subject.stub_chain('session.sys.config.getuid').and_return('Superman')
+        subject.stub_chain('client.sys.config.getprivs').and_return([])
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it 'should return true if successful' do
@@ -1335,6 +1864,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         allow(subject).to receive_message_chain('session.core.migrate').with(pid).and_return(true)
         expect(subject.impersonate_sql_user(service)).to be true
 =======
@@ -1377,6 +1907,38 @@ RSpec.describe Msf::Post::Windows::MSSQL do
         allow(subject).to receive_message_chain('session.core.migrate').with(pid).and_return(true)
         expect(subject.impersonate_sql_user(service)).to be true
 >>>>>>> rapid7/master
+=======
+        allow(subject).to receive_message_chain('session.core.migrate').with(pid).and_return(true)
+        expect(subject.impersonate_sql_user(service)).to be true
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_return(true)
+        subject.impersonate_sql_user(service).should be true
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_return(true)
+        subject.impersonate_sql_user(service).should be true
+>>>>>>> origin/msf-complex-payloads
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_return(true)
+        subject.impersonate_sql_user(service).should be true
+>>>>>>> origin/msf-complex-payloads
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_return(true)
+        subject.impersonate_sql_user(service).should be true
+>>>>>>> origin/payload-generator.rb
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_return(true)
+        subject.impersonate_sql_user(service).should be true
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_return(true)
+        subject.impersonate_sql_user(service).should be true
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_return(true)
+        subject.impersonate_sql_user(service).should be true
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
 
       it 'should rescue an exception if migration fails' do
@@ -1391,6 +1953,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         allow(subject).to receive_message_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
         expect(subject.impersonate_sql_user(service)).to be false
 =======
@@ -1433,6 +1996,38 @@ RSpec.describe Msf::Post::Windows::MSSQL do
         allow(subject).to receive_message_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
         expect(subject.impersonate_sql_user(service)).to be false
 >>>>>>> rapid7/master
+=======
+        allow(subject).to receive_message_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
+        expect(subject.impersonate_sql_user(service)).to be false
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
+        subject.impersonate_sql_user(service).should be false
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
+        subject.impersonate_sql_user(service).should be false
+>>>>>>> origin/msf-complex-payloads
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
+        subject.impersonate_sql_user(service).should be false
+>>>>>>> origin/msf-complex-payloads
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
+        subject.impersonate_sql_user(service).should be false
+>>>>>>> origin/payload-generator.rb
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
+        subject.impersonate_sql_user(service).should be false
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
+        subject.impersonate_sql_user(service).should be false
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        subject.stub_chain('session.core.migrate').with(pid).and_raise(Rex::RuntimeError)
+        subject.impersonate_sql_user(service).should be false
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       end
     end
   end
@@ -1450,6 +2045,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
       expect(subject.get_system).to be_truthy
 =======
       subject.get_system.should be_truthy
@@ -1470,6 +2068,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       subject.get_system.should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
       expect(subject.get_system).to be_truthy
 >>>>>>> rapid7/master
 =======
@@ -1481,6 +2080,10 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       expect(subject.get_system).to be_truthy
 >>>>>>> rapid7/master
+=======
+      subject.get_system.should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
 
     it 'should return true if able to get SYSTEM and print a warning' do
@@ -1496,6 +2099,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
       allow(subject).to receive_message_chain('session.priv.getsystem').and_return([true])
       expect(subject.get_system).to be_truthy
 =======
@@ -1523,6 +2129,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       subject.get_system.should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
       allow(subject).to receive_message_chain('session.priv.getsystem').and_return([true])
       expect(subject.get_system).to be_truthy
 >>>>>>> rapid7/master
@@ -1538,6 +2145,11 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       allow(subject).to receive_message_chain('session.priv.getsystem').and_return([true])
       expect(subject.get_system).to be_truthy
 >>>>>>> rapid7/master
+=======
+      subject.stub_chain('session.priv.getsystem').and_return([true])
+      subject.get_system.should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
 
     it 'should return false if unable to get SYSTEM and print a warning' do
@@ -1553,6 +2165,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       allow(subject).to receive_message_chain('session.priv.getsystem').and_return([false])
       expect(subject.get_system).to be_falsey
 =======
@@ -1595,6 +2208,38 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       allow(subject).to receive_message_chain('session.priv.getsystem').and_return([false])
       expect(subject.get_system).to be_falsey
 >>>>>>> rapid7/master
+=======
+      allow(subject).to receive_message_chain('session.priv.getsystem').and_return([false])
+      expect(subject.get_system).to be_falsey
+=======
+      subject.stub_chain('session.priv.getsystem').and_return([false])
+      subject.get_system.should be_falsey
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      subject.stub_chain('session.priv.getsystem').and_return([false])
+      subject.get_system.should be_falsey
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.stub_chain('session.priv.getsystem').and_return([false])
+      subject.get_system.should be_falsey
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.stub_chain('session.priv.getsystem').and_return([false])
+      subject.get_system.should be_falsey
+>>>>>>> origin/payload-generator.rb
+=======
+      subject.stub_chain('session.priv.getsystem').and_return([false])
+      subject.get_system.should be_falsey
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      subject.stub_chain('session.priv.getsystem').and_return([false])
+      subject.get_system.should be_falsey
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      subject.stub_chain('session.priv.getsystem').and_return([false])
+      subject.get_system.should be_falsey
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
   end
 
@@ -1612,6 +2257,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       allow(p).to receive(:channel).and_return(c)
       allow(subject).to receive_message_chain('session.sys.process.execute').and_return(p)
 =======
@@ -1654,6 +2300,38 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       allow(p).to receive(:channel).and_return(c)
       allow(subject).to receive_message_chain('session.sys.process.execute').and_return(p)
 >>>>>>> rapid7/master
+=======
+      allow(p).to receive(:channel).and_return(c)
+      allow(subject).to receive_message_chain('session.sys.process.execute').and_return(p)
+=======
+      p.stub(:channel).and_return(c)
+      subject.stub_chain('session.sys.process.execute').and_return(p)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      p.stub(:channel).and_return(c)
+      subject.stub_chain('session.sys.process.execute').and_return(p)
+>>>>>>> origin/msf-complex-payloads
+=======
+      p.stub(:channel).and_return(c)
+      subject.stub_chain('session.sys.process.execute').and_return(p)
+>>>>>>> origin/msf-complex-payloads
+=======
+      p.stub(:channel).and_return(c)
+      subject.stub_chain('session.sys.process.execute').and_return(p)
+>>>>>>> origin/payload-generator.rb
+=======
+      p.stub(:channel).and_return(c)
+      subject.stub_chain('session.sys.process.execute').and_return(p)
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      p.stub(:channel).and_return(c)
+      subject.stub_chain('session.sys.process.execute').and_return(p)
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      p.stub(:channel).and_return(c)
+      subject.stub_chain('session.sys.process.execute').and_return(p)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       expect(c).to receive(:read).and_return('hello')
       expect(c).to receive(:read).and_return(nil)
       expect(c).to receive(:close)
@@ -1668,6 +2346,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.run_cmd(nil)).to eq 'hello'
 =======
       subject.run_cmd(nil).should eq 'hello'
@@ -1699,6 +2378,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       expect(subject.run_cmd(nil)).to eq 'hello'
 >>>>>>> rapid7/master
+=======
+      expect(subject.run_cmd(nil)).to eq 'hello'
+=======
+      subject.run_cmd(nil).should eq 'hello'
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      subject.run_cmd(nil).should eq 'hello'
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.run_cmd(nil).should eq 'hello'
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.run_cmd(nil).should eq 'hello'
+>>>>>>> origin/payload-generator.rb
+=======
+      subject.run_cmd(nil).should eq 'hello'
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      subject.run_cmd(nil).should eq 'hello'
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      subject.run_cmd(nil).should eq 'hello'
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
   end
 
@@ -1736,6 +2439,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           expect(args.first.include?(sqlclient)).to be_truthy
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S . ")).to be_truthy
@@ -1789,6 +2493,46 @@ RSpec.describe Msf::Post::Windows::MSSQL do
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S . ")).to be_truthy
 >>>>>>> rapid7/master
+=======
+          expect(args.first.include?(sqlclient)).to be_truthy
+          expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
+          expect(args.first.include?("-S . ")).to be_truthy
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/msf-complex-payloads
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/msf-complex-payloads
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/payload-generator.rb
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         end
         subject.run_sql(query)
       end
@@ -1807,6 +2551,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           expect(args.first.include?(sqlclient)).to be_truthy
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S .\\#{instance} ")).to be_truthy
@@ -1860,6 +2605,46 @@ RSpec.describe Msf::Post::Windows::MSSQL do
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S .\\#{instance} ")).to be_truthy
 >>>>>>> rapid7/master
+=======
+          expect(args.first.include?(sqlclient)).to be_truthy
+          expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
+          expect(args.first.include?("-S .\\#{instance} ")).to be_truthy
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S .\\#{instance} ").should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S .\\#{instance} ").should be_truthy
+>>>>>>> origin/msf-complex-payloads
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S .\\#{instance} ").should be_truthy
+>>>>>>> origin/msf-complex-payloads
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S .\\#{instance} ").should be_truthy
+>>>>>>> origin/payload-generator.rb
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S .\\#{instance} ").should be_truthy
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S .\\#{instance} ").should be_truthy
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S .\\#{instance} ").should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         end
         subject.run_sql(query, instance)
       end
@@ -1876,6 +2661,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           expect(args.first.include?(sqlclient)).to be_truthy
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S . ")).to be_truthy
@@ -1929,6 +2715,46 @@ RSpec.describe Msf::Post::Windows::MSSQL do
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S . ")).to be_truthy
 >>>>>>> rapid7/master
+=======
+          expect(args.first.include?(sqlclient)).to be_truthy
+          expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
+          expect(args.first.include?("-S . ")).to be_truthy
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/msf-complex-payloads
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/msf-complex-payloads
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/payload-generator.rb
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S . ").should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         end
         subject.run_sql(query, 'mssqlsErver')
       end
@@ -1947,6 +2773,9 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
           expect(args.first.include?(sqlclient)).to be_truthy
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S #{server}\\#{instance} ")).to be_truthy
@@ -1981,6 +2810,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
           args.first.include?("-S #{server}\\#{instance} ").should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
           expect(args.first.include?(sqlclient)).to be_truthy
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S #{server}\\#{instance} ")).to be_truthy
@@ -2000,6 +2830,12 @@ RSpec.describe Msf::Post::Windows::MSSQL do
           expect(args.first.include?("-Q \"#{query}\" ")).to be_truthy
           expect(args.first.include?("-S #{server}\\#{instance} ")).to be_truthy
 >>>>>>> rapid7/master
+=======
+          args.first.include?(sqlclient).should be_truthy
+          args.first.include?("-Q \"#{query}\" ").should be_truthy
+          args.first.include?("-S #{server}\\#{instance} ").should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         end
         subject.run_sql(query, instance, server)
       end
@@ -2027,6 +2863,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.check_osql).to be_falsey
 =======
       subject.check_osql.should be_falsey
@@ -2058,6 +2895,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       expect(subject.check_osql).to be_falsey
 >>>>>>> rapid7/master
+=======
+      expect(subject.check_osql).to be_falsey
+=======
+      subject.check_osql.should be_falsey
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      subject.check_osql.should be_falsey
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.check_osql.should be_falsey
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.check_osql.should be_falsey
+>>>>>>> origin/payload-generator.rb
+=======
+      subject.check_osql.should be_falsey
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      subject.check_osql.should be_falsey
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      subject.check_osql.should be_falsey
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
 
     it "should return true if present" do
@@ -2072,6 +2933,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.check_osql).to be_truthy
 =======
       subject.check_osql.should be_truthy
@@ -2103,6 +2965,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       expect(subject.check_osql).to be_truthy
 >>>>>>> rapid7/master
+=======
+      expect(subject.check_osql).to be_truthy
+=======
+      subject.check_osql.should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      subject.check_osql.should be_truthy
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.check_osql.should be_truthy
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.check_osql.should be_truthy
+>>>>>>> origin/payload-generator.rb
+=======
+      subject.check_osql.should be_truthy
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      subject.check_osql.should be_truthy
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      subject.check_osql.should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
   end
 
@@ -2119,6 +3005,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.check_sqlcmd).to be_falsey
 =======
       subject.check_sqlcmd.should be_falsey
@@ -2150,6 +3037,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       expect(subject.check_sqlcmd).to be_falsey
 >>>>>>> rapid7/master
+=======
+      expect(subject.check_sqlcmd).to be_falsey
+=======
+      subject.check_sqlcmd.should be_falsey
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      subject.check_sqlcmd.should be_falsey
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.check_sqlcmd.should be_falsey
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.check_sqlcmd.should be_falsey
+>>>>>>> origin/payload-generator.rb
+=======
+      subject.check_sqlcmd.should be_falsey
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      subject.check_sqlcmd.should be_falsey
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      subject.check_sqlcmd.should be_falsey
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
 
     it "should return true if present" do
@@ -2164,6 +3075,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.check_sqlcmd).to be_truthy
 =======
       subject.check_sqlcmd.should be_truthy
@@ -2195,6 +3107,30 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 =======
       expect(subject.check_sqlcmd).to be_truthy
 >>>>>>> rapid7/master
+=======
+      expect(subject.check_sqlcmd).to be_truthy
+=======
+      subject.check_sqlcmd.should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      subject.check_sqlcmd.should be_truthy
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.check_sqlcmd.should be_truthy
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.check_sqlcmd.should be_truthy
+>>>>>>> origin/payload-generator.rb
+=======
+      subject.check_sqlcmd.should be_truthy
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      subject.check_sqlcmd.should be_truthy
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      subject.check_sqlcmd.should be_truthy
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
   end
 
@@ -2212,6 +3148,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.get_sql_client).to be_nil
       expect(subject.sql_client).to be_nil
 =======
@@ -2254,6 +3191,38 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       expect(subject.get_sql_client).to be_nil
       expect(subject.sql_client).to be_nil
 >>>>>>> rapid7/master
+=======
+      expect(subject.get_sql_client).to be_nil
+      expect(subject.sql_client).to be_nil
+=======
+      subject.get_sql_client.should be_nil
+      subject.sql_client.should be_nil
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      subject.get_sql_client.should be_nil
+      subject.sql_client.should be_nil
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.get_sql_client.should be_nil
+      subject.sql_client.should be_nil
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.get_sql_client.should be_nil
+      subject.sql_client.should be_nil
+>>>>>>> origin/payload-generator.rb
+=======
+      subject.get_sql_client.should be_nil
+      subject.sql_client.should be_nil
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      subject.get_sql_client.should be_nil
+      subject.sql_client.should be_nil
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      subject.get_sql_client.should be_nil
+      subject.sql_client.should be_nil
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
 
     it "should return 'osql' if osql is available" do
@@ -2269,6 +3238,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.get_sql_client).to eq osql
       expect(subject.sql_client).to eq osql
 =======
@@ -2311,6 +3281,38 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       expect(subject.get_sql_client).to eq osql
       expect(subject.sql_client).to eq osql
 >>>>>>> rapid7/master
+=======
+      expect(subject.get_sql_client).to eq osql
+      expect(subject.sql_client).to eq osql
+=======
+      subject.get_sql_client.should eq osql
+      subject.sql_client.should eq osql
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      subject.get_sql_client.should eq osql
+      subject.sql_client.should eq osql
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.get_sql_client.should eq osql
+      subject.sql_client.should eq osql
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.get_sql_client.should eq osql
+      subject.sql_client.should eq osql
+>>>>>>> origin/payload-generator.rb
+=======
+      subject.get_sql_client.should eq osql
+      subject.sql_client.should eq osql
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      subject.get_sql_client.should eq osql
+      subject.sql_client.should eq osql
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      subject.get_sql_client.should eq osql
+      subject.sql_client.should eq osql
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
 
     it "should return 'sqlcmd' if sqlcmd is available" do
@@ -2326,6 +3328,7 @@ RSpec.describe Msf::Post::Windows::MSSQL do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.get_sql_client).to eq sql_command
       expect(subject.sql_client).to eq sql_command
 =======
@@ -2368,6 +3371,38 @@ RSpec.describe Msf::Post::Windows::MSSQL do
       expect(subject.get_sql_client).to eq sql_command
       expect(subject.sql_client).to eq sql_command
 >>>>>>> rapid7/master
+=======
+      expect(subject.get_sql_client).to eq sql_command
+      expect(subject.sql_client).to eq sql_command
+=======
+      subject.get_sql_client.should eq sql_command
+      subject.sql_client.should eq sql_command
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      subject.get_sql_client.should eq sql_command
+      subject.sql_client.should eq sql_command
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.get_sql_client.should eq sql_command
+      subject.sql_client.should eq sql_command
+>>>>>>> origin/msf-complex-payloads
+=======
+      subject.get_sql_client.should eq sql_command
+      subject.sql_client.should eq sql_command
+>>>>>>> origin/payload-generator.rb
+=======
+      subject.get_sql_client.should eq sql_command
+      subject.sql_client.should eq sql_command
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      subject.get_sql_client.should eq sql_command
+      subject.sql_client.should eq sql_command
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      subject.get_sql_client.should eq sql_command
+      subject.sql_client.should eq sql_command
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
   end
 end

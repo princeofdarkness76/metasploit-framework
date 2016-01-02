@@ -14,7 +14,12 @@ require 'msf/core/payload/windows'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
@@ -25,7 +30,10 @@ require 'msf/core/payload/windows'
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 
 module Msf
 
@@ -34,8 +42,11 @@ module Msf
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,7 +76,10 @@ module Msf
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> feature/complex-payloads
 =======
 <<<<<<< HEAD
@@ -74,6 +88,7 @@ module Msf
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
@@ -85,6 +100,12 @@ module Msf
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -92,6 +113,7 @@ module Msf
 >>>>>>> payload-generator.rb
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
@@ -101,6 +123,11 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 <<<<<<< HEAD
 =======
@@ -121,7 +148,10 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 module Msf
 
 =======
@@ -133,8 +163,11 @@ module Msf
 module Msf
 >>>>>>> rapid7/master
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -148,11 +181,10 @@ module Msf
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
-
-module Msf
->>>>>>> rapid7/master
+>>>>>>> pod/metasploit-development-environment
 =======
 
 module Msf
@@ -161,11 +193,18 @@ module Msf
 
 module Msf
 >>>>>>> rapid7/master
+=======
+
+module Msf
+>>>>>>> rapid7/master
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -174,7 +213,10 @@ module Msf
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
@@ -184,10 +226,13 @@ module Msf
 =======
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> origin/pod/metasploit-serialized_class_loader
@@ -196,7 +241,10 @@ module Msf
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 
 module Msf
 >>>>>>> rapid7/master
@@ -204,8 +252,11 @@ module Msf
 
 module Msf
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -225,7 +276,10 @@ module Msf
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> master
 =======
 
@@ -241,13 +295,19 @@ module Msf
 >>>>>>> master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 
 >>>>>>> payload-generator.rb
 =======
@@ -258,33 +318,48 @@ module Msf
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 
 module Msf
 >>>>>>> origin/pod/metasploit-framework
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 =======
 
 module Msf
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 >>>>>>> master
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 
 module Msf
 >>>>>>> master
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
@@ -303,7 +378,10 @@ module Msf
 >>>>>>> feature/complex-payloads
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 
 module Msf
 >>>>>>> master
@@ -325,6 +403,7 @@ module Msf
 
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 module Msf
@@ -336,6 +415,8 @@ module Msf
 
 >>>>>>> feature/complex-payloads
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 
@@ -358,7 +439,25 @@ module Msf
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+
+module Msf
+
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+module Msf
+
+
+>>>>>>> origin/feature/complex-payloads
+=======
+module Msf
+
+
+>>>>>>> rapid7/feature/complex-payloads
+>>>>>>> pod/metasploit-development-environment
 ###
 #
 # Implements arbitrary exit routines for Windows ARCH_X86 payloads
@@ -388,8 +487,13 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 =======
 <<<<<<< HEAD
 =======
@@ -406,7 +510,10 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> 4.11.2_release_pre-rails4
 =======
 <<<<<<< HEAD
@@ -422,11 +529,14 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 <<<<<<< HEAD
 =======
@@ -445,7 +555,10 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> payload-generator.rb
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -454,6 +567,7 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
 <<<<<<< HEAD
@@ -461,6 +575,10 @@ module Payload::Windows::Exitfunk
 >>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 <<<<<<< HEAD
@@ -477,7 +595,12 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/feature/complex-payloads
+>>>>>>> pod/metasploit-development-environment
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['seh']}
           push.i8 0              ; push the exit function parameter
           push ebx               ; push the hash of the exit function
@@ -488,9 +611,12 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> pod/metasploit-gemfile-
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -505,8 +631,11 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
+>>>>>>> pod/metasploit-development-environment
+=======
 =======
 >>>>>>> rapid7/master
 =======
@@ -519,8 +648,11 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -530,16 +662,22 @@ module Payload::Windows::Exitfunk
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 =======
@@ -547,12 +685,16 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 =======
 >>>>>>> master
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
 =======
@@ -561,6 +703,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -586,26 +730,36 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> master
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 >>>>>>> payload-generator.rb
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
 >>>>>>> master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
@@ -615,7 +769,10 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> pod/metasploit-gemfile-
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -624,9 +781,12 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> master
@@ -642,7 +802,14 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['seh'].to_s(16)}
         push.i8 0              ; push the exit function parameter
         push ebx               ; push the hash of the exit function
@@ -659,10 +826,16 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> feature/complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> origin/feature/complex-payloads
 =======
@@ -680,7 +853,12 @@ module Payload::Windows::Exitfunk
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> rapid7/feature/complex-payloads
+>>>>>>> pod/metasploit-development-environment
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['seh']}
           push.i8 0              ; push the exit function parameter
           push ebx               ; push the hash of the exit function
@@ -691,7 +869,10 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
@@ -725,7 +906,10 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> origin/pod/metasploit-api/_index.html
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> feature/complex-payloads
 =======
 >>>>>>> 4.11.2_release_pre-rails4
@@ -739,7 +923,10 @@ module Payload::Windows::Exitfunk
 >>>>>>> pod/metasploit-gemfile-
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> rapid7/master
 =======
@@ -752,13 +939,17 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> msf-complex-payloads
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> payload-generator.rb
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
@@ -769,6 +960,10 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -780,19 +975,26 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> master
 =======
 >>>>>>> master
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> pod/metasploit-gemfile-
@@ -800,12 +1002,16 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
 =======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> pod/metasploit-development-environment
+=======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 =======
 >>>>>>> master
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
@@ -819,10 +1025,13 @@ module Payload::Windows::Exitfunk
 =======
 <<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> master
 =======
 >>>>>>> master
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> master
 >>>>>>> pod/metasploit-gemfile-
@@ -837,6 +1046,8 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> feature/complex-payloads
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
@@ -844,7 +1055,14 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
     # On Windows Vista, Server 2008, and newer, it is not possible to call ExitThread
     # on WoW64 processes, instead we need to call RtlExitUserThread. This stub will
@@ -858,7 +1076,10 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
@@ -890,7 +1111,11 @@ module Payload::Windows::Exitfunk
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -900,6 +1125,8 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/msf-complex-payloads
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -964,6 +1191,13 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> rapid7/master
 >>>>>>> origin/pod/metasploit-serialized_class_loader
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
+>>>>>>> pod/metasploit-development-environment
 
     # On Windows Vista, Server 2008, and newer, it is not possible to call ExitThread
     # on WoW64 processes, instead we need to call RtlExitUserThread. This stub will
@@ -980,6 +1214,11 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 =======
 <<<<<<< HEAD
 =======
@@ -995,7 +1234,10 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> 4.11.2_release_pre-rails4
 =======
@@ -1012,11 +1254,14 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1035,7 +1280,10 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-windows.rb
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> payload-generator.rb
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1043,6 +1291,7 @@ module Payload::Windows::Exitfunk
 >>>>>>> pod/complex-payloads
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
@@ -1053,6 +1302,10 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> feature/complex-payloads
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 =======
@@ -1072,7 +1325,14 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
+>>>>>>> pod/metasploit-development-environment
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
           push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
           call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
@@ -1107,9 +1367,13 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> pod/metasploit-gemfile-
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1123,8 +1387,11 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
+>>>>>>> pod/metasploit-development-environment
+=======
 =======
 >>>>>>> rapid7/master
 =======
@@ -1137,8 +1404,11 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1148,15 +1418,21 @@ module Payload::Windows::Exitfunk
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 =======
@@ -1165,13 +1441,17 @@ module Payload::Windows::Exitfunk
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
 =======
 >>>>>>> master
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-gemfile-
 =======
@@ -1180,6 +1460,8 @@ module Payload::Windows::Exitfunk
 >>>>>>> master
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1206,16 +1488,23 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> master
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> master
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> rapid7/master
 =======
 >>>>>>> master
@@ -1232,9 +1521,12 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> master
@@ -1251,7 +1543,14 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> payload-generator.rb
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         mov ebx, 0x#{Msf::Payload::Windows.exit_types['thread'].to_s(16)}
         push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
         call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
@@ -1275,12 +1574,20 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> msf-complex-payloads
+=======
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> msf-complex-payloads
 =======
 >>>>>>> payload-generator.rb
+<<<<<<< HEAD
 =======
 >>>>>>> pod/metasploit-gemfile-
 =======
@@ -1289,12 +1596,6 @@ module Payload::Windows::Exitfunk
 =======
 =======
 =======
->>>>>>> msf-complex-payloads
-=======
->>>>>>> msf-complex-payloads
-=======
->>>>>>> payload-generator.rb
->>>>>>> metasploit-api/_index.html
 
     when 'process', nil
       asm << %Q^
@@ -1315,10 +1616,6 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> metasploit-api/_index.html
 =======
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
           push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
@@ -1335,18 +1632,7 @@ module Payload::Windows::Exitfunk
         ^
 =======
 >>>>>>> 4.11.2_release_pre-rails4
-<<<<<<< HEAD
-=======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
-=======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
-=======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
-=======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
-=======
 >>>>>>> origin/pod/metasploit-windows.rb
->>>>>>> metasploit-api/_index.html
 
     when 'process', nil
       asm << %Q^
@@ -1359,13 +1645,6 @@ module Payload::Windows::Exitfunk
     when 'sleep'
       asm << %Q^
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> metasploit-api/_index.html
           mov ebx, #{"0x%.8x" % Rex::Text.ror13_hash('Sleep')}
           push 300000            ; 300 seconds
           push ebx               ; push the hash of the function
@@ -1374,17 +1653,6 @@ module Payload::Windows::Exitfunk
         ^
 >>>>>>> feature/complex-payloads
 =======
-<<<<<<< HEAD
-=======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
-=======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
-=======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
-=======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
-=======
->>>>>>> metasploit-api/_index.html
         mov ebx, #{Rex::Text.block_api_hash('kernel32.dll', 'Sleep')}
         push 300000            ; 300 seconds
         push ebx               ; push the hash of the function
@@ -1392,11 +1660,6 @@ module Payload::Windows::Exitfunk
         jmp exitfunk           ; repeat
       ^
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
           mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
           push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
@@ -1420,6 +1683,206 @@ module Payload::Windows::Exitfunk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> payload-generator.rb
+<<<<<<< HEAD
+>>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> pod/metasploit-development-environment
+
+    when 'process', nil
+      asm << %Q^
+        mov ebx, 0x#{Msf::Payload::Windows.exit_types['process'].to_s(16)}
+        push.i8 0              ; push the exit function parameter
+        push ebx               ; push the hash of the exit function
+        call ebp               ; ExitProcess(0)
+      ^
+
+    when 'sleep'
+      asm << %Q^
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+          mov ebx, #{"0x%.8x" % Rex::Text.ror13_hash('Sleep')}
+          push 300000            ; 300 seconds
+          push ebx               ; push the hash of the function
+          call ebp               ; Sleep(300000)
+          jmp exitfunk           ; repeat
+        ^
+>>>>>>> feature/complex-payloads
+=======
+=======
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> pod/metasploit-development-environment
+        mov ebx, #{Rex::Text.block_api_hash('kernel32.dll', 'Sleep')}
+        push 300000            ; 300 seconds
+        push ebx               ; push the hash of the function
+        call ebp               ; Sleep(300000)
+        jmp exitfunk           ; repeat
+      ^
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> metasploit-api/_index.html
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> pod/metasploit-development-environment
+=======
+          mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
+          push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
+          call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
+          cmp al, 6              ; If we are not running on Windows Vista, 2008 or 7
+          jl exitfunk_goodbye    ; Then just call the exit function...
+          cmp bl, 0xE0           ; If we are trying a call to kernel32.dll!ExitThread on Windows Vista, 2008 or 7...
+          jne exitfunk_goodbye   ;
+          mov ebx, 0x6F721347    ; Then we substitute the EXITFUNK to that of ntdll.dll!RtlExitUserThread
+        exitfunk_goodbye:        ; We now perform the actual call to the exit function
+          push.i8 0              ; push the exit function parameter
+          push ebx               ; push the hash of the exit function
+          call ebp               ; call ExitThread(0) || RtlExitUserThread(0)
+        ^
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> pod/metasploit-development-environment
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-development-environment
+
+    when 'process', nil
+      asm << %Q^
+        mov ebx, 0x#{Msf::Payload::Windows.exit_types['process'].to_s(16)}
+        push.i8 0              ; push the exit function parameter
+        push ebx               ; push the hash of the exit function
+        call ebp               ; ExitProcess(0)
+      ^
+
+    when 'sleep'
+      asm << %Q^
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> metasploit-api/_index.html
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> pod/metasploit-development-environment
+          mov ebx, #{"0x%.8x" % Rex::Text.ror13_hash('Sleep')}
+          push 300000            ; 300 seconds
+          push ebx               ; push the hash of the function
+          call ebp               ; Sleep(300000)
+          jmp exitfunk           ; repeat
+        ^
+>>>>>>> feature/complex-payloads
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> pod/metasploit-development-environment
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
+=======
+>>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-development-environment
+        mov ebx, #{Rex::Text.block_api_hash('kernel32.dll', 'Sleep')}
+        push 300000            ; 300 seconds
+        push ebx               ; push the hash of the function
+        call ebp               ; Sleep(300000)
+        jmp exitfunk           ; repeat
+      ^
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/feature/complex-payloads
+>>>>>>> pod/metasploit-development-environment
+          mov ebx, #{"0x%.8x" % Msf::Payload::Windows.exit_types['thread']}
+          push 0x9DBD95A6        ; hash( "kernel32.dll", "GetVersion" )
+          call ebp               ; GetVersion(); (AL will = major version and AH will = minor version)
+          cmp al, 6              ; If we are not running on Windows Vista, 2008 or 7
+          jl exitfunk_goodbye    ; Then just call the exit function...
+          cmp bl, 0xE0           ; If we are trying a call to kernel32.dll!ExitThread on Windows Vista, 2008 or 7...
+          jne exitfunk_goodbye   ;
+          mov ebx, 0x6F721347    ; Then we substitute the EXITFUNK to that of ntdll.dll!RtlExitUserThread
+        exitfunk_goodbye:        ; We now perform the actual call to the exit function
+          push.i8 0              ; push the exit function parameter
+          push ebx               ; push the hash of the exit function
+          call ebp               ; call ExitThread(0) || RtlExitUserThread(0)
+        ^
+=======
+<<<<<<< HEAD
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> msf-complex-payloads
 =======
@@ -1429,6 +1892,11 @@ module Payload::Windows::Exitfunk
 =======
 >>>>>>> pod/metasploit-gemfile-
 >>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
     when 'process', nil
       asm << %Q^
@@ -1448,16 +1916,215 @@ module Payload::Windows::Exitfunk
           call ebp               ; Sleep(300000)
           jmp exitfunk           ; repeat
         ^
+<<<<<<< HEAD
 >>>>>>> feature/complex-payloads
 =======
 =======
 >>>>>>> origin/pod/metasploit-framework
+=======
+<<<<<<< HEAD
+>>>>>>> rapid7/feature/complex-payloads
+=======
+>>>>>>> origin/feature/complex-payloads
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/payload-generator.rb
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> 4.11.2_release_pre-rails4
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> msf-complex-payloads
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+<<<<<<< HEAD
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/msf-complex-payloads
+=======
+>>>>>>> origin/msf-complex-payloads
+=======
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> msf-complex-payloads
+=======
+>>>>>>> msf-complex-payloads
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> rapid7/master
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+=======
+>>>>>>> rapid7/master
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> rapid7/master
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/payload-generator.rb
+=======
+=======
+>>>>>>> rapid7/master
+>>>>>>> msf-complex-payloads
+>>>>>>> origin/pod/metasploit-api/_index.html
+=======
+>>>>>>> 4.11.2_release_pre-rails4
+>>>>>>> origin/pod/metasploit-excellent.mp3
+=======
+=======
+>>>>>>> master
+<<<<<<< HEAD
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/complex-payloads
+=======
+=======
+=======
+>>>>>>> master
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+=======
+>>>>>>> master
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-gemfile-
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> origin/pod/metasploit-framework
+=======
+=======
+>>>>>>> rapid7/master
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+=======
+>>>>>>> master
+>>>>>>> payload-generator.rb
+=======
+>>>>>>> pod/complex-payloads
+>>>>>>> origin/pod/metasploit-windows.rb
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         mov ebx, #{Rex::Text.block_api_hash('kernel32.dll', 'Sleep')}
         push 300000            ; 300 seconds
         push ebx               ; push the hash of the function
         call ebp               ; Sleep(300000)
         jmp exitfunk           ; repeat
       ^
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1820,6 +2487,15 @@ module Payload::Windows::Exitfunk
 >>>>>>> pod/complex-payloads
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/feature/complex-payloads
+=======
+>>>>>>> rapid7/feature/complex-payloads
+>>>>>>> pod/metasploit-development-environment
     else
       # Do nothing and continue after the end of the shellcode
     end

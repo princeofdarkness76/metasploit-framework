@@ -28,6 +28,9 @@ END
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Rex::Parser::WinSCP do
 =======
 describe Rex::Parser::WinSCP do
@@ -51,6 +54,7 @@ describe Rex::Parser::WinSCP do
 describe Rex::Parser::WinSCP do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Rex::Parser::WinSCP do
 >>>>>>> rapid7/master
 =======
@@ -62,6 +66,13 @@ RSpec.describe Rex::Parser::WinSCP do
 =======
 RSpec.describe Rex::Parser::WinSCP do
 >>>>>>> rapid7/master
+=======
+describe Rex::Parser::WinSCP do
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+describe Rex::Parser::WinSCP do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   let(:target) do
     d = Class.new { include Rex::Parser::WinSCP }
     d.new
@@ -140,6 +151,7 @@ RSpec.describe Rex::Parser::WinSCP do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(File).to receive(:read).and_return(nil)
 =======
       File.stub(:read).and_return(nil)
@@ -174,6 +186,36 @@ RSpec.describe Rex::Parser::WinSCP do
 =======
       expect(File).to receive(:read).and_return(nil)
 >>>>>>> rapid7/master
+=======
+      expect(File).to receive(:read).and_return(nil)
+=======
+      File.stub(:read).and_return(nil)
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+      File.stub(:read).and_return(nil)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      File.stub(:read).and_return(nil)
+>>>>>>> origin/msf-complex-payloads
+=======
+      File.stub(:read).and_return(nil)
+>>>>>>> origin/msf-complex-payloads
+=======
+      File.stub(:read).and_return(nil)
+>>>>>>> origin/payload-generator.rb
+=======
+      File.stub(:read).and_return(nil)
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      File.stub(:read).and_return(nil)
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      File.stub(:read).and_return(nil)
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+      File.stub(:read).and_return(nil)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       expect(target.read_and_parse_ini('blah')).to be nil
     end
 
@@ -189,6 +231,7 @@ RSpec.describe Rex::Parser::WinSCP do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(File).to receive(:read).and_return(SAMPLE_INI)
 =======
       File.stub(:read).and_return(SAMPLE_INI)
@@ -223,6 +266,36 @@ RSpec.describe Rex::Parser::WinSCP do
 =======
       expect(File).to receive(:read).and_return(SAMPLE_INI)
 >>>>>>> rapid7/master
+=======
+      expect(File).to receive(:read).and_return(SAMPLE_INI)
+=======
+      File.stub(:read).and_return(SAMPLE_INI)
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+      File.stub(:read).and_return(SAMPLE_INI)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+      File.stub(:read).and_return(SAMPLE_INI)
+>>>>>>> origin/msf-complex-payloads
+=======
+      File.stub(:read).and_return(SAMPLE_INI)
+>>>>>>> origin/msf-complex-payloads
+=======
+      File.stub(:read).and_return(SAMPLE_INI)
+>>>>>>> origin/payload-generator.rb
+=======
+      File.stub(:read).and_return(SAMPLE_INI)
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+      File.stub(:read).and_return(SAMPLE_INI)
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+      File.stub(:read).and_return(SAMPLE_INI)
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+      File.stub(:read).and_return(SAMPLE_INI)
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       expect(target.read_and_parse_ini(SAMPLE_INI).count).to eq 1
     end
   end

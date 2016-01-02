@@ -11,6 +11,9 @@ require 'metasploit/framework/login_scanner/nessus'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Metasploit::Framework::LoginScanner::Nessus do
 =======
 describe Metasploit::Framework::LoginScanner::Nessus do
@@ -31,6 +34,7 @@ describe Metasploit::Framework::LoginScanner::Nessus do
 describe Metasploit::Framework::LoginScanner::Nessus do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::Nessus do
 >>>>>>> rapid7/master
 =======
@@ -42,6 +46,10 @@ RSpec.describe Metasploit::Framework::LoginScanner::Nessus do
 =======
 RSpec.describe Metasploit::Framework::LoginScanner::Nessus do
 >>>>>>> rapid7/master
+=======
+describe Metasploit::Framework::LoginScanner::Nessus do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
     subject(:http_scanner) { described_class.new }
 

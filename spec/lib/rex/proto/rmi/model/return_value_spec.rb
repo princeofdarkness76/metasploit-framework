@@ -15,6 +15,9 @@ require 'rex/java'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Rex::Proto::Rmi::Model::ReturnValue do
 =======
 describe Rex::Proto::Rmi::Model::ReturnValue do
@@ -35,6 +38,7 @@ describe Rex::Proto::Rmi::Model::ReturnValue do
 describe Rex::Proto::Rmi::Model::ReturnValue do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::ReturnValue do
 >>>>>>> rapid7/master
 =======
@@ -46,6 +50,10 @@ RSpec.describe Rex::Proto::Rmi::Model::ReturnValue do
 =======
 RSpec.describe Rex::Proto::Rmi::Model::ReturnValue do
 >>>>>>> rapid7/master
+=======
+describe Rex::Proto::Rmi::Model::ReturnValue do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
   subject(:return_value) do
     described_class.new

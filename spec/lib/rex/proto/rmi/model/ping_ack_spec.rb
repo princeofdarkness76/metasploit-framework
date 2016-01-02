@@ -9,11 +9,15 @@ require 'rex/proto/rmi'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Rex::Proto::Rmi::Model::PingAck do
 =======
 describe Rex::Proto::Rmi::Model::PingAck do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::PingAck do
 >>>>>>> rapid7/master
 =======
@@ -25,6 +29,10 @@ RSpec.describe Rex::Proto::Rmi::Model::PingAck do
 =======
 RSpec.describe Rex::Proto::Rmi::Model::PingAck do
 >>>>>>> rapid7/master
+=======
+describe Rex::Proto::Rmi::Model::PingAck do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
   subject(:ping_ack) do
     described_class.new

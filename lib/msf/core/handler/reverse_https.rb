@@ -54,6 +54,9 @@ module ReverseHttps
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
         OptPath.new('HandlerSSLCert', [false, "Path to a SSL certificate in unified PEM format"]),
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -73,6 +76,7 @@ module ReverseHttps
         OptPath.new('HandlerSSLCert', [false, "Path to a SSL certificate in unified PEM format"]),
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
@@ -80,6 +84,10 @@ module ReverseHttps
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+        OptPath.new('HandlerSSLCert', [false, "Path to a SSL certificate in unified PEM format"]),
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         OptBool.new('StagerVerifySSLCert', [false, "Whether to verify the SSL certificate in Meterpreter"])
       ], Msf::Handler::ReverseHttps)
 

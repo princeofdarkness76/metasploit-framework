@@ -87,6 +87,7 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 describe Rex::Parser::BITLOCKER do
 =======
 RSpec.describe Rex::Parser::BITLOCKER do
@@ -115,6 +116,12 @@ RSpec.describe Rex::Parser::BITLOCKER do
 =======
 RSpec.describe Rex::Parser::BITLOCKER do
 >>>>>>> rapid7/master
+=======
+RSpec.describe Rex::Parser::BITLOCKER do
+=======
+describe Rex::Parser::BITLOCKER do
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+>>>>>>> pod/metasploit-development-environment
   Bitlocker = Rex::Parser::BITLOCKER.new(BitlockerDrive.new(volume_header,
                                                              fve_header))
   ##
@@ -130,6 +137,7 @@ RSpec.describe Rex::Parser::BITLOCKER do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     result.should eq(fvek_dislocker_format)
 =======
     expect(result).to eq fvek_dislocker_format
@@ -158,5 +166,11 @@ RSpec.describe Rex::Parser::BITLOCKER do
 =======
     expect(result).to eq fvek_dislocker_format
 >>>>>>> rapid7/master
+=======
+    expect(result).to eq fvek_dislocker_format
+=======
+    result.should eq(fvek_dislocker_format)
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+>>>>>>> pod/metasploit-development-environment
   end
 end

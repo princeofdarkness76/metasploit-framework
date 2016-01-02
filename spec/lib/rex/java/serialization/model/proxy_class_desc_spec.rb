@@ -14,6 +14,9 @@ require 'stringio'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Rex::Java::Serialization::Model::ProxyClassDesc do
 =======
 describe Rex::Java::Serialization::Model::ProxyClassDesc do
@@ -34,6 +37,7 @@ describe Rex::Java::Serialization::Model::ProxyClassDesc do
 describe Rex::Java::Serialization::Model::ProxyClassDesc do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Rex::Java::Serialization::Model::ProxyClassDesc do
 >>>>>>> rapid7/master
 =======
@@ -45,6 +49,10 @@ RSpec.describe Rex::Java::Serialization::Model::ProxyClassDesc do
 =======
 RSpec.describe Rex::Java::Serialization::Model::ProxyClassDesc do
 >>>>>>> rapid7/master
+=======
+describe Rex::Java::Serialization::Model::ProxyClassDesc do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   subject(:proxy_class_desc) do
     described_class.new
   end

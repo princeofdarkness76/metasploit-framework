@@ -125,11 +125,15 @@ module Msf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
         tbl << [ "nessus_scan_launch", "Launch a newly created scan. New scans need to be manually launched through this command" ]
 =======
         tbl << [ "nessus_scan_lauch", "Launch a newly created scan. New scans need to be manually launched through this command" ]
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
         tbl << [ "nessus_scan_launch", "Launch a newly created scan. New scans need to be manually launched through this command" ]
 >>>>>>> rapid7/master
 =======
@@ -141,6 +145,10 @@ module Msf
 =======
         tbl << [ "nessus_scan_launch", "Launch a newly created scan. New scans need to be manually launched through this command" ]
 >>>>>>> rapid7/master
+=======
+        tbl << [ "nessus_scan_lauch", "Launch a newly created scan. New scans need to be manually launched through this command" ]
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
         tbl << [ "nessus_scan_pause", "Pause a running Nessus scan" ]
         tbl << [ "nessus_scan_pause_all", "Pause all running Nessus scans" ]
         tbl << [ "nessus_scan_stop", "Stop a running or paused Nessus scan" ]

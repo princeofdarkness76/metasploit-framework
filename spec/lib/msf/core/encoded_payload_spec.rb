@@ -60,6 +60,10 @@ RSpec.describe Msf::EncodedPayload do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 =======
 =======
 =======
@@ -68,6 +72,11 @@ RSpec.describe Msf::EncodedPayload do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
     specify { expect(encoded_payload).to respond_to(:encoded) }
 
@@ -76,6 +85,10 @@ RSpec.describe Msf::EncodedPayload do
     end
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/payload-generator.rb
 =======
 >>>>>>> origin/pod/metasploit-serialized_class_loader
@@ -83,15 +96,25 @@ RSpec.describe Msf::EncodedPayload do
 >>>>>>> origin/pod/metasploit-gemfile-
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     specify { expect(encoded_payload).to respond_to(:encoded) }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+    specify { expect(encoded_payload).to respond_to(:encoded) }
+
+>>>>>>> pod/metasploit-development-environment
     it 'is an Msf::EncodedPayload' do
       expect(encoded_payload).to be_a(described_class)
     end
 >>>>>>> origin/msf-complex-payloads
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
     specify { expect(encoded_payload).to respond_to(:encoded) }
 

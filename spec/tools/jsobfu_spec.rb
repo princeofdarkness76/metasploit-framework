@@ -14,6 +14,9 @@ require 'stringio'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Jsobfu do
 =======
 describe Jsobfu do
@@ -34,6 +37,7 @@ describe Jsobfu do
 describe Jsobfu do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Jsobfu do
 >>>>>>> rapid7/master
 =======
@@ -45,6 +49,10 @@ RSpec.describe Jsobfu do
 =======
 RSpec.describe Jsobfu do
 >>>>>>> rapid7/master
+=======
+describe Jsobfu do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
   let(:fname) {
     'test.js'

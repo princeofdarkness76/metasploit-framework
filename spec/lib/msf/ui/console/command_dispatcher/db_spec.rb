@@ -553,6 +553,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -576,6 +579,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
         expect(@output).to match_array [
 >>>>>>> rapid7/master
 =======
@@ -587,6 +591,13 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+        @output.should =~ [
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
           "* default"
         ]
       end
@@ -606,6 +617,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -640,6 +652,36 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
+=======
+        expect(@output).to match_array [
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+        @output.should =~ [
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        @output.should =~ [
+>>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/payload-generator.rb
+=======
+        @output.should =~ [
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        @output.should =~ [
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+        @output.should =~ [
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
           "  default",
           "* foo"
         ]
@@ -660,6 +702,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -694,6 +737,36 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
+=======
+        expect(@output).to match_array [
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+        @output.should =~ [
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        @output.should =~ [
+>>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/payload-generator.rb
+=======
+        @output.should =~ [
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        @output.should =~ [
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+        @output.should =~ [
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
           "Added workspace: foo",
           "Added workspace: bar",
           "Added workspace: baf"
@@ -717,6 +790,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -751,6 +825,36 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
+=======
+        expect(@output).to match_array [
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+        @output.should =~ [
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        @output.should =~ [
+>>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/payload-generator.rb
+=======
+        @output.should =~ [
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        @output.should =~ [
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+        @output.should =~ [
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
           "Deleted workspace: foo",
           "Switched workspace: default"
         ]
@@ -773,6 +877,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -807,6 +912,36 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
+=======
+        expect(@output).to match_array [
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+        @output.should =~ [
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        @output.should =~ [
+>>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/msf-complex-payloads
+=======
+        @output.should =~ [
+>>>>>>> origin/payload-generator.rb
+=======
+        @output.should =~ [
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+=======
+        @output.should =~ [
+>>>>>>> origin/pod/metasploit-gemfile-
+=======
+        @output.should =~ [
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+        @output.should =~ [
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
           "Deleted and recreated the default workspace",
           "Deleted workspace: foo",
           "Switched workspace: default"

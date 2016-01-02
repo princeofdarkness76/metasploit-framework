@@ -10,11 +10,15 @@ require 'rex/java'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Rex::Proto::Rmi::Model::ReturnData do
 =======
 describe Rex::Proto::Rmi::Model::ReturnData do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::ReturnData do
 >>>>>>> rapid7/master
 =======
@@ -26,6 +30,10 @@ RSpec.describe Rex::Proto::Rmi::Model::ReturnData do
 =======
 RSpec.describe Rex::Proto::Rmi::Model::ReturnData do
 >>>>>>> rapid7/master
+=======
+describe Rex::Proto::Rmi::Model::ReturnData do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
   subject(:return_data) do
     described_class.new

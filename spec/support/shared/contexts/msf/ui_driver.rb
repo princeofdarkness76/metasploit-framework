@@ -21,6 +21,7 @@ RSpec.shared_context 'Msf::UIDriver' do
       allow(driver).to receive(:print_error).with(kind_of(String)) do |string|
 =======
       driver.stub(:print_status).with(kind_of(String)) do |string|
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
         @output ||= []
@@ -42,11 +43,29 @@ RSpec.shared_context 'Msf::UIDriver' do
         @output.concat string.split("\n")
       end
 <<<<<<< HEAD
+=======
+        @output ||= []
+        @output.concat string.split("\n")
+      end
       driver.stub(:print_status).with(kind_of(String)) do |string|
         @output ||= []
         @output.concat string.split("\n")
       end
       driver.stub(:print_status).with(kind_of(String)) do |string|
+        @output ||= []
+        @output.concat string.split("\n")
+      end
+      driver.stub(:print_status).with(kind_of(String)) do |string|
+        @output ||= []
+        @output.concat string.split("\n")
+      end
+>>>>>>> pod/metasploit-development-environment
+      driver.stub(:print_status).with(kind_of(String)) do |string|
+        @output ||= []
+        @output.concat string.split("\n")
+      end
+      driver.stub(:print_status).with(kind_of(String)) do |string|
+<<<<<<< HEAD
 =======
 >>>>>>> rapid7/master
         @output ||= []
@@ -77,6 +96,25 @@ RSpec.shared_context 'Msf::UIDriver' do
 =======
       allow(driver).to receive(:print_error).with(kind_of(String)) do |string|
 >>>>>>> rapid7/master
+=======
+        @output ||= []
+        @output.concat string.split("\n")
+      end
+      driver.stub(:print_status).with(kind_of(String)) do |string|
+        @output ||= []
+        @output.concat string.split("\n")
+      end
+      driver.stub(:print_status).with(kind_of(String)) do |string|
+        @output ||= []
+        @output.concat string.split("\n")
+      end
+      driver.stub(:print_status).with(kind_of(String)) do |string|
+        @output ||= []
+        @output.concat string.split("\n")
+      end
+      driver.stub(:print_error).with(kind_of(String)) do |string|
+>>>>>>> origin/4.11.2_release_pre-rails4
+>>>>>>> pod/metasploit-development-environment
         @error ||= []
         @error.concat string.split("\n")
       end

@@ -13,6 +13,9 @@ require 'rex/arch'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Rex::Arch do
 =======
 describe Rex::Arch do
@@ -36,6 +39,7 @@ describe Rex::Arch do
 describe Rex::Arch do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Rex::Arch do
 >>>>>>> rapid7/master
 =======
@@ -47,6 +51,13 @@ RSpec.describe Rex::Arch do
 =======
 RSpec.describe Rex::Arch do
 >>>>>>> rapid7/master
+=======
+describe Rex::Arch do
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+describe Rex::Arch do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   describe ".pack_addr" do
     subject { described_class.pack_addr(arch, addr) }
 

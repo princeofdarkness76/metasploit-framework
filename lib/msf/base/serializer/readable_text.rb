@@ -678,6 +678,13 @@ class ReadableText
 
   # Dumps the list of active sessions in verbose mode
   #
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   # @param framework [Msf::Framework] the framework to dump.
   # @param opts [Hash] the options to dump with.
   # @option opts :session_ids [Array] the list of sessions to dump (no
@@ -692,15 +699,37 @@ class ReadableText
     if framework.sessions.length == 0
       out << "No active sessions.\n"
       return out
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  # @param framework [Msf::Framework] the framework.
+  # @param verbose [Boolean] if true, also prints the payload, LPORT, URIPATH
+  #   and start time, if they exist, for each job.
+  # @param indent [Integer] the indentation amount.
+  # @param col [Integer] the column wrap width.
+  # @return [String] the formatted list of running jobs.
+  def self.dump_jobs(framework, verbose = false, indent = DefaultIndent, col = DefaultColumnWrap)
+    columns = [ 'Id', 'Name', "Payload", "LPORT" ]
+
+    if (verbose)
+      columns += [ "URIPATH", "Start Time" ]
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     end
 
     framework.sessions.each_sorted do |k|
       session = framework.sessions[k]
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
       sess_info    = session.info.to_s
       sess_id      = session.sid.to_s
       sess_tunnel  = session.tunnel_to_s + " (#{session.session_host})"
@@ -709,6 +738,13 @@ class ReadableText
       sess_uuid    = session.payload_uuid.to_s
       sess_puid    = session.payload_uuid.respond_to?(:puid_hex) ? session.payload_uuid.puid_hex : nil
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
       sess_checkin = "<none>"
       sess_machine_id = session.machine_id.to_s
       sess_registration = "No"
@@ -1147,6 +1183,7 @@ class ReadableText
 
     out << "\n"
     return out
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1155,6 +1192,8 @@ class ReadableText
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1165,7 +1204,10 @@ class ReadableText
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
   end
 
   # Dumps the list of active sessions in verbose mode
@@ -1237,6 +1279,7 @@ class ReadableText
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1244,6 +1287,11 @@ class ReadableText
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-framework
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> pod/metasploit-development-environment
   end
 
   # Dumps the list of active sessions in verbose mode
@@ -1312,13 +1360,19 @@ class ReadableText
     out << "\n"
     return out
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
   end
 
   # Dumps the list of active sessions in verbose mode
@@ -1456,7 +1510,10 @@ class ReadableText
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -1612,7 +1669,10 @@ class ReadableText
 
     out << "\n"
     return out
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
   end
 
   # Dumps the list of active sessions in verbose mode
@@ -1681,6 +1741,7 @@ class ReadableText
     out << "\n"
     return out
 =======
+<<<<<<< HEAD
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
@@ -1688,6 +1749,9 @@ class ReadableText
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   end
 
   # Dumps the list of running jobs.
@@ -1711,8 +1775,16 @@ class ReadableText
       'Columns' => columns
       )
 
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
     # jobs are stored as a hash with the keys being a numeric job_id.
     framework.jobs.keys.sort{|a,b| a.to_i <=> b.to_i }.each { |k|
       # Job context is stored as an Array with the 0th element being
@@ -1729,7 +1801,11 @@ class ReadableText
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1740,7 +1816,10 @@ class ReadableText
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1752,9 +1831,12 @@ class ReadableText
 <<<<<<< HEAD
 >>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
       row << (ctx[0].datastore['LPORT'] || "")
@@ -1762,7 +1844,10 @@ class ReadableText
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 
       # Make the LPORT show the bind port if it's different
       local_port = ctx[0].datastore['LPORT']
@@ -1776,10 +1861,13 @@ class ReadableText
 <<<<<<< HEAD
 =======
       row << (ctx[0].datastore['LPORT'] || "")
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
       row << (ctx[0].datastore['LPORT'] || "")
+=======
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1812,7 +1900,10 @@ class ReadableText
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
 =======
@@ -1824,10 +1915,15 @@ class ReadableText
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/pod/metasploit-windows.rb
+>>>>>>> pod/metasploit-development-environment
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
@@ -1844,6 +1940,7 @@ class ReadableText
 >>>>>>> payload-generator.rb
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
@@ -1864,6 +1961,17 @@ class ReadableText
 =======
       row << (ctx[0].datastore['LPORT'] || "")
 =======
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> pod/metasploit-gemfile-
+>>>>>>> pod/metasploit-inject.vcxproj.filters-master_0
+>>>>>>> origin/pod/metasploit-framework
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 >>>>>>> 4.11.2_release_pre-rails4
 <<<<<<< HEAD
@@ -1874,15 +1982,21 @@ class ReadableText
 =======
 >>>>>>> origin/pod/metasploit-excellent.mp3
 =======
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
       row << (ctx[0].datastore['LPORT'] || "")
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> master
 =======
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/pod/metasploit-framework
 =======
 >>>>>>> rapid7/master
@@ -1892,7 +2006,16 @@ class ReadableText
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+      row << (ctx[0].datastore['LPORT'] || "")
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
       if (verbose)
         uripath = ctx[0].get_resource if ctx[0].respond_to?(:get_resource)

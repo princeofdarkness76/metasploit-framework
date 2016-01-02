@@ -18,6 +18,9 @@ require 'msf/base/sessions/mainframe_shell'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Msf::Sessions::MainframeShell do
 =======
 describe Msf::Sessions::MainframeShell do
@@ -41,6 +44,7 @@ describe Msf::Sessions::MainframeShell do
 describe Msf::Sessions::MainframeShell do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Msf::Sessions::MainframeShell do
 >>>>>>> rapid7/master
 =======
@@ -52,6 +56,13 @@ RSpec.describe Msf::Sessions::MainframeShell do
 =======
 RSpec.describe Msf::Sessions::MainframeShell do
 >>>>>>> rapid7/master
+=======
+describe Msf::Sessions::MainframeShell do
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+describe Msf::Sessions::MainframeShell do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   it 'extends Msf::Sessions::CommandShell to include EBCDIC cp1047 codepage translation' do
   args=[0,
    {:datastore=>

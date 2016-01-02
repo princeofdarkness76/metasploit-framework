@@ -14,6 +14,9 @@ require 'net/dns'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pod/metasploit-development-environment
 RSpec.describe Net::DNS::RR::Types do
 =======
 describe Net::DNS::RR::Types do
@@ -37,6 +40,7 @@ describe Net::DNS::RR::Types do
 describe Net::DNS::RR::Types do
 >>>>>>> origin/pod/metasploit-gemfile-
 =======
+<<<<<<< HEAD
 RSpec.describe Net::DNS::RR::Types do
 >>>>>>> rapid7/master
 =======
@@ -48,6 +52,13 @@ RSpec.describe Net::DNS::RR::Types do
 =======
 RSpec.describe Net::DNS::RR::Types do
 >>>>>>> rapid7/master
+=======
+describe Net::DNS::RR::Types do
+>>>>>>> origin/4.11.2_release_pre-rails4
+=======
+describe Net::DNS::RR::Types do
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 
   subject do
     described_class.new

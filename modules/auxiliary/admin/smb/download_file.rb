@@ -19,12 +19,17 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 =======
+=======
+  include Msf::Exploit::Remote::SMB::Client::RemotePaths
+=======
+>>>>>>> pod/metasploit-development-environment
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 <<<<<<< HEAD
@@ -41,12 +46,16 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
 =======
->>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 =======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> origin/pod/metasploit-framework
@@ -63,6 +72,14 @@ class Metasploit3 < Msf::Auxiliary
   include Msf::Exploit::Remote::SMB::Client::RemotePaths
 >>>>>>> master
 =======
+=======
+>>>>>>> origin/pod/metasploit-framework
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/pod/metasploit-api/_index.html
@@ -84,7 +101,12 @@ class Metasploit3 < Msf::Auxiliary
 =======
 >>>>>>> chore/MSP-12110/celluloid-supervision-tree
 >>>>>>> origin/pod/metasploit-windows.rb
+<<<<<<< HEAD
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+>>>>>>> pod/metasploit-development-environment
   include Msf::Auxiliary::Report
   include Msf::Auxiliary::Scanner
 
@@ -114,9 +136,13 @@ class Metasploit3 < Msf::Auxiliary
     ], self.class)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> metasploit-api/_index.html
+=======
+=======
+>>>>>>> pod/metasploit-development-environment
   end
 
 <<<<<<< HEAD
@@ -128,11 +154,15 @@ class Metasploit3 < Msf::Auxiliary
   def peer
     "#{rhost}:#{rport}"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> master
 =======
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> origin/pod/metasploit-serialized_class_loader
+>>>>>>> pod/metasploit-development-environment
   end
 
 =======
