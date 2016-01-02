@@ -6,10 +6,14 @@ require 'rex/java'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Java::Serialization::Builder do
 =======
 describe Rex::Java::Serialization::Builder do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+RSpec.describe Rex::Java::Serialization::Builder do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Rex::Java::Serialization::Builder do
 >>>>>>> rapid7/master

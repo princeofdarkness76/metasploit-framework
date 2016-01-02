@@ -8,6 +8,7 @@ require 'msf/core/opt'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Opt do
 =======
 describe Msf::Opt do
@@ -27,6 +28,9 @@ describe Msf::Opt do
 =======
 describe Msf::Opt do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Msf::Opt do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Msf::Opt do
 >>>>>>> rapid7/master

@@ -9,6 +9,7 @@ require 'rex/post/meterpreter'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe MetasploitPayloads do
 =======
 describe MetasploitPayloads do
@@ -28,6 +29,9 @@ describe MetasploitPayloads do
 =======
 describe MetasploitPayloads do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe MetasploitPayloads do
+>>>>>>> rapid7/master
 =======
 RSpec.describe MetasploitPayloads do
 >>>>>>> rapid7/master

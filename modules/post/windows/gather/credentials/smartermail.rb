@@ -208,6 +208,7 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       ip: rhost,
 =======
       ip: r_host,
@@ -230,6 +231,9 @@ class Metasploit3 < Msf::Post
 =======
       ip: r_host,
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      ip: rhost,
+>>>>>>> rapid7/master
 =======
       ip: rhost,
 >>>>>>> rapid7/master

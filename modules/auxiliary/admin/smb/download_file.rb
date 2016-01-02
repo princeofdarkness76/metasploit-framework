@@ -123,6 +123,7 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   def peer
     "#{rhost}:#{rport}"
 <<<<<<< HEAD
@@ -133,6 +134,8 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> metasploit-api/_index.html
   end
 
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======

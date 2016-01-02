@@ -85,6 +85,7 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 describe Rex::Parser::BITLOCKER do
 =======
 RSpec.describe Rex::Parser::BITLOCKER do
@@ -101,6 +102,9 @@ RSpec.describe Rex::Parser::BITLOCKER do
 describe Rex::Parser::BITLOCKER do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 >>>>>>> metasploit-api/_index.html
+=======
+RSpec.describe Rex::Parser::BITLOCKER do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Rex::Parser::BITLOCKER do
 >>>>>>> rapid7/master
@@ -120,6 +124,7 @@ RSpec.describe Rex::Parser::BITLOCKER do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     result.should eq(fvek_dislocker_format)
 =======
     expect(result).to eq fvek_dislocker_format
@@ -136,6 +141,9 @@ RSpec.describe Rex::Parser::BITLOCKER do
     result.should eq(fvek_dislocker_format)
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 >>>>>>> metasploit-api/_index.html
+=======
+    expect(result).to eq fvek_dislocker_format
+>>>>>>> rapid7/master
 =======
     expect(result).to eq fvek_dislocker_format
 >>>>>>> rapid7/master

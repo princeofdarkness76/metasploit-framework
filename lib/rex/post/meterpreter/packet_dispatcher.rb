@@ -195,6 +195,9 @@ module PacketDispatcher
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -209,6 +212,7 @@ module PacketDispatcher
     if timeout.nil?
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -216,6 +220,8 @@ module PacketDispatcher
     if not t
       send_packet(packet)
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -320,6 +326,7 @@ module PacketDispatcher
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -336,6 +343,8 @@ module PacketDispatcher
     @finish = false
     @last_recvd = Time.now
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -368,6 +377,7 @@ module PacketDispatcher
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       while (self.alive)
 =======
       # Whether we're finished or not is determined by the receiver
@@ -392,6 +402,9 @@ module PacketDispatcher
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      while (self.alive)
+>>>>>>> rapid7/master
 =======
       while (self.alive)
 >>>>>>> rapid7/master
@@ -577,6 +590,7 @@ module PacketDispatcher
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     # Update our last reply time
     self.last_checkin = Time.now
 
@@ -594,8 +608,10 @@ module PacketDispatcher
     # Update our last reply time
     client.last_checkin = Time.now
 
+=======
+>>>>>>> rapid7/master
     # Update our last reply time
-    client.last_checkin = Time.now
+    self.last_checkin = Time.now
 
 =======
 >>>>>>> rapid7/master

@@ -10477,6 +10477,9 @@ class Core
   def cmd_info_help
     print_line "Usage: info <module name> [mod2 mod3 ...]"
     print_line
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
     print_line "Optionally the flag '-j' will print the data in json format"
     print_line "Queries the supplied module or modules for information. If no module is given,"

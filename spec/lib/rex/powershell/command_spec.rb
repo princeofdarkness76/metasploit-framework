@@ -14,6 +14,7 @@ end
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Powershell::Command do
 =======
 describe Rex::Powershell::Command do
@@ -33,6 +34,9 @@ describe Rex::Powershell::Command do
 =======
 describe Rex::Powershell::Command do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Rex::Powershell::Command do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Rex::Powershell::Command do
 >>>>>>> rapid7/master
@@ -62,6 +66,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(script).to be
       expect(script.length).to be > 0
 =======
@@ -88,6 +93,10 @@ RSpec.describe Rex::Powershell::Command do
       script.should be
       script.length.should be > 0
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(script).to be
+      expect(script.length).to be > 0
+>>>>>>> rapid7/master
 =======
       expect(script).to be
       expect(script.length).to be > 0
@@ -112,6 +121,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(compressed.length).to be < script.length
         expect(compressed.include?('IO.Compression')).to be_truthy
 =======
@@ -138,6 +148,10 @@ RSpec.describe Rex::Powershell::Command do
         compressed.length.should be < script.length
         compressed.include?('IO.Compression').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(compressed.length).to be < script.length
+        expect(compressed.include?('IO.Compression')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(compressed.length).to be < script.length
         expect(compressed.include?('IO.Compression')).to be_truthy
@@ -159,6 +173,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(compressed.include?('end_of_file')).to be_truthy
 =======
         compressed.include?('end_of_file').should be_truthy
@@ -178,6 +193,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         compressed.include?('end_of_file').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(compressed.include?('end_of_file')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(compressed.include?('end_of_file')).to be_truthy
 >>>>>>> rapid7/master
@@ -199,6 +217,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(compressed.length).to be < script.length
 =======
         compressed.length.should be < script.length
@@ -218,6 +237,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         compressed.length.should be < script.length
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(compressed.length).to be < script.length
+>>>>>>> rapid7/master
 =======
         expect(compressed.length).to be < script.length
 >>>>>>> rapid7/master
@@ -238,6 +260,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(compressed.length).to be < script.length
 =======
         compressed.length.should be < script.length
@@ -263,6 +286,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         expect(compressed.length).to be < script.length
 >>>>>>> rapid7/master
+=======
+        expect(compressed.length).to be < script.length
+>>>>>>> rapid7/master
       end
     end
 
@@ -270,6 +296,7 @@ RSpec.describe Rex::Powershell::Command do
       it 'should strip whitespace' do
         script = File.read(example_script)
         compressed = subject.compress_script(script, nil, strip_comments: false, strip_whitespace: true)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -297,6 +324,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         decompress(compressed).length.should be < script.length
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(decompress(compressed).length).to be < script.length
+>>>>>>> rapid7/master
 =======
         expect(decompress(compressed).length).to be < script.length
 >>>>>>> rapid7/master
@@ -326,6 +356,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(decompress(compressed).include?('$hashes')).to be_falsey
 =======
         decompress(compressed).include?('$hashes').should be_falsey
@@ -345,6 +376,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         decompress(compressed).include?('$hashes').should be_falsey
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(decompress(compressed).include?('$hashes')).to be_falsey
+>>>>>>> rapid7/master
 =======
         expect(decompress(compressed).include?('$hashes')).to be_falsey
 >>>>>>> rapid7/master
@@ -366,6 +400,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(decompress(compressed).include?('$hashes')).to be_truthy
 =======
         decompress(compressed).include?('$hashes').should be_truthy
@@ -385,6 +420,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         decompress(compressed).include?('$hashes').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(decompress(compressed).include?('$hashes')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(decompress(compressed).include?('$hashes')).to be_truthy
 >>>>>>> rapid7/master
@@ -406,6 +444,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(decompress(compressed).include?('DumpHashes')).to be_falsey
 =======
         decompress(compressed).include?('DumpHashes').should be_falsey
@@ -431,6 +470,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         expect(decompress(compressed).include?('DumpHashes')).to be_falsey
 >>>>>>> rapid7/master
+=======
+        expect(decompress(compressed).include?('DumpHashes')).to be_falsey
+>>>>>>> rapid7/master
       end
     end
 
@@ -438,6 +480,7 @@ RSpec.describe Rex::Powershell::Command do
       it 'shouldnt substitute variables' do
         script = File.read(example_script)
         compressed = subject.compress_script(script, nil, sub_funcs: false)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -465,6 +508,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         decompress(compressed).include?('DumpHashes').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(decompress(compressed).include?('DumpHashes')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(decompress(compressed).include?('DumpHashes')).to be_truthy
 >>>>>>> rapid7/master
@@ -491,6 +537,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(code.include?('syswow64')).to be_truthy
 =======
         code.include?('syswow64').should be_truthy
@@ -510,6 +557,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         code.include?('syswow64').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(code.include?('syswow64')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(code.include?('syswow64')).to be_truthy
 >>>>>>> rapid7/master
@@ -530,6 +580,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(code.include?('sysnative')).to be_truthy
 =======
         code.include?('sysnative').should be_truthy
@@ -549,6 +600,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         code.include?('sysnative').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(code.include?('sysnative')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(code.include?('sysnative')).to be_truthy
 >>>>>>> rapid7/master
@@ -569,6 +623,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(code.include?('-nop -w hidden -e ')).to be_truthy
 =======
         code.include?('-nop -w hidden -e ').should be_truthy
@@ -588,6 +643,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         code.include?('-nop -w hidden -e ').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(code.include?('-nop -w hidden -e ')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(code.include?('-nop -w hidden -e ')).to be_truthy
 >>>>>>> rapid7/master
@@ -608,6 +666,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(code.include?('-nop -w hidden -c ')).to be_truthy
 =======
         code.include?('-nop -w hidden -c ').should be_truthy
@@ -633,12 +692,16 @@ RSpec.describe Rex::Powershell::Command do
 =======
         expect(code.include?('-nop -w hidden -c ')).to be_truthy
 >>>>>>> rapid7/master
+=======
+        expect(code.include?('-nop -w hidden -c ')).to be_truthy
+>>>>>>> rapid7/master
       end
     end
 
     context 'when old' do
       it 'should generate a code including unshorted args' do
         code = subject.run_hidden_psh(payload, arch, encoded, method: 'old')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -666,6 +729,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         code.include?('-NoProfile -WindowStyle hidden -NoExit -Command ').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(code.include?('-NoProfile -WindowStyle hidden -NoExit -Command ')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(code.include?('-NoProfile -WindowStyle hidden -NoExit -Command ')).to be_truthy
 >>>>>>> rapid7/master
@@ -704,6 +770,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(except).to be_truthy
 =======
         except.should be_truthy
@@ -723,6 +790,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         except.should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(except).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(except).to be_truthy
 >>>>>>> rapid7/master
@@ -743,6 +813,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(decompress(code).include?('while(1){Start-Sleep -s ')).to be_truthy
 =======
         decompress(code).include?('while(1){Start-Sleep -s ').should be_truthy
@@ -762,6 +833,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         decompress(code).include?('while(1){Start-Sleep -s ').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(decompress(code).include?('while(1){Start-Sleep -s ')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(decompress(code).include?('while(1){Start-Sleep -s ')).to be_truthy
 >>>>>>> rapid7/master
@@ -782,6 +856,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(decompress(code).include?('while(1){Start-Sleep -s ')).to be_falsey
 =======
         decompress(code).include?('while(1){Start-Sleep -s ').should be_falsey
@@ -801,6 +876,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         decompress(code).include?('while(1){Start-Sleep -s ').should be_falsey
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(decompress(code).include?('while(1){Start-Sleep -s ')).to be_falsey
+>>>>>>> rapid7/master
 =======
         expect(decompress(code).include?('while(1){Start-Sleep -s ')).to be_falsey
 >>>>>>> rapid7/master
@@ -821,6 +899,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(decompress(code).include?('Start-Sleep -s ')).to be_truthy
 =======
         decompress(code).include?('Start-Sleep -s ').should be_truthy
@@ -840,6 +919,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         decompress(code).include?('Start-Sleep -s ').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(decompress(code).include?('Start-Sleep -s ')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(decompress(code).include?('Start-Sleep -s ')).to be_truthy
 >>>>>>> rapid7/master
@@ -860,6 +942,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(decompress(code).include?('Start-Sleep -s ')).to be_falsey
 =======
         decompress(code).include?('Start-Sleep -s ').should be_falsey
@@ -879,6 +962,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         decompress(code).include?('Start-Sleep -s ').should be_falsey
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(decompress(code).include?('Start-Sleep -s ')).to be_falsey
+>>>>>>> rapid7/master
 =======
         expect(decompress(code).include?('Start-Sleep -s ')).to be_falsey
 >>>>>>> rapid7/master
@@ -899,6 +985,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(decompress(code).include?('Start-Sleep -s ')).to be_falsey
 =======
         decompress(code).include?('Start-Sleep -s ').should be_falsey
@@ -924,12 +1011,16 @@ RSpec.describe Rex::Powershell::Command do
 =======
         expect(decompress(code).include?('Start-Sleep -s ')).to be_falsey
 >>>>>>> rapid7/master
+=======
+        expect(decompress(code).include?('Start-Sleep -s ')).to be_falsey
+>>>>>>> rapid7/master
       end
     end
 
     context 'when method is old' do
       it 'should generate a command line' do
         code = subject.cmd_psh_payload(payload, arch, template_path, method: 'old')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -965,6 +1056,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         expect(decompress(code).include?('-namespace Win32Functions')).to be_truthy
 >>>>>>> rapid7/master
+=======
+        expect(decompress(code).include?('-namespace Win32Functions')).to be_truthy
+>>>>>>> rapid7/master
       end
       it 'shouldnt shorten args' do
         code = subject.cmd_psh_payload(payload, arch, template_path, method: 'old')
@@ -972,6 +1066,7 @@ RSpec.describe Rex::Powershell::Command do
       end
       it 'should include -NoExit' do
         code = subject.cmd_psh_payload(payload, arch, template_path, method: 'old')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         code.include?('-NoProfile -WindowStyle hidden -NoExit -Command').should be_truthy
@@ -997,12 +1092,16 @@ RSpec.describe Rex::Powershell::Command do
 =======
         expect(code.include?('-NoProfile -WindowStyle hidden -NoExit -Command')).to be_truthy
 >>>>>>> rapid7/master
+=======
+        expect(code.include?('-NoProfile -WindowStyle hidden -NoExit -Command')).to be_truthy
+>>>>>>> rapid7/master
       end
     end
 
     context 'when method is net' do
       it 'should generate a command line' do
         code = subject.cmd_psh_payload(payload, arch, template_path, method: 'net')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1036,12 +1135,16 @@ RSpec.describe Rex::Powershell::Command do
 =======
         expect(decompress(code).include?('System.Runtime.InteropServices;')).to be_truthy
 >>>>>>> rapid7/master
+=======
+        expect(decompress(code).include?('System.Runtime.InteropServices;')).to be_truthy
+>>>>>>> rapid7/master
       end
     end
 
     context 'when method is reflection' do
       it 'should generate a command line' do
         code = subject.cmd_psh_payload(payload, arch, template_path, method: 'reflection')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1069,6 +1172,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         decompress(code).include?('GlobalAssemblyCache').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(decompress(code).include?('GlobalAssemblyCache')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(decompress(code).include?('GlobalAssemblyCache')).to be_truthy
 >>>>>>> rapid7/master
@@ -1094,6 +1200,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(except).to be_truthy
 =======
         except.should be_truthy
@@ -1113,6 +1220,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         except.should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(except).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(except).to be_truthy
 >>>>>>> rapid7/master
@@ -1138,6 +1248,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(except).to be_truthy
 =======
         except.should be_truthy
@@ -1163,12 +1274,16 @@ RSpec.describe Rex::Powershell::Command do
 =======
         expect(except).to be_truthy
 >>>>>>> rapid7/master
+=======
+        expect(except).to be_truthy
+>>>>>>> rapid7/master
       end
     end
 
     context 'when encode_inner_payload' do
       it 'should contain an inner payload with -e' do
           code = subject.cmd_psh_payload(payload, arch, template_path, encode_inner_payload: true, method: psh_method)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1196,6 +1311,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
           code.include?(' -e ').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+          expect(code.include?(' -e ')).to be_truthy
+>>>>>>> rapid7/master
 =======
           expect(code.include?(' -e ')).to be_truthy
 >>>>>>> rapid7/master
@@ -1220,6 +1338,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           expect(except).to be_truthy
 =======
           except.should be_truthy
@@ -1239,6 +1358,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
           except.should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+          expect(except).to be_truthy
+>>>>>>> rapid7/master
 =======
           expect(except).to be_truthy
 >>>>>>> rapid7/master
@@ -1261,6 +1383,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           expect(code.include?(' -e ')).to be_truthy
           expect(code.include?(' -c ')).to be_falsey
 =======
@@ -1295,11 +1418,16 @@ RSpec.describe Rex::Powershell::Command do
           expect(code.include?(' -e ')).to be_truthy
           expect(code.include?(' -c ')).to be_falsey
 >>>>>>> rapid7/master
+=======
+          expect(code.include?(' -e ')).to be_truthy
+          expect(code.include?(' -c ')).to be_falsey
+>>>>>>> rapid7/master
         end
       end
       context 'when no_equals is true' do
         it 'should contain a final payload with -e' do
           code = subject.cmd_psh_payload(payload, arch, template_path, encode_final_payload: true, no_equals: true, method: psh_method)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1341,6 +1469,11 @@ RSpec.describe Rex::Powershell::Command do
           code.include?(' -c ').should be_falsey
           code.include?('=').should be_falsey
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+          expect(code.include?(' -e ')).to be_truthy
+          expect(code.include?(' -c ')).to be_falsey
+          expect(code.include?('=')).to be_falsey
+>>>>>>> rapid7/master
 =======
           expect(code.include?(' -e ')).to be_truthy
           expect(code.include?(' -c ')).to be_falsey
@@ -1369,6 +1502,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           expect(except).to be_truthy
 =======
           except.should be_truthy
@@ -1388,6 +1522,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
           except.should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+          expect(except).to be_truthy
+>>>>>>> rapid7/master
 =======
           expect(except).to be_truthy
 >>>>>>> rapid7/master
@@ -1409,6 +1546,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(code.include?('%COMSPEC%')).to be_falsey
 =======
         code.include?('%COMSPEC%').should be_falsey
@@ -1434,12 +1572,16 @@ RSpec.describe Rex::Powershell::Command do
 =======
         expect(code.include?('%COMSPEC%')).to be_falsey
 >>>>>>> rapid7/master
+=======
+        expect(code.include?('%COMSPEC%')).to be_falsey
+>>>>>>> rapid7/master
       end
     end
 
     context 'when use single quotes' do
       it 'should wrap in single quotes' do
         code = subject.cmd_psh_payload(payload, arch, template_path, use_single_quotes: true, method: psh_method)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1467,6 +1609,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
         code.include?(' -c \'').should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(code.include?(' -c \'')).to be_truthy
+>>>>>>> rapid7/master
 =======
         expect(code.include?(' -c \'')).to be_truthy
 >>>>>>> rapid7/master
@@ -1489,6 +1634,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(command.include?("powershell ")).to be_truthy
 =======
       command.include?("powershell ").should be_truthy
@@ -1508,6 +1654,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
       command.include?("powershell ").should be_truthy
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(command.include?("powershell ")).to be_truthy
+>>>>>>> rapid7/master
 =======
       expect(command.include?("powershell ")).to be_truthy
 >>>>>>> rapid7/master
@@ -1527,6 +1676,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(command.include?("powershell.exe ")).to be_truthy
 
       opts = {:no_full_stop => false}
@@ -1564,6 +1714,13 @@ RSpec.describe Rex::Powershell::Command do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(command.include?("powershell.exe ")).to be_truthy
+
+      opts = {:no_full_stop => false}
+      command = subject.generate_psh_command_line(opts)
+      expect(command.include?("powershell.exe ")).to be_truthy
+>>>>>>> rapid7/master
 =======
       expect(command.include?("powershell.exe ")).to be_truthy
 
@@ -1591,6 +1748,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(command.include?("test\\powershell.exe ")).to be_truthy
 
       opts = {:path => "test\\"}
@@ -1628,6 +1786,13 @@ RSpec.describe Rex::Powershell::Command do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(command.include?("test\\powershell.exe ")).to be_truthy
+
+      opts = {:path => "test\\"}
+      command = subject.generate_psh_command_line(opts)
+      expect(command.include?("test\\powershell.exe ")).to be_truthy
+>>>>>>> rapid7/master
 =======
       expect(command.include?("test\\powershell.exe ")).to be_truthy
 
@@ -1655,6 +1820,7 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.generate_psh_args(nil)).to eql ""
 =======
       subject.generate_psh_args(nil).should eql ""
@@ -1674,6 +1840,9 @@ RSpec.describe Rex::Powershell::Command do
 =======
       subject.generate_psh_args(nil).should eql ""
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(subject.generate_psh_args(nil)).to eql ""
+>>>>>>> rapid7/master
 =======
       expect(subject.generate_psh_args(nil)).to eql ""
 >>>>>>> rapid7/master
@@ -1719,6 +1888,9 @@ RSpec.describe Rex::Powershell::Command do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -1731,6 +1903,7 @@ RSpec.describe Rex::Powershell::Command do
           expect(long_args[0]).not_to eql " "
           expect(short_args[-1]).not_to eql " "
           expect(long_args[-1]).not_to eql " "
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -1776,6 +1949,12 @@ RSpec.describe Rex::Powershell::Command do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+
+          if opts[:command]
+            expect(long_args[-10..-1]).to eql "-Command Z"
+            expect(short_args[-4..-1]).to eql "-c Z"
+>>>>>>> rapid7/master
 =======
 
           if opts[:command]

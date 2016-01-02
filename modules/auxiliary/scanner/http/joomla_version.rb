@@ -26,6 +26,7 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     register_options(
       [
@@ -52,6 +53,8 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
   end
 
   def get_server_header
@@ -74,6 +77,7 @@ class Metasploit3 < Msf::Auxiliary
       print_error("It doesn't look like Joomla is up and running at #{target_uri.to_s}")
       return
 <<<<<<< HEAD
+<<<<<<< HEAD
     end
 
     server = get_server_header
@@ -103,6 +107,19 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 >>>>>>> rapid7/master
 =======
+>>>>>>> rapid7/master
+=======
+    end
+
+    server = get_server_header
+    version = joomla_version
+
+    if server
+      print_status("Server: #{server}")
+    else
+      print_error("Unable to determine server.")
+    end
+
 >>>>>>> rapid7/master
     if version
       print_status("Joomla version: #{version}")

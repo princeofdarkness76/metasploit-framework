@@ -9,6 +9,7 @@ require 'metasploit/framework/login_scanner/gitlab'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::GitLab do
 =======
 describe Metasploit::Framework::LoginScanner::GitLab do
@@ -28,6 +29,9 @@ describe Metasploit::Framework::LoginScanner::GitLab do
 =======
 describe Metasploit::Framework::LoginScanner::GitLab do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Metasploit::Framework::LoginScanner::GitLab do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Metasploit::Framework::LoginScanner::GitLab do
 >>>>>>> rapid7/master

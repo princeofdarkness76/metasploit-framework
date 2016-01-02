@@ -9,6 +9,7 @@ require 'metasploit/framework/login_scanner/nessus'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::Nessus do
 =======
 describe Metasploit::Framework::LoginScanner::Nessus do
@@ -28,6 +29,9 @@ describe Metasploit::Framework::LoginScanner::Nessus do
 =======
 describe Metasploit::Framework::LoginScanner::Nessus do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Metasploit::Framework::LoginScanner::Nessus do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Metasploit::Framework::LoginScanner::Nessus do
 >>>>>>> rapid7/master

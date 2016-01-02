@@ -29,6 +29,7 @@ class Android < Extension
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   COLLECT_TYPE_GEO  = 2
   COLLECT_TYPE_CELL = 3
 =======
@@ -53,6 +54,10 @@ class Android < Extension
   COLLECT_TYPE_GEO  = 2
   COLLECT_TYPE_CELL = 3
 >>>>>>> rapid7/master
+=======
+  COLLECT_TYPE_GEO  = 2
+  COLLECT_TYPE_CELL = 3
+>>>>>>> rapid7/master
 
   COLLECT_ACTION_START  = 1
   COLLECT_ACTION_PAUSE  = 2
@@ -61,6 +66,7 @@ class Android < Extension
   COLLECT_ACTION_DUMP   = 5
 
   COLLECT_TYPES = {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94,6 +100,11 @@ class Android < Extension
 =======
     'wifi' => COLLECT_TYPE_WIFI
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+    'wifi' => COLLECT_TYPE_WIFI,
+    'geo'  => COLLECT_TYPE_GEO,
+    'cell' => COLLECT_TYPE_CELL,
+>>>>>>> rapid7/master
 =======
     'wifi' => COLLECT_TYPE_WIFI,
     'geo'  => COLLECT_TYPE_GEO,
@@ -191,6 +202,9 @@ class Android < Extension
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -255,6 +269,7 @@ class Android < Extension
       end
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/4.11.2_release_pre-rails4
 =======
@@ -269,6 +284,8 @@ class Android < Extension
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======

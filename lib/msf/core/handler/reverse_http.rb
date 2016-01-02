@@ -26,6 +26,7 @@ module ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   include Msf::Handler::Reverse
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -39,6 +40,9 @@ module ReverseHttp
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+  include Msf::Handler::Reverse
+>>>>>>> rapid7/master
 =======
   include Msf::Handler::Reverse
 >>>>>>> rapid7/master
@@ -77,6 +81,7 @@ module ReverseHttp
 
     register_advanced_options(
       [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -138,6 +143,12 @@ module ReverseHttp
         OptString.new('MeterpreterUserAgent', [false, 'The user-agent that the payload should use for communication', Rex::UserAgent.shortest]),
         OptString.new('MeterpreterServerName', [false, 'The server header that the handler will send in response to requests', 'Apache']),
         OptAddress.new('ReverseListenerBindAddress', [false, 'The specific IP address to bind to on the local system']),
+=======
+
+        OptString.new('MeterpreterUserAgent', [false, 'The user-agent that the payload should use for communication', Rex::UserAgent.shortest]),
+        OptString.new('MeterpreterServerName', [false, 'The server header that the handler will send in response to requests', 'Apache']),
+        OptAddress.new('ReverseListenerBindAddress', [false, 'The specific IP address to bind to on the local system']),
+>>>>>>> rapid7/master
 =======
 
         OptString.new('MeterpreterUserAgent', [false, 'The user-agent that the payload should use for communication', Rex::UserAgent.shortest]),
@@ -404,6 +415,7 @@ module ReverseHttp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     comm = datastore['ReverseListenerComm']
     if (comm.to_s == 'local')
@@ -413,6 +425,8 @@ module ReverseHttp
     end
 
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
 =======
@@ -428,6 +442,7 @@ module ReverseHttp
         'Msf'        => framework,
         'MsfExploit' => self,
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -453,6 +468,9 @@ module ReverseHttp
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      nil,
+>>>>>>> rapid7/master
 =======
       nil,
 >>>>>>> rapid7/master
