@@ -5,10 +5,14 @@ require 'stringio'
 require 'rex/proto/rmi'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::OutputHeader do
 =======
 describe Rex::Proto::Rmi::Model::OutputHeader do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+RSpec.describe Rex::Proto::Rmi::Model::OutputHeader do
+>>>>>>> rapid7/master
 
   subject(:output_header) do
     described_class.new

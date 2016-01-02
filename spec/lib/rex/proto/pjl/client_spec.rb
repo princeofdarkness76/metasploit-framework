@@ -105,6 +105,7 @@ RSpec.describe Rex::Proto::PJL::Client do
         response = "TYPE=FILE SIZE=1337\r\n\f"
         tmp_sock = double("sock")
 <<<<<<< HEAD
+<<<<<<< HEAD
         allow(tmp_sock).to receive(:put).with(an_instance_of(String))
         allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
@@ -115,6 +116,12 @@ RSpec.describe Rex::Proto::PJL::Client do
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
         tmp_cli.fsquery("1:").should eq(true)
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        allow(tmp_sock).to receive(:put).with(an_instance_of(String))
+        allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
+        tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
+        expect(tmp_cli.fsquery("1:")).to eq(true)
+>>>>>>> rapid7/master
       end
     end
 
@@ -143,6 +150,7 @@ RSpec.describe Rex::Proto::PJL::Client do
         tmp_sock = double("sock")
         allow(tmp_sock).to receive(:put).with(an_instance_of(String))
         allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
+<<<<<<< HEAD
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
         expect(tmp_cli.fsupload("1:")).to eq('FILE')
       end
@@ -175,6 +183,10 @@ RSpec.describe Rex::Proto::PJL::Client do
         allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
         expect(tmp_cli.fsdelete("1:")).to eq(true)
+=======
+        tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
+        expect(tmp_cli.fsupload("1:")).to eq('FILE')
+>>>>>>> rapid7/master
       end
     end
 
@@ -186,10 +198,10 @@ RSpec.describe Rex::Proto::PJL::Client do
       it "should upload a file" do
         response = "TYPE=FILE SIZE=1337\r\n\f"
         tmp_sock = double("sock")
-        tmp_sock.stub(:put).with(an_instance_of(String))
-        tmp_sock.stub(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
+        allow(tmp_sock).to receive(:put).with(an_instance_of(String))
+        allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
-        tmp_cli.fsdownload("/dev/null", "1:").should eq(true)
+        expect(tmp_cli.fsdownload("/dev/null", "1:")).to eq(true)
       end
     end
 
@@ -201,10 +213,10 @@ RSpec.describe Rex::Proto::PJL::Client do
       it "should delete a file" do
         response = "FILEERROR=3\r\n\f"
         tmp_sock = double("sock")
-        tmp_sock.stub(:put).with(an_instance_of(String))
-        tmp_sock.stub(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
+        allow(tmp_sock).to receive(:put).with(an_instance_of(String))
+        allow(tmp_sock).to receive(:get).with(Rex::Proto::PJL::DEFAULT_TIMEOUT).and_return(response)
         tmp_cli = Rex::Proto::PJL::Client.new(tmp_sock)
-        tmp_cli.fsdelete("1:").should eq(true)
+        expect(tmp_cli.fsdelete("1:")).to eq(true)
       end
     end
   end

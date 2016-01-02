@@ -118,6 +118,7 @@ class Metasploit3 < Msf::Auxiliary
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> metasploit-api/_index.html
@@ -135,6 +136,8 @@ class Metasploit3 < Msf::Auxiliary
 =======
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 >>>>>>> metasploit-api/_index.html
+=======
+>>>>>>> rapid7/master
   def smb_delete_files
     vprint_status("#{peer}: Connecting to the server...")
     connect()

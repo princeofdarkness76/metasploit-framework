@@ -54,6 +54,7 @@ RSpec.describe Rex::Encoder::Alpha2::AlphaUpper do
 
       it "raises an error" do
         expect { decoder_prefix }.to raise_error(RuntimeError)
+<<<<<<< HEAD
       end
     end
 
@@ -1272,6 +1273,8 @@ RSpec.describe Rex::Encoder::Alpha2::AlphaUpper do
             expect(modified_registers).to include(Rex::Arch::X86::EDX)
           end
         end
+=======
+>>>>>>> rapid7/master
       end
     end
 
@@ -1479,6 +1482,7 @@ RSpec.describe Rex::Encoder::Alpha2::AlphaUpper do
 
       it "raises an error" do
         expect { decoder }.to raise_error(RuntimeError)
+<<<<<<< HEAD
       end
     end
 
@@ -1675,6 +1679,8 @@ RSpec.describe Rex::Encoder::Alpha2::AlphaUpper do
       it "marks ESP as modified" do
         described_class.gen_decoder(reg, offset, modified_registers)
         expect(modified_registers).to include(Rex::Arch::X86::ESP)
+=======
+>>>>>>> rapid7/master
       end
     end
 

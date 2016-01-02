@@ -263,6 +263,7 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       target_info = cmd_exec('uname -ms')
 =======
 =======
@@ -279,6 +280,9 @@ class Metasploit3 < Msf::Post
 >>>>>>> origin/pod/metasploit-gemfile-
       target_info = cmd_exec('uname -mo')
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+      target_info = cmd_exec('uname -ms')
+>>>>>>> rapid7/master
       if target_info =~ /linux/i && target_info =~ /86/
         # Handle linux shells that were identified as 'unix'
         platform = 'linux'
@@ -293,11 +297,15 @@ class Metasploit3 < Msf::Post
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
       elsif target_info =~ /darwin/i
         platform = 'python'
         payload_name = 'python/meterpreter/reverse_tcp'
         vprint_status("Platform: OS X")
       elsif cmd_exec('python -V 2>&1') =~ /Python (2|3)\.(\d)/
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -313,6 +321,8 @@ class Metasploit3 < Msf::Post
 >>>>>>> origin/pod/metasploit-gemfile-
       elsif cmd_exec('python -V') =~ /Python (2|3)\.(\d)/
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> rapid7/master
         # Generic fallback for OSX, Solaris, Linux/ARM
         platform = 'python'
         payload_name = 'python/meterpreter/reverse_tcp'

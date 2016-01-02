@@ -22,18 +22,21 @@ RSpec.shared_examples "datastore" do
   context "#to_h" do
     it "should return a Hash with correct values" do
       expect(subject.to_h).to eq({ "foo" => "bar", "fizz" => "buzz" })
+<<<<<<< HEAD
     end
   end
   context "#delete" do
     it "should delete the specified case-insensitive key" do
       expect(subject.delete("foo")).to eq "bar"
       expect(subject.delete("Fizz")).to eq "buzz"
+=======
+>>>>>>> rapid7/master
     end
   end
   context "#delete" do
     it "should delete the specified case-insensitive key" do
-      subject.delete("foo").should == "bar"
-      subject.delete("Fizz").should == "buzz"
+      expect(subject.delete("foo")).to eq "bar"
+      expect(subject.delete("Fizz")).to eq "buzz"
     end
   end
 end

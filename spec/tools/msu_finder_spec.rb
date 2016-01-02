@@ -10,6 +10,7 @@ require 'uri'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe MicrosoftPatchFinder do
 =======
 describe MicrosoftPatchFinder do
@@ -32,6 +33,9 @@ describe MicrosoftPatchFinder do
 =======
 describe MicrosoftPatchFinder do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe MicrosoftPatchFinder do
+>>>>>>> rapid7/master
 
   before(:each) do
     cli = Rex::Proto::Http::Client.new('127.0.0.1')
@@ -336,6 +340,9 @@ describe MicrosoftPatchFinder do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
         Rex::Proto::Http::Response.new.tap { |response|
           allow(response).to receive(:body).and_return(
                                %Q|
@@ -345,6 +352,7 @@ describe MicrosoftPatchFinder do
                                |
                              )
         }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -386,6 +394,8 @@ describe MicrosoftPatchFinder do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> rapid7/master
       end
 
       it 'returns an array of links' do

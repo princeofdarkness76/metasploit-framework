@@ -6,6 +6,7 @@ RSpec.shared_context 'Msf::UIDriver' do
     ).tap { |driver|
       allow(driver).to receive(:on_command_proc=).with(kind_of(Proc))
       allow(driver).to receive(:print_line).with(kind_of(String)) do |string|
+<<<<<<< HEAD
         @output ||= []
         @output.concat string.split("\n")
       end
@@ -37,15 +38,21 @@ RSpec.shared_context 'Msf::UIDriver' do
         @output.concat string.split("\n")
       end
       driver.stub(:print_status).with(kind_of(String)) do |string|
+=======
+>>>>>>> rapid7/master
         @output ||= []
         @output.concat string.split("\n")
       end
-      driver.stub(:print_status).with(kind_of(String)) do |string|
+      allow(driver).to receive(:print_status).with(kind_of(String)) do |string|
         @output ||= []
         @output.concat string.split("\n")
       end
+<<<<<<< HEAD
       driver.stub(:print_error).with(kind_of(String)) do |string|
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+      allow(driver).to receive(:print_error).with(kind_of(String)) do |string|
+>>>>>>> rapid7/master
         @error ||= []
         @error.concat string.split("\n")
       end

@@ -193,6 +193,9 @@ module PacketDispatcher
   #
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
   # @param packet [Packet] request to send
   # @param timeout [Fixnum,nil] seconds to wait for response, or nil to ignore the
   #   response and return immediately
@@ -201,6 +204,7 @@ module PacketDispatcher
     response = send_packet_wait_response(packet, timeout)
 
     if timeout.nil?
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/msf-complex-payloads
@@ -208,6 +212,8 @@ module PacketDispatcher
     if not t
       send_packet(packet)
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> rapid7/master
       return nil
     elsif response.nil?
       raise TimeoutError.new("Send timed out")
@@ -306,6 +312,7 @@ module PacketDispatcher
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -322,6 +329,8 @@ module PacketDispatcher
     @finish = false
     @last_recvd = Time.now
 >>>>>>> origin/4.11.2_release_pre-rails4
+=======
+>>>>>>> rapid7/master
     @ping_sent = false
 
     # Spawn a thread for receiving packets
@@ -348,6 +357,7 @@ module PacketDispatcher
     self.dispatcher_thread = Rex::ThreadFactory.spawn("MeterpreterDispatcher", false) do
       begin
 <<<<<<< HEAD
+<<<<<<< HEAD
       while (self.alive)
 =======
       # Whether we're finished or not is determined by the receiver
@@ -372,6 +382,9 @@ module PacketDispatcher
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      while (self.alive)
+>>>>>>> rapid7/master
         incomplete = []
         backlog    = []
 
@@ -549,6 +562,7 @@ module PacketDispatcher
   def dispatch_inbound_packet(packet)
     handled = false
 
+<<<<<<< HEAD
     # Update our last reply time
     self.last_checkin = Time.now
 
@@ -567,8 +581,10 @@ module PacketDispatcher
     # Update our last reply time
     client.last_checkin = Time.now
 
+=======
+>>>>>>> rapid7/master
     # Update our last reply time
-    client.last_checkin = Time.now
+    self.last_checkin = Time.now
 
     # If the packet is a response, try to notify any potential
     # waiters

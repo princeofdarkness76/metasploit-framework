@@ -659,6 +659,7 @@ RSpec.describe Msf::PayloadGenerator do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(payload_generator).to receive(:generate_java_payload).and_call_original
 =======
         payload_generator.should_receive(:generate_java_payload).and_call_original
@@ -681,6 +682,9 @@ RSpec.describe Msf::PayloadGenerator do
 =======
         payload_generator.should_receive(:generate_java_payload).and_call_original
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(payload_generator).to receive(:generate_java_payload).and_call_original
+>>>>>>> rapid7/master
         payload_generator.generate_payload
       end
     end

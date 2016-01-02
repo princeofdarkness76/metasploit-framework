@@ -73,6 +73,7 @@ Gem::Specification.new do |spec|
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   spec.add_runtime_dependency 'metasploit_data_models', '1.2.10'
 =======
   spec.add_runtime_dependency 'metasploit_data_models', '1.2.9'
@@ -98,10 +99,14 @@ Gem::Specification.new do |spec|
 =======
   spec.add_runtime_dependency 'metasploit_data_models', '~> 1.2.9'
 >>>>>>> rapid7/twiddle-wakka-metasploit-deps
+=======
+  spec.add_runtime_dependency 'metasploit_data_models', '1.2.10'
+>>>>>>> rapid7/master
   # Things that would normally be part of the database model, but which
   # are needed when there's no database
   spec.add_runtime_dependency 'metasploit-model', '~> 1.0.0'
   # Needed for Meterpreter
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -249,6 +254,9 @@ Gem::Specification.new do |spec|
 =======
 >>>>>>> origin/pod/metasploit-windows.rb
 >>>>>>> metasploit-api/_index.html
+=======
+  spec.add_runtime_dependency 'metasploit-payloads', '1.0.21'
+>>>>>>> rapid7/master
   # Needed by msfgui and other rpc components
   spec.add_runtime_dependency 'msgpack'
   # get list of network interfaces, like eth* from OS.

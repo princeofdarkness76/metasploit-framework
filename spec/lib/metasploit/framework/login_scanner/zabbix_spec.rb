@@ -3,10 +3,14 @@ require 'spec_helper'
 require 'metasploit/framework/login_scanner/zabbix'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::Zabbix do
 =======
 describe Metasploit::Framework::LoginScanner::Zabbix do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+RSpec.describe Metasploit::Framework::LoginScanner::Zabbix do
+>>>>>>> rapid7/master
 
   subject(:http_scanner) { described_class.new }
 

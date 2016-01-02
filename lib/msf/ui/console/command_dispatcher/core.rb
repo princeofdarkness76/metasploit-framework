@@ -10438,6 +10438,7 @@ class Core
   def cmd_rename_job_help
     print_line "Usage: rename_job [ID] [Name]"
     print_line
+<<<<<<< HEAD
     print_line "Example: rename_job 0 \"meterpreter HTTPS special\""
     print_line
     print_line "Rename a job that's currently active."
@@ -10448,14 +10449,60 @@ class Core
   def cmd_rename_job(*args)
     if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
       cmd_rename_job_help
+=======
+    print_line "Optionally the flag '-j' will print the data in json format"
+    print_line "Queries the supplied module or modules for information. If no module is given,"
+    print_line "show info for the currently active module."
+    print_line
+  end
+
+  #
+  # Displays information about one or more module.
+  #
+  def cmd_info(*args)
+    dump_json = false
+    if args.include?('-j')
+      args.delete('-j')
+      dump_json = true
+    end
+
+    if (args.length == 0)
+      if (active_module)
+        if dump_json
+          print(Serializer::Json.dump_module(active_module) + "\n")
+        else
+          print(Serializer::ReadableText.dump_module(active_module))
+        end
+        return true
+      else
+        cmd_info_help
+        return false
+      end
+    elsif args.include? "-h"
+      cmd_info_help
+>>>>>>> rapid7/master
       return false
 >>>>>>> rapid7/master
     end
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     end
+=======
+    args.each { |name|
+      mod = framework.modules.create(name)
+
+      if (mod == nil)
+        print_error("Invalid module: #{name}")
+      elsif dump_json
+        print(Serializer::Json.dump_module(mod) + "\n")
+      else
+        print(Serializer::ReadableText.dump_module(mod))
+      end
+    }
+>>>>>>> rapid7/master
   end
 
 >>>>>>> rapid7/master

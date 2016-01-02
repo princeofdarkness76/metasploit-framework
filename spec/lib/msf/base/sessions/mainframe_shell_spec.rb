@@ -14,6 +14,7 @@ require 'msf/base/sessions/mainframe_shell'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Sessions::MainframeShell do
 =======
 describe Msf::Sessions::MainframeShell do
@@ -36,6 +37,9 @@ describe Msf::Sessions::MainframeShell do
 =======
 describe Msf::Sessions::MainframeShell do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Msf::Sessions::MainframeShell do
+>>>>>>> rapid7/master
   it 'extends Msf::Sessions::CommandShell to include EBCDIC cp1047 codepage translation' do
   args=[0,
    {:datastore=>

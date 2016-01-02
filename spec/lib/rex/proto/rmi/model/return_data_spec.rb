@@ -6,10 +6,14 @@ require 'rex/proto/rmi'
 require 'rex/java'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::ReturnData do
 =======
 describe Rex::Proto::Rmi::Model::ReturnData do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+RSpec.describe Rex::Proto::Rmi::Model::ReturnData do
+>>>>>>> rapid7/master
 
   subject(:return_data) do
     described_class.new

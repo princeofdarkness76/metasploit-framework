@@ -24,6 +24,7 @@ class Metasploit3 < Msf::Auxiliary
       'License'     => MSF_LICENSE
     )
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     register_options(
       [
@@ -46,6 +47,8 @@ class Metasploit3 < Msf::Auxiliary
     end
     return os
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+>>>>>>> rapid7/master
   end
 
   def get_server_header
@@ -71,6 +74,7 @@ class Metasploit3 < Msf::Auxiliary
 
     server = get_server_header
     version = joomla_version
+<<<<<<< HEAD
 
     if server
       print_status("Server: #{server}")
@@ -78,6 +82,15 @@ class Metasploit3 < Msf::Auxiliary
       print_error("Unable to determine server.")
     end
 
+=======
+
+    if server
+      print_status("Server: #{server}")
+    else
+      print_error("Unable to determine server.")
+    end
+
+>>>>>>> rapid7/master
     if version
       print_status("Joomla version: #{version}")
       report_note(

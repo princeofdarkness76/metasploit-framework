@@ -5,10 +5,14 @@ require 'stringio'
 require 'rex/proto/rmi'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::DgcAck do
 =======
 describe Rex::Proto::Rmi::Model::DgcAck do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+RSpec.describe Rex::Proto::Rmi::Model::DgcAck do
+>>>>>>> rapid7/master
 
   subject(:dgc_ack) do
     described_class.new
