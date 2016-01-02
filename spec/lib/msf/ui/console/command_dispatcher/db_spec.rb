@@ -550,6 +550,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -575,6 +576,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
+=======
+        expect(@output).to match_array [
+>>>>>>> rapid7/master
           "* default"
         ]
       end
@@ -583,6 +587,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
         db.cmd_workspace("-a", "foo")
         @output = []
         db.cmd_workspace
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -613,6 +618,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(@output).to match_array [
+>>>>>>> rapid7/master
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
@@ -633,6 +641,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -655,6 +664,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(@output).to match_array [
+>>>>>>> rapid7/master
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
@@ -678,6 +690,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(@output).to match_array [
 =======
         @output.should =~ [
@@ -703,6 +716,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master
+=======
+        expect(@output).to match_array [
+>>>>>>> rapid7/master
           "Deleted workspace: foo",
           "Switched workspace: default"
         ]
@@ -714,6 +730,7 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
         db.cmd_workspace("-a", "foo")
         @output = []
         db.cmd_workspace("-D")
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -744,6 +761,9 @@ RSpec.describe Msf::Ui::Console::CommandDispatcher::Db do
 =======
         @output.should =~ [
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+        expect(@output).to match_array [
+>>>>>>> rapid7/master
 =======
         expect(@output).to match_array [
 >>>>>>> rapid7/master

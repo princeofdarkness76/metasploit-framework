@@ -10,6 +10,7 @@ require 'msf/core/post/windows/runas'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Post::Windows::Runas do
 =======
 describe Msf::Post::Windows::Runas do
@@ -32,6 +33,9 @@ describe Msf::Post::Windows::Runas do
 =======
 RSpec.describe Msf::Post::Windows::Runas do
 >>>>>>> rapid7/master
+=======
+RSpec.describe Msf::Post::Windows::Runas do
+>>>>>>> rapid7/master
   let(:process_info) do
     "\x01\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x04\x00\x00\x00"
   end
@@ -42,6 +46,7 @@ RSpec.describe Msf::Post::Windows::Runas do
 
   let(:advapi32) do
     advapi32 = double('advapi32')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -73,6 +78,9 @@ RSpec.describe Msf::Post::Windows::Runas do
 =======
     allow(advapi32).to receive(:CreateProcessWithLogonW).and_return({
 >>>>>>> rapid7/master
+=======
+    allow(advapi32).to receive(:CreateProcessWithLogonW).and_return({
+>>>>>>> rapid7/master
                         'return' => true,
                         'lpProcessInformation' => process_info
     })
@@ -80,6 +88,7 @@ RSpec.describe Msf::Post::Windows::Runas do
       'return' => true,
       'lpProcessInformation' => process_info
     })
+<<<<<<< HEAD
 <<<<<<< HEAD
     advapi32.stub(:LogonUserA).and_return ({
 <<<<<<< HEAD
@@ -101,6 +110,9 @@ RSpec.describe Msf::Post::Windows::Runas do
 =======
     allow(advapi32).to receive(:LogonUserA).and_return ({
 >>>>>>> rapid7/master
+=======
+    allow(advapi32).to receive(:LogonUserA).and_return ({
+>>>>>>> rapid7/master
       'return' => true,
       'phToken' => phToken
     })
@@ -112,6 +124,7 @@ RSpec.describe Msf::Post::Windows::Runas do
   end
 
   let(:subject) do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -166,6 +179,14 @@ RSpec.describe Msf::Post::Windows::Runas do
     allow(mod).to receive_message_chain("session.railgun.kernel32").and_return(kernel32)
     allow(mod).to receive_message_chain("session.railgun.advapi32").and_return(advapi32)
 >>>>>>> rapid7/master
+=======
+    mod = double(Module.new)
+    mod.extend described_class
+    stubs = [ :vprint_status, :print_status, :vprint_good, :print_good, :print_error ]
+    stubs.each { |meth| allow(mod).to receive(meth) }
+    allow(mod).to receive_message_chain("session.railgun.kernel32").and_return(kernel32)
+    allow(mod).to receive_message_chain("session.railgun.advapi32").and_return(advapi32)
+>>>>>>> rapid7/master
     mod
   end
 
@@ -174,6 +195,7 @@ RSpec.describe Msf::Post::Windows::Runas do
       expect(advapi32).to receive(:CreateProcessWithLogonW)
       expect(kernel32).not_to receive(:CloseHandle)
       pi = subject.create_process_with_logon(nil, 'bob', 'pass', nil, 'cmd.exe')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -233,6 +255,15 @@ RSpec.describe Msf::Post::Windows::Runas do
       expect(advapi32).to receive(:CreateProcessWithLogonW).and_return('return' => false, 'GetLastError' => 1783, 'ErrorMessage' => 'parp')
       expect(subject.create_process_with_logon(nil, 'bob', 'pass', nil, 'cmd.exe')).to be nil
 >>>>>>> rapid7/master
+=======
+      expect(pi).to be_kind_of(Hash)
+      expect(pi).to eq(process_handle: 1, thread_handle: 2, process_id: 3, thread_id: 4)
+    end
+
+    it "should return a nil on failure" do
+      expect(advapi32).to receive(:CreateProcessWithLogonW).and_return('return' => false, 'GetLastError' => 1783, 'ErrorMessage' => 'parp')
+      expect(subject.create_process_with_logon(nil, 'bob', 'pass', nil, 'cmd.exe')).to be nil
+>>>>>>> rapid7/master
     end
   end
 
@@ -244,6 +275,7 @@ RSpec.describe Msf::Post::Windows::Runas do
       expect(kernel32).to receive(:CloseHandle).with(1)
       expect(kernel32).to receive(:CloseHandle).with(2)
       pi = subject.create_process_as_user(nil, 'bob', 'pass', nil, 'cmd.exe')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -277,6 +309,10 @@ RSpec.describe Msf::Post::Windows::Runas do
       pi.should be_kind_of(Hash)
       pi.should eq(process_handle: 1, thread_handle: 2, process_id: 3, thread_id: 4)
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(pi).to be_kind_of(Hash)
+      expect(pi).to eq(process_handle: 1, thread_handle: 2, process_id: 3, thread_id: 4)
+>>>>>>> rapid7/master
 =======
       expect(pi).to be_kind_of(Hash)
       expect(pi).to eq(process_handle: 1, thread_handle: 2, process_id: 3, thread_id: 4)
@@ -296,6 +332,7 @@ RSpec.describe Msf::Post::Windows::Runas do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       allow(advapi32).to receive(:CreateProcessAsUserA).and_return('return' => false, 'GetLastError' => 1783, 'ErrorMessage' => 'parp')
       expect(subject.create_process_as_user(nil, 'bob', 'pass', nil, 'cmd.exe')).to be nil
 =======
@@ -322,6 +359,10 @@ RSpec.describe Msf::Post::Windows::Runas do
       advapi32.stub(:CreateProcessAsUserA).and_return('return' => false, 'GetLastError' => 1783, 'ErrorMessage' => 'parp')
       subject.create_process_as_user(nil, 'bob', 'pass', nil, 'cmd.exe').should be nil
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      allow(advapi32).to receive(:CreateProcessAsUserA).and_return('return' => false, 'GetLastError' => 1783, 'ErrorMessage' => 'parp')
+      expect(subject.create_process_as_user(nil, 'bob', 'pass', nil, 'cmd.exe')).to be nil
+>>>>>>> rapid7/master
 =======
       allow(advapi32).to receive(:CreateProcessAsUserA).and_return('return' => false, 'GetLastError' => 1783, 'ErrorMessage' => 'parp')
       expect(subject.create_process_as_user(nil, 'bob', 'pass', nil, 'cmd.exe')).to be nil
@@ -341,6 +382,7 @@ RSpec.describe Msf::Post::Windows::Runas do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       allow(advapi32).to receive(:LogonUserA).and_return('return' => false, 'GetLastError' => 1783, 'ErrorMessage' => 'parp')
       expect(subject.create_process_as_user(nil, 'bob', 'pass', nil, 'cmd.exe')).to be nil
 =======
@@ -367,6 +409,10 @@ RSpec.describe Msf::Post::Windows::Runas do
       advapi32.stub(:LogonUserA).and_return('return' => false, 'GetLastError' => 1783, 'ErrorMessage' => 'parp')
       subject.create_process_as_user(nil, 'bob', 'pass', nil, 'cmd.exe').should be nil
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      allow(advapi32).to receive(:LogonUserA).and_return('return' => false, 'GetLastError' => 1783, 'ErrorMessage' => 'parp')
+      expect(subject.create_process_as_user(nil, 'bob', 'pass', nil, 'cmd.exe')).to be nil
+>>>>>>> rapid7/master
 =======
       allow(advapi32).to receive(:LogonUserA).and_return('return' => false, 'GetLastError' => 1783, 'ErrorMessage' => 'parp')
       expect(subject.create_process_as_user(nil, 'bob', 'pass', nil, 'cmd.exe')).to be nil
@@ -383,6 +429,7 @@ RSpec.describe Msf::Post::Windows::Runas do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(subject.startup_info.size).to eq(68)
 =======
       subject.startup_info.size.should eq(68)
@@ -402,6 +449,9 @@ RSpec.describe Msf::Post::Windows::Runas do
 =======
       subject.startup_info.size.should eq(68)
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(subject.startup_info.size).to eq(68)
+>>>>>>> rapid7/master
 =======
       expect(subject.startup_info.size).to eq(68)
 >>>>>>> rapid7/master
@@ -416,6 +466,7 @@ RSpec.describe Msf::Post::Windows::Runas do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(si[11]).to eq(1)
       expect(si[12]).to eq(0)
 =======
@@ -446,12 +497,17 @@ RSpec.describe Msf::Post::Windows::Runas do
       expect(si[11]).to eq(1)
       expect(si[12]).to eq(0)
 >>>>>>> rapid7/master
+=======
+      expect(si[11]).to eq(1)
+      expect(si[12]).to eq(0)
+>>>>>>> rapid7/master
     end
   end
 
   context "#parse_process_information" do
     it "should return a hash when given valid data" do
       pi = subject.parse_process_information(process_info)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -486,6 +542,10 @@ RSpec.describe Msf::Post::Windows::Runas do
       expect(pi).to be_kind_of(Hash)
       expect(pi).to eq(process_handle: 1, thread_handle: 2, process_id: 3, thread_id: 4)
 >>>>>>> rapid7/master
+=======
+      expect(pi).to be_kind_of(Hash)
+      expect(pi).to eq(process_handle: 1, thread_handle: 2, process_id: 3, thread_id: 4)
+>>>>>>> rapid7/master
     end
 
     it "should return an exception when given an empty string" do
@@ -493,6 +553,7 @@ RSpec.describe Msf::Post::Windows::Runas do
     end
 
     it "should return an exception when given an nil value" do
+<<<<<<< HEAD
 <<<<<<< HEAD
       expect { subject.parse_process_information(nil) }.to raise_error
 <<<<<<< HEAD
@@ -514,6 +575,9 @@ RSpec.describe Msf::Post::Windows::Runas do
 =======
       expect { subject.parse_process_information(nil) }.to raise_error(ArgumentError)
 >>>>>>> rapid7/master
+=======
+      expect { subject.parse_process_information(nil) }.to raise_error(ArgumentError)
+>>>>>>> rapid7/master
     end
   end
 
@@ -529,6 +593,7 @@ RSpec.describe Msf::Post::Windows::Runas do
     end
 
     it "should return an exception when username is nil" do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -568,6 +633,9 @@ RSpec.describe Msf::Post::Windows::Runas do
 =======
       expect { subject.check_user_format(nil, domain) }.to raise_error(ArgumentError)
 >>>>>>> rapid7/master
+=======
+      expect { subject.check_user_format(nil, domain) }.to raise_error(ArgumentError)
+>>>>>>> rapid7/master
     end
 
     it "should return an exception when UPN format and domain supplied" do
@@ -583,6 +651,7 @@ RSpec.describe Msf::Post::Windows::Runas do
     end
 
     it "should return true when domain format and domain supplied" do
+<<<<<<< HEAD
 <<<<<<< HEAD
       subject.check_user_format(domain_username, domain).should be true
 <<<<<<< HEAD
@@ -601,6 +670,9 @@ RSpec.describe Msf::Post::Windows::Runas do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(subject.check_user_format(domain_username, domain)).to be true
+>>>>>>> rapid7/master
 =======
       expect(subject.check_user_format(domain_username, domain)).to be true
 >>>>>>> rapid7/master
@@ -631,6 +703,7 @@ RSpec.describe Msf::Post::Windows::Runas do
     end
 
     it "should raise an exception when max_length is nil" do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -678,6 +751,9 @@ RSpec.describe Msf::Post::Windows::Runas do
 =======
       expect { subject.check_command_length(nil, nil, nil) }.to raise_error(ArgumentError)
 >>>>>>> rapid7/master
+=======
+      expect { subject.check_command_length(nil, nil, nil) }.to raise_error(ArgumentError)
+>>>>>>> rapid7/master
     end
 
     it "should raise an exception when application_name and command_line are nil" do
@@ -702,6 +778,7 @@ RSpec.describe Msf::Post::Windows::Runas do
 
     it "should return true when application_name is nil and command_module is less than MAX_PATH" do
 <<<<<<< HEAD
+<<<<<<< HEAD
       subject.check_command_length(nil, normal_command_module, max_length).should be true
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -719,6 +796,9 @@ RSpec.describe Msf::Post::Windows::Runas do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(subject.check_command_length(nil, normal_command_module, max_length)).to be true
+>>>>>>> rapid7/master
 =======
       expect(subject.check_command_length(nil, normal_command_module, max_length)).to be true
 >>>>>>> rapid7/master

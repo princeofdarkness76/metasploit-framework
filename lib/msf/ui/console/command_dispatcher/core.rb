@@ -10446,10 +10446,38 @@ class Core
     print_line
   end
 
+<<<<<<< HEAD
   def cmd_rename_job(*args)
     if args.include?('-h') || args.length != 2 || args[0] !~ /^\d+$/
       cmd_rename_job_help
 =======
+=======
+  def cmd_advanced(*args)
+    if args.empty?
+      if (active_module)
+        show_advanced_options(active_module)
+        return true
+      else
+        print_error('No module active')
+        return false
+      end
+    end
+
+    args.each { |name|
+      mod = framework.modules.create(name)
+
+      if (mod == nil)
+        print_error("Invalid module: #{name}")
+      else
+        show_advanced_options(mod)
+      end
+    }
+  end
+
+  def cmd_info_help
+    print_line "Usage: info <module name> [mod2 mod3 ...]"
+    print_line
+>>>>>>> rapid7/master
     print_line "Optionally the flag '-j' will print the data in json format"
     print_line "Queries the supplied module or modules for information. If no module is given,"
     print_line "show info for the currently active module."

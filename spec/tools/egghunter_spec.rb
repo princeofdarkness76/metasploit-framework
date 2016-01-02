@@ -9,6 +9,7 @@ require 'stringio'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Egghunter do
 =======
 describe Egghunter do
@@ -28,6 +29,9 @@ describe Egghunter do
 =======
 describe Egghunter do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Egghunter do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Egghunter do
 >>>>>>> rapid7/master

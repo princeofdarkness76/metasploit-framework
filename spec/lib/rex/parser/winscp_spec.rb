@@ -25,6 +25,7 @@ END
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Parser::WinSCP do
 =======
 describe Rex::Parser::WinSCP do
@@ -47,6 +48,9 @@ describe Rex::Parser::WinSCP do
 =======
 describe Rex::Parser::WinSCP do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Rex::Parser::WinSCP do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Rex::Parser::WinSCP do
 >>>>>>> rapid7/master
@@ -125,6 +129,7 @@ RSpec.describe Rex::Parser::WinSCP do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       expect(File).to receive(:read).and_return(nil)
 =======
       File.stub(:read).and_return(nil)
@@ -150,10 +155,14 @@ RSpec.describe Rex::Parser::WinSCP do
 =======
       expect(File).to receive(:read).and_return(nil)
 >>>>>>> rapid7/master
+=======
+      expect(File).to receive(:read).and_return(nil)
+>>>>>>> rapid7/master
       expect(target.read_and_parse_ini('blah')).to be nil
     end
 
     it "parses the example ini and return a single result" do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -184,6 +193,9 @@ RSpec.describe Rex::Parser::WinSCP do
 =======
       File.stub(:read).and_return(SAMPLE_INI)
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      expect(File).to receive(:read).and_return(SAMPLE_INI)
+>>>>>>> rapid7/master
 =======
       expect(File).to receive(:read).and_return(SAMPLE_INI)
 >>>>>>> rapid7/master

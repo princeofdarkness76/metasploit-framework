@@ -11,6 +11,7 @@ require 'stringio'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Java::Serialization::Model::ProxyClassDesc do
 =======
 describe Rex::Java::Serialization::Model::ProxyClassDesc do
@@ -30,6 +31,9 @@ describe Rex::Java::Serialization::Model::ProxyClassDesc do
 =======
 describe Rex::Java::Serialization::Model::ProxyClassDesc do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Rex::Java::Serialization::Model::ProxyClassDesc do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Rex::Java::Serialization::Model::ProxyClassDesc do
 >>>>>>> rapid7/master

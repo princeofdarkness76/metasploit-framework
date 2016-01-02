@@ -91,6 +91,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               attr_accessor :arch
 =======
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
@@ -104,6 +105,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+              attr_accessor :arch
+>>>>>>> rapid7/master
 =======
               attr_accessor :arch
 >>>>>>> rapid7/master
@@ -154,6 +158,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               allow(db_manager).to receive(:create_match_for_vuln).and_return(nil)
 =======
               MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
@@ -176,6 +181,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
               MetasploitDataModels::AutomaticExploitation::MatchSet.any_instance.stub(:create_match_for_vuln).and_return(nil)
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+              allow(db_manager).to receive(:create_match_for_vuln).and_return(nil)
+>>>>>>> rapid7/master
 =======
               allow(db_manager).to receive(:create_match_for_vuln).and_return(nil)
 >>>>>>> rapid7/master
@@ -323,7 +331,7 @@ shared_examples_for 'Msf::DBManager::Session' do
               end
 
               it 'should not find workspace from session' do
-                db_manager.should_not_receive(:find_workspace)
+                expect(db_manager).not_to receive(:find_workspace)
 
                 expect { report_session }.to change(Mdm::Vuln, :count).by(1)
               end
@@ -331,6 +339,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 
             context 'without :workspace' do
               it 'should find workspace from session' do
+<<<<<<< HEAD
                 db_manager.should_receive(:find_workspace).with(session.workspace).and_call_original
 
                 report_session
@@ -2290,6 +2299,9 @@ shared_examples_for 'Msf::DBManager::Session' do
               it 'should find workspace from session' do
                 expect(db_manager).to receive(:find_workspace).with(session.workspace).and_call_original
 >>>>>>> rapid7/master
+=======
+                expect(db_manager).to receive(:find_workspace).with(session.workspace).and_call_original
+>>>>>>> rapid7/master
 
             context 'with workspace from either :workspace or session' do
               it 'should pass normalized host from session as :host to #find_or_create_host' do
@@ -2301,11 +2313,14 @@ shared_examples_for 'Msf::DBManager::Session' do
                 db_manager.stub(:report_vuln)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 db_manager.should_receive(:find_or_create_host).with(
                     hash_including(
                         :host => normalized_host
                     )
 =======
+=======
+>>>>>>> rapid7/master
               it 'should pass session.workspace to #find_or_create_host' do
                 expect(db_manager).to receive(:find_or_create_host).with(
                   hash_including(
@@ -2323,10 +2338,11 @@ shared_examples_for 'Msf::DBManager::Session' do
             context 'with workspace from either :workspace or session' do
               it 'should pass normalized host from session as :host to #find_or_create_host' do
                 normalized_host = double('Normalized Host')
-                db_manager.stub(:normalize_host).with(session).and_return(normalized_host)
+                expect(db_manager).to receive(:normalize_host).with(session).and_return(normalized_host)
                 # stub report_vuln so its use of find_or_create_host and normalize_host doesn't interfere.
-                db_manager.stub(:report_vuln)
+                expect(db_manager).to receive(:report_vuln)
 
+<<<<<<< HEAD
 =======
 
             context 'with workspace from either :workspace or session' do
@@ -2343,6 +2359,8 @@ shared_examples_for 'Msf::DBManager::Session' do
                         :host => normalized_host
                     )
 =======
+=======
+>>>>>>> rapid7/master
                 expect(db_manager).to receive(:find_or_create_host).with(
                   hash_including(
                     :host => normalized_host
@@ -2363,6 +2381,7 @@ shared_examples_for 'Msf::DBManager::Session' do
                 end
 
                 before(:each) do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2403,6 +2422,12 @@ shared_examples_for 'Msf::DBManager::Session' do
                 end
 
                 it 'should pass :arch to #find_or_create_host' do
+=======
+                  allow(session).to receive(:arch).and_return(arch)
+                end
+
+                it 'should pass :arch to #find_or_create_host' do
+>>>>>>> rapid7/master
                   expect(db_manager).to receive(:find_or_create_host).with(
                     hash_including(
                       :arch => arch
@@ -2416,6 +2441,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 
               context 'without session responds to arch' do
                 it 'should not pass :arch to #find_or_create_host' do
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2438,6 +2464,8 @@ shared_examples_for 'Msf::DBManager::Session' do
                           :arch
                       )
 =======
+=======
+>>>>>>> rapid7/master
                   expect(db_manager).to receive(:find_or_create_host).with(
                     hash_excluding(
                       :arch
@@ -2460,6 +2488,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               it { is_expected.to be_an Mdm::Session }
 =======
               it { should be_an Mdm::Session }
@@ -2476,10 +2505,14 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
               it { is_expected.to be_an Mdm::Session }
 >>>>>>> rapid7/master
+=======
+              it { is_expected.to be_an Mdm::Session }
+>>>>>>> rapid7/master
 
               it 'should set session.db_record to created Mdm::Session' do
                 mdm_session = report_session
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2498,6 +2531,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
                 session.db_record.should == mdm_session
 >>>>>>> origin/payload-generator.rb
+=======
+                expect(session.db_record).to eq mdm_session
+>>>>>>> rapid7/master
 =======
                 expect(session.db_record).to eq mdm_session
 >>>>>>> rapid7/master
@@ -2717,6 +2753,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
                   expect(session.info).to be_present
@@ -2828,6 +2867,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
                   it "should not have session.via_exploit of 'exploit/multi/handler'" do
                     expect(session.via_exploit).not_to eq 'exploit/multi/handler'
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
                   end
 
@@ -2857,6 +2899,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
               it 'should not find workspace from session' do
                 expect(db_manager).not_to receive(:find_workspace)
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 
                 #
@@ -2884,6 +2929,9 @@ shared_examples_for 'Msf::DBManager::Session' do
             context 'without :workspace' do
               it 'should find workspace from session' do
                 expect(db_manager).to receive(:find_workspace).with(session.workspace).and_call_original
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
 
 >>>>>>> origin/pod/metasploit-serialized_class_loader
@@ -3227,6 +3275,7 @@ shared_examples_for 'Msf::DBManager::Session' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     expect(session.via_exploit).not_to eq 'exploit/multi/handler'
 =======
                     session.via_exploit.should_not == 'exploit/multi/handler'
@@ -3246,6 +3295,9 @@ shared_examples_for 'Msf::DBManager::Session' do
 =======
                     session.via_exploit.should_not == 'exploit/multi/handler'
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+                    expect(session.via_exploit).not_to eq 'exploit/multi/handler'
+>>>>>>> rapid7/master
 =======
                     expect(session.via_exploit).not_to eq 'exploit/multi/handler'
 >>>>>>> rapid7/master

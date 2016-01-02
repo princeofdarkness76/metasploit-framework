@@ -10,6 +10,7 @@ require 'msf/core/post/android/priv'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Post::Android::Priv do
 =======
 describe Msf::Post::Android::Priv do
@@ -32,6 +33,9 @@ describe Msf::Post::Android::Priv do
 =======
 describe Msf::Post::Android::Priv do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Msf::Post::Android::Priv do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Msf::Post::Android::Priv do
 >>>>>>> rapid7/master

@@ -4,10 +4,14 @@ require 'metasploit/framework/login_scanner/zabbix'
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::Zabbix do
 =======
 describe Metasploit::Framework::LoginScanner::Zabbix do
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+RSpec.describe Metasploit::Framework::LoginScanner::Zabbix do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Metasploit::Framework::LoginScanner::Zabbix do
 >>>>>>> rapid7/master

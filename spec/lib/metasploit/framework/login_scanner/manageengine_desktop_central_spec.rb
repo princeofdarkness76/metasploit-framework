@@ -8,6 +8,7 @@ require 'metasploit/framework/login_scanner/manageengine_desktop_central'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Metasploit::Framework::LoginScanner::ManageEngineDesktopCentral do
 =======
 describe Metasploit::Framework::LoginScanner::ManageEngineDesktopCentral do
@@ -27,6 +28,9 @@ describe Metasploit::Framework::LoginScanner::ManageEngineDesktopCentral do
 =======
 describe Metasploit::Framework::LoginScanner::ManageEngineDesktopCentral do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Metasploit::Framework::LoginScanner::ManageEngineDesktopCentral do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Metasploit::Framework::LoginScanner::ManageEngineDesktopCentral do
 >>>>>>> rapid7/master

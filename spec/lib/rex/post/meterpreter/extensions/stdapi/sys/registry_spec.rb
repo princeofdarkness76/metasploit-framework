@@ -14,6 +14,7 @@ RSpec.describe Rex::Post::Meterpreter::Extensions::Stdapi::Sys::Registry do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       it { is_expected.to eq(3) }
     end
     context "with 'REG_DWORD'" do
@@ -50,6 +51,9 @@ RSpec.describe Rex::Post::Meterpreter::Extensions::Stdapi::Sys::Registry do
 =======
       it { is_expected.to eq(3) }
 >>>>>>> rapid7/master
+=======
+      it { is_expected.to eq(3) }
+>>>>>>> rapid7/master
     end
     context "with 'REG_DWORD'" do
       let(:type) { 'REG_DWORD' }
@@ -70,6 +74,7 @@ RSpec.describe Rex::Post::Meterpreter::Extensions::Stdapi::Sys::Registry do
     context "with 'REG_SZ'" do
       let(:type) { 'REG_SZ' }
 <<<<<<< HEAD
+<<<<<<< HEAD
       it { should eq(1) }
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -87,6 +92,9 @@ RSpec.describe Rex::Post::Meterpreter::Extensions::Stdapi::Sys::Registry do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+      it { is_expected.to eq(1) }
+>>>>>>> rapid7/master
 =======
       it { is_expected.to eq(1) }
 >>>>>>> rapid7/master

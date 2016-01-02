@@ -122,10 +122,14 @@ module Msf
         tbl << [ "nessus_scan_new", "Create a new Nessus Scan" ]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         tbl << [ "nessus_scan_launch", "Launch a newly created scan. New scans need to be manually launched through this command" ]
 =======
         tbl << [ "nessus_scan_lauch", "Launch a newly created scan. New scans need to be manually launched through this command" ]
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
+=======
+        tbl << [ "nessus_scan_launch", "Launch a newly created scan. New scans need to be manually launched through this command" ]
+>>>>>>> rapid7/master
 =======
         tbl << [ "nessus_scan_launch", "Launch a newly created scan. New scans need to be manually launched through this command" ]
 >>>>>>> rapid7/master

@@ -25,6 +25,7 @@ class Metasploit3 < Msf::Auxiliary
     )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     register_options(
       [
@@ -49,6 +50,8 @@ class Metasploit3 < Msf::Auxiliary
 >>>>>>> origin/chore/MSP-12110/celluloid-supervision-tree
 =======
 >>>>>>> rapid7/master
+=======
+>>>>>>> rapid7/master
   end
 
   def get_server_header
@@ -70,6 +73,7 @@ class Metasploit3 < Msf::Auxiliary
     unless joomla_and_online?
       print_error("It doesn't look like Joomla is up and running at #{target_uri.to_s}")
       return
+<<<<<<< HEAD
     end
 
     server = get_server_header
@@ -83,6 +87,12 @@ class Metasploit3 < Msf::Auxiliary
     end
 
 =======
+=======
+    end
+
+    server = get_server_header
+    version = joomla_version
+>>>>>>> rapid7/master
 
     if server
       print_status("Server: #{server}")
@@ -90,6 +100,9 @@ class Metasploit3 < Msf::Auxiliary
       print_error("Unable to determine server.")
     end
 
+<<<<<<< HEAD
+>>>>>>> rapid7/master
+=======
 >>>>>>> rapid7/master
     if version
       print_status("Joomla version: #{version}")

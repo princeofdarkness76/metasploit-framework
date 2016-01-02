@@ -9,6 +9,7 @@ require 'rex/proto/steam/message'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Steam do
 =======
 describe Rex::Proto::Steam do
@@ -28,6 +29,9 @@ describe Rex::Proto::Steam do
 =======
 describe Rex::Proto::Steam do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Rex::Proto::Steam do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Rex::Proto::Steam do
 >>>>>>> rapid7/master

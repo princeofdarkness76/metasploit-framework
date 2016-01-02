@@ -11,6 +11,7 @@ require 'uri'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe MicrosoftPatchFinder do
 =======
 describe MicrosoftPatchFinder do
@@ -33,6 +34,9 @@ describe MicrosoftPatchFinder do
 =======
 describe MicrosoftPatchFinder do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe MicrosoftPatchFinder do
+>>>>>>> rapid7/master
 =======
 RSpec.describe MicrosoftPatchFinder do
 >>>>>>> rapid7/master
@@ -341,6 +345,9 @@ RSpec.describe MicrosoftPatchFinder do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
         Rex::Proto::Http::Response.new.tap { |response|
@@ -352,6 +359,7 @@ RSpec.describe MicrosoftPatchFinder do
                                |
                              )
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -394,6 +402,8 @@ RSpec.describe MicrosoftPatchFinder do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
       end

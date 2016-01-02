@@ -49,6 +49,7 @@ RSpec.describe Rex::Encoder::Alpha2::AlphaMixed do
       it "raises an error" do
         expect { decoder_prefix }.to raise_error(RuntimeError)
 <<<<<<< HEAD
+<<<<<<< HEAD
       end
     end
 
@@ -1267,6 +1268,8 @@ RSpec.describe Rex::Encoder::Alpha2::AlphaMixed do
             expect(modified_registers).to include(Rex::Arch::X86::EDX)
           end
         end
+=======
+>>>>>>> rapid7/master
 =======
 >>>>>>> rapid7/master
       end

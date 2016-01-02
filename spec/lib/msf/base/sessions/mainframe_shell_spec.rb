@@ -15,6 +15,7 @@ require 'msf/base/sessions/mainframe_shell'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Msf::Sessions::MainframeShell do
 =======
 describe Msf::Sessions::MainframeShell do
@@ -37,6 +38,9 @@ describe Msf::Sessions::MainframeShell do
 =======
 describe Msf::Sessions::MainframeShell do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Msf::Sessions::MainframeShell do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Msf::Sessions::MainframeShell do
 >>>>>>> rapid7/master

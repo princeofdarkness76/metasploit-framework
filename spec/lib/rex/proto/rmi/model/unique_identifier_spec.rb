@@ -12,6 +12,7 @@ require 'rex/java'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::UniqueIdentifier do
 =======
 describe Rex::Proto::Rmi::Model::UniqueIdentifier do
@@ -31,6 +32,9 @@ describe Rex::Proto::Rmi::Model::UniqueIdentifier do
 =======
 describe Rex::Proto::Rmi::Model::UniqueIdentifier do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Rex::Proto::Rmi::Model::UniqueIdentifier do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Rex::Proto::Rmi::Model::UniqueIdentifier do
 >>>>>>> rapid7/master

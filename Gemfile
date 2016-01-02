@@ -31,6 +31,7 @@ group :development, :test do
   # environment is development
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   gem 'rspec-rails' , '~> 3.3'
 =======
   gem 'rspec-rails' , '>= 2.12', '< 3.0.0'
@@ -53,6 +54,9 @@ group :development, :test do
 >>>>>>> origin/pod/metasploit-serialized_class_loader
 =======
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+  gem 'rspec-rails' , '~> 3.3'
+>>>>>>> rapid7/master
 =======
   gem 'rspec-rails' , '~> 3.3'
 >>>>>>> rapid7/master

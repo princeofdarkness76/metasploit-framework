@@ -12,6 +12,7 @@ require 'rex/java'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RSpec.describe Rex::Proto::Rmi::Model::ReturnValue do
 =======
 describe Rex::Proto::Rmi::Model::ReturnValue do
@@ -31,6 +32,9 @@ describe Rex::Proto::Rmi::Model::ReturnValue do
 =======
 describe Rex::Proto::Rmi::Model::ReturnValue do
 >>>>>>> origin/pod/metasploit-gemfile-
+=======
+RSpec.describe Rex::Proto::Rmi::Model::ReturnValue do
+>>>>>>> rapid7/master
 =======
 RSpec.describe Rex::Proto::Rmi::Model::ReturnValue do
 >>>>>>> rapid7/master
